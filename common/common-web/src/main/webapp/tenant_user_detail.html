@@ -1,0 +1,266 @@
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">  
+	<link href="css/bootstrap/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">    
+	<link href="css/common-style.css" rel="stylesheet">
+	<link href="css/workbench-style.css" rel="stylesheet">
+</head> 
+<body>
+<div class="container container-top bg-color">
+	<div type="layout" ms-controller="vm1449483622439" id="vm1449483622439" class="form-horizontal">
+		<div class="row">
+			<div type="layout" class="form-horizontal pd15 tip-border mb15 bg-white">
+				<div class="page-navigation"></div>
+				<p> 对项目的用户进行管理，包含用户的新增、修改和删除。注意在登录时需要选择项目信息，例如为ksy项目增加了user用户，该用户使用user用户名，选择项目名称ksy进行登录。
+                </p>
+                <p> 用户的默认密码为888888。
+                </p>
+            </div>
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column bg-white pd15">
+				<div type="layout" id="layout1449483740120" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="layout" id="layout1449483796801" class="form-group">
+								<div class="row">
+									<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+										<div type="separator">
+											<ul class="layout-separator" id="separator1449483803303" style="border-color: silver;" ms-duplex-string="separator1449483803303" ms-attr-disabled="separator1449483803303_form_disabled">
+												<li class="layout-separator-selected ">
+													 <div class="layout-separator-inner">
+													 	<span class="icon glyphicon glyphicon-th-list" style="color: #8a8686;"></span> 
+													 	<span class="title" style="color: #8a8686;">基本信息</span>
+													 </div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" id="layout1449483764786" class="form-group">
+								<div class="row">
+									<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1449483956403" style="font-weight: normal">用户名 <span class="red-star">*</span>：</label>
+										</div>
+									</div>
+									<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="login_name" name="login_name" ms-duplex-string="login_name" ms-attr-disabled="login_name_form_disabled" data-bv-group=".group" placeholder="用户名可以是字母、整数、中划线和下划线">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" id="layout1449717286169" class="form-group">
+								<div class="row">
+									<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1449717295166" style="font-weight: normal">用户全名：</label>
+										</div>
+									</div>
+									<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="fullname" name="fullname" ms-duplex-string="fullname" ms-attr-disabled="fullname_form_disabled" data-bv-group=".group" >
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" id="layout1449483782651" class="form-group">
+								<div class="row">
+									<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1449559712018" style="font-weight: normal">密码 <span class="red-star">*</span>：</label>
+										</div>
+									</div>
+									<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+										<div type="input_text" class="group">
+											<input type="password" class="form-control" id="password" name="password" ms-duplex-string="password" ms-attr-disabled="password_form_disabled" data-bv-group=".group" placeholder="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" id="layout1449559609092" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="layout" id="layout1449559800467" class="form-group">
+								<div class="row">
+									<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+										<div type="separator">
+											<ul class="layout-separator" id="separator1449559804802" style="border-color: silver;" ms-duplex-string="separator1449559804802" ms-attr-disabled="separator1449559804802_form_disabled">
+												<li class="layout-separator-selected ">
+													 <div class="layout-separator-inner">
+													 	<span class="icon glyphicon glyphicon-th-list" style="color: #8a8686;"></span> 
+													 	<span class="title" style="color: #8a8686;">高级属性</span>
+													 </div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" id="layout1449716875503" class="form-group">
+								<div class="row">
+									<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1449716881153" style="font-weight: normal">用户昵称：</label>
+										</div>
+									</div>
+									<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="nick_name" name="nick_name" ms-duplex-string="nick_name" ms-attr-disabled="nick_name_form_disabled" data-bv-group=".group" >
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1449716961683" style="font-weight: normal">用户真实名称 <span class="red-star">*</span>：</label>
+										</div>
+									</div>
+									<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="real_name" name="real_name" ms-duplex-string="real_name" ms-attr-disabled="real_name_form_disabled" data-bv-group=".group" placeholder="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" id="layout1449717143429" class="form-group">
+								<div class="row">
+									<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1449717148912" style="font-weight: normal">用户生日 <span class="red-star">*</span>：</label>
+										</div>
+									</div>
+									<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">										
+										<div type="input_datetime" data-defaultvalue="none" vtype="datetime" compid="birth_date" compname="birth_date" placeholder="YYYY-MM-DD" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" class="group">
+											<input class="form-control form_time" type="text" id="birth_date" name="birth_date" ms-duplex-string="birth_date" ms-attr-disabled="birth_date_form_disabled" data-bv-group=".group" placeholder="" data-bv-for="birth_date">
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1449717180950" style="font-weight: normal">标签：</label>
+										</div>
+									</div>
+									<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="tag" name="tag" ms-duplex-string="tag" ms-attr-disabled="tag_form_disabled" data-bv-group=".group">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" id="layout1449559670884" class="form-group">
+								<div class="row">
+									<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1449483976301" style="font-weight: normal">电话 <span class="red-star">*</span>：</label>
+										</div>
+									</div>
+									<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="mobile" name="mobile" ms-duplex-string="mobile" ms-attr-disabled="mobile_form_disabled" data-bv-group=".group" placeholder="">
+										</div>
+									</div>
+									<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1449484037778" style="font-weight: normal">邮箱 <span class="red-star">*</span>：</label>
+										</div>
+									</div>
+									<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="email" name="email" ms-duplex-string="email" ms-attr-disabled="email_form_disabled" data-bv-group=".group" placeholder="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" id="layout1449717023092" class="form-group">
+								<div class="row">
+									<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1449717041696" style="font-weight: normal">描述：</label>
+										</div>
+									</div>
+									<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+										<div type="textarea">
+											<textarea class="form-control" rows="2" id="description" name="description" ms-duplex-string="description" ms-attr-disabled="description_form_disabled">											</textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" id="layout1449716748461" class="form-group" style="display:none">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="layout" id="layout1449716757941" class="form-group">
+								<div class="row">
+									<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+										<div type="separator">
+											<ul class="layout-separator" id="separator1449716760985" ms-duplex-string="separator1449716760985" ms-attr-disabled="separator1449716760985_form_disabled">
+												<li class="layout-separator-selected ">
+													 <a class="layout-separator-inner"><span class="icon glyphicon glyphicon-th-list"></span> <span class="title">账号控制</span></a>
+												</li>
+											</ul>
+										</div>
+										<div type="layout" id="layout1449716779562" class="form-group">
+											<div class="row">
+												<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+													<div type="label" class="layout-align-right">
+														 <label class="control-label" id="label1449716503586">禁用：</label>
+													</div>
+												</div>
+												<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+													<input type="checkbox" id="chkStatus" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" id="layout1449538864025" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="button_group" class="layout-align-right">
+								 <button type="button" class="btn btn-primary btn-sm" id="btnSubmit" name="button_group1449538887256" ms-duplex-string="button_group1449538887256" ms-attr-disabled="button_group1449538887256_form_disabled">确定</button> 
+								 <button type="button" class="btn btn-default btn-sm" id="btnCancel" name="button_group1449538887256" >取消</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/lib/bootbox.js"></script>
+<script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.js"></script>
+<script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+<script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+<script type="text/javascript" src="js/lib/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="js/lib/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="js/lib/avalon.js"></script>
+<script type="text/javascript" src="js/lib/waypoints/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="js/commTools.js"></script>
+<script type="text/javascript" src="js/page/layoutitPage.js"></script>
+<script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+<script type="text/javascript" src="js/page/layoutitNavigation.js"></script>
+<script type="text/javascript" src="default_common.js"></script>
+<script type="text/javascript" src="js/mao/mao-orm-base.js"></script>
+<script type="text/javascript" src="js/mao/mao-env-base.js"></script>
+<script type="text/javascript" src="js/mao/tip-box.js"></script>
+<script type="text/javascript" src="js/mao/tenant_user_detail.js"></script>
+<script type="text/javascript" src="js/mao/aes.js"></script>
+<script type="text/javascript" src="js/mao/framework-util.js"></script>
+</body>
+</html>

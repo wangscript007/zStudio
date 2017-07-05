@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XML Spy v4.4 U (http://www.xmlspy.com) by Snowm (ZTE) -->
+<tree i18n-file="dataservice-i18n.xml">
+
+	<tree-node nodeid="bcp.dataservice" describe="ORM" label-key="bcp.dataservice">
+			<operation value="bcp.dataservice.orm.rest" describe="ORM rest接口" label-key="bcp.dataservice.orm.rest" desc-key="bcp.dataservice.orm.rest.desc" level="4" attribute="1"/>
+	</tree-node>
+	
+</tree>

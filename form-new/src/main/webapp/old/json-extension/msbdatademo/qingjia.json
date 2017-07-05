@@ -1,0 +1,667 @@
+[
+  {
+    "id": "qingjia",
+    "name": "qingjia",
+    "ip": "",
+    "port": "",
+    "app_path": "/bpm/model/api",
+    "services": [
+      {
+        "id": "qingjia",
+        "name": "qingjia",
+        "definitions": {
+          "INPUT-qingjia-PUT": {
+            "properties": [
+              {
+                "name": "qingjiashiyou",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "qingjialeixing",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "lianxifangshi",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "jieshushijian",
+                "length": "0",
+                "type": "dateTime"
+              },
+              {
+                "name": "gangwei",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "shenpiyijian",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "zhiwu",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "shenqingren",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "tianshu",
+                "length": "0",
+                "type": "integer"
+              },
+              {
+                "name": "zhuti",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "xiaoshi",
+                "length": "0",
+                "type": "number"
+              },
+              {
+                "name": "ruzhiriqi",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "bumen",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "kaishishijian",
+                "length": "0",
+                "type": "dateTime"
+              },
+              {
+                "name": "id",
+                "length": "0",
+                "type": "string"
+              }
+            ]
+          },
+          "OUTPUT-qingjia-load-POST": {
+            "properties": [
+              {
+                "name": "qingjiashiyou",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "qingjialeixing",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "lianxifangshi",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "jieshushijian",
+                "length": "0",
+                "type": "dateTime"
+              },
+              {
+                "name": "gangwei",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "shenpiyijian",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "zhiwu",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "shenqingren",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "tianshu",
+                "length": "0",
+                "type": "integer"
+              },
+              {
+                "name": "zhuti",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "xiaoshi",
+                "length": "0",
+                "type": "number"
+              },
+              {
+                "name": "ruzhiriqi",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "bumen",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "kaishishijian",
+                "length": "0",
+                "type": "dateTime"
+              },
+              {
+                "name": "id",
+                "length": "0",
+                "type": "string"
+              }
+            ]
+          },
+          "INPUT-qingjia-load-POST": {
+            "properties": [
+              {
+                "name": "id",
+                "length": "0",
+                "type": "string"
+              }
+            ]
+          },
+          "INPUT-qingjia-POST": {
+            "properties": [
+              {
+                "name": "qingjiashiyou",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "qingjialeixing",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "jieshushijian",
+                "length": "0",
+                "type": "dateTime"
+              },
+              {
+                "name": "lianxifangshi",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "gangwei",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "shenpiyijian",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "zhiwu",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "shenqingren",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "zhuti",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "tianshu",
+                "length": "0",
+                "type": "integer"
+              },
+              {
+                "name": "xiaoshi",
+                "length": "0",
+                "type": "number"
+              },
+              {
+                "name": "ruzhiriqi",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "bumen",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "kaishishijian",
+                "length": "0",
+                "type": "dateTime"
+              },
+              {
+                "name": "id",
+                "length": "0",
+                "type": "string"
+              }
+            ]
+          },
+          "OUTPUT-qingjia-GET": {
+            "properties": [
+              {
+                "name": "qingjiashiyou",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "qingjialeixing",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "jieshushijian",
+                "length": "0",
+                "type": "dateTime"
+              },
+              {
+                "name": "lianxifangshi",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "gangwei",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "shenpiyijian",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "zhiwu",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "shenqingren",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "tianshu",
+                "length": "0",
+                "type": "integer"
+              },
+              {
+                "name": "zhuti",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "xiaoshi",
+                "length": "0",
+                "type": "number"
+              },
+              {
+                "name": "ruzhiriqi",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "bumen",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "kaishishijian",
+                "length": "0",
+                "type": "dateTime"
+              },
+              {
+                "name": "id",
+                "length": "0",
+                "type": "string"
+              }
+            ]
+          }
+        },
+        "sets": [
+          {
+            "name": "/qingjia",
+            "set_path": "/qingjia",
+            "post_in": [
+              {
+                "name": "qingjiashiyou",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "qingjialeixing",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "jieshushijian",
+                "length": "0",
+                "type": "dateTime"
+              },
+              {
+                "name": "lianxifangshi",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "gangwei",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "shenpiyijian",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "zhiwu",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "shenqingren",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "zhuti",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "tianshu",
+                "length": "0",
+                "type": "integer"
+              },
+              {
+                "name": "xiaoshi",
+                "length": "0",
+                "type": "number"
+              },
+              {
+                "name": "ruzhiriqi",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "bumen",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "kaishishijian",
+                "length": "0",
+                "type": "dateTime"
+              },
+              {
+                "name": "id",
+                "length": "0",
+                "type": "string"
+              }
+            ],
+            "get_out": [
+              {
+                "name": "qingjiashiyou",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "qingjialeixing",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "jieshushijian",
+                "length": "0",
+                "type": "dateTime"
+              },
+              {
+                "name": "lianxifangshi",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "gangwei",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "shenpiyijian",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "zhiwu",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "shenqingren",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "tianshu",
+                "length": "0",
+                "type": "integer"
+              },
+              {
+                "name": "zhuti",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "xiaoshi",
+                "length": "0",
+                "type": "number"
+              },
+              {
+                "name": "ruzhiriqi",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "bumen",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "kaishishijian",
+                "length": "0",
+                "type": "dateTime"
+              },
+              {
+                "name": "id",
+                "length": "0",
+                "type": "string"
+              }
+            ],
+            "get_param": [
+              {
+                "type": "integer",
+                "name": "tianshu",
+                "length": "0"
+              },
+              {
+                "type": "string",
+                "name": "zhiwu",
+                "length": "0"
+              },
+              {
+                "type": "string",
+                "name": "shenqingren",
+                "length": "0"
+              },
+              {
+                "type": "dateTime",
+                "name": "jieshushijian",
+                "length": "0"
+              },
+              {
+                "type": "string",
+                "name": "ruzhiriqi",
+                "length": "0"
+              },
+              {
+                "type": "string",
+                "name": "shenpiyijian",
+                "length": "0"
+              },
+              {
+                "type": "string",
+                "name": "bumen",
+                "length": "0"
+              },
+              {
+                "type": "string",
+                "name": "gangwei",
+                "length": "0"
+              },
+              {
+                "type": "string",
+                "name": "id",
+                "length": "0"
+              },
+              {
+                "type": "string",
+                "name": "zhuti",
+                "length": "0"
+              },
+              {
+                "type": "number",
+                "name": "xiaoshi",
+                "length": "0"
+              },
+              {
+                "type": "dateTime",
+                "name": "kaishishijian",
+                "length": "0"
+              },
+              {
+                "type": "string",
+                "name": "lianxifangshi",
+                "length": "0"
+              },
+              {
+                "type": "string",
+                "name": "qingjialeixing",
+                "length": "0"
+              },
+              {
+                "type": "string",
+                "name": "qingjiashiyou",
+                "length": "0"
+              }
+            ],
+            "put_in": [
+              {
+                "name": "qingjiashiyou",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "qingjialeixing",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "lianxifangshi",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "jieshushijian",
+                "length": "0",
+                "type": "dateTime"
+              },
+              {
+                "name": "gangwei",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "shenpiyijian",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "zhiwu",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "shenqingren",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "tianshu",
+                "length": "0",
+                "type": "integer"
+              },
+              {
+                "name": "zhuti",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "xiaoshi",
+                "length": "0",
+                "type": "number"
+              },
+              {
+                "name": "ruzhiriqi",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "bumen",
+                "length": "0",
+                "type": "string"
+              },
+              {
+                "name": "kaishishijian",
+                "length": "0",
+                "type": "dateTime"
+              },
+              {
+                "name": "id",
+                "length": "0",
+                "type": "string"
+              }
+            ]
+          },
+          {
+            "name": "/qingjia/load",
+            "set_path": "/qingjia/load",
+            "post_in": [
+              {
+                "name": "id",
+                "length": "0",
+                "type": "string"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

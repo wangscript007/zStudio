@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/bootstrap/select2/select2.min.css" rel="stylesheet">
+    <link href="css/component/m-layout.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/frame/patch.css" rel="stylesheet">
+    <link href="css/frame/docs.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-ID-CN.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+    <script type="text/javascript" src="js/lib/lodash.min.js"></script>
+    <script type="text/javascript" src="js/lib/select2/select2.min.js"></script>
+    <script type="text/javascript" src="js/lib/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery.i18n.properties-1.0.9.js"></script>
+    <script type="text/javascript" src="js/lib/chinese-region/bootstrap-chinese-region.js"></script>
+    <script type="text/javascript" src="js/commTools.js"></script>
+    <script type="text/javascript" src="js/page/cache/page-cache-manage.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-base.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-json.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-multitable.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-orm.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPagei18n.js"></script>
+    <script type="text/javascript" src="js/page/init/page-cache-init.js"></script>
+    <script type="text/javascript" src="js/component/m-layout.js"></script>
+    <script type="text/javascript" src="default_common.js"></script>
+    <script type="text/javascript" src="js/frame/lib/docs.min.js"></script>
+    <script type="text/javascript" src="js/mao/data_model_design_upload_doc_logic.js"></script>
+</head>
+<body>
+<div class="container bs-docs-container">
+
+    <div class="row">
+        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+            <div style="font-size: 14px;font-weight:bold;">
+                文件名格式：“<数据模型名>.json”
+            </div>
+            <div style="font-size: 14px;">
+                文件编码格式应为如下图：
+            </div>
+            <img src="img/dataModel/globalizationFileCoding.png">
+            <div style="font-size: 14px;">
+                以下替换“<>”内容为实际应用的内容，文件内容格式如下：
+            </div>
+            <div class="highlight">
+                <pre>
+                    <code class="language-html" data-lang="html">
+<span class="nt">[</span>
+<span class="nt">   {</span>
+<span class="nt">      "id":"<字段名>",</span>
+<span class="nt">      "name":"<字段显示名>",</span>
+<span class="nt">      "default":"<默认值>",</span>
+<span class="nt">      "controlType":"<控件类型>",</span>
+<span class="nt">      "uiVisible":"<可显示>",</span>
+<span class="nt">      "layout":"<布局类型>",</span>
+<span class="nt">      "dataBlock":"<所属面板域，面板域值为“整数”，面板域的顺序为“整数升序排列”>"</span>
+<span class="nt">   }</span>
+<span class="nt">]</span>
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+            <div style="font-size: 14px;color: red;font-weight:bold;">
+                注意：
+            </div>
+            <div style="font-size: 14px;">
+                “controlType”的值应为“1”、“2”、“3”、“4”、“5”、“6”、“7”、“8”。
+            </div>
+            <div style="font-size: 14px;">
+                对应关系如下：
+            </div>
+            <table id="controlTypeTable_sdf53532123" class="table table-bordered">
+            </table>
+            <div style="font-size: 14px;">
+                “layout”的值应为“0”、“1”和“2”。
+            </div>
+            <div style="font-size: 14px;">
+                对应关系如下：
+            </div>
+            <table id="layoutTable_sdf53532123" class="table table-bordered">
+            </table>
+            <div style="font-size: 14px;">
+                “uiVisible”的值应为“1”和“2”。
+            </div>
+            <div style="font-size: 14px;">
+                对应关系如下：
+            </div>
+            <table id="uiVisibleTable_sdf53532123" class="table table-bordered">
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+            <div style="font-size: 14px;font-weight:bold;">
+                示例：
+            </div>
+            <div style="font-size: 14px;">
+               文件名：“role.json”
+            </div>
+            <div style="font-size: 14px;">
+                文件内容如下：
+            </div>
+            <div class="highlight">
+                <pre>
+                    <code class="language-html" data-lang="html">
+<span class="nt">[</span>
+<span class="nt">   {</span>
+<span class="nt">       "id":"ID",</span>
+<span class="nt">       "name":"编号",</span>
+<span class="nt">       "default":"1",</span>
+<span class="nt">       "controlType":"2",</span>
+<span class="nt">       "uiVisible":"1",</span>
+<span class="nt">       "layout":"1",</span>
+<span class="nt">       "dataBlock":"1"</span>
+<span class="nt">   },</span>
+<span class="nt">   {</span>
+<span class="nt">       "id":"NAME",</span>
+<span class="nt">       "name":"名称",</span>
+<span class="nt">       "default":"",</span>
+<span class="nt">       "controlType":"2",</span>
+<span class="nt">       "uiVisible":"2",</span>
+<span class="nt">       "layout":"2",</span>
+<span class="nt">       "dataBlock":"2"</span>
+<span class="nt">   }</span>
+<span class="nt">]</span>
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/bootstrap/select2/select2.min.css" rel="stylesheet">
+    <link href="css/component/m-layout.css" rel="stylesheet">
+    <link href="css/component/m-label.css" rel="stylesheet">
+    <script type="text/javascript" src="app-child-menu-add.js"></script>
+    <script type="text/javascript" src="js/mao/app-child-menu-add-logic.js"></script>
+</head> 
+<body>
+<div class="container container-top">
+	<div type="layout" compid="vm1469583980628" ms-controller="vm1469583980628" id="vm1469583980628" dstype="orm" bfd-operation-params="%7B%22model%22%3A%22vm1469583980628%22%2C%22service%22%3A%22bcp%22%2C%22set%22%3A%22tenant_menu%22%2C%22operations%22%3A%5B%7B%22method%22%3A%22POST%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fbpm%2Form%2Ftable%2Ftenant_menu%22%2C%22name%22%3A%22add%22%7D%2C%7B%22method%22%3A%22PUT%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fbpm%2Form%2Ftable%2Ftenant_menu%22%2C%22name%22%3A%22update%22%7D%2C%7B%22method%22%3A%22DELETE%22%2C%22submit%22%3A%22delete%22%2C%22url%22%3A%22%2Fbpm%2Form%2Ftable%2Ftenant_menu%22%2C%22name%22%3A%22delete%22%7D%2C%7B%22method%22%3A%22GET%22%2C%22submit%22%3A%22initVMData%22%2C%22url%22%3A%22%2Fbpm%2Form%2Ftable%2Ftenant_menu%22%2C%22name%22%3A%22query%22%7D%5D%2C%22post_in%22%3A%5B%5D%2C%22put_in%22%3A%5B%5D%2C%22get_out%22%3A%5B%5D%7D" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+				<div type="layout" compid="layout1475061232881" id="layout1475061232881" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="separator" compid="separator1469584179896">
+								<ul class="layout-separator" id="separator1469584179896" style="border-color: rgb(130, 130, 130);">
+									<li class="layout-separator-selected ">
+										 <a class="layout-separator-inner"><span class="icon glyphicon glyphicon-th-list"></span> <span class="title" i18nkey="基础属性">基础属性</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1469585894654" id="layout1469585894654" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" compid="label1469584250846" class="layout-align-center">
+								 <label class="control-label" id="label1469584250846" i18nkey="菜单名称">菜单名称</label>
+							</div>
+						</div>
+						<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+							<div type="input_text" compid="input_text1469584255512" field="NAME" class="group">
+								<input type="text" class="form-control" id="child_menu_name" name="child_menu_name" ms-attr-disabled="NAME_form_disabled" ms-duplex-string="NAME" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1469584314423" id="layout1469584314423" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" compid="label1469584375393" class="layout-align-center">
+								 <label class="control-label" id="label1469584375393" i18nkey="父节点名称">父节点名称</label>
+							</div>
+						</div>
+						<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+							<div type="input_text" compid="input_text1469584377250" field="PARENT_KEY" class="group">
+								<input type="text" class="form-control" id="parent_key" name="parent_key" ms-duplex-string="PARENT_KEY" data-bv-group=".group" disabled>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1475061236412" id="layout1475061236412" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="separator" compid="separator1469753076725">
+								<ul class="layout-separator" id="separator1469753076725" style="border-color: rgb(130, 130, 130);">
+									<li class="layout-separator-selected ">
+										 <a class="layout-separator-inner"><span class="icon glyphicon glyphicon-th-list"></span> <span class="title" i18nkey="功能属性">功能属性</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1475130985620" id="layout1475130985620" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" compid="label1475131006665" class="layout-align-center">
+								 <label class="control-label" id="label1475131006665" i18nkey="是否显示">显示</label>
+							</div>
+						</div>
+						<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+							<div type="select_dynamic" compid="select_dynamic14910090882010" compname="select_dynamic14910090882010" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" field="STATUS">
+								 <select style="display : inline;width:100%;" class="form-control" id="select_status" name="select_status" ms-duplex-number="STATUS"> <option value="1">是</option> <option value="0">否</option></select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1469584401328" id="layout1469584401328" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" compid="label1469584456406" class="layout-align-center">
+								 <label class="control-label" id="label1469584456406" i18nkey="链接地址">链接地址</label>
+							</div>
+						</div>
+						<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+							<div type="textarea" compid="textarea1469584462932" field="URL" class="group">
+								<textarea class="form-control" rows="2" id="url_addr" name="url_addr" ms-duplex-string="URL" 
+									ms-attr-disabled="URL_form_disabled" data-bv-group=".group"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1475138388340" id="layout1475138388340" class="form-group" hidden>
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" compid="label1475138397977" class="layout-align-center">
+								 <label class="control-label" id="label1475138397977" i18nkey="排序码">排序码</label>
+							</div>
+						</div>
+						<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+							<div type="input_text" compid="input_text1475138413288" field="ORDER" class="group">
+								<input type="text" class="form-control" id="order_code" name="order_code" 
+									ms-duplex-number="ORDER" data-bv-group=".group" placeholder="请输入1~32767之间的数字">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1487321075261" compname="layout1487321075261" id="layout1487321075261" class="form-group" style="margin-top:25px;">
+				<div class="row">
+					<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column layout-align-right">						
+						<div class="btn-group">
+							<div type="button" compid="button14873211447040" compname="button14873211447040" class="layout-align-right" style="margin-left:30px;">
+								 <button type="button" class="btn btn-primary btn-sm" id="submitBtn" name="submitBtn" i18nkey="确定">确定</button>
+							</div>
+						</div>
+						<div class="btn-group">
+							<div type="button" compid="button14873211465030" compname="button14873211465030" class="layout-align-right">
+								 <button type="button" class="btn btn-default btn-sm" id="cancelBtn" name="cancelBtn" i18nkey="取消">取消</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

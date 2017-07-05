@@ -1,0 +1,356 @@
+{
+  "id": "parallel",
+  "thumbnail": "parallel.png",
+  "js": "parallel.js",
+  "instanceName": "Parallel",
+  "displayName": "平行坐标",
+
+  "properties": [{
+    "displayName": "图表",
+    "propertyItems": [
+	  {
+        "displayName": "高度",
+        "attributeName": "chart_height",
+        "attributeRelation": "chart_height",
+        "type": "input",
+        "defaultOption": "300px",
+		"dataType": "string"
+      },
+      {
+        "displayName": "背景颜色",
+        "attributeName": "backgroundColor",
+        "attributeRelation": "backgroundColor",
+        "type": "color",
+        "defaultOption": "transparent"
+      },
+      {
+        "displayName": "是否开启动画",
+        "attributeName": "animation",
+        "attributeRelation": "animation",
+        "type": "radio",
+        "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+        "defaultOption": true
+      }]
+  },{
+    "displayName": "标题",
+    "attributeName": "title",
+    "propertyItems": [
+      {
+        "displayName": "是否显示",
+        "attributeName": "title_show",
+        "attributeRelation": "title.show",
+        "type": "radio",
+        "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+        "defaultOption": true
+      }, {
+        "displayName": "主标题",
+        "attributeName": "title_text",
+        "attributeRelation": "title.text",
+        "type": "input",
+        "defaultOption": "主标题",
+        "dataType": "string"
+      }, {
+        "displayName": "主标题颜色",
+        "attributeName": "title_textStyle_color",
+        "attributeRelation": "title.textStyle.color",
+        "type": "color",
+        "defaultOption": "#333"
+      },{
+        "displayName": "副标题",
+        "attributeName": "title_subtext",
+        "attributeRelation": "title.subtext",
+        "type": "input",
+        "defaultOption": "副标题",
+        "dataType": "string"
+      },  {
+        "displayName": "副标题颜色",
+        "attributeName": "title_subtextStyle_color",
+        "attributeRelation": "title.subtextStyle.color",
+        "type": "color",
+        "defaultOption": "#aaa"
+      },{
+        "displayName": "水平位置",
+        "attributeName": "title_left",
+        "attributeRelation": "title.left",
+        "type": "radio",
+        "options": [{"title": "左", "value": "left"}, {"title": "中", "value": "center"}, {"title": "右", "value": "right"}],
+        "defaultOption": "left"
+      }, {
+        "displayName": "垂直位置",
+        "attributeName": "title_top",
+        "attributeRelation": "title.top",
+        "type": "radio",
+        "options": [{"title": "上", "value": "top"}, {"title": "中", "value": "middle"}, {"title": "下", "value": "bottom"}],
+        "defaultOption": "top"
+      }, {
+        "displayName": "背景颜色",
+        "attributeName": "title_backgroundColor",
+        "attributeRelation": "title.backgroundColor",
+        "type": "color",
+        "defaultOption": "transparent"
+      }]
+  },
+    {
+      "displayName": "图例",
+      "attributeName": "legend",
+      "propertyItems": [{
+        "displayName": "是否显示",
+        "attributeName": "legend_show",
+        "attributeRelation": "legend.show",
+        "type": "radio",
+        "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+        "defaultOption": true
+      }, {
+        "displayName": "布局方式",
+        "attributeName": "legend_orient",
+        "attributeRelation": "legend.orient",
+        "type": "radio",
+        "options": [{"title": "水平", "value": "horizontal"}, {"title": "垂直", "value": "vertical"}],
+        "defaultOption": "horizontal"
+      }, {
+        "displayName": "水平位置",
+        "attributeName": "legend_left",
+        "attributeRelation": "legend.left",
+        "type": "radio",
+        "options": [{"title": "左", "value": "left"}, {"title": "中", "value": "center"}, {"title": "右", "value": "right"}],
+        "defaultOption": "center"
+      }, {
+        "displayName": "垂直位置",
+        "attributeName": "legend_top",
+        "attributeRelation": "legend.top",
+        "type": "radio",
+        "options": [{"title": "上", "value": "top"}, {"title": "中", "value": "middle"}, {"title": "下", "value": "bottom"}],
+        "defaultOption": "top"
+      },
+        {
+          "displayName": "字体颜色",
+          "attributeName": "legend_textStyle_color",
+          "attributeRelation": "legend.textStyle.color",
+          "type": "color",
+          "defaultOption": "#333"
+        },
+        {
+          "displayName": "字体风格",
+          "attributeName": "legend_textStyle_fontStyle",
+          "attributeRelation": "legend.textStyle.fontStyle",
+          "type": "radio",
+          "options": [{"title": "标准", "value": "normal"}, {"title": "斜体", "value": "italic"}, {"title": "倾斜", "value": "oblique"}],
+          "defaultOption": "normal"
+        },
+        {
+          "displayName": "字体粗细",
+          "attributeName": "legend_textStyle_fontWeight",
+          "attributeRelation": "legend.textStyle.fontWeight",
+          "type": "radio",
+          "options": [{"title": "标准", "value": "normal"}, {"title": "加粗", "value": "bold"}, {"title": "更粗", "value": "bolder"}, {"title": "更细", "value": "lighter"}],
+          "defaultOption": "normal"
+        },
+        {
+          "displayName": "字体大小",
+          "attributeName": "legend_textStyle_fontSize",
+          "attributeRelation": "legend.textStyle.fontSize",
+          "type": "input",
+          "defaultOption": 12,
+          "dataType": "int"
+        }
+      ]
+    },
+    {
+      "displayName": "提示框",
+      "attributeName": "tooltip",
+      "propertyItems": [{
+        "displayName": "是否显示",
+        "attributeName": "tooltip_show",
+        "attributeRelation": "tooltip.show",
+        "type": "radio",
+        "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+        "defaultOption": true
+      }, {
+        "displayName": "触发类型",
+        "attributeName": "tooltip_trigger",
+        "attributeRelation": "tooltip.trigger",
+        "type": "radio",
+        "options": [{"title": "数据", "value": "item"}, {"title": "坐标", "value": "axis"}],
+        "defaultOption": "item"
+      }]
+    },
+    {
+      "displayName": "工具箱",
+      "attributeName": "toolbox",
+      "propertyItems": [{
+        "displayName": "是否显示",
+        "attributeName": "toolbox_show",
+        "attributeRelation": "toolbox.show",
+        "type": "radio",
+        "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+        "defaultOption": true
+      }, {
+        "displayName": "布局方式",
+        "attributeName": "toolbox_orient",
+        "attributeRelation": "toolbox.orient",
+        "type": "radio",
+        "options": [{"title": "水平", "value": "horizontal"}, {"title": "垂直", "value": "vertical"}],
+        "defaultOption": "horizontal"
+      }, {
+        "displayName": "水平位置",
+        "attributeName": "toolbox_left",
+        "attributeRelation": "toolbox.left",
+        "type": "radio",
+        "options": [{"title": "左", "value": "left"}, {"title": "中", "value": "center"}, {"title": "右", "value": "right"}],
+        "defaultOption": "right"
+      }, {
+        "displayName": "垂直位置",
+        "attributeName": "toolbox_top",
+        "attributeRelation": "toolbox.top",
+        "type": "radio",
+        "options": [{"title": "上", "value": "top"}, {"title": "中", "value": "middle"}, {"title": "下", "value": "bottom"}],
+        "defaultOption": "top"
+      },
+        {
+          "displayName": "框选区域缩放",
+          "attributeName": "toolbox_feature_dataZoom_show",
+          "attributeRelation": "toolbox.feature.dataZoom.show",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": false
+        }, {
+          "displayName": "数据视图",
+          "attributeName": "toolbox_feature_dataView_show",
+          "attributeRelation": "toolbox.feature.dataView.show",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": false
+        },{
+          "displayName": "动态类型切换",
+          "attributeName": "toolbox_feature_magicType_show",
+          "attributeRelation": "toolbox.feature.magicType.show",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": false
+        },{
+          "displayName": "动态类型",
+          "attributeName": "toolbox_feature_magicType_type",
+          "attributeRelation": "toolbox.feature.magicType.type",
+          "type": "checkbox",
+          "options": [{"title": "折线图", "value": "line"}, {"title": "柱状图", "value": "bar"}, {"title": "堆叠", "value": "stack"}, {"title": "平铺", "value": "tiled"}],
+          "defaultOption": ["line", "bar", "stack", "tiled"]
+        },{
+          "displayName": "还原",
+          "attributeName": "toolbox_feature_restore_show",
+          "attributeRelation": "toolbox.feature.restore.show",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": false
+        },{
+          "displayName": "保存图片",
+          "attributeName": "toolbox_feature_saveAsImage_show",
+          "attributeRelation": "toolbox.feature.saveAsImage.show",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": false
+        }]
+    },
+    {
+      "displayName": "组件布局",
+      "attributeName": "parallel",
+      "attributeRelation": "parallel",
+      "propertyItems": [
+        {
+          "displayName": "布局方式",
+          "attributeName": "parallel_layout",
+          "attributeRelation": "parallel.layout",
+          "type": "radio",
+          "options": [{"title": "水平", "value": "horizontal"}, {"title": "垂直", "value": "vertical"}],
+          "defaultOption": "horizontal"
+        },
+        {
+          "displayName": "是否轴扩展",
+          "attributeName": "parallel_axisExpandable",
+          "attributeRelation": "parallel.axisExpandable",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": false
+        },
+		{
+          "displayName": "轴线颜色",
+          "attributeName": "parallel_parallelAxisDefault_axisLine_lineStyle_color",
+          "attributeRelation": "parallel.parallelAxisDefault.axisLine.lineStyle.color",
+          "type": "color",
+          "defaultOption": "#333"
+        }
+      ]
+    },
+    {
+      "displayName": "系列",
+      "attributeName": "series",
+      "attributeRelation": "series",
+      "multiple": true,
+      "propertyItems": [
+        {
+          "displayName": "线宽",
+          "attributeName": "series_lineStyle_normal_width",
+          "attributeRelation": "series[{idx}].lineStyle.normal.width",
+          "type": "input",
+          "defaultOption": 2,
+          "dataType": "int"
+        },
+        {
+          "displayName": "线的类型",
+          "attributeName": "series_lineStyle_normal_type",
+          "attributeRelation": "series[{idx}].lineStyle.normal.type",
+          "type": "radio",
+          "options": [{"title": "实线", "value": "solid"}, {"title": "虚线", "value": "dashed"}, {"title": "点状线", "value": "dotted"}],
+          "defaultOption": "solid"
+        },
+        {
+          "displayName": "图形透明度",
+          "attributeName": "series_lineStyle_normal_opacity",
+          "attributeRelation": "series[{idx}].lineStyle.normal.opacity",
+          "type": "input",
+          "defaultOption": 0.45,
+          "dataType": "float"
+        },
+        {
+          "displayName": "未框选透明度",
+          "attributeName": "series_inactiveOpacity",
+          "attributeRelation": "series[{idx}].inactiveOpacity",
+          "type": "input",
+          "defaultOption": 0.05,
+          "dataType": "float"
+        },
+        {
+          "displayName": "已框选透明度",
+          "attributeName": "series_activeOpacity",
+          "attributeRelation": "series[{idx}].activeOpacity",
+          "type": "input",
+          "defaultOption": 1,
+          "dataType": "float"
+        },
+        {
+          "displayName": "实时刷新",
+          "attributeName": "series_realtime",
+          "attributeRelation": "series[{idx}].realtime",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": true
+        },
+        {
+          "displayName": "响应鼠标事件",
+          "attributeName": "series_silent",
+          "attributeRelation": "series[{idx}].silent",
+          "type": "radio",
+          "options": [{"title": "是", "value": false}, {"title": "否", "value": true}],
+          "defaultOption": false
+        },
+        {
+          "displayName": "开启动画",
+          "attributeName": "series_animation",
+          "attributeRelation": "series[{idx}].animation",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": true
+        }
+      ]
+    }
+  ]
+}

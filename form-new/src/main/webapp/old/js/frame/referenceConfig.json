@@ -1,0 +1,269 @@
+﻿{
+  "base": {
+	"css": [
+	  "css/bootstrap/bootstrap.min.css",
+	  "css/bootstrap/bootstrapValidator.min.css",
+	  "css/page.css",
+	  "css/bootstrap/select2/select2.min.css"
+	],
+	"js": [
+	  "js/lib/jquery/jquery.min.js",
+	  "js/lib/jquery-ui.min.js",
+	  "js/lib/jquery.mCustomScrollbar.concat.min.js",
+	  "js/lib/bootstrap.min.js",
+	  "js/lib/bootbox.js",
+	  "js/lib/bootstrapvalidator/bootstrapValidator.min.js",
+	  "js/lib/bootstrapvalidator/bootstrapValidator-Custom.js",
+	  "js/lib/bootstrapvalidator/bootstrapValidator-ID-CN.js",
+	  "js/lib/bootstrapvalidator/language/zh_CN.js",
+	  "js/lib/lodash.min.js",
+	  "js/lib/select2/select2.min.js",
+	  "js/lib/moment-with-locales.min.js",
+	  "js/lib/bootstrap-datetimepicker.min.js",
+	  "js/lib/jquery/jquery.i18n.properties-1.0.9.js",
+	  "js/lib/chinese-region/bootstrap-chinese-region.js",
+	  "js/commTools.js",
+	  "js/page/cache/page-cache-manage.js",
+	  "js/page/operation/page-operation-base.js",
+	  "js/page/operation/page-operation-json.js",
+	  "js/page/operation/page-operation-multitable.js",
+	  "js/page/operation/page-operation-orm.js",
+	  "js/page/layoutitPage.js",
+	  "js/page/layoutitPageLoad.js",
+	  "js/page/layoutitPagei18n.js",
+	  "js/page/init/page-cache-init.js"
+	]
+  },
+  "tab": {
+	"css": [
+	  "css/component/myAdmin.css"
+	],
+	"js": [
+	  "js/component/tabs.js"
+	]
+  },
+  "base_end": {
+	"js": [
+	  "js/lib/avalon.js"
+	]
+  },
+  "input_fileinput": {
+	"css": [
+	  "css/bootstrap/fileinput/css/fileinput.css"
+	],
+	"js": [
+	  "js/lib/fileinput/fileinput.js",
+	  "js/lib/fileinput/fileinput_locale_zh.js"
+	]
+  },
+  "table_base": {
+	"css": [
+	  "css/bootstrap/bootstrap-table.min.css"
+	],
+	"js": [
+	  "js/lib/bootstrap-table.min.js",
+	  "js/lib/bootstrap-table-editable.js",
+	  "js/lib/bootstrap-table-zh-CN.min.js",
+	  "js/lib/bootstrap-table-pagination.js",
+	  "js/page/layoutitPageTable.js"
+	]
+  },
+  "table_base_local": {
+	"css": [
+	  "css/bootstrap/bootstrap-table.min.css"
+	],
+	"js": [
+	  "js/lib/bootstrap-table.min.js",
+	  "js/lib/bootstrap-table-editable.js",
+	  "js/lib/bootstrap-table-zh-CN.min.js",
+	  "js/lib/bootstrap-table-toolbar.js",
+	  "js/page/layoutitPageTable.js"
+	]
+  },
+  "tree": {
+	"css": [
+	  "css/zTreeStyle/zTreeStyle.css"
+	],
+	"js": [
+	  "js/lib/jquery.ztree.all-3.5.js",
+	  "js/lib/chinese-region/bootstrap-chinese-region-areas.json",
+	  "js/page/zTree.js"
+	]
+  },  
+  "input_datetime": {
+	"css": [
+	  "css/bootstrap/bootstrap-datetimepicker.min.css"
+	],
+	"js": [
+	  "js/lib/moment-with-locales.min.js",
+	  "js/lib/bootstrap-datetimepicker.min.js"
+	]
+  },
+  "select_dynamic": {
+	"css": [
+	  "css/bootstrap/select2/select2.min.css"
+	],
+	"js": [
+	  "js/lib/select2/select2.min.js"
+	]
+  },
+  "modal_dialog": {
+	"js": [
+	  "js/page/layoutitPageDialog.js"
+	]
+  },
+  "imgBar": {
+	"js": [
+	  "js/lib/echarts.common.min.js",
+	  "js/page/layoutitPageCharts.js"
+	]
+  },
+  "layoutitWaypoint": {
+	"js": [
+	  "js/page/layoutitWaypoint.js"
+	]
+  },
+  "imgPie": {
+	"js": [
+	  "js/lib/echarts.common.min.js",
+	  "js/page/layoutitPageCharts.js"
+	]
+  },
+  "imgLine": {
+	"js": [
+	  "js/lib/echarts.common.min.js",
+	  "js/page/layoutitPageCharts.js"
+	]
+  },
+  "imgConnect": {
+	"js": [
+	  "js/lib/echarts.common.min.js",
+	  "js/page/layoutitPageCharts.js"
+	]
+  },
+  "imgMap": {
+	"js": [
+	  "js/lib/echarts.common.min.js",
+	  "js/page/layoutitPageCharts.js"
+	]
+  },
+  "chinese_region": {
+	"css": [
+	  "css/bootstrap/bootstrap-chinese-region.min.css"
+	],
+	"js": [
+	  "js/lib/chinese-region/bootstrap-chinese-region-areas.json"
+	]
+  },
+  "layout_extend": {
+	"css": [
+	  "css/layout/layout-default.css"
+	],
+	"js": [
+	  "js/lib/jquery.layout.js"
+	]
+  } ,
+  "image": {
+	"css": [
+	  "css/lib/jquery.fancybox.css"
+	],
+	"js": [
+	  "js/lib/jquery/jquery.fancybox.js"
+	]
+  },
+  "product_list": {
+	"css": [
+	  "css/component/m-common.css",
+	  "css/component/m-common-list.css",
+	  "css/component/m-product-list.css"
+	],
+	"js": [
+	  "js/component/m-common-list.js",
+	  "js/component/m-product-list.js"
+	]
+  },
+  "m_switch": {
+	"css": [
+	  "css/bootstrap/bootstrap-switch.css"
+	],
+	"js": [
+	  "js/lib/bootstrap-switch.js",
+	  "js/component/switch.js"
+	]
+  }, 
+  "m_shopping_cart": {
+	"css": [
+	  "css/component/m-shopping-cart.css"
+	],
+	"js": [
+	  "js/component/m-shopping-cart.js"
+	]
+  },
+  "m_header": {
+	"css": [
+	  "css/component/m-page-navigation.css"
+	],
+	"js": [
+	  "js/component/m-page-navigation.js"
+	]
+  },
+  "m_toolbar": {
+	"css": [
+	  "css/component/m-common.css",
+	  "css/component/m-toolbar.css"
+	],
+	"js": [
+	  "js/component/m-toolbar.js"
+	]
+  },
+  "layout":{
+	"css": [
+	  "css/component/m-layout.css"
+	],
+	"js": [
+	  "js/component/m-layout.js"
+	]
+  },
+  "label":{
+	"css": [
+	  "css/component/m-label.css"
+	],
+	"js": [
+	  "js/component/m-label.js"
+	]
+  },
+  "iframe":{
+	"js": [
+	  "js/page/layoutitPageDialog.js",
+	  "js/component/iframe.js"
+	]
+  },
+  "bfd_panel":{
+	"css":[
+	  "css/component/myAdmin.css",
+	  "css/lib/mCustomScrollbar/jquery.mCustomScrollbar.min.css",
+	  "css/lib/jquery-ui.min.css"
+	],
+	"js":[
+	  "js/component/panel.js"
+	]
+  },
+  "advanced_select": {
+	"js": [
+	  "js/page/layoutitPageDialog.js",
+	  "js/component/advanced-select.js"
+	]
+  },
+  "vertical_list": {
+  	"css":[
+	  "css/component/jquery-accordion-menu.css",
+	  "css/component/font-awesome.css"
+	  
+	],
+	"js": [
+	  "js/component/jquery-accordion-menu.js",
+	  "js/component/vertical_list.js"
+	  
+	]
+  }
+}

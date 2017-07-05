@@ -1,0 +1,14 @@
+{
+  "id": "tables",
+  "name": "表格组件",
+  "baseUri": "module/datavisual/plugins/table",
+  "guide": "guide.js",
+  "plugins": [{
+      "name": "table_detail",
+      "path": "table_detail"
+    }
+  ],
+  "baseProperties": [
+
+  ]
+}

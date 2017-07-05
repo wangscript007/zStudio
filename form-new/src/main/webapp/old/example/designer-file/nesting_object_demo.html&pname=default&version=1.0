@@ -1,0 +1,924 @@
+<div class="demo ui-sortable" style="min-height: 619px;">
+	<div class="lyrow ui-draggable" style="display: block;">
+		<a href="#close" class="remove label label-danger">
+			<i class="glyphicon-remove glyphicon">
+			</i>
+		</a>
+		<div class="preview">
+			12/自定义
+		</div>
+		<div class="view">
+			<div type="layout" ratio="12" compid="vm1468995525176" compname="vm1468995525176"
+			layoutstyle="" ms-controller="vm1468995525176" id="vm1468995525176" uri="bfd_user"
+			dsname="uds" dstype="json" bfd-operation-params="%7B%22service%22%3A%22uds%22%2C%22set%22%3A%22bfd_user%22%2C%22operations%22%3A%5B%7B%22method%22%3A%22POST%22%2C%22url%22%3A%22%2Fdesigner%2Fbcp%2Flayoutit%22%7D%2C%7B%22method%22%3A%22PUT%22%2C%22url%22%3A%22%2Fdesigner%2Fbcp%2Flayoutit%22%7D%2C%7B%22method%22%3A%22DELETE%22%2C%22url%22%3A%22%2Fdesigner%2Fbcp%2Flayoutit%22%7D%2C%7B%22method%22%3A%22GET%22%2C%22url%22%3A%22%2Fdesigner%2Fbcp%2Flayoutit%22%7D%5D%2C%22post_in%22%3A%5B%7B%22name%22%3A%22userid%22%2C%22type%22%3A%22int%22%2C%22length%22%3A%2211%22%7D%2C%7B%22name%22%3A%22login_name%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22password%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%22255%22%7D%2C%7B%22name%22%3A%22email%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%22100%22%7D%2C%7B%22name%22%3A%22mobile%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%22100%22%7D%2C%7B%22name%22%3A%22bfd_user_company%22%2C%22type%22%3A%22object%22%2C%22%24ref%22%3A%22bfd_user_company%22%2C%22properties%22%3A%5B%7B%22name%22%3A%22id%22%2C%22type%22%3A%22int%22%2C%22length%22%3A%2211%22%7D%2C%7B%22name%22%3A%22userid%22%2C%22type%22%3A%22int%22%2C%22length%22%3A%2211%22%7D%2C%7B%22name%22%3A%22company_name%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22type%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22bfd_user_position%22%2C%22type%22%3A%22object%22%2C%22%24ref%22%3A%22bfd_user_position%22%2C%22properties%22%3A%5B%7B%22name%22%3A%22id%22%2C%22type%22%3A%22int%22%2C%22length%22%3A%2211%22%7D%2C%7B%22name%22%3A%22userid%22%2C%22type%22%3A%22int%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22position_num%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22position%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22level%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%5D%7D%5D%7D%2C%7B%22name%22%3A%22bfd_user_roles%22%2C%22type%22%3A%22array%22%2C%22%24ref%22%3A%22bfd_user_roles%22%2C%22properties%22%3A%5B%7B%22name%22%3A%22id%22%2C%22type%22%3A%22int%22%2C%22length%22%3A%2211%22%7D%2C%7B%22name%22%3A%22role_description%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22userid%22%2C%22type%22%3A%22int%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22role_num%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22role_name%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%5D%7D%5D%2C%22put_in%22%3A%5B%7B%22name%22%3A%22userid%22%2C%22type%22%3A%22int%22%2C%22length%22%3A%2211%22%7D%2C%7B%22name%22%3A%22login_name%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22password%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%22255%22%7D%2C%7B%22name%22%3A%22email%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%22100%22%7D%2C%7B%22name%22%3A%22mobile%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%22100%22%7D%2C%7B%22name%22%3A%22bfd_user_company%22%2C%22type%22%3A%22object%22%2C%22%24ref%22%3A%22bfd_user_company%22%2C%22properties%22%3A%5B%7B%22name%22%3A%22id%22%2C%22type%22%3A%22int%22%2C%22length%22%3A%2211%22%7D%2C%7B%22name%22%3A%22userid%22%2C%22type%22%3A%22int%22%2C%22length%22%3A%2211%22%7D%2C%7B%22name%22%3A%22company_name%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22type%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22bfd_user_position%22%2C%22type%22%3A%22object%22%2C%22%24ref%22%3A%22bfd_user_position%22%2C%22properties%22%3A%5B%7B%22name%22%3A%22id%22%2C%22type%22%3A%22int%22%2C%22length%22%3A%2211%22%7D%2C%7B%22name%22%3A%22userid%22%2C%22type%22%3A%22int%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22position_num%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22position%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22level%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%5D%7D%5D%7D%2C%7B%22name%22%3A%22bfd_user_roles%22%2C%22type%22%3A%22array%22%2C%22%24ref%22%3A%22bfd_user_roles%22%2C%22properties%22%3A%5B%7B%22name%22%3A%22id%22%2C%22type%22%3A%22int%22%2C%22length%22%3A%2211%22%7D%2C%7B%22name%22%3A%22role_description%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22userid%22%2C%22type%22%3A%22int%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22role_num%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%2C%7B%22name%22%3A%22role_name%22%2C%22type%22%3A%22string%22%2C%22length%22%3A%2250%22%7D%5D%7D%5D%2C%22get_out%22%3A%5B%5D%7D">
+				<div class="row clearfix">
+					<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+					style="padding-bottom: 5px;">
+						<div class="box box-element ui-draggable" style="display: block;">
+							<a href="#close" class="remove label label-danger">
+								<i class="glyphicon-remove glyphicon">
+								</i>
+							</a>
+							<div class="preview">
+								分隔栏
+							</div>
+							<div class="view draggableHandle">
+								<div type="separator" init="true" picklinecolor="828282" compid="separator1468995684209"
+								compname="separator1468995684209" picklineheight="1px" separatortitle="%E7%94%A8%E6%88%B7(%E4%B8%80%E5%B1%82%E6%95%B0%E6%8D%AE)">
+									<ul class="layout-separator" id="separator1468995684209" name="separator1468995684209"
+									ms-duplex-string="separator1468995684209" ms-attr-disabled="separator1468995684209_form_disabled"
+									style="border-color: rgb(130, 130, 130);">
+										<li class="layout-separator-selected ">
+											<a class="layout-separator-inner">
+												<span class="icon">
+												</span>
+												<span class="title" i18nkey="用户(一层数据)">
+													用户(一层数据)
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="lyrow ui-draggable" style="display: block;">
+							<a href="#close" class="remove label label-danger">
+								<i class="glyphicon-remove glyphicon">
+								</i>
+							</a>
+							<div class="preview">
+								2,4,2,4
+							</div>
+							<div class="view">
+								<div type="layout" ratio="2,4,2,4" compid="layout1468995532923" compname="layout1468995532923"
+								layoutstyle="" id="layout1468995532923">
+									<div class="row clearfix">
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 21px;">
+											<div class="box box-element ui-draggable" style="display: block;">
+												<a href="#close" class="remove label label-danger">
+													<i class="glyphicon-remove glyphicon">
+													</i>
+												</a>
+												<div class="preview">
+													标签
+												</div>
+												<div class="view draggableHandle">
+													<div type="label" lablefontsize="16" labelfontweight="false" labelfontcolor=""
+													class="layout-align-right" compid="label1468995544017" compname="label1468995544017"
+													defaultvalue="%E7%94%A8%E6%88%B7id">
+														<label class="control-label" id="label1468995544017" name="label1468995544017"
+														ms-duplex-string="layout1468995532923" ms-attr-disabled="layout1468995532923_form_disabled"
+														i18nkey="用户id">
+															用户id
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 5px;">
+											<div class="box box-element ui-draggable" style="display: block;">
+												<a href="#close" class="remove label label-danger">
+													<i class="glyphicon-remove glyphicon">
+													</i>
+												</a>
+												<div class="preview">
+													文本框
+												</div>
+												<div class="view draggableHandle">
+													<div type="input_text" compid="input_text1468995589558" compname="input_text1468995589558"
+													editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D"
+													textboxtype="text" vnotempty="false" placeholder="%E5%BF%85%E5%A1%AB%E9%A1%B9"
+													fieldtype="int" field="userid">
+														<input type="text" class="form-control" id="input_text1468995589558" name="input_text1468995589558"
+														placeholder="必填项" i18nkeyforph="必填项" ms-attr-disabled="userid_form_disabled"
+														ms-duplex-number="userid">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 21px;">
+											<div class="box box-element ui-draggable" style="display: block;">
+												<a href="#close" class="remove label label-danger">
+													<i class="glyphicon-remove glyphicon">
+													</i>
+												</a>
+												<div class="preview">
+													标签
+												</div>
+												<div class="view draggableHandle">
+													<div type="label" lablefontsize="16" labelfontweight="false" labelfontcolor=""
+													class="layout-align-right" compid="label1468995559606" compname="label1468995559606"
+													defaultvalue="%E7%99%BB%E9%99%86%E5%90%8D">
+														<label class="control-label" id="label1468995559606" name="label1468995559606"
+														ms-duplex-string="layout1468995532923" ms-attr-disabled="layout1468995532923_form_disabled"
+														i18nkey="登陆名">
+															登陆名
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 5px;">
+											<div class="box box-element ui-draggable" style="display: block;">
+												<a href="#close" class="remove label label-danger">
+													<i class="glyphicon-remove glyphicon">
+													</i>
+												</a>
+												<div class="preview">
+													文本框
+												</div>
+												<div class="view draggableHandle">
+													<div type="input_text" compid="input_text1468995620143" compname="input_text1468995620143"
+													editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D"
+													textboxtype="text" vnotempty="false" fieldtype="string" field="login_name"
+													placeholder="%E5%BF%85%E5%A1%AB%E9%A1%B9">
+														<input type="text" class="form-control" id="input_text1468995620143" name="input_text1468995620143"
+														ms-attr-disabled="login_name_form_disabled" ms-duplex-string="login_name"
+														placeholder="必填项" i18nkeyforph="必填项">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="lyrow ui-draggable" style="display: block;">
+							<a href="#close" class="remove label label-danger">
+								<i class="glyphicon-remove glyphicon">
+								</i>
+							</a>
+							<div class="preview">
+								2,4,2,4
+							</div>
+							<div class="view">
+								<div type="layout" ratio="2,4,2,4" compid="layout1468995534313" compname="layout1468995534313"
+								layoutstyle="" id="layout1468995534313">
+									<div class="row clearfix">
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 21px;">
+											<div class="box box-element ui-draggable" style="display: block;">
+												<a href="#close" class="remove label label-danger">
+													<i class="glyphicon-remove glyphicon">
+													</i>
+												</a>
+												<div class="preview">
+													标签
+												</div>
+												<div class="view draggableHandle">
+													<div type="label" lablefontsize="16" labelfontweight="false" labelfontcolor=""
+													class="layout-align-right" compid="label1468995568759" compname="label1468995568759"
+													defaultvalue="%E5%AF%86%E7%A0%81">
+														<label class="control-label" id="label1468995568759" name="label1468995568759"
+														ms-duplex-string="layout1468995534313" ms-attr-disabled="layout1468995534313_form_disabled"
+														i18nkey="密码">
+															密码
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 5px;">
+											<div class="box box-element ui-draggable" style="display: block;">
+												<a href="#close" class="remove label label-danger">
+													<i class="glyphicon-remove glyphicon">
+													</i>
+												</a>
+												<div class="preview">
+													文本框
+												</div>
+												<div class="view draggableHandle">
+													<div type="input_text" compid="input_text1468995634083" compname="input_text1468995634083"
+													editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D"
+													textboxtype="password" vnotempty="false" fieldtype="string" field="password"
+													placeholder="%E5%BF%85%E5%A1%AB%E9%A1%B9">
+														<input type="password" class="form-control" id="input_text1468995634083"
+														name="input_text1468995634083" ms-attr-disabled="password_form_disabled"
+														ms-duplex-string="password" placeholder="必填项" i18nkeyforph="必填项">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 21px;">
+											<div class="box box-element ui-draggable" style="display: block;">
+												<a href="#close" class="remove label label-danger">
+													<i class="glyphicon-remove glyphicon">
+													</i>
+												</a>
+												<div class="preview">
+													标签
+												</div>
+												<div class="view draggableHandle">
+													<div type="label" lablefontsize="16" labelfontweight="false" labelfontcolor=""
+													class="layout-align-right" compid="label1468995578779" compname="label1468995578779"
+													defaultvalue="%E9%82%AE%E4%BB%B6">
+														<label class="control-label" id="label1468995578779" name="label1468995578779"
+														ms-duplex-string="layout1468995534313" ms-attr-disabled="layout1468995534313_form_disabled"
+														i18nkey="邮件">
+															邮件
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 5px;">
+											<div class="box box-element ui-draggable" style="display: block;">
+												<a href="#close" class="remove label label-danger">
+													<i class="glyphicon-remove glyphicon">
+													</i>
+												</a>
+												<div class="preview">
+													文本框
+												</div>
+												<div class="view draggableHandle">
+													<div type="input_text" compid="input_text1468995646064" compname="input_text1468995646064"
+													editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D"
+													textboxtype="text" vnotempty="true" fieldtype="string" field="email" vcontent="emailAddress%3A%7B%7D"
+													vtype="email">
+														<input type="text" class="form-control" id="input_text1468995646064" name="input_text1468995646064"
+														ms-attr-disabled="email_form_disabled" ms-duplex-string="email">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="lyrow ui-draggable" style="display: block;">
+							<a href="#close" class="remove label label-danger">
+								<i class="glyphicon-remove glyphicon">
+								</i>
+							</a>
+							<div class="preview">
+								2,4,2,4
+							</div>
+							<div class="view">
+								<div type="layout" ratio="2,4,2,4" compid="layout1468995536100" compname="layout1468995536100"
+								layoutstyle="" id="layout1468995536100">
+									<div class="row clearfix">
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 19px;">
+											<div class="box box-element ui-draggable" style="display: block;">
+												<a href="#close" class="remove label label-danger">
+													<i class="glyphicon-remove glyphicon">
+													</i>
+												</a>
+												<div class="preview">
+													标签
+												</div>
+												<div class="view draggableHandle">
+													<div type="label" lablefontsize="16" labelfontweight="false" labelfontcolor=""
+													class="layout-align-right" compid="label1468995586102" compname="label1468995586102"
+													defaultvalue="%E6%89%8B%E6%9C%BA">
+														<label class="control-label" id="label1468995586102" name="label1468995586102"
+														ms-duplex-string="layout1468995536100" ms-attr-disabled="layout1468995536100_form_disabled"
+														i18nkey="手机">
+															手机
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 5px;">
+											<div class="box box-element ui-draggable" style="display: block;">
+												<a href="#close" class="remove label label-danger">
+													<i class="glyphicon-remove glyphicon">
+													</i>
+												</a>
+												<div class="preview">
+													文本框
+												</div>
+												<div class="view draggableHandle">
+													<div type="input_text" compid="input_text1468995656759" compname="input_text1468995656759"
+													editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D"
+													textboxtype="text" vnotempty="true" fieldtype="string" field="mobile" vcontent="phone%3A%7Bcountry%3A'CN'%7D"
+													vtype="phone">
+														<input type="text" class="form-control" id="input_text1468995656759" name="input_text1468995656759"
+														ms-attr-disabled="mobile_form_disabled" ms-duplex-string="mobile">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 44px;">
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 44px;">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="box box-element ui-draggable" style="display: block; position: relative; opacity: 1; z-index: 0; left: 0px; top: 0px;">
+							<a href="#close" class="remove label label-danger">
+								<i class="glyphicon-remove glyphicon">
+								</i>
+							</a>
+							<div class="preview">
+								分隔栏
+							</div>
+							<div class="view draggableHandle">
+								<div type="separator" init="true" picklinecolor="828282" compid="separator1468995710531"
+								compname="separator1468995710531" picklineheight="1px" separatortitle="%E5%85%AC%E5%8F%B8(%E4%BA%8C%E5%B1%82%E6%95%B0%E6%8D%AE)">
+									<ul class="layout-separator" id="separator1468995710531" name="separator1468995710531"
+									style="border-color: rgb(130, 130, 130);">
+										<li class="layout-separator-selected ">
+											<a class="layout-separator-inner">
+												<span class="icon">
+												</span>
+												<span class="title" i18nkey="公司(二层数据)">
+													公司(二层数据)
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="lyrow ui-draggable" style="display: block;">
+							<a href="#close" class="remove label label-danger">
+								<i class="glyphicon-remove glyphicon">
+								</i>
+							</a>
+							<div class="preview">
+								12/自定义
+							</div>
+							<div class="view">
+								<div type="layout" ratio="12" compid="layout1468995704629" compname="layout1468995704629"
+								layoutstyle="" id="layout1468995704629" uri="bfd_user_company" dsname="uds"
+								dstype="json" bfd_set_type="object" bfd_set_ref="bfd_user_company" bfd_parent_uri="bfd_user">
+									<div class="row clearfix">
+										<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+										style="padding-bottom: 5px;">
+											<div class="lyrow ui-draggable" style="display: block;">
+												<a href="#close" class="remove label label-danger">
+													<i class="glyphicon-remove glyphicon">
+													</i>
+												</a>
+												<div class="preview">
+													2,4,2,4
+												</div>
+												<div class="view">
+													<div type="layout" ratio="2,4,2,4" compid="layout1468995707727" compname="layout1468995707727"
+													layoutstyle="" id="layout1468995707727">
+														<div class="row clearfix">
+															<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 21px;">
+																<div class="box box-element ui-draggable" style="display: block;">
+																	<a href="#close" class="remove label label-danger">
+																		<i class="glyphicon-remove glyphicon">
+																		</i>
+																	</a>
+																	<div class="preview">
+																		标签
+																	</div>
+																	<div class="view draggableHandle">
+																		<div type="label" lablefontsize="16" labelfontweight="false" labelfontcolor=""
+																		class="layout-align-right" compid="label1468995755357" compname="label1468995755357"
+																		defaultvalue="%E5%85%AC%E5%8F%B8%E5%90%8D">
+																			<label class="control-label" id="label1468995755357" name="label1468995755357"
+																			ms-duplex-string="layout1468995707727" ms-attr-disabled="layout1468995707727_form_disabled"
+																			i18nkey="公司名">
+																				公司名
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 5px;">
+																<div class="box box-element ui-draggable" style="display: block;">
+																	<a href="#close" class="remove label label-danger showRemove">
+																		<i class="glyphicon-remove glyphicon">
+																		</i>
+																	</a>
+																	<div class="preview">
+																		文本框
+																	</div>
+																	<div class="view draggableHandle form-component_active">
+																		<div type="input_text" compid="input_text1468995728805" compname="input_text1468995728805"
+																		editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D"
+																		textboxtype="text" vnotempty="false" fieldtype="string" field="bfd_user_company.company_name"
+																		placeholder="%E5%BF%85%E5%A1%AB%E9%A1%B9">
+																			<input type="text" class="form-control" id="input_text1468995728805" name="input_text1468995728805"
+																			ms-attr-disabled="bfd_user_company.company_name_form_disabled" ms-duplex-string="bfd_user_company.company_name"
+																			placeholder="必填项" i18nkeyforph="必填项">
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 21px;">
+																<div class="box box-element ui-draggable" style="display: block;">
+																	<a href="#close" class="remove label label-danger">
+																		<i class="glyphicon-remove glyphicon">
+																		</i>
+																	</a>
+																	<div class="preview">
+																		标签
+																	</div>
+																	<div class="view draggableHandle">
+																		<div type="label" lablefontsize="16" labelfontweight="false" labelfontcolor=""
+																		class="layout-align-right" compid="label1468995761974" compname="label1468995761974"
+																		defaultvalue="%E7%B1%BB%E5%9E%8B">
+																			<label class="control-label" id="label1468995761974" name="label1468995761974"
+																			ms-duplex-string="layout1468995707727" ms-attr-disabled="layout1468995707727_form_disabled"
+																			i18nkey="类型">
+																				类型
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 5px;">
+																<div class="box box-element ui-draggable" style="display: block;">
+																	<a href="#close" class="remove label label-danger">
+																		<i class="glyphicon-remove glyphicon">
+																		</i>
+																	</a>
+																	<div class="preview">
+																		文本框
+																	</div>
+																	<div class="view draggableHandle">
+																		<div type="input_text" compid="input_text1468995736498" compname="input_text1468995736498"
+																		editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D"
+																		textboxtype="text" vnotempty="false" fieldtype="string" field="bfd_user_company.type"
+																		placeholder="%E5%BF%85%E5%A1%AB%E9%A1%B9">
+																			<input type="text" class="form-control" id="input_text1468995736498" name="input_text1468995736498"
+																			ms-attr-disabled="bfd_user_company.type_form_disabled" ms-duplex-string="bfd_user_company.type"
+																			placeholder="必填项" i18nkeyforph="必填项">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="box box-element ui-draggable" style="display: block;">
+												<a href="#close" class="remove label label-danger">
+													<i class="glyphicon-remove glyphicon">
+													</i>
+												</a>
+												<div class="preview">
+													分隔栏
+												</div>
+												<div class="view draggableHandle">
+													<div type="separator" init="true" picklinecolor="828282" compid="separator1468996168974"
+													compname="separator1468996168974" picklineheight="1px" separatortitle="%E8%81%8C%E4%BD%8D%E8%AF%A6%E6%83%85(%E4%B8%89%E5%B1%82%E6%95%B0%E6%8D%AE)">
+														<ul class="layout-separator" id="separator1468996168974" name="separator1468996168974"
+														ms-duplex-string="separator1468996168974" ms-attr-disabled="separator1468996168974_form_disabled"
+														style="border-color: rgb(130, 130, 130);">
+															<li class="layout-separator-selected ">
+																<a class="layout-separator-inner">
+																	<span class="icon">
+																	</span>
+																	<span class="title" i18nkey="职位详情(三层数据)">
+																		职位详情(三层数据)
+																	</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="lyrow ui-draggable" style="display: block;">
+												<a href="#close" class="remove label label-danger">
+													<i class="glyphicon-remove glyphicon">
+													</i>
+												</a>
+												<div class="preview">
+													12/自定义
+												</div>
+												<div class="view">
+													<div type="layout" ratio="12" compid="layout1468996129399" compname="layout1468996129399"
+													layoutstyle="" id="layout1468996129399" uri="bfd_user_position" dsname="uds"
+													dstype="json" bfd_set_type="object" bfd_set_ref="bfd_user_position" bfd_parent_uri="bfd_user.bfd_user_company">
+														<div class="row clearfix">
+															<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+															style="padding-bottom: 5px;">
+																<div class="lyrow ui-draggable" style="display: block;">
+																	<a href="#close" class="remove label label-danger">
+																		<i class="glyphicon-remove glyphicon">
+																		</i>
+																	</a>
+																	<div class="preview">
+																		2,4,2,4
+																	</div>
+																	<div class="view">
+																		<div type="layout" ratio="2,4,2,4" compid="layout1468996133076" compname="layout1468996133076"
+																		layoutstyle="" id="layout1468996133076">
+																			<div class="row clearfix">
+																				<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 17px;">
+																					<div class="box box-element ui-draggable" style="display: block; position: relative; opacity: 1; z-index: 0; left: 0px; top: 0px;">
+																						<a href="#close" class="remove label label-danger">
+																							<i class="glyphicon-remove glyphicon">
+																							</i>
+																						</a>
+																						<div class="preview">
+																							标签
+																						</div>
+																						<div class="view draggableHandle">
+																							<div type="label" lablefontsize="16" labelfontweight="false" labelfontcolor=""
+																							class="layout-align-right" compid="label1468996205923" compname="label1468996205923"
+																							defaultvalue="%E5%B7%A5%E7%89%8C%E7%BC%96%E5%8F%B7">
+																								<label class="control-label" id="label1468996205923" name="label1468996205923"
+																								ms-duplex-string="layout1468996133076" ms-attr-disabled="layout1468996133076_form_disabled"
+																								i18nkey="工牌编号">
+																									工牌编号
+																								</label>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 5px;">
+																					<div class="box box-element ui-draggable" style="display: block;">
+																						<a href="#close" class="remove label label-danger">
+																							<i class="glyphicon-remove glyphicon">
+																							</i>
+																						</a>
+																						<div class="preview">
+																							文本框
+																						</div>
+																						<div class="view draggableHandle">
+																							<div type="input_text" compid="input_text1468996189328" compname="input_text1468996189328"
+																							editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D"
+																							textboxtype="text" vnotempty="false" fieldtype="string" field="bfd_user_company.bfd_user_position.position_num"
+																							placeholder="%E5%BF%85%E5%A1%AB%E9%A1%B9">
+																								<input type="text" class="form-control" id="input_text1468996189328" name="input_text1468996189328"
+																								ms-attr-disabled="bfd_user_company.bfd_user_position.position_num_form_disabled"
+																								ms-duplex-string="bfd_user_company.bfd_user_position.position_num" placeholder="必填项"
+																								i18nkeyforph="必填项">
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 19px;">
+																					<div class="box box-element ui-draggable" style="display: block;">
+																						<a href="#close" class="remove label label-danger">
+																							<i class="glyphicon-remove glyphicon">
+																							</i>
+																						</a>
+																						<div class="preview">
+																							标签
+																						</div>
+																						<div class="view draggableHandle">
+																							<div type="label" lablefontsize="16" labelfontweight="false" labelfontcolor=""
+																							class="layout-align-right" compid="label1468996219265" compname="label1468996219265"
+																							defaultvalue="%E8%81%8C%E4%BD%8D">
+																								<label class="control-label" id="label1468996219265" name="label1468996219265"
+																								ms-duplex-string="layout1468996133076" ms-attr-disabled="layout1468996133076_form_disabled"
+																								i18nkey="职位">
+																									职位
+																								</label>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 5px;">
+																					<div class="box box-element ui-draggable" style="display: block;">
+																						<a href="#close" class="remove label label-danger">
+																							<i class="glyphicon-remove glyphicon">
+																							</i>
+																						</a>
+																						<div class="preview">
+																							文本框
+																						</div>
+																						<div class="view draggableHandle">
+																							<div type="input_text" compid="input_text1468996248245" compname="input_text1468996248245"
+																							editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D"
+																							textboxtype="text" vnotempty="false" fieldtype="string" field="bfd_user_company.bfd_user_position.position"
+																							placeholder="%E5%BF%85%E5%A1%AB%E9%A1%B9">
+																								<input type="text" class="form-control" id="input_text1468996248245" name="input_text1468996248245"
+																								ms-attr-disabled="bfd_user_company.bfd_user_position.position_form_disabled"
+																								ms-duplex-string="bfd_user_company.bfd_user_position.position" placeholder="必填项"
+																								i18nkeyforph="必填项">
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="lyrow ui-draggable" style="display: block;">
+																	<a href="#close" class="remove label label-danger">
+																		<i class="glyphicon-remove glyphicon">
+																		</i>
+																	</a>
+																	<div class="preview">
+																		2,4,2,4
+																	</div>
+																	<div class="view">
+																		<div type="layout" ratio="2,4,2,4" compid="layout1468996139177" compname="layout1468996139177"
+																		layoutstyle="" id="layout1468996139177">
+																			<div class="row clearfix">
+																				<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 19px;">
+																					<div class="box box-element ui-draggable" style="display: block;">
+																						<a href="#close" class="remove label label-danger">
+																							<i class="glyphicon-remove glyphicon">
+																							</i>
+																						</a>
+																						<div class="preview">
+																							标签
+																						</div>
+																						<div class="view draggableHandle">
+																							<div type="label" lablefontsize="16" labelfontweight="false" labelfontcolor=""
+																							class="layout-align-right" compid="label1468996233554" compname="label1468996233554"
+																							defaultvalue="%E5%91%98%E5%B7%A5%E7%AD%89%E7%BA%A7">
+																								<label class="control-label" id="label1468996233554" name="label1468996233554"
+																								ms-duplex-string="layout1468996139177" ms-attr-disabled="layout1468996139177_form_disabled"
+																								i18nkey="员工等级">
+																									员工等级
+																								</label>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 5px;">
+																					<div class="box box-element ui-draggable" style="display: block;">
+																						<a href="#close" class="remove label label-danger">
+																							<i class="glyphicon-remove glyphicon">
+																							</i>
+																						</a>
+																						<div class="preview">
+																							文本框
+																						</div>
+																						<div class="view draggableHandle">
+																							<div type="input_text" compid="input_text1468996251936" compname="input_text1468996251936"
+																							editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D"
+																							textboxtype="text" vnotempty="false" fieldtype="string" field="bfd_user_company.bfd_user_position.level"
+																							placeholder="%E5%BF%85%E5%A1%AB%E9%A1%B9">
+																								<input type="text" class="form-control" id="input_text1468996251936" name="input_text1468996251936"
+																								ms-attr-disabled="bfd_user_company.bfd_user_position.level_form_disabled"
+																								ms-duplex-string="bfd_user_company.bfd_user_position.level" placeholder="必填项"
+																								i18nkeyforph="必填项">
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 44px;">
+																				</div>
+																				<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 44px;">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="box box-element ui-draggable" style="display: block;">
+							<a href="#close" class="remove label label-danger">
+								<i class="glyphicon-remove glyphicon">
+								</i>
+							</a>
+							<div class="preview">
+								分隔栏
+							</div>
+							<div class="view draggableHandle">
+								<div type="separator" init="true" picklinecolor="828282" compid="separator1469000303419"
+								compname="separator1469000303419" picklineheight="1px" separatortitle="%E7%94%A8%E6%88%B7%E8%A7%92%E8%89%B2(%E4%BA%8C%E5%B1%82%E6%95%B0%E6%8D%AE)">
+									<ul class="layout-separator" id="separator1469000303419" name="separator1469000303419"
+									ms-duplex-string="separator1469000303419" ms-attr-disabled="separator1469000303419_form_disabled"
+									style="border-color: rgb(130, 130, 130);">
+										<li class="layout-separator-selected ">
+											<a class="layout-separator-inner">
+												<span class="icon">
+												</span>
+												<span class="title" i18nkey="用户角色(二层数据)">
+													用户角色(二层数据)
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="lyrow ui-draggable" style="display: block;">
+							<a href="#close" class="remove label label-danger">
+								<i class="glyphicon-remove glyphicon">
+								</i>
+							</a>
+							<div class="preview">
+								12/自定义
+							</div>
+							<div class="view">
+								<div type="layout" ratio="12" compid="layout1468996308228" compname="layout1468996308228"
+								layoutstyle="" id="layout1468996308228" uri="bfd_user_roles" dsname="uds"
+								dstype="json" bfd_set_type="array" bfd_set_ref="bfd_user_roles" bfd_parent_uri="bfd_user">
+									<div class="row clearfix">
+										<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+										style="padding-bottom: 5px;">
+											<div class="box box-element ui-draggable" style="display: block;">
+												<a href="#close" class="remove label label-danger">
+													<i class="glyphicon-remove glyphicon">
+													</i>
+												</a>
+												<div class="preview">
+													本地表格
+												</div>
+												<div class="view draggableHandle">
+													<div type="table_base_local" style="overflow-x: auto; overflow-y: auto;"
+													pagesize="20" tableheight="500" tablemodel="none" tableheaderalign="left"
+													tablecolumnalign="left" compid="table_base_local1468996330078" compname="table_base_local1468996330078"
+													rowdata="%5B%7B%22state%22%3Atrue%2C%22%24id%22%3A3%2C%22title%22%3A%22%E8%A7%92%E8%89%B2%E5%90%8D%E7%A7%B0%22%2C%22field%22%3A%22role_name%22%2C%22formatter%22%3A%22formatTableText%22%2C%22width%22%3A%22%22%2C%22initData%22%3A%7B%22defaultValue%22%3A%22%22%2C%22data%22%3A%5B%5D%7D%2C%22editable%22%3Atrue%2C%22hide%22%3Afalse%7D%2C%7B%22state%22%3Atrue%2C%22%24id%22%3A2%2C%22title%22%3A%22%E8%A7%92%E8%89%B2%E6%8F%8F%E8%BF%B0%22%2C%22field%22%3A%22role_num%22%2C%22formatter%22%3A%22formatTableText%22%2C%22width%22%3A%22%22%2C%22initData%22%3A%7B%22defaultValue%22%3A%22%22%2C%22data%22%3A%5B%5D%7D%2C%22editable%22%3Atrue%2C%22hide%22%3Afalse%7D%2C%7B%22state%22%3Atrue%2C%22%24id%22%3A1%2C%22title%22%3A%22%E8%A7%92%E8%89%B2%E7%BC%96%E5%8F%B7%22%2C%22field%22%3A%22role_description%22%2C%22formatter%22%3A%22formatTableText%22%2C%22width%22%3A%22%22%2C%22initData%22%3A%7B%22defaultValue%22%3A%22%22%2C%22data%22%3A%5B%5D%7D%2C%22editable%22%3Atrue%2C%22hide%22%3Afalse%7D%2C%7B%22state%22%3Atrue%2C%22%24id%22%3A0%2C%22title%22%3A%22%E6%93%8D%E4%BD%9C%22%2C%22field%22%3A%22operator%22%2C%22editable%22%3Afalse%2C%22width%22%3A%22%22%2C%22initData%22%3A%7B%22defaultValue%22%3A%22%22%2C%22data%22%3A%5B%5D%7D%2C%22hide%22%3Afalse%2C%22validate%22%3A%22%22%2C%22formatter%22%3A%22operatorFormatter%22%7D%5D"
+													parameter="%7B%22striped%22%3Atrue%2C%22pagination%22%3Atrue%2C%22pageSize%22%3A%2220%22%2C%22pageList%22%3A%5B10%2C20%2C50%2C100%2C200%5D%2C%22height%22%3A%22500%22%2C%22search%22%3Afalse%2C%22showColumns%22%3Afalse%2C%22selectItemName%22%3A%22btSelectItemtable_base_local1468996330078%22%2C%22showRefresh%22%3Afalse%2C%22sidePagination%22%3A%22client%22%2C%22sortable%22%3Atrue%2C%22idTable%22%3A%22table_base_local1468996330078%22%2C%22idField%22%3A%22%24id%22%2C%22pk%22%3A%5B%22%24id%22%5D%2C%22columns%22%3A%5B%7B%22field%22%3A%22%24id%22%2C%22visible%22%3Afalse%2C%22title%22%3A%22ID%22%2C%22width%22%3A50%2C%22class%22%3A%22td-word-wrap%22%7D%2C%7B%22field%22%3A%22role_name%22%2C%22title%22%3A%22%E8%A7%92%E8%89%B2%E5%90%8D%E7%A7%B0%22%2C%22formatter%22%3A%22formatTableText%22%2C%22editable%22%3Atrue%2C%22initData%22%3A%7B%22defaultValue%22%3A%22%22%2C%22data%22%3A%5B%5D%7D%2C%22visible%22%3Atrue%2C%22valign%22%3A%22middle%22%2C%22class%22%3A%22td-word-wrap%22%2C%22tableId%22%3A%22table_base_local1468996330078%22%2C%22width%22%3A%22%22%7D%2C%7B%22field%22%3A%22role_num%22%2C%22title%22%3A%22%E8%A7%92%E8%89%B2%E6%8F%8F%E8%BF%B0%22%2C%22formatter%22%3A%22formatTableText%22%2C%22editable%22%3Atrue%2C%22initData%22%3A%7B%22defaultValue%22%3A%22%22%2C%22data%22%3A%5B%5D%7D%2C%22visible%22%3Atrue%2C%22valign%22%3A%22middle%22%2C%22class%22%3A%22td-word-wrap%22%2C%22tableId%22%3A%22table_base_local1468996330078%22%2C%22width%22%3A%22%22%7D%2C%7B%22field%22%3A%22role_description%22%2C%22title%22%3A%22%E8%A7%92%E8%89%B2%E7%BC%96%E5%8F%B7%22%2C%22formatter%22%3A%22formatTableText%22%2C%22editable%22%3Atrue%2C%22initData%22%3A%7B%22defaultValue%22%3A%22%22%2C%22data%22%3A%5B%5D%7D%2C%22visible%22%3Atrue%2C%22valign%22%3A%22middle%22%2C%22class%22%3A%22td-word-wrap%22%2C%22tableId%22%3A%22table_base_local1468996330078%22%2C%22width%22%3A%22%22%7D%2C%7B%22field%22%3A%22operator%22%2C%22title%22%3A%22%E6%93%8D%E4%BD%9C%22%2C%22formatter%22%3A%22operatorFormatter%22%2C%22isAddBtn%22%3Atrue%2C%22class%22%3A%22td-word-wrap%22%2C%22width%22%3A100%7D%5D%2C%22data%22%3A%5B%7B%22role_name%22%3A%22%22%2C%22role_name-editable%22%3Atrue%2C%22role_num%22%3A%22%22%2C%22role_num-editable%22%3Atrue%2C%22role_description%22%3A%22%22%2C%22role_description-editable%22%3Atrue%2C%22%24id%22%3A0%7D%5D%7D"
+													field="id%3Dbfd_user_roles.role_name%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3Dbfd_user_roles.role_num%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3Dbfd_user_roles.role_description%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40"
+													bfd-uri-path="bfd_user_roles" isaddbtn="true">
+														<div class="bootstrap-table">
+															<div class="fixed-table-toolbar">
+															</div>
+															<div class="fixed-table-container" style="height: 441px; padding-bottom: 41px;">
+																<div class="fixed-table-header" style="margin-right: 0px;">
+																	<table class="table table-hover table-striped" style="width: 849px;">
+																		<thead>
+																			<tr>
+																				<th class="td-word-wrap" style="vertical-align: middle; width: px; " data-field="role_name">
+																					<div class="th-inner ">
+																						角色名称
+																					</div>
+																					<div class="fht-cell" style="width: 236px;">
+																					</div>
+																				</th>
+																				<th class="td-word-wrap" style="vertical-align: middle; width: px; " data-field="role_num">
+																					<div class="th-inner ">
+																						角色描述
+																					</div>
+																					<div class="fht-cell" style="width: 238px;">
+																					</div>
+																				</th>
+																				<th class="td-word-wrap" style="vertical-align: middle; width: px; " data-field="role_description">
+																					<div class="th-inner ">
+																						角色编号
+																					</div>
+																					<div class="fht-cell" style="width: 239px;">
+																					</div>
+																				</th>
+																				<th class="td-word-wrap" style="width: 100px; " data-field="operator">
+																					<div class="th-inner ">
+																						操作
+																					</div>
+																					<div class="fht-cell" style="width: 133px;">
+																					</div>
+																				</th>
+																			</tr>
+																		</thead>
+																	</table>
+																</div>
+																<div class="fixed-table-body">
+																	<div class="fixed-table-loading" style="top: 42px;">
+																		正在努力地加载数据中，请稍候……
+																	</div>
+																	<table id="table_base_local1468996330078" class="table table-hover table-striped"
+																	style="margin-top: -41px;">
+																		<thead>
+																			<tr>
+																				<th class="td-word-wrap" style="vertical-align: middle; width: px; " data-field="role_name">
+																					<div class="th-inner ">
+																						角色名称
+																					</div>
+																					<div class="fht-cell">
+																					</div>
+																				</th>
+																				<th class="td-word-wrap" style="vertical-align: middle; width: px; " data-field="role_num">
+																					<div class="th-inner ">
+																						角色描述
+																					</div>
+																					<div class="fht-cell">
+																					</div>
+																				</th>
+																				<th class="td-word-wrap" style="vertical-align: middle; width: px; " data-field="role_description">
+																					<div class="th-inner ">
+																						角色编号
+																					</div>
+																					<div class="fht-cell">
+																					</div>
+																				</th>
+																				<th class="td-word-wrap" style="width: 100px; " data-field="operator">
+																					<div class="th-inner ">
+																						操作
+																					</div>
+																					<div class="fht-cell">
+																					</div>
+																				</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr data-index="0">
+																				<td class="td-word-wrap" style="vertical-align: middle; width: px; ">
+																				</td>
+																				<td class="td-word-wrap" style="vertical-align: middle; width: px; ">
+																				</td>
+																				<td class="td-word-wrap" style="vertical-align: middle; width: px; ">
+																				</td>
+																				<td class="td-word-wrap" style="width: 100px; ">
+																					operatorFormatter
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+																<div class="fixed-table-footer" style="display: none;">
+																	<table>
+																		<tbody>
+																			<tr>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+																<div class="fixed-table-pagination">
+																	<div class="pull-left pagination-detail">
+																		<span class="pagination-info">
+																			显示第 1 到第 1 条记录，总共 1 条记录
+																		</span>
+																		<span class="page-list" style="display: none;">
+																			每页显示
+																			<span class="btn-group dropup">
+																				<button type="button" class="btn btn-default  dropdown-toggle" data-toggle="dropdown">
+																					<span class="page-size">
+																						20
+																					</span>
+																					<span class="caret">
+																					</span>
+																				</button>
+																				<ul class="dropdown-menu" role="menu">
+																					<li>
+																						<a href="javascript:void(0)">
+																							10
+																						</a>
+																					</li>
+																				</ul>
+																			</span>
+																			条记录
+																		</span>
+																	</div>
+																	<div class="pull-right pagination" style="display: none;">
+																		<ul class="pagination">
+																			<li class="page-first disabled">
+																				<a href="javascript:void(0)">
+																					«
+																				</a>
+																			</li>
+																			<li class="page-pre disabled">
+																				<a href="javascript:void(0)">
+																					‹
+																				</a>
+																			</li>
+																			<li class="page-number active">
+																				<a href="javascript:void(0)">
+																					1
+																				</a>
+																			</li>
+																			<li class="page-next disabled">
+																				<a href="javascript:void(0)">
+																					›
+																				</a>
+																			</li>
+																			<li class="page-last disabled">
+																				<a href="javascript:void(0)">
+																					»
+																				</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="clearfix">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="box box-element ui-draggable" style="display: block;">
+							<a href="#close" class="remove label label-danger">
+								<i class="glyphicon-remove glyphicon">
+								</i>
+							</a>
+							<div class="preview">
+								按钮
+							</div>
+							<div class="view draggableHandle">
+								<div type="button" compid="button1468996313716" compname="button1468996313716"
+								btntype="submit" class="layout-align-right" defaultvalue="%E6%8F%90%E4%BA%A4">
+									<button type="button" class="btn btn-primary" id="button1468996313716"
+									name="button1468996313716" ms-click="submit" i18nkey="提交">
+										提交
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer-bg ui-sortable">
+</div>

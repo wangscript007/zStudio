@@ -1,0 +1,44 @@
+/***tab***/
+.nav-tabs > li:hover {
+    background-color: transparent;
+    border-bottom: 1px transparent;
+    border-top: 3px solid #a4d7f7;
+}
+.nav-tabs > li.active,
+.nav-tabs > li.active:hover,
+.nav-tabs > li.active:focus {
+    border: 0;
+    border-top: 3px solid #1798eb;
+}
+.nav-tabs > div > li > a:hover {
+    background-color: transparent;
+    border-bottom: 1px transparent;
+    border-top: 3px solid #a4d7f7;
+}
+.nav-tabs > div > li.active,
+.nav-tabs > div > li.active:hover,
+.nav-tabs > div > li.active:focus {
+    border: 0;
+    border-top: 3px solid #1798eb;
+}
+/*Angular2-Tabset*/
+.nav-tabs .nav-link.active {
+    border-top: 3px solid #1798eb;
+}
+.nav-tabs .nav-link:hover {
+    border-top: 3px solid #a4d7f7;
+}
+.boder-tab > .nav-tabs > .nav-item > .nav-link.active {
+    border-top: 3px solid #1798eb;
+}
+/***form-wizard & progress ***/
+.form-wizard .steps > li.active > a.step .number {
+    background-color: #1798eb;
+}
+.progress > .progress-bar-success {
+    background-color: #1798eb;
+}
+/*Angular2-progress*/
+.progress > .bg-success {
+    background-color: #1798eb !important;
+}

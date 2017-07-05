@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root frameFilePath="../../../procs/ppus/bcp.ppu/bcp-web.pmu/bcp-web.ear/bcp-web.war/res/bcp-web/layoutit-page/frameFiles" isCsvFile="true">
+    <project name="default" localPath="../../../procs/ppus/bcp.ppu/bcp-web.pmu/bcp-web.ear/bcp-web.war/res/bcp-web/formfiles/" publishPath="../../../procs/ppus/bcp.ppu/bcp-web.pmu/bcp-web.ear/bcp-web.war/res/bcp-web/formfiles/" commonjsPath="js/bcp" commoncssPath="css/common" previewPort="21180" previewPrefix="/zxbcp-web/res/bcp-web/formfiles/">
+        <sourceItem name="bcp" displayName="BCP-OR" ip="10.74.216.63" port="21180" uriPrefix="/dataservice/orm/"/>
+    </project>
+</root>

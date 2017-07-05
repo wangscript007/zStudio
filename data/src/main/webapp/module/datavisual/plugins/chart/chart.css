@@ -1,0 +1,36 @@
+.ksy-chart-err-wrap {
+    padding: 15px;
+    height: 100%;
+}
+
+.ksy-chart-err {
+    background-color: #d9edf7;
+    color: #31708f;
+    font-family: "Microsoft YaHei",微软雅黑;
+    height: 100%;
+    padding: 30px 30px;
+    border: 1px solid #bce8f1;
+    border-radius: 4px;
+}
+
+/*.ksy-chart-err {*/
+    /*background-color: #FFDEDE;*/
+    /*color: #CC2020;*/
+    /*font-family: Microsoft YaHei,微软雅黑;*/
+    /*height: 100%;*/
+    /*padding: 30px 30px;*/
+    /*border: 1px solid #ebccd1;*/
+    /*border-radius: 4px;*/
+/*}*/
+
+.ksy-chart-err-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ksy-chart-err-item {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}

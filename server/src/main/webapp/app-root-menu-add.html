@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="app-root-menu-add.js"></script>
+    <script type="text/javascript" src="js/mao/app-root-menu-add-logic.js"></script>
+</head> 
+<body>
+<div class="container container-top">
+	<div type="layout" class="bc-white form-horizontal" compid="vm1490766924874" compname="vm1490766924874" ms-controller="vm1490766924874" id="vm1490766924874" dstype="orm" bfd-operation-params="%7B%22dsType%22%3A%22orm%22%2C%22model%22%3A%22vm1490766924874%22%2C%22source%22%3A%22bcp%22%2C%22service%22%3A%22bcp%22%2C%22set%22%3A%22tenant_menu%22%2C%22operations%22%3A%5B%7B%22method%22%3A%22POST%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Ftenant_menu%22%2C%22name%22%3A%22add%22%7D%2C%7B%22method%22%3A%22PUT%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Ftenant_menu%22%2C%22name%22%3A%22update%22%7D%2C%7B%22method%22%3A%22DELETE%22%2C%22submit%22%3A%22delete%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Ftenant_menu%22%2C%22name%22%3A%22delete%22%7D%2C%7B%22method%22%3A%22GET%22%2C%22submit%22%3A%22initVMData%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Ftenant_menu%22%2C%22name%22%3A%22query%22%7D%5D%2C%22post_in%22%3A%5B%5D%2C%22put_in%22%3A%5B%5D%2C%22get_out%22%3A%5B%5D%7D">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column" style="min-height: 50px;" id="groupLayout1490767043888">
+				<div type="layout" class="bc-white form-group" compid="layout1490856572116" compname="layout1490856572116" id="layout1490856572116">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="layout" class="bc-white form-group" compid="layout1490856645179" compname="layout1490856645179" id="layout1490856645179">
+								<div class="row">
+									<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+										<div type="label" compid="menu_name_desc" compname="menu_name_desc" class="layout-align-right">
+											 <label class="control-label" id="menu_name_desc" i18nkey="菜单名称">菜单名称</label>
+										</div>
+									</div>
+									<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+										<div type="input_text" compid="menu_name" compname="menu_name" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" field="NAME" class="group">
+											<input type="text" class="form-control" id="menu_name" name="menu_name" ms-duplex-string="NAME" data-bv-group=".group">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" class="bc-white form-group" compid="url" compname="layout1490857664002" id="url">
+								<div class="row">
+									<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+										<div type="label" compid="is_status" compname="is_status" class="layout-align-right">
+											 <label class="control-label" id="is_status" i18nkey="是否显示">显示</label>
+										</div>
+									</div>
+									<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+										<div type="select_dynamic" compid="select_dynamic14910090882010" compname="select_dynamic14910090882010" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" field="STATUS">
+											 <select style="display : inline;width:100%;" class="form-control" id="select_status" name="select_status" ms-duplex-number="STATUS"> <option value="1">是</option> <option value="0">否</option></select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" class="bc-white form-group" compid="layout1490856782394" compname="layout1490856782394" id="layout1490856782394">
+								<div class="row">
+									<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+										<div type="label" compid="url_addr_desc" compname="url_addr_desc" class="layout-align-right">
+											 <label class="control-label" id="url_addr_desc" i18nkey="链接地址">链接地址</label>
+										</div>
+									</div>
+									<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+										<div type="textarea" compid="url_addr" compname="textarea14908568685400" editable="%7B%22add%22%3A%22%22%2C%22view%22%3A%22checked%22%2C%22modify%22%3A%22%22%7D" field="URL">
+											<textarea class="form-control" rows="2" id="url_addr" name="url_addr" ms-duplex-string="URL" disabled>											</textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" class="bc-white form-group hide" compid="layout12121" compname="layout12121" id="layout12121">
+								<div class="row">
+									<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+										<div type="label" compid="order_cody_desc" compname="order_cody_desc" class="layout-align-right">
+											 <label class="control-label" id="parent_key_desc" i18nkey="排序码">排序码</label>
+										</div>
+									</div>
+									<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+										<div type="input_text" compid="order_cody" compname="order_cody" editable="%7B%22add%22%3A%22%22%2C%22view%22%3A%22checked%22%2C%22modify%22%3A%22%22%7D" field="ORDER" class="group">
+											<input type="text" class="form-control" id="order_code" name="order_code" ms-duplex-string="ORDER" data-bv-group=".group">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column layout-align-right">						
+						<div class="btn-group">
+							<div type="button" compid="button14873211447040" compname="button14873211447040" class="layout-align-right" style="margin-left:30px;">
+								 <button type="button" class="btn btn-primary btn-sm" id="submitBtn" name="submitBtn" i18nkey="确定">确定</button>
+							</div>
+						</div>
+						<div class="btn-group">
+							<div type="button" compid="button14873211465030" compname="button14873211465030" class="layout-align-right">
+								 <button type="button" class="btn btn-default btn-sm" id="cancelBtn" name="cancelBtn" i18nkey="取消">取消</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

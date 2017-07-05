@@ -1,0 +1,14 @@
+[
+    {
+        "groupid": "layout",
+        "name": "布局组件"
+    },
+    {
+        "groupid": "base",
+        "name": "基础组件"
+    },
+    {
+        "groupid": "hidden",
+        "name": "隐藏组件"
+    }
+]

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/bootstrap/select2/select2.min.css" rel="stylesheet">
+    <link href="css/component/m-layout.css" rel="stylesheet">
+    <link href="css/jquery/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/component/m-label.css" rel="stylesheet">
+    <link href="css/component/myAdmin.css" rel="stylesheet">
+    <link href="css/lib/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="css/lib/jquery-ui.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-ID-CN.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+    <script type="text/javascript" src="js/lib/lodash.min.js"></script>
+    <script type="text/javascript" src="js/lib/select2/select2.min.js"></script>
+    <script type="text/javascript" src="js/lib/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery.i18n.properties-1.0.9.js"></script>
+    <script type="text/javascript" src="js/lib/chinese-region/bootstrap-chinese-region.js"></script>
+    <script type="text/javascript" src="js/commTools.js"></script>
+    <script type="text/javascript" src="js/page/cache/page-cache-manage.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-base.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-json.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-multitable.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-orm.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPagei18n.js"></script>
+    <script type="text/javascript" src="js/page/init/page-cache-init.js"></script>
+    <script type="text/javascript" src="js/component/m-layout.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/component/m-label.js"></script>
+    <script type="text/javascript" src="js/component/panel.js"></script>
+    <script type="text/javascript" src="js/lib/avalon.js"></script>
+    <script type="text/javascript" src="default_common.js"></script>
+    <script type="text/javascript" src="js/common/designer-orm-base.js"></script>
+    <script type="text/javascript" src="js/mao/datasource_manage.js"></script>
+    <script type="text/javascript" src="data_source.js"></script>
+</head> 
+<body>
+<div class="container container-top">
+	<div id="vm1478155202799" compid="vm1478155202799" type="layout" ms-controller="vm1478155202799" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+				<div id="sortableComponentOriginalNext1479192533437">
+				</div>
+				<div compid="image1476151699870" type="image" class="layout-align-center">
+					<img src="img/demo/pro_type.jpg" class="fancybox" alt="图片1" height="100px" width="100px">
+				</div>
+			</div>
+			<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+				<div type="layout" compid="layout1479192440773" id="layout1479192440773" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="label" compid="label14791925342500" class="layout-align-left">
+								 <label class="control-label tip-title" id="label14791925342500" i18nkey="什么是数据源" style="color: rgb(28, 137, 184); font-weight: normal; font-size: 16px;">什么是数据源</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1479192447020" id="layout1479192447020" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div id="sortableComponentOriginalNext1479192533488">
+							</div>
+							<div class="layout-align-left" compid="label1476151726752" type="label">
+								 <label i18nkey="数据源即通常所说的数据库，其配置包括数据库IP、端口、用户、密码等关键信息。数据源是建立数据模型的基础，也就是说，数据模型是建立在数据源上的，因此数据源的设置尤其重要。" style="font-size: 14px; font-weight: normal;padding-left: 28px;" id="label1476151726752" class="control-label tip-content">数据源即通常所说的数据库，其配置包括数据库IP、端口、用户、密码等关键信息。数据源是建立数据模型的基础，也就是说，数据模型是建立在数据源上的，因此数据源的设置尤其重要。</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="vm1476235263373" compid="vm1476235263373" type="layout">
+		<div class="row clearfix">
+			<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+				<div id="sortableComponentOriginalNext1477392975162">
+				</div>
+				<div id="sortableComponentOriginalNext1477392975268">
+				</div>
+				<div id="sortableComponentOriginalNext1477446628505">
+				</div>
+				<div id="sortableComponentOriginalNext1479192533362">
+				</div>
+				<div bfd-panel-scrollbar-style="dark" compid="bfd_panel1476236950282" type="bfd_panel" class="bfd-panel sort-disable mb50 bfd-panel-sortable" id="p3">
+					<div class="bfd-panel-heading">
+						<div class="row clearfix">
+							<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+								<div compid="label1476237021831" type="label" class="layout-align-left layout-align-right">
+									 <label i18nkey="数据源" id="label1476237021831" class="control-label">数据源</label>
+								</div>
+							</div>
+							<div style="min-height: 50px;" class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+								<div class="layout-block-align-center" compid="bfd_icon1477392976169" type="bfd_icon">
+									<a class="icon glyphicon glyphicon-plus"></a>
+								</div>
+							</div>
+						</div><hr>
+					</div>
+					<div class="bfd-panel-body">
+						<div class="row clearfix">
+							<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+								<div id="layout1476236960576" compid="layout1476236960576" type="layout">
+									<div class="row clearfix">
+										<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+											<div id="sortableComponentOriginalNext1477392975209">
+											</div>
+											<div class="layout-align-left" compid="button1476236970297" type="button">
+												 <button class="btn btn-link" i18nkey="内置数据源" name="button1476236970297" id="button1476236970297" type="button">内置数据源</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="layout1476236956943" compid="layout1476236956943" type="layout">
+									<div class="row clearfix">
+										<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+											<div id="layout1476950646771" compid="layout1476950646771" type="layout">
+												<div class="row clearfix">
+													<div class="col-md-8 col-xs-8 col-sm-8 col-lg-8 column">
+														<div class="layout-align-left" compid="button1476236973485" type="button">
+															 <button class="btn btn-link" i18nkey="自定义数据源" name="button1476236973485" id="button1476236973485" type="button">自定义数据源</button>
+														</div>
+													</div>
+													<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+														<div class="layout-block-align-center" compid="bfd_icon1476237126151" type="bfd_icon">
+															<a class="icon glyphicon glyphicon-edit"></a>
+														</div>
+													</div>
+													<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+														<div class="layout-block-align-center" compid="bfd_icon1476237147415" type="bfd_icon">
+															<a class="icon glyphicon glyphicon-remove"></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column">
+				<div id="sortableComponentOriginalNext1477446628699">
+				</div>
+				<div ms-controller="bfd_panel1476235914143" bfd-operation-params="%7B%22model%22%3A%22bfd_panel1476235914143%22%2C%22service%22%3A%22bcp%22%2C%22set%22%3A%22bcp_re_userinfo%22%2C%22operations%22%3A%5B%7B%22method%22%3A%22POST%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdsp%2Form%2Ftable%2Fbcp_re_userinfo%22%2C%22name%22%3A%22add%22%7D%2C%7B%22method%22%3A%22PUT%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdsp%2Form%2Ftable%2Fbcp_re_userinfo%22%2C%22name%22%3A%22update%22%7D%2C%7B%22method%22%3A%22DELETE%22%2C%22submit%22%3A%22delete%22%2C%22url%22%3A%22%2Fdsp%2Form%2Ftable%2Fbcp_re_userinfo%22%2C%22name%22%3A%22delete%22%7D%2C%7B%22method%22%3A%22GET%22%2C%22submit%22%3A%22initVMData%22%2C%22url%22%3A%22%2Fdsp%2Form%2Ftable%2Fbcp_re_userinfo%22%2C%22name%22%3A%22query%22%7D%5D%2C%22post_in%22%3A%5B%5D%2C%22put_in%22%3A%5B%5D%2C%22get_out%22%3A%5B%5D%7D" bfd-panel-scrollbar-style="dark" compid="bfd_panel1476235914143" type="bfd_panel" class="bfd-panel sort-disable mb50 bfd-panel-sortable form-horizontal" id="bfd_panel1476235914143">
+					<div class="bfd-panel-heading">
+						<div class="row">
+							<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+								<div compid="label1476235915185" type="label" class="layout-align-left layout-align-right">
+									 <label i18nkey="数据源配置" id="label1476235915185" class="control-label">数据源配置</label>
+								</div>
+							</div>
+							<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+								<div compid="bfd_icon1476235933416" type="bfd_icon" class="bfd-panel-default-controls layout-block-align-right">
+									<a id="btnCollapse" class="icon glyphicon glyphicon-minus"></a>
+								</div>
+							</div>
+						</div><hr>
+					</div>
+					<div class="bfd-panel-body">
+						<div class="row">
+							<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+								<div id="layout1476235945081" compid="layout1476235945081" type="layout" class="form-group">
+									<div class="row">
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+											<div compid="label1476235985750" type="label" class="layout-align-right">
+												 <label i18nkey="数据源名称" id="label1476235985750" class="control-label">数据源名称</label>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+											<div editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" compid="input_text1476236058391" type="input_text" class="group">
+												<input name="input_text1476236058391" id="input_text1476236058391" class="form-control" type="text" data-bv-group=".group">
+											</div>
+										</div>
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+											<div compid="label1476235995837" type="label" class="layout-align-right">
+												 <label i18nkey="数据源标识" id="label1476235995837" class="control-label">数据源标识</label>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+											<div editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" compid="input_text1476236059345" type="input_text" vtype="custom" class="group">
+												<input name="input_text1476236059345" id="input_text1476236059345" class="form-control" type="text" data-bv-group=".group">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="layout1476235948808" compid="layout1476235948808" type="layout" class="form-group">
+									<div class="row">
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+											<div compid="label1476236001396" type="label" class="layout-align-right">
+												 <label i18nkey="数据协议" id="label1476236001396" class="control-label">数据协议</label>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+											<div editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" compid="select_dynamic1476255634792" type="select_dynamic">
+												 <select name="select_dynamic1476255634792" id="select_dynamic1476255634792" style="display : inline;width:100%;" class="form-control"> <option value="orm">ORM数据源</option></select>
+											</div>
+										</div>
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+											<div compid="label1476236007980" type="label" class="layout-align-right">
+												 <label i18nkey="主机IP" id="label1476236007980" class="control-label">主机IP</label>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+											<div vtype="ipv4" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" compid="input_text1476236053143" type="input_text" class="group">
+												<input name="input_text1476236053143" id="input_text1476236053143" class="form-control" type="text" data-bv-group=".group">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="layout1476235938866" compid="layout1476235938866" type="layout" class="form-group">
+									<div class="row">
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+											<div compid="label1476236013527" type="label" class="layout-align-right">
+												 <label i18nkey="主机端口" id="label1476236013527" class="control-label">主机端口</label>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+											<div vtype="integer" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" compid="input_text1476236056609" type="input_text" class="group">
+												<input name="input_text1476236056609" id="input_text1476236056609" class="form-control" type="text" data-bv-group=".group">
+											</div>
+										</div>
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+											<div compid="label1476236029659" type="label" class="layout-align-right">
+												 <label i18nkey="URI" id="label1476236029659" class="control-label">URI</label>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+											<div editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" compid="input_text1476236061861" type="input_text" class="group">
+												<input name="input_text1476236061861" id="input_text1476236061861" class="form-control" type="text" data-bv-group=".group">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="layout1476235959232" compid="layout1476235959232" type="layout" class="form-group">
+									<div class="row">
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+											<div compid="label1476236034947" type="label" class="layout-align-right">
+												 <label i18nkey="用户名" id="label1476236034947" class="control-label">用户名</label>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+											<div editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" compid="input_text1476236134051" type="input_text" class="group">
+												<input name="input_text1476236134051" id="input_text1476236134051" class="form-control" type="text" data-bv-group=".group">
+											</div>
+										</div>
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+											<div class="layout-align-right" compid="label1476255412635" type="label">
+												 <label i18nkey="密码" id="label1476255412635" class="control-label">密码</label>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+											<div vtype="custom" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" compid="input_text1476255418310" type="input_text" class="group">
+												<input name="input_text1476255418310" id="input_text1476255418310" class="form-control" type="password" data-bv-group=".group">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="layout1476236170524" compid="layout1476236170524" type="layout" class="form-group">
+									<div class="row">
+										<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+											<div id="sortableComponentOriginalNext1477446628745">
+											</div>
+										</div>
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+											<div class="layout-align-center" compid="button1477446629743" type="button">
+												 <button i18nkey="测试" name="button1477446629743" id="button1477446629743" type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> 测试</button>
+											</div>
+										</div>
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+											<div class="layout-align-center" compid="button1476236192130" type="button">
+												 <button i18nkey="保存" name="button1476236192130" id="button1476236192130" type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 保存</button>
+											</div>
+										</div>
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+											<div class="layout-align-center" compid="button1476236226510" type="button">
+												 <button i18nkey="取消" name="button1476236226510" id="button1476236226510" type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 取消</button>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

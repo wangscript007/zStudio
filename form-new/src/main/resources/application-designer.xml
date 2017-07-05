@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/util
+http://www.springframework.org/schema/util/spring-util.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx.xsd
+">
+
+	<!--读取外部的属性文件配置参数 -->
+	<!-- <context:property-placeholder location="classpath:db.properties" /> -->
+
+  <bean id="dbPropertyConfigurer"
+    class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <property name="order" value="1" />
+    <property name="ignoreUnresolvablePlaceholders" value="true" />
+          <property name="locations">
+          <list>
+              <value>file:${catalina.home}/conf/zstudio.properties</value>
+          </list>
+      </property>
+  </bean>
+  <bean id="defaultDataSource" class="com.alibaba.druid.pool.DruidDataSource"
+    destroy-method="close">
+    <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+    <property name="url" value="${jdbc.url}" />
+    <property name="username" value="${db.username}" />
+    <property name="password" value="${db.password}" />
+    <property name="connectionProperties" value="autoReconnect=true;failOverReadOnly=false" />
+    <property name="testOnBorrow" value="false" />
+    <property name="testOnReturn" value="false" />
+    <property name="validationQuery" value="select 1" />
+    <property name="maxActive" value="5000" />
+    <property name="initialSize" value="100" />
+    <property name="maxWait" value="60000" />
+    <property name="minIdle" value="100" />
+    <property name="timeBetweenEvictionRunsMillis" value="30000" />
+    <property name="minEvictableIdleTimeMillis" value="60000" />
+    <property name="testWhileIdle" value="false" />
+    <property name="filters" value="stat" />
+  </bean>
+
+	<bean id="namedParameterJdbcTemplate"
+		class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+		<constructor-arg ref="defaultDataSource" />
+	</bean>
+</beans>

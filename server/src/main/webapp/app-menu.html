@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>应用开发</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="js/lib/cranberry/cranberry.css" rel="stylesheet">
+
+    <link href="css/component/myAdmin.css" rel="stylesheet">
+	<link href="css/common-style.css" rel="stylesheet">
+    <link href="css/icons/style.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/app-menu-main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container container-top">
+        <div type="layout" id="vm1489401734315" class="form-horizontal">
+            <div class="row">
+                <div class="col-sm-12 column">
+                    <div type="layout" compid="layout1489401738059" compname="layout1489401738059" id="layout1489401738059" class="form-group">
+                        <div class="row">
+                            <div id="appMenu" class="col-md-3 col-xs-3 col-sm-3 col-lg-2 column">
+								<div class="row app-menu-head">
+                                    <div class="col-sm-12 column title">
+                                        <span>顶层菜单</span>
+                                        <span id="totalApps" class="badge total" title="菜单总数">1</span>
+                                        <button id="addNewRootMenu" class="btn btn-default btn-sm pull-right">
+                                        <span class="ict-new" title="新增"></span>&nbsp;新增</button>
+                                    </div>                                    
+                                </div>
+
+                                <div class="col-sm-12 column app-menu-spliter"></div>
+                                
+                                <div class="app-menu-container">
+									<div class="list-group app-menu-body"></div>
+								</div>                                  
+                            </div>
+
+                            <div class="col-md-9 col-xs-9 col-sm-9 col-lg-10 column">                                
+								 <div class="tab-content app-tab-content">
+									<div role="tabpanel" class="tab-pane active" id="appcontent">
+										<div type="layout" compid="layout1487148302366" compname="layout1487148302366" id="layout1487148302366" class="form-group app-tab-panel">
+                                    <div class="row modelRow">
+                                        <div id="appModel" class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+											<div class="app-row-ext">
+                                            <div class="row app-menu-head">
+                                                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+                                                    <div>
+                                                        <i class="title glyphicon glyphicon-tasks"></i>
+                                                        <span class="title" >子菜单列表</span>
+                                                        <span id="menu_total" btn="white" class="badge total"></span>
+                                                        <button id="addNewChildMenu" btn="headBtn" class="btn btn-default btn-sm headBtn">
+                                        				<span class="ict-new" title="新增"></span>&nbsp;新增子菜单
+                                                        <button id="sortAsc" btn="headBtn" class="btn btn-default btn-sm headBtn">
+                                        				<span class="ict-open" title="上移"></span>&nbsp;上移
+                                                        <button id="sortDesc" btn="headBtn" class="btn btn-default btn-sm headBtn">
+                                        				<span class="ict-fold" title="下移"></span>&nbsp;下移
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column tools">
+	                                                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+	                                                	<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+	                                                		<input type="text" class="form-control" id="queryCond" name="queryCond" placeholder="菜单名称">
+	                                                	</div>
+		                                                <div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+		                                                	<button id="childMenuQuery" btn="headBtn" class="btn btn-default btn-sm headBtn" >
+                                        					<span class="ict-Magnifier" title="查询"></span>&nbsp;查询
+		                                                </div>
+	                                                </div>
+                                                </div>
+                                            </div>
+                                          <div class="col-sm-12 column app-menu-spliter"></div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+                                                    <table id="menu_table" class="table modelTable">
+                                                        <thead>
+                                                           <tr style="font-weight: bold;">
+																<td class="tableHeadTd" style="width:30%;;padding-left:0;padding-right:0;">菜单名称</td>
+																<td class="tableHeadTd" style="width:30%;padding-left:0;padding-right:0;">父节点名称</td>
+																<td class="tableHeadTd" style="width:20%;padding-left:0;padding-right:0;">类型</td>
+																<td class="tableHeadTd" style="width:5%;padding-left:0;padding-right:0;">显示</td>
+																<td class="tableHeadTd" style="width:15%;padding-left:0;padding-right:0;">操作</td>
+															</tr>
+                                                       	</thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+											</div>
+										</div>
+                                    </div>
+                                </div>
+								</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主菜单弹出对话框 -->
+    <div id="dialogMenu" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" data-ly-params="{&quot;compwidth&quot;:&quot;500px&quot;,&quot;compheight&quot;:&quot;150px&quot;}">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        标题
+                    </h4>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 子菜单弹出对话框 -->
+    <div id="dialogChildMenu" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" data-ly-params="{&quot;compwidth&quot;:&quot;600px&quot;,&quot;compheight&quot;:&quot;350px&quot;}">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="myModalLabel1">
+                        标题
+                    </h4>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+	<script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="js/lib/lodash.min.js"></script>
+    <script type="text/javascript" src="js/commTools.js"></script>    
+    <script type="text/javascript" src="js/mao/tip-box.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    
+    <script type="text/javascript" src="js/lib/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-editable.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-zh-CN.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-toolbar.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-pagination.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-ID-CN.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>	
+    <script type="text/javascript" src="js/lib/cranberry/cranberry.js"></script>  
+	<script type="text/javascript" src="js/lib/avalon.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageTable.js"></script>
+    <script type="text/javascript" src="js/common/generate-form.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageDialog.js"></script>    	
+	<script type="text/javascript" src="default_common.js"></script>
+    <script type="text/javascript" src="js/common/designer-orm-base.js"></script>
+    <script type="text/javascript" src="js/mao/mao-env-base.js"></script>
+    <script type="text/javascript" src="js/mao/mao-orm-base.js"></script>  
+	<script type="text/javascript" src="js/common/data_model_column_data.js"></script>	
+	<script type="text/javascript" src="js/mao/aes.js"></script>
+	<script type="text/javascript" src="js/mao/framework-util.js"></script>
+	<script type="text/javascript" src="js/ksy-common.js"></script>
+	<script type="text/javascript" src="js/mao/app_menu_main_logic.js"></script>
+    <script type="text/javascript" src="js/mao/app-menu-main.js"></script>
+	
+</body>
+
+</html>

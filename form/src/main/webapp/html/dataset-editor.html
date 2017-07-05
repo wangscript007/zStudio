@@ -1,0 +1,197 @@
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-table.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-editable.css" rel="stylesheet">
+    <link href="css/bootstrap/fileinput/css/fileinput.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/frame/zTreeStyle/zTreeStyle.css" rel="stylesheet">
+    <link href="css/bootstrap/select2/select2.min.css" rel="stylesheet">
+	
+    <script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+    <script type="text/javascript" src="js/lib/fileinput/fileinput.js"></script>
+    <script type="text/javascript" src="js/lib/fileinput/fileinput_locale_zh.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-zh-CN.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-editable.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-toolbar.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-editable.js"></script>
+    <script type="text/javascript" src="js/lib/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/lib/select2/select2.min.js"></script>
+    
+    <script type="text/javascript" src="js/lib/jquery.ztree.all-3.5.js"></script>
+	
+    <script type="text/javascript" src="js/commTools.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageTable.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageDialog.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+    <script type="text/javascript" src="js/page/zTree.js"></script>
+	<script type="text/javascript" src="js/dataset/dataSource.js"></script>
+	<script type="text/javascript" src="js/dataset/dataSource2ESB.js"></script>
+    <script type="text/javascript" src="js/dataset.js"></script>
+	<style>		
+		.navbar-layoutit #menu-layoutit { float:left;}
+		.navbar-layoutit { min-height: 32px; padding: 5px; }
+		.navbar-layoutit .navbar-brand {width:180px; color:#fff; padding: 0; margin:0 5px; }
+		.navbar-layoutit .navbar-brand img {float:left; margin:2px 10px 0 0; }
+		.navbar-layoutit .navbar-brand .label { 
+			position:relative; 
+			left:10px; 
+			top:-3px; 
+			font-weight:normal; 
+			font-size:9px;
+			background:#666;
+			-webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.7);
+			-moz-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.7);
+			box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.7);
+		}
+	</style>	 
+	
+</head> 
+<body>
+<div style="padding-top:40px;">
+<div class="navbar navbar-inverse navbar-fixed-top navbar-layoutit">
+<div class="navbar-header">
+  <button data-target="navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+	<span class="glyphicon-bar"></span>
+	<span class="glyphicon-bar"></span>
+	<span class="glyphicon-bar"></span>
+  </button>
+  <a class="navbar-brand" href="#">布局设计器</a>
+</div>	
+</div>
+	<div type="layout" class="container-fluid" style="padding-left:10px;padding-right:10px;" ms-controller="vm1440659984667" id="vm1440659984667" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-droppable">
+				<div type="layout" id="layout1440659993387" class="form-group">
+					<div class="row">
+						<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column ui-droppable">
+						
+							<div class="panel panel-default">
+							 <div class="panel-heading">数据源</div>	
+							  <div class="panel-body">
+								<div type="layout" id="layout1440643419145" >
+									<div class="row">
+										<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+											<div type="select_dynamic">
+												<select style="display : inline;width:100%;" class="form-control" id="select_dynamic_datasource" name="select_dynamic_datasource" > <option>动态下拉框1</option> <option>动态下拉框2</option> <option>动态下拉框3</option> <option>动态下拉框4</option></select>
+											</div>
+										</div>
+									</div>
+								</div>								
+							  </div>							  
+							</div>
+
+							<div type="layout" id="layout1440643419145" class="form-group">
+								<div class="row">
+									<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+										<div type="table_base_local" style="overflow-x: auto; overflow-y: auto;">
+											<table id="table_base_local_datasets"></table>
+										</div>
+									</div>						
+								</div>
+							</div>	
+						</div>
+						<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column ui-droppable">
+							<div type="layout" id="layout1440727305002" class="form-group">
+								<div class="row">
+									<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+										<div type="layout" id="layout1440727837849" class="form-group">
+											<div class="row">
+												<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+													<div type="button_group" class="layout-align-right">
+														<button type="button" class="btn btn-primary" id="button_new">新建</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div type="layout" id="layout1440727312091" class="form-group">
+											<div class="row">
+												<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+													<div type="separator">
+														<ul class="layout-separator" id="separator1440727319708" ms-duplex-string="separator1440727319708" ms-attr-disabled="separator1440727319708_form_disabled">
+															<li class="layout-separator-selected ">
+																 <a class="layout-separator-inner"><span class="icon glyphicon glyphicon-th-list"></span> <span class="title">数据集信息</span></a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div type="layout" id="layout1440727900424" class="form-group">											
+											<div class="row">
+												<div class="col-md-8 col-xs-8 col-sm-8 col-lg-8 column">													
+													<div type="layout" id="layout1440728645225" style="height:450px;" class="form-group">
+														<div class="row">
+															<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+																<div id="sqlEditor" style="height: 450px;"></div>
+															</div>
+														</div>
+													</div>
+													<div type="layout" id="layout1440729087646" class="form-group">
+														<div class="row">
+															<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+																<div type="layout" id="layoutdataset" class="form-group">
+																	<div class="row">
+																		<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+																			<div type="label" class="layout-align-center">
+																				 <label class="control-label" id="label1440729137826">数据集名称</label>
+																			</div>
+																		</div>
+																		<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+																			<div type="input_text" class="group">
+																				<input type="text" class="form-control" id="input_text_datasetName" name="input_text_datasetName"  data-bv-group=".group">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>													
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">												
+													<div class="alert alert-info" role="alert" style="height:500px;">
+														<p><span class="glyphicon glyphicon-info-sign"></span><span>SQL脚本：脚本中只能包含查询相关的语句；且必须满足标准的SQL语法；查询语句中表的列必须全部列出来；当有多表关联时，表与表之间的重复列要设置列别名。</span></p>
+														<p><span class="glyphicon glyphicon-info-sign"></span><span>数据集名称：不能为空，在数据库中唯一标识数据集信息。</span></p>														
+													</div>
+												</div>
+											</div>
+										</div>
+										<div type="layout" id="layout1440729087646" class="form-group">
+											<div class="row">												 
+												<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+													<div type="button" class="layout-align-right">
+														 <button type="button" class="btn btn-primary" id="button_submit" name="button1440729235726" ms-click="submit">提交</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

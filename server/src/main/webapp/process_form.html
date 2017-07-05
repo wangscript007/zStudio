@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/bootstrap/select2/select2.min.css" rel="stylesheet">
+    <link href="css/component/m-layout.css" rel="stylesheet">
+    <link href="css/component/m-label.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-table.min.css" rel="stylesheet">
+	<link href="css/common-style.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-ID-CN.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+    <script type="text/javascript" src="js/lib/lodash.min.js"></script>
+	<script type="text/javascript" src="js/mao/tip-box.js"></script>
+    <script type="text/javascript" src="js/lib/select2/select2.min.js"></script>
+    <script type="text/javascript" src="js/lib/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery.i18n.properties-1.0.9.js"></script>
+    <script type="text/javascript" src="js/lib/chinese-region/bootstrap-chinese-region.js"></script>
+    <script type="text/javascript" src="js/commTools.js"></script>
+    <script type="text/javascript" src="js/page/cache/page-cache-manage.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-base.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-json.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-multitable.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-orm.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPagei18n.js"></script>
+    <script type="text/javascript" src="js/page/init/page-cache-init.js"></script>
+    <script type="text/javascript" src="js/component/m-layout.js"></script>
+    <script type="text/javascript" src="js/component/m-label.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-editable.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-zh-CN.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-toolbar.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageTable.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageDialog.js"></script>
+    <script type="text/javascript" src="js/lib/avalon.js"></script>
+    <script type="text/javascript" src="default_common.js"></script>
+    <script type="text/javascript" src="js/mao/mao-env-base.js"></script>
+    <script type="text/javascript" src="js/mao/mao-orm-base.js"></script>
+    <script type="text/javascript" src="js/mao/jquery.base64.js"></script>
+	<script type="text/javascript" src="process_form.js"></script>
+    <script type="text/javascript" src="js/mao/process_file_form_logic.js"></script>
+</head>
+
+<body>
+<div class="container container-top">
+	<div type="layout" compid="vm1470275533736" compname="vm1470275533736" ms-controller="vm1470275533736" id="vm1470275533736" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column" style="background-color: rgb(255, 255, 255);">
+				<div type="layout" compid="layout1474967668831" compname="layout1474967668831" id="layout1474967668831" class="form-group">
+					<div class="row">
+						<div class="col-md-7 col-xs-7 col-sm-7 col-lg-7 column">
+							<div class="btn-toolbar" role="toolbar">
+								<div class="btn-group">
+									<button type="button" class="btn btn-primary btn-sm" i18nkey="导入应用" onclick="importApplication()"><span class="glyphicon glyphicon-import" aria-hidden="true"></span>导入应用</button>
+								</div>
+								<div class="btn-group">
+									<button type="button" class="btn btn-primary btn-sm" i18nkey="应用详情" onclick="appDetailView()"><span class="glyphicon glyphicon-list" aria-hidden="true"></span>应用详情</button>
+								</div>
+								<div class="btn-group">
+									<button type="button" class="btn btn-primary btn-sm" i18nkey="删除应用" onclick="deleteApplication()"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>删除应用</button>
+								</div>
+								<div class="btn-group">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 col-xs-5 col-sm-5 col-lg-5 column">
+							<div class="col-md-10 col-xs-8 col-sm-8 col-lg-8 column">
+								<div type="input_text" compid="input_text1477965453864" compname="input_text1477965453864" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" class="group">
+									<input type="text" class="form-control" id="input_text1477965453864" name="input_text1477965453864" data-bv-group=".group" placeholder="应用名称">
+								</div>
+							</div>
+							<div class="col-md-2 col-xs-4 col-sm-4 col-lg-4 column">
+								<div type="button" compid="button1470276200107" compname="button1470276200107" class="layout-align-right pull-right" componentevent="%7B%22type%22%3A%22button%22%2C%22id%22%3A%22button1470276200107%22%2C%22events%22%3A%5B%22name%3Dclick%2Cvalue%3DuiShowService.serachProcessInfo()%22%5D%7D">
+									<button type="button" class="btn btn-primary btn-sm" id="button1470276200107" name="button1470276200107" i18nkey="查询"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> 查询</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div type="layout" compid="layout1471941926884"
+					 compname="layout1471941926884" id="layout1471941926884"
+					 class="form-group" value="true">
+					<div class="row">
+						<div class="col-md-4 col-xs-4 col-lg-4 column"
+							 style="padding-right: 0;">
+							<form id="uploadDataApplFile" method="post"
+								  enctype="multipart/form-data">
+								<input type="file" class="form-control" name="files"
+									   id="file_app_zip" accept=".zip" title="请选择应用压缩包">
+							</form>
+						</div>
+						<div class="col-md-2 col-xs-4 col-lg-2 column"
+							 style="text-align: left; padding-top: 2px;">
+							<button type="button" class="btn btn-default btn-sm"
+									id="upload_file_app" title="上传应用压缩包">
+								<span class="glyphicon glyphicon-upload"></span> 确定
+							</button>
+							<button type="button" class="btn btn-default btn-sm"
+									id="trash_file_app" title="清空所选文件">
+								<span class="glyphicon glyphicon-trash"></span> 清空
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div type="layout" compid="layout1474967761026" compname="layout1474967761026" id="layout1474967761026" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column" style="background-color: rgb(255, 255, 255);">
+							<div type="table_base_local" style="overflow-x: auto; overflow-y: auto;" compid="table_base_local1470275538711" compname="table_base_local1470275538711" field="id%3Dprocess_def_id%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3Dprocess_name%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3Dprocess_packageName%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3Dprocess_package_version%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3Dimport_userName%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3Dimport_time%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3Dstatus%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40">
+								<table id="table_base_local1470275538711">
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div>
+		<div id="dialog1470276493252" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" data-ly-params="{&quot;compwidth&quot;:&quot;900px&quot;,&quot;compheight&quot;:&quot;400px&quot;}">
+				<div class="modal-content">
+					<div class="modal-header">
+						 <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span></button>
+						<h4 class="modal-title" id="myModalLabel">
+							标题
+						</h4>
+					</div>
+					<div class="modal-body">
+					</div>
+					<div class="modal-footer">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

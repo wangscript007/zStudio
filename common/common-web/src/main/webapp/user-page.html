@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+	<meta name="description" content="The portal of UEP project" />
+	<link rel="icon" type="image/png" href="./img/title.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The styles -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/bootstrap/bootstrap-select.css" rel="stylesheet"/>
+    <link  href="plugins/bootstrapvalidator/css/bootstrapValidator.min.css" rel="stylesheet">
+	<link href="component/thirdparty/css/fontawesome/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            font-family: "Microsoft YaHei",微软雅黑;
+            margin: 0px;
+            padding: 0px;
+            font-size: 16px;background-image: url("img/bag.png");
+        }
+        .main {
+            position:relative;
+        }
+        .title {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            font-size: 36px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .title-left {
+            top: 0;
+            left: 0;
+            line-height: 65px;
+            font-size: 30px;
+            padding-left: 100px;
+            float: left;
+        }
+
+        .title-right {
+            float: right;
+            padding-right: 50px;
+            font-size: 14px;
+            padding-top: 35px;
+            font-family: "SimSun", 宋体;
+        }
+
+        .login {
+            position:absolute;
+            top: 50px;
+            left: 0px;
+            height: 560px;
+            margin: auto;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .login .chi {
+            position:relative;
+            margin: auto;
+            background-image: url("img/login-box.png");
+            background-size:450px 620px;
+            height: 560px;
+            width: 450px;
+            padding-top: 50px;
+        }
+
+        .gradient {
+            position:absolute;
+            min-height: 130px;
+            width: 100%;
+            background:-webkit-gradient(linear, 0 0, 0 bottom, from(#44b0c7), to(#5bb5ca));
+            top:480px;left:0px;
+            z-index: 1;
+        }
+
+        .form-group {
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-bottom: 20px;
+        }
+
+        .form-group input[type="input"],
+        .form-group input[type="password"]
+        {
+            height: 45px;
+            border-radius:20px;
+            border: 0px;
+        }
+        .fl {
+            float: left;
+        }
+
+        .login-btn {
+            background-color: #3B98AF;
+            width: 100%;
+            color: #ffffff;
+            height: 45px;
+            border-radius: 30px;
+            border: 0px;
+            font-size: 20px;
+        }
+
+        .login-btn:hover {
+            background-color: #297E93;
+            border: 0px;
+        }
+		
+		.main-font {
+            font-size: 14px;
+            color: #419399;
+        }
+        .main-font a {
+			font-size: 14px;
+            color: #428bca;
+		}
+
+        .width80p {
+            width: 80%;
+        }
+        .color-white {
+            color: white;
+        }
+		.bootstrap-select .dropdown-toggle:focus{outline:none !important;}
+		.logo-img{
+			height:54px;
+			width:9.7%;
+			float:left;
+			position:relative;
+			margin-top:15px;
+			margin-left:50px
+		}
+    </style>
+</head>
+
+<body>
+
+<div style="height: 60px;">
+    <div class="logo-img"><img src="./img/nav-logo-w.svg" alt="logo"></div>
+    <div class="title-right">
+        <span><a href="#" class="color-white portal-index">返回首页</a></span>
+        <span class="color-white">|</span>
+        <span><a href="#" target="_blank" class="color-white portal-help">帮助中心</a></span>
+    </div>
+</div>
+
+<div id="header" style="height: 20px;"></div>
+
+<div class="main">
+    <div class="login">
+        <div class="chi">
+			<div class="form-group">
+				<div class="main-font" id="error_prompt" style="display:block;color:#b94a48;width:350px;height:14px;text-align:center"></div>
+            </div>
+            <form id="registerForm" style="display: none">
+
+                <div class="form-group">
+                    <input type="input" class="form-control" name="userName1" id="userName1" placeholder="项目名称" />
+
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password1" id="password1" placeholder="密码" />
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" name="confirmPassword1" id="confirmPassword1" placeholder="再输入一次密码" />
+                </div>
+
+                <div class="form-group" style="height: 30px; padding-left: 60px;">
+                    <div class="fl main-font"> <a href="/index.html" class="portal-index">返回首页</a></div>
+                    <div class="fl main-font" style="margin-left: 200px;"><a href="user-page.html?page=log">账号登录</a></div>
+                </div>
+                <div class="form-group">
+                    <button type="submit"  class="btn btn-primary register login-btn">注 册</button>
+                </div>
+
+            </form>
+                <form id="loginForm" style="display: none">
+					
+                    <div class="form-group">
+                        <input type="input" class="form-control" name="userName" id="userName" placeholder="用户名" />
+
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" id="password" placeholder="密码" />
+                    </div>
+					<div class="form-group">
+                        <select id="projectSelect" class="selectpicker show-tick form-control"   data-live-search="true" style="border-radius: 20px;">
+                        	<option>请选择项目名称</option>>
+                    	</select> 
+                    </div>
+                    <div class="form-group" style="height: 30px; padding-left: 60px;">
+                        <div class="fl" style="padding-right: 10px;"><input type="checkbox" checked disabled /></div> <div class="fl main-font"> 记住密码</div>
+                        <div class="fl main-font" style="margin-left: 180px;"><a href="user-page.html?page=reg" >项目注册</a></div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit"  class="btn btn-primary submit login-btn">登 录</button>
+                    </div>
+                </form>
+        </div>
+    </div>
+    <div class="gradient"></div>
+</div>
+
+
+<!-- external javascript -->
+
+<!-- jQuery -->
+<script src="js/lib/jquery/jquery.min.js"></script>
+<script src="plugins/jquery/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/lib/bootstrap-select.min.js"></script>
+<script src="plugins/bootstrapvalidator/js/bootstrapValidator.min.js"></script>
+<script src="plugins/bootstrapvalidator/js/zh_CN.js"></script>
+<script type="text/javascript" src="js/lib/bootbox.js"></script>
+<script src="default_common.js"></script>
+<script type="text/javascript" src="js/mao/mao-env-base.js"></script>
+<script type="text/javascript" src="js/mao/mao-orm-base.js"></script>
+<script type="text/javascript" src="js/mao/aes.js"></script>
+<script type="text/javascript" src="js/mao/framework-util.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/ksy_browser.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/ksy-common.js"></script>
+<script>
+    function adjustHeight() {
+        var height = $(window).height() - 60 - 20 - 480;
+        height = height > 0 ? height + 'px' : '';
+        $('.gradient').css('height', height);
+    }
+    $(window).resize(function() {
+        adjustHeight();
+    });
+
+    $(function () {
+        adjustHeight();
+        $('.portal-index').attr('href', window.portal_Url);
+        $('.portal-help').attr('href', window.portal_Url + 'client/help.html');
+    });
+	$(document).ready(function(){
+		var data = maoOrmBase.query("tenant",'["name"]',undefined,true),
+			array = data.rows,
+			html = "";
+		$.each(array, function(index,item) {
+			if(item.name === "demo") {
+				return true;
+			}
+			html+='<option>'+ item.name +'</option>';
+		});
+		$('#projectSelect').append(html);
+	});
+	window.onload=function(){
+		$('#projectSelect').parent().css({"height":"45px","border-radius":"20px"});
+		$('#projectSelect').siblings('button').css({"height":"45px","border-radius":"20px"});
+		
+	}
+</script>
+</body>
+</html>

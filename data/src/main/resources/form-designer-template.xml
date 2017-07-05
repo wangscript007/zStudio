@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312"?> 
+<root version="1.0">
+    <template type="default" name="relationModel" displayName="关系模型" description="" thumbnail="img/multiTable.png">
+		<param key="configURL" value="relationModel/relationModelConfig.html"></param>
+		<param key="jsObject" value="RelationModelTemplate"></param>
+	</template>	  
+</root>

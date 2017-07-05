@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>zForm - 页面设计器界面预览</title>
+    <link rel="stylesheet" media="screen" href="css/frame/preview/main.css">
+
+
+</head>
+<body>
+<section id="devices">
+
+
+    <div class="deviceWrap iphone-5-portrait">
+
+
+        <div class="device" style="width: 300px;height: 500px;">
+            <iframe src="" id="iphone-5-portrait"></iframe>
+        </div>
+        <!-- /device -->
+
+    </div>
+    <!-- /deviceWrap -->
+
+    <div class="deviceWrap iphone-5-landscape">
+
+        <div class="device" style="width: 600px;height: 350px;">
+            <iframe src="" id="iphone-5-landscape"></iframe>
+        </div>
+        <!-- /device -->
+
+    </div>
+    <!-- /deviceWrap -->
+
+    <div class="deviceWrap ipad-portrait">
+        <div class="device" style="width: 800px;height: 850px;">
+            <iframe src="" id="ipad-portrait"></iframe>
+        </div>
+        <!-- /device -->
+    </div>
+    <!-- /deviceWrap -->
+</section>
+
+
+
+
+<script type="text/javascript" src="js/frame/mobile/preview/responsinator.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        var search = location.search,
+                len = '?url='.length,
+                path;
+        if(search.indexOf('&') > len) {
+            path = search.substring(len, search.indexOf('&'));
+        }
+        else {
+            path = search.substring(len);
+        }
+        $("#iphone-5-portrait,#ipad-portrait,#iphone-5-landscape").attr('src', path);
+    });
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+.ace-iplastic {
+    background-color: #ffffff !important;
+}
+
+.ace-iplastic .ace_gutter {
+    background: #ebebeb !important;
+}
+
+.edit {
+    position: relative;
+    height: 360px;
+    border: 1px dashed rgb(0, 100, 0);
+}

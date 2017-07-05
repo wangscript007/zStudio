@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+	<link href="css/page.css" rel="stylesheet">
+	<link href="css/bootstrap/select2/select2.min.css" rel="stylesheet">
+	<link href="css/component/m-layout.css" rel="stylesheet">
+	<link href="css/component/m-label.css" rel="stylesheet">
+	<link href="css/bootstrap/bootstrap-datetimepicker.min.css" rel="stylesheet">
+	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootbox.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-ID-CN.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+	<script type="text/javascript" src="js/lib/lodash.min.js"></script>
+	<script type="text/javascript" src="js/lib/select2/select2.min.js"></script>
+	<script type="text/javascript" src="js/lib/moment-with-locales.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrap-datetimepicker.min.js"></script>
+	<!--<script type="text/javascript" src="js/lib/jquery/jquery.i18n.properties-1.0.9.js"></script>-->
+	<script type="text/javascript" src="js/lib/chinese-region/bootstrap-chinese-region.js"></script>
+	<script type="text/javascript" src="js/commTools.js"></script>
+	<script type="text/javascript" src="js/page/layoutitPage.js"></script>
+	<script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+	<script type="text/javascript" src="js/page/layoutitPagei18n.js"></script>
+	<script type="text/javascript" src="js/page/init/page-cache-init.js"></script>
+	<script type="text/javascript" src="js/component/m-layout.js"></script>
+	<script type="text/javascript" src="js/component/m-label.js"></script>
+	<script type="text/javascript" src="js/lib/avalon.js"></script>
+	<script type="text/javascript" src="default_common.js"></script>
+	<script type="text/javascript" src="js/mao/mao-env-base.js"></script>
+	<script type="text/javascript" src="js/common/designer-orm-base.js"></script>
+	<script type="text/javascript" src="bpm-form.js"></script>
+	<script type="text/javascript" src="js/common/data_model_column_data.js"></script>
+	<script type="text/javascript" src="js/common/generate-form.js"></script>
+</head>
+<body>
+<div class="container container-top">
+	<div type="layout" compid="vm1476253718194" ms-controller="vm1476253718194" id="vm1476253718194" dstype="orm" bfd-operation-params="%7B%22model%22%3A%22vm1476253718194%22%2C%22service%22%3A%22bcp%22%2C%22set%22%3A%22bcp_re_form%22%2C%22operations%22%3A%5B%7B%22method%22%3A%22POST%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdsp%2Form%2Ftable%2Fbcp_re_form%22%2C%22name%22%3A%22add%22%7D%2C%7B%22method%22%3A%22PUT%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdsp%2Form%2Ftable%2Fbcp_re_form%22%2C%22name%22%3A%22update%22%7D%2C%7B%22method%22%3A%22DELETE%22%2C%22submit%22%3A%22delete%22%2C%22url%22%3A%22%2Fdsp%2Form%2Ftable%2Fbcp_re_form%22%2C%22name%22%3A%22delete%22%7D%2C%7B%22method%22%3A%22GET%22%2C%22submit%22%3A%22initVMData%22%2C%22url%22%3A%22%2Fdsp%2Form%2Ftable%2Fbcp_re_form%22%2C%22name%22%3A%22query%22%7D%5D%2C%22post_in%22%3A%5B%5D%2C%22put_in%22%3A%5B%5D%2C%22get_out%22%3A%5B%5D%7D" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+				<div type="layout" compid="layout1476253825545" id="layout1476253825545" class="form-group" style="display:none">
+					<div class="row">
+						<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+							<div type="label" compid="label1476253846816" class="layout-align-right">
+								<label class="control-label" id="label1476253846816" i18nkey="流程包ID">流程包ID</label>
+							</div>
+						</div>
+						<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column">
+							<div type="input_text" compid="input_text1476253868795" field="packageid" class="group">
+								<input type="text" class="form-control" id="input_text1476253868795" name="input_text1476253868795" ms-attr-disabled="packageid_form_disabled" ms-duplex-string="packageid" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1476253825547" id="layout1476253825547" class="form-group">
+					<div class="row">
+						<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+							<div type="label" compid="label1476253846818" class="layout-align-right">
+								<label class="control-label" id="label1476253846818" i18nkey="名称">名称</label>
+							</div>
+						</div>
+						<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column">
+							<div type="input_text" compid="input_text1476253868797" compname="input_text1476253868797" field="name"   placeholder="%E5%90%8D%E7%A7%B0%E9%BB%98%E8%AE%A4%E4%B8%BA%E8%8F%9C%E5%8D%95%E5%90%8D">
+								<input type="text" class="form-control" id="input_text1476253868797" name="input_text1476253868797" ms-attr-disabled="name_form_disabled" ms-duplex-string="name" data-bv-group=".group" placeholder="名称默认为菜单名" i18nkeyforph="名称默认为菜单名">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1476253825543" id="layout1476253825543" class="form-group">
+					<div class="row">
+						<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+							<div type="label" compid="label1476253846813" class="layout-align-right">
+								<label class="control-label" id="label1476253846813" i18nkey="表单ID">表单ID</label>
+							</div>
+						</div>
+						<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column">
+							<div type="input_text" compid="input_text1476253868793" field="id"  textboxtype="text" >
+								<!--<input type="text" class="form-control" id="input_text1476253868793" name="input_text1476253868793" ms-attr-disabled="id_form_disabled" ms-duplex-string="id" data-bv-group=".group" onblur="getData()">-->
+								<input type="text" class="form-control" id="input_text1476253868793" name="input_text1476253868793" ms-attr-disabled="id_form_disabled" ms-duplex-string="id" data-bv-group=".group" onblur="getData()">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1476253820394" id="layout1476253820394" class="form-group" >
+					<div class="row">
+						<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+							<div type="label" compid="label1476253877881" class="layout-align-right">
+								<label class="control-label" id="label1476253877881" i18nkey="数据模型">数据模型</label>
+							</div>
+						</div>
+						<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column">
+							<div type="select_dynamic" compid="select_dynamic1476253895566" field="modelid">
+								<select style="display : inline;width:100%;" class="form-control" id="select_dynamic1476253895566" name="select_dynamic1476253895566"  ></select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1476253820394" id="layout1476253820394" class="form-group" >
+					<div class="row">
+						<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+							<div type="label" compid="label1476253877881" class="layout-align-right">
+								<label class="control-label" id="label1476253877881" i18nkey="类型">类型</label>
+							</div>
+						</div>
+						<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column">
+							<div type="select_dynamic" compid="select_dynamic1476253894758" field="type">
+								<select style="display : inline;width:100%;" class="form-control" id="select_dynamic1476253894759" name="select_dynamic1476253894759" ms-attr-disabled="type_form_disabled" ms-duplex-string="type"> <option value="表单">表单</option>  <option value="列表">列表</option> <option value="报表">报表</option></select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1476253815356" id="layout1476253815356" class="form-group">
+					<div class="row">
+						<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+							<div type="label" compid="label1476253933979" class="layout-align-right">
+								<label class="control-label" id="label1476253933979" i18nkey="URL">URL</label>
+							</div>
+						</div>
+						<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column">
+							<div type="input_text" compid="input_text1476253945536" field="formurl" class="group">
+								<input type="text" class="form-control" id="input_text1476253945536" name="input_text1476253945536" ms-attr-disabled="formurl_form_disabled" ms-duplex-string="formurl" data-bv-group=".group" >
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div type="layout" compid="layout1476253806704" id="layout1476253806704" class="form-group">
+					<div class="row">
+						<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+							<div type="label" compid="label1476254002784" class="layout-align-right">
+								<label class="control-label" id="label1476254002784" i18nkey="状态">状态</label>
+							</div>
+						</div>
+						<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column">
+							<div type="select_dynamic" compid="select_dynamic1476253894758">
+								<select style="display : inline;width:100%;" class="form-control" id="select_dynamic1476253894758" name="select_dynamic1476253894758" ms-attr-disabled="status_form_disabled" ms-duplex-string="status"> <option value="已发布">已发布</option> <option value="未发布">未发布</option></select>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div type="layout" compid="layout1476253810962" id="layout1476253810962" class="form-group">
+					<div class="row">
+						<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+							<div type="label" compid="label1476253951271" class="layout-align-right">
+								<label class="control-label" id="label1476253951271" i18nkey="描述">描述</label>
+							</div>
+						</div>
+						<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column">
+							<div type="textarea" compid="textarea1476253961855" field="description">
+								<textarea class="form-control" rows="2" id="textarea1476253961855" name="textarea1476253961855" ms-attr-disabled="description_form_disabled" ms-duplex-string="description"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div type="layout" compid="layout1476253802677" id="layout1476253802677" class="form-group" style="display:none">
+					<div class="row">
+						<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+							<div type="label" compid="label1476254023386" class="layout-align-right">
+								<label class="control-label" id="label1476254023386" i18nkey="创建者">创建者</label>
+							</div>
+						</div>
+						<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column">
+							<div type="input_text" compid="input_text1476254051826" field="creator" class="group">
+								<input type="text" class="form-control" id="input_text1476254051826" name="input_text1476254051826" ms-attr-disabled="creator_form_disabled" ms-duplex-string="creator" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1476253797887" id="layout1476253797887" class="form-group" style="display:none">
+					<div class="row">
+						<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+							<div type="label" compid="label1476254058037" class="layout-align-right">
+								<label class="control-label" id="label1476254058037" i18nkey="创建时间">创建时间</label>
+							</div>
+						</div>
+						<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column">
+							<div type="input_datetime" compid="input_datetime1476254069827" placeholder="YYYY-MM-DD HH:mm:ss" field="createTime" class="group">
+								<input class="form-control form_time" placeholder="YYYY-MM-DD HH:mm:ss" type="text" id="input_datetime1476254069827" name="input_datetime1476254069827" ms-attr-disabled="createTime_form_disabled" ms-duplex-string="createTime" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1476254708480" id="layout1476254708480" class="form-group">
+					<div class="row">
+						<div class="col-md-12 column ui-droppable layout-align-right">
+							<div type="button_group" class="layout-align-right" button_type_select="submit" buttontype="submit"  style="display:inline">
+								<button type="button" style="margin-right:3px" class="btn btn-primary btn-sm" id="button1476254950005" name="button1476254950005" ms-click="submit" i18nkey="确定">确定</button>
+							</div>
+							<div  style="display:inline">
+								<button type="button" class="btn btn-primary btn-sm" id="button1476254954907" name="button1476254954907" onclick="hideModalDialog('dialog1474531840414')" i18nkey="取消">取消</button>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

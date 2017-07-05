@@ -1,0 +1,20 @@
+{
+  "id": "col_6_6",
+  "thumbnail": "col_6_6.png",
+  "js": "col_6_6.js",
+  "instanceName": "Col_6_6",
+  "displayName": "6,6",
+
+  "properties": [{
+    "displayName": "布局",
+    "propertyItems": [
+      {
+        "displayName": "布局比例",
+        "attributeName": "ratio",
+        "attributeRelation": "ratio",
+        "type": "input",
+        "defaultOption": "6,6",
+        "dataType": "string"
+      }]
+  }]
+}

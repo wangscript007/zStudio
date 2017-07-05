@@ -1,0 +1,29 @@
+.leftspace{
+    background: #fff;
+    border-width: 0px;
+    padding: 0px 0px 0px 5px;
+    border-style: outset;
+    cursor: pointer;
+}
+.leftrightspace{
+    background: #fff;
+    border-width: 0px;
+    padding: 0px 5px 0px 5px;
+    border-style: outset;
+    cursor: pointer;
+}
+.gray{
+    background: #eaedf1;
+    border-width: 0px;
+    padding: 0px 0px;
+    border-style: outset;
+    cursor: pointer;
+}
+.bottomspace{
+    background: #fff;
+    border-width: 0px;
+    padding: 0px 0px;
+    margin-bottom: 10px;
+    border-style: outset;
+    cursor: pointer;
+}

@@ -1,0 +1,159 @@
+<div class="demo_parent" style="height:722px">
+	<div class="demo ui-sortable" style="min-height: 619px;">
+		<div class="lyrow ui-draggable" style="display: block;">
+			<a href="#close" class="remove label label-danger">
+				<i class="glyphicon-remove glyphicon">
+				</i>
+			</a>
+			<div class="preview">
+				12/自定义
+			</div>
+			<div class="view">
+				<div type="layout" ratio="12" compid="vm1467111232850" compname="vm1467111232850"
+				layoutstyle="" ms-controller="vm1467111232850" id="vm1467111232850" uri="product_list_demo"
+				dsname="bcp">
+					<div class="row clearfix">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+						style="padding-bottom: 5px;">
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									产品列表
+								</div>
+								<div class="view draggableHandle">
+									<div type="layout" compid="vm1467111237122" compname="vm1467111237122"
+									layoutstyle="" id="vm1467111237122">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable">
+													<a href="#close" class="remove label label-danger showRemove">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														产品列表
+													</div>
+													<div class="view draggableHandle form-component_active">
+														<div type="product_list" compid="product_list1467111238648" compname="product_list1467111238648"
+														data-params="%7B%22pagination%22%3A%7B%22isPaging%22%3Afalse%2C%22pageSize%22%3A5%7D%2C%22columns%22%3A%7B%22PRODUCT_ID%22%3A%22ID%22%2C%22PRODUCT_TITLE%22%3A%22GOODS_NAME%22%2C%22PRODUCT_PRICE%22%3A%22GOODS_PRICE%22%2C%22PRODUCT_ALT%22%3A%22GOODS_NAME%22%2C%22PRODUCT_IMG_URL%22%3A%22GOODS_IMG_URL%22%2C%22PRODUCT_SUPPLIER%22%3A%22GOODS_PROVIDER%22%7D%2C%22dataView%22%3A%7B%22customProductListMethod%22%3A%22formatProductView%22%2C%22formatDetailUrlMethod%22%3A%22%22%7D%2C%22ajaxParams%22%3A%7B%22dsName%22%3A%22bcp%22%2C%22tableName%22%3A%22product_list_demo%22%7D%2C%22extendColumns%22%3A%5B%22ID%22%2C%22GOODS_NAME%22%2C%22GOODS_PRICE%22%2C%22GOODS_IMG_URL%22%2C%22GOODS_PROVIDER%22%2C%22ESTIMATE%22%2C%22GOODS_STORE_PRICE%22%2C%22SALE_NUMBER%22%5D%7D"
+														product_id="ID" data-columns="%7B%22columns%22%3A%5B%22ID%22%2C%22GOODS_NAME%22%2C%22GOODS_PRICE%22%2C%22GOODS_IMG_URL%22%2C%22GOODS_PROVIDER%22%2C%22ESTIMATE%22%2C%22GOODS_STORE_PRICE%22%2C%22SALE_NUMBER%22%5D%7D"
+														product_title="GOODS_NAME" product_price="GOODS_PRICE" product_alt="GOODS_NAME"
+														product_img_url="GOODS_IMG_URL" product_supplier="GOODS_PROVIDER" custom_product_list_method="formatProductView"
+														format_detail_url_method="">
+															<div class="new-ct">
+																<div class="new-search new-goods-lst">
+																	<ul class="new-mu_l2w" id="product_list1467111238648" name="product_list1467111238648"
+																	ms-duplex-string="product_list1467111238648" ms-attr-disabled="product_list1467111238648_form_disabled">
+																		<li class="new-mu_l2">
+																			<a href="#" class="new-mu_l2a">
+																				<span class="new-mu_tmb">
+																					<img src="img/product-list/phone.jpg" width="100" height="100" alt="">
+																				</span>
+																				<span class="new-mu_l2cw">
+																					<strong class="new-mu_l2h">
+																						Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4G手机
+																					</strong>
+																					<span class="new-mu_l2h new-mu_l2h-v1">
+																						<span class="new-txt-rd2">
+																						</span>
+																					</span>
+																					<span class="new-mu_l2c new-p-re">
+																						<strong class="new-txt-rd2">
+																							¥5000.00
+																						</strong>
+																						<span class="new-txt-price" style="color:red">
+																						</span>
+																					</span>
+																				</span>
+																			</a>
+																		</li>
+																		<li class="new-mu_l2">
+																			<a href="#" class="new-mu_l2a">
+																				<span class="new-mu_tmb">
+																					<img src="img/product-list/mac.jpg" width="100" height="100" alt="">
+																				</span>
+																				<span class="new-mu_l2cw">
+																					<strong class="new-mu_l2h">
+																						Apple MacBook Air 13.3英寸笔记本电脑 银色(Core i5 处理器/8GB内存/128GB SSD闪存 MMGF2CH/A)
+																					</strong>
+																					<span class="new-mu_l2h new-mu_l2h-v1">
+																						<span class="new-txt-rd2">
+																						</span>
+																					</span>
+																					<span class="new-mu_l2c new-p-re">
+																						<strong class="new-txt-rd2">
+																							¥6000.00
+																						</strong>
+																						<span class="new-txt-price" style="color:red">
+																						</span>
+																					</span>
+																				</span>
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+																<div class="new-paging">
+																	<div class="new-tbl-type">
+																		<div class="new-tbl-cell">
+																			<span class="new-a-prve">
+																				<span>
+																					上一页
+																				</span>
+																			</span>
+																		</div>
+																		<div class="new-tbl-cell new-p-re">
+																			<div class="new-a-page">
+																				<span class="new-open">
+																					1/5
+																				</span>
+																			</div>
+																			<select class="new-select" id="product_list1467111238648" name="product_list1467111238648"
+																			ms-duplex-string="product_list1467111238648" ms-attr-disabled="product_list1467111238648_form_disabled">
+																			</select>
+																		</div>
+																		<div class="new-tbl-cell">
+																			<a class="new-a-next" href="#">
+																				<span>
+																					下一页
+																				</span>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer-bg ui-sortable">
+	<div class="box-hide box-element ui-draggable col-md-2" style="display: block;">
+		<a href="#close" class="remove label label-danger">
+			<i class="glyphicon-remove glyphicon">
+			</i>
+		</a>
+		<div class="preview" style="border-color: rgb(237, 22, 22);">
+			JS脚本jsscript1467103464678
+		</div>
+		<div class="view">
+			<div type="jsscript" compid="jsscript1467103464678" compname="jsscript1467103464678"
+			format_detail_url_method="formatDetailUrl" data-params="%7B%22dataView%22%3A%7B%22formatDetailUrlMethod%22%3A%22formatDetailUrl%22%7D%7D"
+			jspath="js%26%23x2F%3Bcommon%26%23x2F%3Bm-product-list-demo.js%20%20">
+			</div>
+		</div>
+	</div>
+</div>

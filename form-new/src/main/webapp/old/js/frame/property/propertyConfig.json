@@ -1,0 +1,1505 @@
+{
+    "layout": [
+        {
+            "showname": "布局比例",
+            "attribute": "columns",
+            "type": "userDefine:LayoutRatioProperty"
+        },
+        {
+            "showname": "是否隐藏",
+            "attribute": "componentvisibility",
+            "type": "userDefine:ComponentVisibilityProperty"
+        },
+        {
+            "showname": "数据源",
+            "attribute": "datasource",
+            "type": "userDefine:LayoutURIProperty"
+        }
+    ],
+    "label": [
+        {
+            "showname": "显示文本",
+            "attribute": "defaultvalue",
+            "type": "userDefine:ComponentTextProperty"
+        },
+        {
+            "showname": "字体颜色",
+            "attribute": "labelfontcolor",
+            "type": "userDefine:ComponentColorPickProperty"
+        },
+        {
+            "showname": "字体大小",
+            "attribute": "lablefontsize",
+            "type": "preDefine:select",
+            "values": "static:12,12;14,14;16,16;18,18;20,20;22,22;24,24;26,26;28,28;36,36;48,48;72,72",
+            "customevent": "labelFontSizeSet",
+            "defaultvalue": "16"
+        },
+        {
+            "showname": "是否加粗",
+            "attribute": "labelfontweight",
+            "type": "preDefine:select",
+            "values": "static:是,true;否,false",
+            "customevent": "labelFontWeightSet",
+            "defaultvalue": "是"
+        },
+        {
+            "showname": "绑定字段",
+            "attribute": "field",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+            "customevent":"updateTextLabelField"
+        },
+        {
+            "showname": "对齐方式",
+            "attribute": "alignstyle",
+            "type": "userDefine:ComponentAlignProperty"
+        },
+        {
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:LableEventProperty",
+            "group": "events"
+        }
+    ],
+    "input_text": [
+        {
+            "showname": "默认值",
+            "attribute": "defaultvalue",
+            "type": "userDefine:ComponentTextProperty"
+        },        
+		{
+            "showname": "提示信息",
+            "attribute": "placeholder",
+            "type": "userDefine:ComponentForPlaceholderProperty"
+        },
+		
+        {
+            "showname": "绑定字段",
+            "attribute": "field",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+			"customevent":"updateInputTextBindField"
+        },
+        {
+            "showname": "可编辑性",
+            "attribute": "editable",
+            "type": "userDefine:ComponentEditableProperty"
+        },
+		{
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:BaseComponentEventProperty",
+			"group": "events"
+        },
+		{
+            "showname": "组件类型",
+            "attribute": "textboxtype",
+            "type": "preDefine:select",
+            "values": "static:文本框,text;密码框,password",
+			"customevent": "updateTextBoxType",
+            "defaultvalue": "text"
+        },
+		{
+            "showname": "是否为空",
+            "attribute": "vnotempty",
+            "type": "preDefine:select",
+			"values": "static:是,true;否,false",
+			"defaultvalue": "true"
+		},
+		{
+            "showname": "长度范围",
+            "attribute": "vstringlength",
+            "type": "preDefine:text",
+			"placeholder": "1,200"
+        },
+		{
+            "showname": "验证类型",
+            "attribute": "vtype",
+            "type": "preDefine:selecttextarea",
+			"values":"static:无,;身份证号码,id;邮箱,email;手机号码,phone;IPV4,ipv4;整数,integer;浮点数,numeric;自定义,custom",
+			"customevent":"updateInputTextValidator"
+			
+		},
+        {
+            "showname": "查询操作",
+            "attribute": "bfd-query-operation",
+            "type": "preDefine:select",
+            "values": "static:<--请选择-->,;=,eq;>,gt;<,lt;>=,gte;<=,lte;<>,ne;like,like"
+        }
+    ],
+    "textarea": [
+        {
+            "showname": "默认值",
+            "attribute": "defaultvalue",
+            "type": "userDefine:ComponentTextProperty"
+        },
+        {
+            "showname": "高度",
+            "attribute": "rows",
+            "type": "preDefine:text",
+            "placeholder": "以Rows为单位",
+            "validation": {
+				"trigger":"focusout",
+                "expression": "^\\d{1}$",
+                "message": "高度属性只能输入1-9之间的整数。"
+            },
+			"customevent":"updateTextAreaHeight"
+        },
+        {
+            "showname": "绑定字段",
+            "attribute": "field",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+			"customevent":"updateTextAreatBindField"
+        },
+        {
+            "showname": "可编辑性",
+            "attribute": "editable",
+            "type": "userDefine:ComponentEditableProperty"
+        },
+		{
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:BaseComponentEventProperty",
+			"group": "events"
+        },
+		{
+            "showname": "是否为空",
+            "attribute": "vnotempty",
+            "type": "preDefine:select",
+			"values": "static:是,true;否,false"
+		},
+		{
+            "showname": "长度范围",
+            "attribute": "vstringlength",
+            "type": "preDefine:text",
+			"placeholder": "1,200"
+        },
+        {
+            "showname": "查询操作",
+            "attribute": "bfd-query-operation",
+            "type": "preDefine:select",
+            "values": "static:<--请选择-->,;=,eq;>,gt;<,lt;>=,gte;<=,lte;<>,ne;like,like"
+        }
+    ],
+    "select_dynamic": [		
+		{
+            "showname": "模式",
+            "attribute": "selecttype",
+            "type": "userDefine:SelectTypeProperty"
+        },
+        {
+            "showname": "默认项",
+            "attribute": "defaultvalue",
+            "type": "preDefine:text",
+			"customevent":"updateSelectDefaultValue"
+        },
+        {
+            "showname": "静态选项",
+            "attribute": "optionvalue",
+            "type": "preDefine:textarea",
+			"validation": {
+				"trigger":"focusout",
+                "expression": "([\\s\\S]+\\:[\\s\\S]*\\n?)+",
+                "message": "选项需要按正确格式输入，单个选项形式如name(显示名):value(值)，多个选项之间需换行。"
+            },
+            "customevent":"updateSelectOptions"
+        },
+        {
+            "showname": "动态URL",
+            "attribute": "optionvurl",
+            "type": "userDefine:ComponentDataURLProperty"
+        },
+        {
+            "showname": "绑定字段",
+            "attribute": "field",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+			"customevent":"updateSelectDynamicBindField"
+        },
+        {
+            "showname": "可编辑性",
+            "attribute": "editable",
+            "type": "userDefine:ComponentEditableProperty"
+        },
+        {
+            "showname": "脚本对象名",
+            "attribute": "datasetting",
+            "type": "userDefine:ComponentDataSettingProperty"
+        },
+		{
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:BaseComponentEventProperty",
+			"group": "events"
+        },
+        {
+            "showname": "查询操作",
+            "attribute": "bfd-query-operation",
+            "type": "preDefine:select",
+            "values": "static:<--请选择-->,;=,eq;>,gt;<,lt;>=,gte;<=,lte;<>,ne;like,like"
+        }
+		
+    ],
+    "input_radio": [
+		{
+            "showname": "默认项",
+            "attribute": "defaultvalue",
+            "type": "preDefine:text",
+			"customevent":"updateInputRadioDefaultValue"
+        },
+        {
+            "showname": "静态选项",
+            "attribute": "optionvalue",
+            "type": "preDefine:textarea",
+			"validation": {
+				"trigger":"focusout",
+                "expression": "([A-Za-z0-9_\\u4e00-\\u9fa5]+\\:[A-Za-z0-9_\\u4e00-\\u9fa5]+\\n?)+",
+                "message": "选项需要按正确格式输入，单个选项形式如name(显示名):value(值)，多个选项之间需换行。"
+            },
+            "defaultvalue":"选项1:1\n选项2:2",
+            "customevent": "updateRadio"
+        },
+        {
+            "showname": "绑定字段",
+            "attribute": "field",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+			"customevent":"updateRadioMsAttr"
+        },
+        {
+            "showname": "可编辑性",
+            "attribute": "editable",
+            "type": "userDefine:ComponentEditableProperty"
+        },
+		{
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:BaseComponentEventProperty",
+			"group": "events"
+        },
+        {
+            "showname": "脚本对象",
+            "attribute": "datasetting",
+            "type": "userDefine:ComponentDataSettingProperty"
+        },
+        {
+            "showname": "查询操作",
+            "attribute": "bfd-query-operation",
+            "type": "preDefine:select",
+            "values": "static:<--请选择-->,;=,eq;>,gt;<,lt;>=,gte;<=,lte;<>,ne;like,like"
+        }
+    ],
+    "checkbox": [
+		{
+            "showname": "默认项",
+            "attribute": "defaultvalue",
+            "type": "preDefine:text",
+			"customevent":"updateInputCheckboxDefaultValue"
+        },
+        {
+            "showname": "静态选项",
+            "attribute": "optionvalue",
+            "type": "preDefine:textarea",
+			"validation": {
+				"trigger":"focusout",
+                "expression": "([A-Za-z0-9_\\u4e00-\\u9fa5]+\\:[A-Za-z0-9_\\u4e00-\\u9fa5]+\\n?)+",
+                "message": "选项需要按正确格式输入，单个选项形式如name(显示名):value(值)，多个选项之间需换行。"
+            },
+            "defaultvalue":"选项1:football\n选项2:basketball\n选项3:baseball",
+            "customevent": "updateRadio"
+        },
+        {
+            "showname": "绑定字段",
+            "attribute": "field",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+			"customevent":"updateRadioMsAttr"
+        },
+        {
+            "showname": "可编辑性",
+            "attribute": "editable",
+            "type": "userDefine:ComponentEditableProperty"
+        },
+		{
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:BaseComponentEventProperty",
+			"group": "events"
+        },
+        {
+            "showname": "脚本对象",
+            "attribute": "datasetting",
+            "type": "userDefine:ComponentDataSettingProperty"
+        },
+        {
+            "showname": "查询操作",
+            "attribute": "bfd-query-operation",
+            "type": "preDefine:select",
+            "values": "static:<--请选择-->,;=,eq;>,gt;<,lt;>=,gte;<=,lte;<>,ne;like,like"
+        }
+    ],
+    "input_datetime": [
+        {
+            "showname": "默认值",
+            "attribute": "data-defaultvalue",
+            "type": "preDefine:select",
+            "values": "static:无,none;当前时间,today;昨天,yesterday;明天,tomorrow"
+        },
+		{
+            "showname": "提示信息",
+            "attribute": "placeholder",
+            "type": "preDefine:text",
+			"customevent":"updateInputTextPlaceholder",
+			"defaultvalue":"YYYY-MM-DD HH:mm:ss"
+        },
+		{
+            "showname": "是否为空",
+            "attribute": "vnotempty",
+            "type": "preDefine:select",
+			"values": "static:是,true;否,false",
+			"defaultvalue":"true"
+		},
+        {
+            "showname": "绑定字段",
+            "attribute": "field",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+			"customevent":"updateInputDateTimeBindField"
+        },
+        {
+            "showname": "可编辑性",
+            "attribute": "editable",
+            "type": "userDefine:ComponentEditableProperty"
+        },
+		{
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:DatetimeEventProperty",
+			"group": "events"
+        },
+		{
+            "showname": "验证类型",
+            "attribute": "vtype",
+            "type": "preDefine:selecttextarea",
+			"values":"static:日期时间,datetime;日期,date;自定义,custom",
+			"customevent":"updateInputDateTimeValidator"
+			
+		},
+        {
+            "showname": "查询操作",
+            "attribute": "bfd-query-operation",
+            "type": "preDefine:select",
+            "values": "static:<--请选择-->,;=,eq;>,gt;<,lt;>=,gte;<=,lte;<>,ne;like,like"
+        }
+    ],
+	"input_fileinput": [
+        {
+            "showname": "URL",
+            "attribute": "fileuploadurl",
+            "type": "userDefine:ComponentDataURLProperty"
+        },
+        {
+            "showname": "对齐方式",
+            "attribute": "alignstyle",
+            "type": "userDefine:ComponentAlignProperty"
+        },
+		{
+            "showname": "文件格式",
+			"placeholder": "文件格式以逗号分隔，如：jpg,png,bpm",
+            "attribute": "allowedFileExtensions",
+            "type": "preDefine:text",
+			"defaultvalue": "jpg,png,bpm"
+        },
+		{
+            "showname": "是否为空",
+            "attribute": "vnotempty",
+            "type": "preDefine:select",
+			"values": "static:是,true;否,false"
+		},
+        {
+            "showname": "绑定字段",
+            "attribute": "field",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField"
+        },
+        {
+            "showname": "可编辑性",
+            "attribute": "editable",
+            "type": "userDefine:ComponentEditableProperty"
+        },
+		{
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:BaseComponentEventProperty",
+			"group": "events"
+        }
+    ],
+    "image": [
+        {
+            "showname": "宽",
+            "attribute": "imgwidth",
+            "type": "preDefine:text",
+            "customevent":"updateImg"
+        },
+        {
+            "showname": "高",
+            "attribute": "imgheight",
+            "type": "preDefine:text",
+            "customevent":"updateImg"
+        },
+        {
+            "showname": "对齐方式",
+            "attribute": "alignstyle",
+            "type": "userDefine:ComponentAlignProperty"
+        },
+        {
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:BaseComponentEventProperty",
+            "group": "events"
+        },
+        {
+            "showname": "源地址",
+            "attribute": "imgsrc",
+            "type": "preDefine:text",
+            "customevent":"updateImg"
+        },
+        {
+            "showname": "Alt",
+            "attribute": "imgalt",
+            "type": "preDefine:text",
+            "customevent":"updateImg",
+            "defaultvalue":"图片"
+        },
+        {
+            "showname": "放大",
+            "attribute": "zoomIn",
+            "type": "preDefine:select",
+            "values": "static:否,false;是,true",
+            "defaultvalue":"true"
+        },
+        {
+            "showname": "绑定字段",
+            "attribute": "srcfield",
+            "type": "userDefine:ImageBindSrcFieldProperty"
+        }
+    ],
+    "li": [
+        {
+            "showname": "选择菜单",
+            "attribute": "item",
+            "type": "userDefine:ComponentMenuSelectItemProperty"
+        },
+        {
+            "showname": "上级菜单",
+            "attribute": "parent",
+            "type": "userDefine:ComponentMenuParentItemProperty"
+        }
+    ],
+
+    "button": [
+        {
+            "showname": "显示名",
+            "attribute": "defaultvalue",
+            "type": "userDefine:ComponentTextProperty"
+        },
+		{
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:BaseComponentEventProperty",
+			"group": "events"
+        },
+        {
+            "showname": "颜色",
+            "attribute": "data-color",
+            "type": "preDefine:select",
+            "values": "static:Default,btn-default;Primary,btn-primary;Success,btn-success;Info,btn-info;Warning,btn-warning;Danger,btn-danger;link,btn-link",
+            "customevent":"updateBtnColor"
+        },
+        {
+            "showname": "尺寸",
+            "attribute": "data-size",
+            "type": "preDefine:select",
+            "values": "static:Large,btn-lg;Default, ;Small,btn-sm;Extra small,btn-xs",
+            "customevent":"updateBtnSize"
+        },
+		{
+            "showname": "图标",
+            "attribute": "buttonicon",
+            "type": "userDefine:ComponentButtonIconProperty"			
+        },
+        {
+            "showname": "对齐方式",
+            "attribute": "alignstyle",
+            "type": "userDefine:ComponentAlignProperty"
+        },
+        {
+            "showname": "按钮类型",
+            "attribute": "btntype",
+            "type": "userDefine:ButtonOperationBindProperty"
+        }
+    ],
+    "toolbar-button": [
+        {
+            "showname": "显示名",
+            "attribute": "defaultvalue",
+            "type": "userDefine:ComponentTextProperty"
+        },
+        {
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:BaseComponentEventProperty",
+            "group": "events"
+        },
+        {
+            "showname": "颜色",
+            "attribute": "data-color",
+            "type": "preDefine:select",
+            "values": "static:Default,btn-default;Primary,btn-primary;Success,btn-success;Info,btn-info;Warning,btn-warning;Danger,btn-danger;link,btn-link",
+            "customevent":"updateBtnColor"
+        },
+        {
+            "showname": "尺寸",
+            "attribute": "data-size",
+            "type": "preDefine:select",
+            "values": "static:Large,btn-lg;Default, ;Small,btn-sm;Extra small,btn-xs",
+            "customevent":"updateBtnSize"
+        },
+        {
+            "showname": "图标",
+            "attribute": "buttonicon",
+            "type": "userDefine:ComponentButtonIconProperty"
+        },
+        {
+            "showname": "按钮类型",
+            "attribute": "btntype",
+            "type": "userDefine:ButtonOperationBindProperty"
+        },
+        {
+            "showname": "是否分隔",
+            "attribute": "data-split",
+            "type": "preDefine:select",
+            "values": "static:是,true;否,false"
+        }
+    ],
+    "table_base": [
+        {
+            "showname": "数据字段",
+            "attribute": "dataField",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+            "customevent":"updateTable.setDataField"
+        },
+        {
+            "showname": "总记录字段",
+            "attribute": "totalRowsField",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+            "customevent":"updateTable.setTotalRowsField"
+        },
+        {
+            "showname": "设置",
+            "attribute": "tableconfig",
+            "type": "userDefine:TableRemoteConfigProperty"
+        },
+        {
+            "showname": "高度",
+            "attribute": "tableheight",
+            "placeholder":"默认500",
+            "type": "preDefine:text",
+            "customevent":"updateTable.setHeight"
+        },
+        {
+            "showname": "每页条数",
+            "attribute": "pagesize",
+            "type": "preDefine:select",
+            "values": "static:10,10;20,20;50,50;100,100;200,200",
+            "customevent":"updateTable.setPageSize"
+        },
+		{
+            "showname": "表格模式",
+            "attribute": "tablemodel",
+            "type": "preDefine:select",
+            "values": "static:普通,none;单选,radiotable;多选,checkboxtable",
+            "customevent":"updateTable.setModal"
+        },
+        {
+            "showname": "隐藏选择框",
+            "attribute": "hidebox",
+            "type": "preDefine:select",
+            "values": "static:否,false;是,true",
+            "customevent":"updateTable.setHideBox",
+            "defaultvalue":"false"
+        },
+		{
+            "showname": "表格头对齐方式",
+            "attribute": "tableheaderalign",
+            "type": "preDefine:select",
+            "values": "static:靠左对齐,left;居中,center;靠右对齐,right",
+            "customevent":"updateTable.setHAlign"
+        },
+		{
+            "showname": "表格列对齐方式",
+            "attribute": "tablecolumnalign",
+            "type": "preDefine:select",
+            "values": "static:靠左对齐,left;居中,center;靠右对齐,right",
+            "customevent":"updateTable.setCAlign"
+        },
+        {
+            "showname": "分页栏HTML",
+            "attribute": "paginationHTML",
+            "type": "preDefine:textarea",
+            "customevent": "updateTable.setPaginationHTML"
+        },
+        {
+            "showname": "全局格式化函数",
+            "attribute": "data-global-format-function",
+            "placeholder":"参数为表格数据,须返回数据",
+            "type": "preDefine:text",
+            "customevent":"updateTable.setGlobalFormatFunction"
+        },
+		{
+            "showname": "表格事件",
+            "attribute": "componentevent",
+            "type": "userDefine:TableEventProperty",
+			"group": "events"
+        }
+    ],
+    "table_base_local":[
+        {
+            "showname": "设置",
+            "attribute": "tableconfig",
+            "type": "userDefine:TableLocalConfigProperty"
+        },
+        {
+            "showname": "高度",
+            "attribute": "tableheight",
+            "placeholder":"默认高度500",
+            "type": "preDefine:text",
+            "customevent":"updateTable.setHeight"
+        },
+        {
+            "showname": "每页显示条数",
+            "attribute": "pagesize",
+            "type": "preDefine:select",
+            "values": "static:10,10;20,20;50,50;100,100;200,200",
+            "customevent":"updateTable.setPageSize"
+        },
+		{
+            "showname": "支持单选/多选",
+            "attribute": "tablemodel",
+            "type": "preDefine:select",
+            "values": "static:不支持,none;单选,radiotable;多选,checkboxtable",
+            "customevent":"updateTable.setModal"
+        },
+        {
+            "showname": "添加按钮",
+            "attribute": "isAddBtn",
+            "type": "preDefine:select",
+            "values": "static:否,false;是,true",
+            "customevent":"updateTable.setAddBtn"
+        }
+    ],
+	"modal_dialog": [
+		{
+				"showname": "Id",
+				"attribute": "compid",
+				"type": "preDefine:text",
+				"customevent":"updateModalDialogId"
+		},
+        {
+            "showname": "标题",
+            "attribute": "bfd_dialog_title",
+            "type": "preDefine:text",
+            "customevent":"updateModalDialogTitle"
+        },
+        {
+            "showname": "URL",
+            "attribute": "bfd_dialog_url",
+            "type": "preDefine:text",
+            "customevent":"updateModalDialogURL"
+        },
+		{
+				"showname": "宽度",
+				"attribute": "compwidth",
+				"type": "preDefine:text",
+				"validation": {
+					"trigger":"focusout",
+					"expression": "^\\d{1,4}$",
+					"message": "宽度属性只能输入整数。"
+				},
+				"defaultvalue":"1080",
+				"customevent":"updateModalDialogWidth"
+		},
+		{
+				"showname": "高度",
+				"attribute": "compheight",
+				"type": "preDefine:text",
+				"validation": {
+					"trigger":"focusout",
+					"expression": "^\\d{1,4}$",
+					"message": "高度属性只能输入整数。"
+				},
+				"defaultvalue":"600",
+				"customevent":"updateModalDialogHeight"
+		},
+		{
+				"showname": "静态对话框显示内容(支持HTML)",
+				"attribute": "modalbody",
+				"type": "preDefine:textarea",
+				"customevent":"updateModalDialogBody"
+		},
+		{
+				"showname": "对话框footer",
+				"attribute": "modalfooter",
+				"type": "userDefine:ModalDialogFooterProperty"
+		}
+		
+	],
+	"jsscript": [
+		{
+				"showname": "引用JS文件路径",
+				"attribute": "jspath",
+                "placeholder":"引用多个脚本需要换行",
+				"type": "preDefine:textarea"
+		}
+	],
+    "i18nfile": [
+        {
+            "showname": "引用国际化文件路径",
+            "attribute": "i18nfilepath",
+            "placeholder":"引用多个文件需要换行",
+            "type": "userDefine:ComponentI18nPath"
+        }
+    ],
+	"tree": [
+        {
+            "showname": "树类型",
+            "attribute": "treeStyle",
+            "type": "preDefine:select",
+            "values": "static:普通树,;区域树,areatree",
+            "customevent": "updateTreeStyle",
+            "defaultvalue": ""
+        },
+        {
+            "showname": "节点ID",
+            "attribute": "treenodeid",
+            "type": "preDefine:text" ,
+            "customevent":"updateTreeNodeID"
+        },
+		{
+            "showname": "节点名称",
+            "attribute": "treenodename",
+            "type": "preDefine:text",
+			"customevent":"updateTreeNodeName" 
+        },
+		{
+            "showname": "父节点ID",
+            "attribute": "treeparentnodeid",
+            "type": "preDefine:text" ,
+			"customevent":"updateTreeParentNodeID"
+        },
+		{
+            "showname": "节点提示",
+            "attribute": "treenodetitle",
+            "type": "preDefine:text" ,
+			"customevent":"updateTreeNodeTitle"
+        },
+		{
+            "showname": "URL",
+            "attribute": "treeDataUrl",
+            "type": "userDefine:ComponentDataURLProperty"
+        },
+        {
+            "showname": "勾选类型",
+            "attribute": "chkStyle",
+            "type": "preDefine:select",
+            "values": "static:普通类型,;节点单选,radio;节点复选,checkbox",
+            "customevent": "updateTreeChkStyle",
+            "defaultvalue": ""
+        },
+		{
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:ZTreeEventProperty",
+			"group": "events"
+        }
+    ],
+	"separator": [
+        {
+            "showname": "标题",
+            "attribute": "separatortitle",
+            "type": "userDefine:ComponentTextProperty"
+        },
+		{
+            "showname": "分隔线颜色",
+            "attribute": "picklinecolor",
+            "type": "userDefine:ComponentColorPickProperty"
+        },
+        {
+            "showname": "分割线高度",
+            "attribute": "picklineheight",
+            "type": "preDefine:select",
+            "values": "static:1px,1px;2px,2px;3px,3px;4px,4px;5px,5px",
+            "customevent": "picklineHeightSet",
+            "defaultvalue": "1px"
+        },
+		{
+            "showname": "分隔线图标",
+            "attribute": "buttonicon",
+            "type": "userDefine:ComponentButtonIconProperty"			
+        },
+        {
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:SeparatorProperty",
+            "group": "events"
+        }
+    ],
+    "iframe": [
+        {
+            "showname": "高度(支持百分比)",
+            "attribute": "compheight",
+            "type": "preDefine:text",
+            "customevent":"updateIframeHeight"
+        },
+        {
+            "showname": "宽度(支持百分比)",
+            "attribute": "compWidth",
+            "type": "preDefine:text",
+            "customevent":"updateIframeWidth"
+        },
+        {
+            "showname": "src",
+            "attribute": "compSrc",
+            "type": "preDefine:text",
+            "customevent":"updateIframeSrc"
+        },
+        {
+            "showname": "隐藏iframe",
+            "attribute": "data-hide-iframe",
+            "type": "preDefine:select",
+            "values": "static:是,true;否,false"
+        }
+    ],
+    "tab": [
+        {
+            "showname": "选项",
+            "attribute": "options",
+            "type": "userDefine:OldComponentTabCollapseOptions"
+        },
+        {
+            "showname": "关闭按钮",
+            "attribute": "data-close",
+            "type": "preDefine:select",
+            "values": "static:是,true;否,false",
+            "customevent": "updateTabCloseOption"
+        },
+        {
+            "showname": "工具栏",
+            "attribute": "data-tools-options",
+            "type": "userDefine:TabToolbarOptionsProperty"
+        },
+        {
+            "showname": "选项卡方向",
+            "attribute": "data-tabdirection",
+            "type": "preDefine:select",
+            "values": "static:上方,top;左侧,left;右侧,right",
+            "customevent": "updateTabDirection"
+        },
+        {
+            "showname": "选项卡事件",
+            "attribute": "componentevent",
+            "type": "userDefine:TabsEventProperty",
+            "group": "events"
+        }
+    ],
+    "collapse": [
+        {
+            "showname": "选项",
+            "attribute": "options",
+            "type": "userDefine:OldComponentTabCollapseOptions"
+
+        }
+    ],
+    "button_group": [
+        {
+            "showname": "选项",
+            "attribute": "options",
+            "type": "userDefine:OldComponentTabCollapseOptions"
+        },
+        {
+            "showname": "对齐方式",
+            "attribute": "alignstyle",
+            "type": "userDefine:ComponentAlignProperty"
+        },
+        {
+            "showname": "是否间隙",
+            "attribute": "isspace",
+            "type": "preDefine:select",
+            "values": "static:是,true;否,false",
+            "customevent": "updateBtnGroupSpace"
+        }
+    ],
+    "cssscript": [
+        {
+            "showname": "引用css文件路径",
+            "attribute": "csspath",
+            "placeholder":"引用多个脚本需要换行",
+            "type": "preDefine:textarea"
+        }
+    ],
+    "imgBar":[
+        {
+        "showname": "设置",
+        "attribute": "setting",
+        "type": "userDefine:ChartsConfigProperty"
+        },
+        {
+            "showname": "标题",
+            "attribute": "text",
+            "type": "userDefine:ComponentChartTitleOptions"
+        },
+        {
+            "showname": "图例",
+            "attribute": "legend",
+            "type": "userDefine:ComponentChartLegendOptions"
+        },
+        {
+            "showname": "提示框",
+            "attribute": "tooltip",
+            "type": "userDefine:ComponentChartTooltipOptions"
+        },
+        {
+            "showname": "工具箱",
+            "attribute": "toolbox",
+            "type": "userDefine:ComponentChartToolboxOptions"
+        }
+    ],
+    "imgPie":[
+        {
+            "showname": "设置",
+            "attribute": "option",
+            "type": "userDefine:EChartsPie"
+        },
+        {
+            "showname": "标题",
+            "attribute": "text",
+            "type": "userDefine:ComponentChartTitleOptions"
+        },
+        {
+            "showname": "图例",
+            "attribute": "legend",
+            "type": "userDefine:ComponentChartLegendOptions"
+        },
+        {
+            "showname": "提示框",
+            "attribute": "tooltip",
+            "type": "userDefine:ComponentChartTooltipOptions"
+        },
+        {
+            "showname": "工具箱",
+            "attribute": "toolbox",
+            "type": "userDefine:ComponentChartToolboxOptions"
+        }
+    ],
+    "imgLine":[
+        {
+        "showname": "设置",
+        "attribute": "legend",
+        "type": "userDefine:ChartsConfigProperty"
+        },
+        {
+            "showname": "标题",
+            "attribute": "text",
+            "type": "userDefine:ComponentChartTitleOptions"
+        },
+        {
+            "showname": "图例",
+            "attribute": "subtext",
+            "type": "userDefine:ComponentChartLegendOptions"
+        },
+        {
+            "showname": "提示框",
+            "attribute": "legend",
+            "type": "userDefine:ComponentChartTooltipOptions"
+        },
+        {
+            "showname": "工具箱",
+            "attribute": "legend",
+            "type": "userDefine:ComponentChartToolboxOptions"
+        }
+    ],
+    "imgConnect":[
+        {
+            "showname": "设置",
+            "attribute": "legend",
+            "type": "userDefine:AdvanceMultiChartComponent"
+        },
+        {
+            "showname": "标题",
+            "attribute": "text",
+            "type": "userDefine:ComponentChartTitleOptions"
+        },
+        {
+            "showname": "图例",
+            "attribute": "subtext",
+            "type": "userDefine:ComponentChartLegendOptions"
+        },
+        {
+            "showname": "提示框",
+            "attribute": "legend",
+            "type": "userDefine:ComponentChartTooltipOptions"
+        },
+        {
+            "showname": "工具箱",
+            "attribute": "legend",
+            "type": "userDefine:ComponentChartToolboxOptions"
+        }
+    ],
+    "imgMap":[
+        {
+            "showname": "覆盖物",
+            "attribute": "overlay",
+            "type": "userDefine:BMapConfigProperty"
+        }
+    ],
+    "layoutitWaypoint": [
+        {
+            "showname": "导航配置",
+            "attribute": "waypointsetting",
+            "type": "userDefine:WaypointSettingProperty"
+        }
+    ],
+    "chinese_region": [       
+        {
+            "showname": "区域编码",
+            "attribute": "areacode",
+            "type": "userDefine:ChineseRegionBindFieldIDProperty"
+        },
+        {
+            "showname": "区域名称",
+            "attribute": "areaname",
+            "type": "userDefine:ChineseRegionBindFieldNameProperty"
+        },
+        {
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:ChineseRegionEventProperty",
+            "group": "events"
+        }
+    ],
+    "user_defined_component": [],
+    "m_complex_component": [],
+    "layout_extend": [],
+    "advanced_select": [
+        {
+            "showname": "弹出框标题",
+            "attribute": "dialog_title",
+            "type": "preDefine:text"
+        },
+        {
+            "showname": "弹出框URL",
+            "attribute": "dialog_url",
+            "type": "preDefine:text"
+        },
+        {
+            "showname": "弹出框宽度",
+            "attribute": "dialog_width",
+            "type": "preDefine:text",
+            "validation": {
+                "trigger": "focusout",
+                "expression": "^\\d{1,4}$",
+                "message": "宽度属性只能输入整数。"
+            },
+            "defaultvalue": "1080",
+            "customevent": "updateModalDialogWidth"
+        },
+        {
+            "showname": "弹出框高度",
+            "attribute": "dialog_height",
+            "type": "preDefine:text",
+            "validation": {
+                "trigger": "focusout",
+                "expression": "^\\d{1,4}$",
+                "message": "高度属性只能输入整数。"
+            },
+            "defaultvalue": "600",
+            "customevent": "updateModalDialogHeight"
+        },
+        {
+            "showname": "内容属性",
+            "attribute": "defaultvalue",
+            "type": "preDefine:text"
+        },
+        {
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:advancedSelectProperty",
+            "group": "events"
+        }
+    ],
+	"product_list": [
+        {
+            "showname": "产品ID",
+            "attribute": "product_id",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+            "customevent":"updateProductList.setProductId"
+        },
+        {
+            "showname": "产品名称",
+            "attribute": "product_title",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+            "customevent":"updateProductList.setProductTitle"
+        },
+        {
+            "showname": "产品价格",
+            "attribute": "product_price",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+            "customevent":"updateProductList.setProductPrice"
+        },
+        {
+            "showname": "产品提示信息",
+            "attribute": "product_alt",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+            "customevent":"updateProductList.setProductAlt"
+        },
+        {
+            "showname": "产品图片url",
+            "attribute": "product_img_url",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+            "customevent":"updateProductList.setProductImgUrl"
+        },
+        {
+            "showname": "店铺名称",
+            "attribute": "product_supplier",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+            "customevent":"updateProductList.setProductSupplier"
+        },
+        {
+            "showname": "分页设置",
+            "attribute": "pagesetting",
+            "type": "userDefine:ProductListPaginationProperty"
+        },
+        {
+            "showname": "详情url格式化函数",
+            "attribute": "format_detail_url_method",
+            "type": "preDefine:text",
+            "customevent":"updateProductList.setProductDetailUrlMethod"
+        },
+        {
+            "showname": "自定义产品列表函数",
+            "attribute": "custom_product_list_method",
+            "type": "preDefine:text",
+            "customevent":"updateProductList.setCustomProductListMethod"
+        },
+        {
+            "showname": "扩展字段选择",
+            "attribute": "extend_field",
+            "type": "userDefine:ExtendFieldsSelectProperty"
+        }
+    ],
+    "m_shopping_cart":[
+        {
+            "showname": "对象名",
+            "attribute": "data-products",
+            "placeholder": "对象名为全局对象",
+            "type": "preDefine:text"
+        },
+        {
+            "showname": "事件",
+            "attribute": "submit-event",
+            "type": "userDefine:ShoppingCartEventProperty",
+            "group": "events"
+        }
+    ],
+	"m_switch": [
+        {
+            "showname": "默认值",
+            "attribute": "data-defaultvalue",
+            "type": "preDefine:select",
+            "values": "static:On,On;Off,Off",
+            "customevent": "switchDefaultValue",
+            "defaultvalue": "On"
+        },
+        {
+            "showname": "大小",
+            "attribute": "data-switchsize",
+            "type": "preDefine:select",
+            "values": "static:large,large;normal,normal;small,small;mini,mini",
+            "customevent": "ckSwitchSize",
+            "defaultvalue": "normal"
+        },
+        {
+            "showname": "颜色",
+            "attribute": "data-switchcolor",
+            "type": "preDefine:select",
+            "values": "static:蓝色,primary;淡蓝,info;绿色,success;橘黄,warning;红色,danger",
+            "customevent": "ckSwitchColor",
+            "defaultvalue": "primary"
+        },
+        {
+            "showname": "对齐方式",
+            "attribute": "alignstyle",
+            "type": "userDefine:ComponentAlignProperty"
+        },
+        {
+            "showname": "事件",
+            "attribute": "switch-event",
+            "type": "userDefine:MSwitchProperty",
+            "group": "events"
+        },
+        {
+            "showname": "绑定字段",
+            "attribute": "field",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField"
+        },
+        {
+            "showname": "可编辑性",
+            "attribute": "editable",
+            "type": "userDefine:ComponentEditableProperty"
+        }
+    ],
+    "m_header":[
+        {
+        "showname": "标题",
+        "attribute": "data-title",
+        "placeholder": "标题名称",
+        "type": "preDefine:text",
+        "customevent":"updateHeaderTitle"
+        }
+    ],
+    "m_toolbar":[{
+        "showname": "选项",
+        "attribute": "data-options",
+        "type": "userDefine:ToolbarOptionsProperty"
+    },
+        {
+            "showname": "active选项",
+            "attribute": "data-active",
+            "type": "userDefine:ToolbarActiveProperty"
+        }
+    ],
+	"bfd_panel": [
+        {
+            "showname": "显示标题栏",
+            "attribute": "bfd-panel-style",
+            "type": "userDefine:DesignerPropDefine.panel.PanelHeadingProp"
+        },
+        {
+            "showname": "面板样式",
+            "attribute": "bfd-panel-style",
+            "type": "userDefine:DesignerPropDefine.panel.PanelBodyStyleProp"
+        },
+        {
+            "showname": "面板高度",
+            "attribute": "bfd-panel-height",
+            "type": "userDefine:DesignerPropDefine.panel.PanelBodyHeightProp"
+        },
+        {
+            "showname": "滚动条样式",
+            "attribute": "bfd-panel-scrollbar-style",
+            "type": "userDefine:DesignerPropDefine.panel.PanelScrollBarStyleProp"
+        },
+        {
+            "showname": "面板可拖动",
+            "attribute": "bfd-panel-style",
+            "type": "userDefine:DesignerPropDefine.panel.PanelSortableProp"
+        },
+        {
+            "showname": "数据源",
+            "attribute": "datasource",
+            "type": "userDefine:LayoutURIProperty"
+        }
+    ],
+    "bfd_icon": [
+        {
+            "showname": "提示信息",
+            "attribute": "bfd_icon_title",
+            "type": "preDefine:text",
+            "customevent": "updateIconTitle"
+        },
+        {
+            "showname": "图标",
+            "attribute": "buttonicon",
+            "type": "userDefine:ComponentButtonIconProperty"
+        },
+        {
+            "showname": "对齐方式",
+            "attribute": "alignstyle",
+            "type": "userDefine:ComponentBlockAlignProperty"
+        },
+        {
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:BFDIconEventProperty",
+            "group": "events"
+        }
+    ],
+    "advanced_select": [
+        {
+            "showname": "弹出框标题",
+            "attribute": "bfd-dialog-title",
+            "type": "preDefine:text"
+        },
+        {
+            "showname": "弹出框URL",
+            "attribute": "bfd-dialog-url",
+            "type": "preDefine:text"
+        },
+        {
+            "showname": "弹出框宽度",
+            "attribute": "bfd-dialog-width",
+            "type": "preDefine:text",
+            "validation": {
+                "trigger": "focusout",
+                "expression": "^\\d{1,4}$",
+                "message": "宽度属性只能输入整数。"
+            },
+            "defaultvalue": "1080",
+            "customevent": "updateModalDialogWidth"
+        },
+        {
+            "showname": "弹出框高度",
+            "attribute": "bfd-dialog-height",
+            "type": "preDefine:text",
+            "validation": {
+                "trigger": "focusout",
+                "expression": "^\\d{1,4}$",
+                "message": "高度属性只能输入整数。"
+            },
+            "defaultvalue": "600",
+            "customevent": "updateModalDialogHeight"
+        },
+        {
+            "showname": "图标",
+            "attribute": "buttonicon",
+            "type": "userDefine:ComponentButtonIconProperty"
+        },
+        {
+            "showname": "绑定字段",
+            "attribute": "field",
+            "type": "preDefine:select",
+            "values": "dynamic:bindField",
+            "customevent":"updateInputTextBindField"
+        },
+        {
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:advancedSelectProperty",
+            "group": "events"
+        },
+        {
+            "showname": "数据集配置",
+            "attribute": "bfd-dataset-config",
+            "type": "userDefine:DesignerPropDefine.dataset.OptionsConfigProp"
+        }
+    ],
+	"vertical_list": [
+        {
+            "showname": "显示标题栏",
+            "attribute": "bfd-panel-style",
+            "type": "userDefine:DesignerPropDefine.verticalListHeader"
+        },
+        {
+            "showname": "标题布局比例",
+            "attribute": "vertical-list-columns",
+            "type": "preDefine:text",
+            "validation": {
+                "trigger":"focusout",
+                "expression": "([0-9][,]?)+",
+                "message": "比例以“,”号分隔。"
+            },
+            "defaultvalue":"",
+            "customevent": "verticalListLayoutProportion"
+        },
+        {
+            "showname": "颜色",
+            "attribute": "vertical-list-color",
+            "type": "preDefine:select",
+            "values": "static:white,white;green,green;red,red;blue,blue",
+            "defaultvalue":"white",
+            "customevent": "getVerticalListClor"
+        },
+        {
+            "showname": "列表高度",
+            "attribute": "vertical-list-height",
+            "type": "preDefine:text",
+            "validation": {
+                "trigger": "focusout",
+                "expression": "^\\d{1,4}$",
+                "message": "高度属性只能输入整数。"
+            },
+            "defaultvalue": "",
+            "customevent": "updateVerticalListHeight"
+        },
+        {
+            "showname": "静态选项",
+            "attribute": "vertical-list-value",
+            "type": "preDefine:textarea",
+            "validation": {
+                "trigger":"focusout",
+                "expression": "([A-Za-z0-9_\\u4e00-\\u9fa5\\s]+\\n?)+",
+                "message": "选项需要按正确格式输入，单个选项形式如value(值)，多个选项之间需换行。"
+            },
+            "defaultvalue":"Home%0AEvents%0AGallery%0AService%0APortfolio%0AAbout",
+            "customevent": "getStaticValue"
+        },
+        {
+            "showname": "脚本对象",
+            "attribute": "datasetting",
+            "type": "userDefine:ComponentDataSettingProperty"
+        },
+        {
+            "showname": "对齐方式",
+            "attribute": "alignstyle",
+            "type": "userDefine:DesignerPropDefine.verticalListAlignProperty"
+        },
+        {
+            "showname": "事件",
+            "attribute": "componentevent",
+            "type": "userDefine:verticalListEventProperty",
+            "group": "events"
+        }
+    ],
+    "dashboard-card": [
+        {
+            "showname": "背景色",
+            "attribute": "dc-background-color",
+            "type": "preDefine:text",
+            "defaultvalue": "#3598dc",
+            "validation": {
+                "trigger":"focusout",
+                "expression": "^#[0-9a-fA-F]{6}$",
+                "message": "请填写正确颜色值，例如#3598dc。"
+            },
+            "customevent": "updateDashboardCard"
+        },
+        {
+            "showname": "图标",
+            "attribute": "buttonicon",
+            "type": "userDefine:ComponentButtonIconProperty"
+        },
+        {
+            "showname": "统计信息",
+            "attribute": "dc-status",
+            "type": "preDefine:text",
+            "customevent": "updateDashboardCard"
+        },
+        {
+            "showname": "描述信息",
+            "attribute": "dc-desc",
+            "type": "preDefine:text",
+            "customevent": "updateDashboardCard"
+        }
+    ]
+}

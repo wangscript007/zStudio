@@ -1,0 +1,13 @@
+{
+  "id": "table_detail",
+  "thumbnail": "table_detail.png",
+  "js": "table_detail.js",
+  "instanceName": "Table_detail",
+  "displayName": "明细表",
+  "unsupportedBaseProperties": [
+  ],
+
+  "properties": [
+
+  ]
+}

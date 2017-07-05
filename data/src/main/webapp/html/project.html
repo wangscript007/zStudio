@@ -1,0 +1,434 @@
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="../css/bootstrap/bootstrap-table.min.css" rel="stylesheet">
+    <link href="../css/bootstrap/fileinput/css/fileinput.css" rel="stylesheet">
+    <link href="../css/page.css" rel="stylesheet">
+    <link href="../css/bootstrap/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="../css/frame/zTreeStyle/zTreeStyle.css" rel="stylesheet">
+    <link href="../css/bootstrap/select2/select2.min.css" rel="stylesheet">
+
+    <script type="text/javascript" src="../js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrapvalidator/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+    <script type="text/javascript" src="../js/lib/fileinput/fileinput.js"></script>
+    <script type="text/javascript" src="../js/lib/fileinput/fileinput_locale_zh.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrap-table-zh-CN.min.js"></script>
+
+    <script type="text/javascript" src="../js/lib/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="../js/lib/select2/select2.min.js"></script>
+    <script type="text/javascript" src="../js/lib/avalon.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery.ztree.all-3.5.js"></script>
+
+	<script type="text/javascript" src="../js/frame/lib/jquery.ztree.exhide-3.5.min.js"></script>
+    <script type="text/javascript" src="../js/commTools.js"></script>
+    <script type="text/javascript" src="../js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="../js/page/layoutitPageTable.js"></script>
+    <script type="text/javascript" src="../js/page/layoutitPageDialog.js"></script>
+    <script type="text/javascript" src="../js/page/layoutitPageLoad.js"></script>
+    <script type="text/javascript" src="../js/page/zTree.js"></script>
+
+	<script type="text/javascript" src="../js/workbench/ui/ui-common.js"></script>
+	<script type="text/javascript" src="../js/workbench/api.js"></script>
+
+    <script type="text/javascript" src="../js/frame/project/project-manage.js"></script>
+
+</head> 
+<body>
+<div class="container container-top">
+	<div type="layout" ms-controller="vm1438053588469" id="vm1438053588469" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 column">
+				<div id="projectButtonGroup" type="button_group" class="pull-right">
+					<button id="btnProjectAdd" type="button" class="btn btn-primary">新增工程</button>
+					<button id="btnProjectUpdate" type="button" class="btn btn-primary">修改工程</button>
+					<button id="btnProjectDelete" type="button" class="btn btn-primary">删除工程</button>
+				</div>
+				<div id="datasourceButtonGroup" type="button_group" class="pull-right">
+					<button id="btnDataSourceAdd" type="button" class="btn btn-primary">新增数据源</button>
+					<button id="btnDataSourceUpdate" type="button" class="btn btn-primary">修改数据源</button>
+				</div>
+				<div id="designfileButtonGroup" type="button_group" class="pull-right">
+					<button id="btnDesignFileAdd" type="button" class="btn btn-primary">新增文件</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div type="layout" ms-controller="vm1438050062200" id="vm1438050062200" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-3 column ui-droppable">
+				<div class="panel panel-default">
+					<div class="panel-heading">工程信息</div>
+					<div class="panel-body" style="height:450px;" >
+						<div type="layout" id="layout1438050211510" class="form-group">
+							<div class="row">
+								<div class="col-md-12 column ui-droppable" style="overflow-x:auto">
+									<div type="tree">
+										<ul class="ztree" id="tree_project">
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+				  	</div>
+				</div>
+			</div>
+
+			<div class="col-md-9 column ui-droppable">
+				<div type="layout"  class="form-group">
+					<div class="row">
+						<!--工程信息-->
+						<div class="col-md-12 column ui-droppable" id="divProjectInfo">
+							<div type="layout" id="layout1438053659737" class="form-group">
+								<div class="row">
+									<div class="col-md-12 column">
+										<div type="separator">
+											<ul class="layout-separator" id="separator1438053665522" ms-duplex-string="separator1438053665522">
+												<li class="layout-separator-selected ">
+													 <a class="layout-separator-inner"><span class="icon glyphicon glyphicon-th-list"></span> <span class="title">工程详情</span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" id="layout1438050449856" class="form-group">
+								<div class="row">
+									<div class="col-md-3 column ui-droppable">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1438050461841">工程名：</label>
+										</div>
+									</div>
+									<div class="col-md-9 column ui-droppable">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control"  id="input_text_project_name" name="input_text_project_name" ms-duplex-string="input_text_project_name" ms-attr-disabled="input_text_project_name_form_disabled" data-bv-group=".group" placeholder="工程名由字母、整数和下划线组成，全局唯一，不能重复。">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!--
+							<div type="layout" id="layout1438050566466" class="form-group">
+								<div class="row" style="display: none">
+									<div class="col-md-3 column ui-droppable">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1438050605806">发布路径:</label>
+										</div>
+									</div>
+									<div class="col-md-9 column ui-droppable">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="input_text_project_local_path" name="input_text_project_local_path" ms-duplex-string="input_text_project_local_path" ms-attr-disabled="input_text_project_local_path_form_disabled" data-bv-group=".group" placeholder="源码路径必填！">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" id="layout1438063945035" class="form-group">
+								<div class="row" style="display: none">
+									<div class="col-md-3 column">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1438063957444">预览路径：</label>
+										</div>
+									</div>
+									<div class="col-md-9 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="input_text_project_publish_path" name="input_text_project_publish_path" ms-duplex-string="input_text_project_publish_path" ms-attr-disabled="input_text_project_publish_path_form_disabled" data-bv-group=".group" placeholder="发布路径不填时，默认与源码路径相同。">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" id="layout1438063945039" class="form-group">
+								<div class="row" style="display: none">
+									<div class="col-md-3 column">
+										<div type="label" class="layout-align-right">
+											<label class="control-label" id="label1438063957444">自定义JS路径：</label>
+										</div>
+									</div>
+									<div class="col-md-9 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="input_text_project_common_js_path" name="input_text_project_common_js_path" ms-duplex-string="input_text_project_common_js_path" ms-attr-disabled="input_text_project_common_js_path_form_disabled" data-bv-group=".group" >
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" id="layout1438063945039" class="form-group">
+								<div class="row" style="display: none">
+									<div class="col-md-3 column">
+										<div type="label" class="layout-align-right">
+											<label class="control-label" id="label1438063957444">自定义CSS路径：</label>
+										</div>
+									</div>
+									<div class="col-md-9 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="input_text_project_common_css_path" name="input_text_project_common_css_path" ms-duplex-string="input_text_project_common_css_path" ms-attr-disabled="input_text_project_common_css_path_form_disabled" data-bv-group=".group" >
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" id="layout1438063589066" class="form-group">
+								<div class="row" style="display: none">
+									<div class="col-md-3 column">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1438063599610">预览端口：</label>
+										</div>
+									</div>
+									<div class="col-md-9 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="input_text_preview_port" name="input_text_preview_port" ms-duplex-string="input_text_preview_port"  ms-attr-disabled="input_text_preview_port_form_disabled"  data-bv-group=".group">
+										</div>
+									</div>
+								</div>
+							</div>
+							-->
+							<!--div type="layout" id="layout1438063589066223" class="form-group">
+								<div class="row">
+									<div class="col-md-3 column">
+										<div type="label" class="layout-align-right">
+											<label class="control-label" id="label1438063599610223" >是否国际化：</label>
+										</div>
+									</div>
+									<div class="col-md-9 column">
+										<div type="input_text" class="group">
+											<input type="checkbox" style="cursor:pointer;" id="input_checkbox_i18n" name="input_checkbox_i18n" ms-duplex-checked="input_checkbox_is_i18n" ms-attr-disabled="input_checkbox_is_i18n_disabled">
+											<span>(点击选中为启用国际化)</span>
+										</div>
+									</div>
+								</div>
+							</div-->
+							<div type="layout" id="layout1438063589066" class="form-group">
+								<div class="row" style="display: none">
+									<div class="col-md-12 column">
+										<div class="alert alert-info" role="alert">
+											<p><span class="glyphicon glyphicon-info-sign"></span><span>自定义JS路径：不能为空，相对于发布路径下，用于脚本编辑器中新建、打开和保存js文件的目录，默认相对路径为“js/common/”。</span></p>
+											<p><span class="glyphicon glyphicon-info-sign"></span><span>自定义CSS路径：不能为空，相对于发布路径下，用于保存css文件的目录，默认值为“css/common/”。</span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+
+						<!--数据源信息-->
+						<div class="col-md-12 column ui-droppable">
+							<div type="layout" id="divDataSourceInfo" class="form-group">
+								<div class="row">
+									<div class="col-md-12 column">
+										<div type="separator">
+											<ul class="layout-separator" id="separator1438154656841" ms-duplex-string="separator1438154656841">
+												<li class="layout-separator-selected ">
+													<a class="layout-separator-inner"><span class="icon glyphicon glyphicon-th-list"></span> <span class="title">数据源信息</span></a>
+												</li>
+											</ul>
+										</div>
+										<div type="layout" id="layout1438154754499" class="form-group">
+											<div class="row">
+												<div class="col-md-2 column">
+													<div type="label" class="layout-align-right">
+														 <label class="control-label" id="label1438154880165">数据源ID：</label>
+													</div>
+												</div>
+												<div class="col-md-10 column">
+													<div type="input_text" class="group">
+														<input type="text" class="form-control" id="input_text_ds_name" name="input_text_ds_name" ms-duplex-string="input_text_ds_name" ms-attr-disabled="input_text_ds_name_form_disabled" data-bv-group=".group">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div type="layout" id="layout1438154765524" class="form-group">
+											<div class="row">
+												<div class="col-md-2 column">
+													<div type="label" class="layout-align-right">
+														 <label class="control-label" id="label1438154882755">数据源名称：</label>
+													</div>
+												</div>
+												<div class="col-md-10 column">
+													<div type="input_text" class="group">
+														<input type="text" class="form-control" id="input_text_ds_displayName" name="input_text_ds_displayName" ms-duplex-string="input_text_ds_displayName" ms-attr-disabled="input_text_ds_displayName_form_disabled" data-bv-group=".group">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div type="layout" id="layout1438154830655" class="form-group">
+											<div class="row">
+												<div class="col-md-2 column">
+													<div type="label" class="layout-align-right">
+														 <label class="control-label" id="label1438154888089">IP:</label>
+													</div>
+												</div>
+												<div class="col-md-10 column">
+													<div type="input_text" class="group">
+														<input type="text" class="form-control" id="input_text_ds_ip" name="input_text_ds_ip" ms-duplex-string="input_text_ds_ip" ms-attr-disabled="input_text_ds_ip_form_disabled" data-bv-group=".group">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div type="layout" id="layout1438154633505" class="form-group">
+											<div class="row">
+												<div class="col-md-2 column">
+													<div type="label" class="layout-align-right">
+														 <label class="control-label" id="label1438154893770">端口：</label>
+													</div>
+												</div>
+												<div class="col-md-10 column">
+													<div type="input_text" class="group">
+														<input type="text" class="form-control" id="input_text_ds_port" name="input_text_ds_port" ms-duplex-string="input_text_ds_port" ms-attr-disabled="input_text_ds_port_form_disabled"  data-bv-group=".group">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div type="layout" id="layout1438154598905" class="form-group">
+											<div class="row">
+												<div class="col-md-2 column">
+													<div type="label" class="layout-align-right">
+														 <label class="control-label" id="label1438154897488">URL前缀：</label>
+													</div>
+												</div>
+												<div class="col-md-10 column">
+													<div type="input_text" class="group">
+														<input type="text" class="form-control" id="input_text_ds_uriPrefix" name="input_text_ds_uriPrefix" ms-duplex-string="input_text_ds_uriPrefix" ms-attr-disabled="input_text_ds_uriPrefix_form_disabled" data-bv-group=".group">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div type="layout" id="layout1438063589066" class="form-group">
+									<div class="row">
+										<div class="col-md-12 column">
+											<div class="alert alert-info" role="alert">
+												<p><span class="glyphicon glyphicon-info-sign"></span><span>数据源ID:全局唯一，不能为空，由字母、整数和下划线组成。</span></p>
+												<p><span class="glyphicon glyphicon-info-sign"></span><span>数据源名称：不能为空，界面上显示数据源时显示该名称。</span></p>
+												<p><span class="glyphicon glyphicon-info-sign"></span><span>IP、端口、URL前缀：不能为空。</span></p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<!--数据源列表信息-->
+						<div class="col-md-12 column" id="divDataSourceList">
+							<div type="separator">
+								<ul class="layout-separator" id="separator1438307019502" ms-duplex-string="separator1438307019502">
+									<li class="layout-separator-selected ">
+										 <a class="layout-separator-inner"><span class="icon glyphicon glyphicon-th-list"></span> <span class="title">数据源信息</span></a>
+									</li>
+								</ul>
+							</div>
+							<div type="table_base_local" style="overflow-x: auto; overflow-y: auto;">
+								<table id="table_base_local_datasource">
+								</table>
+							</div>
+						</div>
+						<!--设计文件列表-->
+						<div class="col-md-12 column" id="divDesignFileInfo">
+							<div type="separator">
+								<ul class="layout-separator" id="separator1438326899146" ms-duplex-string="separator1438326899146">
+									<li class="layout-separator-selected ">
+										 <a class="layout-separator-inner"><span class="icon glyphicon glyphicon-th-list"></span> <span class="title">文件信息</span></a>
+									</li>
+								</ul>
+							</div>
+							<div type="table_base_local" style="overflow-x: auto; overflow-y: auto;">
+								<table id="table_base_local_design_file"></table>
+							</div>
+						</div>
+						<!--设计文件信息-->
+						<div class="col-md-12 column" id="divFileInfo">
+							<div type="separator">
+								<ul class="layout-separator" id="separator1438329021982" ms-duplex-string="separator1438329021982">
+									<li class="layout-separator-selected ">
+										 <a class="layout-separator-inner"><span class="icon glyphicon glyphicon-th-list"></span> <span class="title">文件信息</span></a>
+									</li>
+								</ul>
+							</div>
+							<div type="layout" id="layout1438328978670" class="form-group">
+								<div class="row">
+									<div class="col-md-2 column">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1438329068341">工程路径：</label>
+										</div>
+									</div>
+									<div class="col-md-10 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="input_text_filePath" name="input_text_filePath" ms-duplex-string="input_text_filePath" ms-attr-disabled="input_text_filePath_form_disabled" data-bv-group=".group">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" id="layout1438328978670" class="form-group">
+								<div class="row">
+									<div class="col-md-2 column">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1438329068341">相对路径：</label>
+										</div>
+									</div>
+									<div class="col-md-10 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="input_text_file_relative_path" name="input_text_file_relative_path" ms-duplex-string="input_text_file_relative_path" ms-attr-disabled="input_text_file_relative_path_form_disabled" data-bv-group=".group">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" id="layout1438328992819" class="form-group">
+								<div class="row">
+									<div class="col-md-2 column">
+										<div type="label" class="layout-align-right">
+											 <label class="control-label" id="label1438329053983">文件名：</label>
+										</div>
+									</div>
+									<div class="col-md-9 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="input_text_fileName" name="input_text_fileName" ms-duplex-string="input_text_fileName" ms-attr-disabled="input_text_fileName_form_disabled" data-bv-group=".group" >
+										</div>
+									</div>
+									<div class="col-md-1 column" style="padding-left:0px;padding-top: 10px">
+										 .html
+									</div>
+								</div>
+							</div>
+							<div type="layout" id="layout1438063589067" class="form-group">
+								<div class="row">
+									<div class="col-md-12 column">
+										<div class="alert alert-info" role="alert">
+											<p><span class="glyphicon glyphicon-info-sign"></span><span>工程路径:设计文件所在工程地址，不能编辑。</span></p>
+											<p><span class="glyphicon glyphicon-info-sign"></span><span>相对路径：设计文件在工程中的相对路径。</span></p>
+											<p><span class="glyphicon glyphicon-info-sign"></span><span>文件名：设计文件名，不能为空！</span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-md-12 column ui-droppable">	
+							<div type="layout" id="layout1438050631166" class="form-group">
+									<div class="row">
+										<div class="col-md-12 column ui-droppable">
+											<div type="button_group" class="pull-right">
+												<button id="btnSaveAndOpen" type="button" class="btn btn-primary">确定并打开</button>
+												<button id="btnSave" type="button" class="btn btn-primary">确定</button>
+												<!--button id="btnSaveOpenTemplate" type="button" class="btn btn-primary">按模板创建</button-->
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

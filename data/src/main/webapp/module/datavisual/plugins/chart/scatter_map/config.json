@@ -1,0 +1,436 @@
+{
+  "id": "scatter_map",
+  "thumbnail": "scatter_map.png",
+  "js": "scatter_map.js",
+  "instanceName": "Scatter_map",
+  "displayName": "矢量地图散点图",
+  "unsupportedBaseProperties": [
+    "toolbox"
+  ],
+
+  "properties": [{
+    "displayName": "图表",
+    "propertyItems": [
+	  {
+        "displayName": "高度",
+        "attributeName": "chart_height",
+        "attributeRelation": "chart_height",
+        "type": "input",
+        "defaultOption": "300px",
+		"dataType": "string"
+      },
+      {
+        "displayName": "背景颜色",
+        "attributeName": "backgroundColor",
+        "attributeRelation": "backgroundColor",
+        "type": "color",
+        "defaultOption": "transparent"
+      },
+      {
+        "displayName": "是否开启动画",
+        "attributeName": "animation",
+        "attributeRelation": "animation",
+        "type": "radio",
+        "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+        "defaultOption": true
+      }]
+  },{
+    "displayName": "标题",
+    "attributeName": "title",
+    "propertyItems": [
+      {
+        "displayName": "是否显示",
+        "attributeName": "title_show",
+        "attributeRelation": "title.show",
+        "type": "radio",
+        "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+        "defaultOption": true
+      }, {
+        "displayName": "主标题",
+        "attributeName": "title_text",
+        "attributeRelation": "title.text",
+        "type": "input",
+        "defaultOption": "主标题",
+        "dataType": "string"
+      }, {
+        "displayName": "主标题颜色",
+        "attributeName": "title_textStyle_color",
+        "attributeRelation": "title.textStyle.color",
+        "type": "color",
+        "defaultOption": "#333"
+      }, {
+        "displayName": "副标题",
+        "attributeName": "title_subtext",
+        "attributeRelation": "title.subtext",
+        "type": "input",
+        "defaultOption": "副标题",
+        "dataType": "string"
+      }, {
+        "displayName": "副标题颜色",
+        "attributeName": "title_subtextStyle_color",
+        "attributeRelation": "title.subtextStyle.color",
+        "type": "color",
+        "defaultOption": "#aaa"
+      }, {
+        "displayName": "水平位置",
+        "attributeName": "title_left",
+        "attributeRelation": "title.left",
+        "type": "radio",
+        "options": [{"title": "左", "value": "left"}, {"title": "中", "value": "center"}, {"title": "右", "value": "right"}],
+        "defaultOption": "left"
+      }, {
+        "displayName": "垂直位置",
+        "attributeName": "title_top",
+        "attributeRelation": "title.top",
+        "type": "radio",
+        "options": [{"title": "上", "value": "top"}, {"title": "中", "value": "middle"}, {"title": "下", "value": "bottom"}],
+        "defaultOption": "top"
+      }, {
+        "displayName": "背景颜色",
+        "attributeName": "title_backgroundColor",
+        "attributeRelation": "title.backgroundColor",
+        "type": "color",
+        "defaultOption": "transparent"
+      }]
+  },
+    {
+      "displayName": "图例",
+      "attributeName": "legend",
+      "propertyItems": [{
+        "displayName": "是否显示",
+        "attributeName": "legend_show",
+        "attributeRelation": "legend.show",
+        "type": "radio",
+        "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+        "defaultOption": true
+      }, {
+        "displayName": "布局方式",
+        "attributeName": "legend_orient",
+        "attributeRelation": "legend.orient",
+        "type": "radio",
+        "options": [{"title": "水平", "value": "horizontal"}, {"title": "垂直", "value": "vertical"}],
+        "defaultOption": "horizontal"
+      }, {
+        "displayName": "水平位置",
+        "attributeName": "legend_left",
+        "attributeRelation": "legend.left",
+        "type": "radio",
+        "options": [{"title": "左", "value": "left"}, {"title": "中", "value": "center"}, {"title": "右", "value": "right"}],
+        "defaultOption": "center"
+      }, {
+        "displayName": "垂直位置",
+        "attributeName": "legend_top",
+        "attributeRelation": "legend.top",
+        "type": "radio",
+        "options": [{"title": "上", "value": "top"}, {"title": "中", "value": "middle"}, {"title": "下", "value": "bottom"}],
+        "defaultOption": "top"
+      },
+        {
+          "displayName": "字体颜色",
+          "attributeName": "legend_textStyle_color",
+          "attributeRelation": "legend.textStyle.color",
+          "type": "color",
+          "defaultOption": "#333"
+        },
+        {
+          "displayName": "字体风格",
+          "attributeName": "legend_textStyle_fontStyle",
+          "attributeRelation": "legend.textStyle.fontStyle",
+          "type": "radio",
+          "options": [{"title": "标准", "value": "normal"}, {"title": "斜体", "value": "italic"}, {"title": "倾斜", "value": "oblique"}],
+          "defaultOption": "normal"
+        },
+        {
+          "displayName": "字体粗细",
+          "attributeName": "legend_textStyle_fontWeight",
+          "attributeRelation": "legend.textStyle.fontWeight",
+          "type": "radio",
+          "options": [{"title": "标准", "value": "normal"}, {"title": "加粗", "value": "bold"}, {"title": "更粗", "value": "bolder"}, {"title": "更细", "value": "lighter"}],
+          "defaultOption": "normal"
+        },
+        {
+          "displayName": "字体大小",
+          "attributeName": "legend_textStyle_fontSize",
+          "attributeRelation": "legend.textStyle.fontSize",
+          "type": "input",
+          "defaultOption": 12,
+          "dataType": "int"
+        }
+      ]
+    },
+    {
+      "displayName": "提示框",
+      "attributeName": "tooltip",
+      "propertyItems": [{
+        "displayName": "是否显示",
+        "attributeName": "tooltip_show",
+        "attributeRelation": "tooltip.show",
+        "type": "radio",
+        "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+        "defaultOption": true
+      }, {
+        "displayName": "触发类型",
+        "attributeName": "tooltip_trigger",
+        "attributeRelation": "tooltip.trigger",
+        "type": "radio",
+        "options": [{"title": "数据", "value": "item"}, {"title": "坐标", "value": "axis"}],
+        "defaultOption": "item"
+      }]
+    },
+    {
+      "displayName": "地理坐标系组件",
+      "attributeName": "geo",
+      "attributeRelation": "geo",
+      "propertyItems": [
+        {
+          "displayName": "地理坐标系",
+          "attributeName": "geo_show",
+          "attributeRelation": "geo.show",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": true
+        },
+        {
+          "displayName": "地图类型",
+          "attributeName": "geo_map",
+          "attributeRelation": "geo.map",
+          "type": "radio",
+          "options": [{"title": "中国", "value": "china"}, {"title": "世界", "value": "world"}],
+          "defaultOption": "china"
+        },
+        {
+          "displayName": "开启缩放",
+          "attributeName": "geo_roam",
+          "attributeRelation": "geo.roam",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": true
+        },
+        {
+          "displayName": "缩放比例",
+          "attributeName": "geo_zoom",
+          "attributeRelation": "geo.zoom",
+          "type": "input",
+          "defaultOption": 1,
+          "dataType": "int"
+        },
+        {
+          "displayName": "选中模式",
+          "attributeName": "geo_selectedMode",
+          "attributeRelation": "geo.selectedMode",
+          "type": "radio",
+          "options": [{"title": "单选", "value": "single"}, {"title": "多选", "value": "multiple"}, {"title": "不选", "value": false}],
+          "defaultOption": false
+        },
+        {
+          "displayName": "响应鼠标事件",
+          "attributeName": "geo_silent",
+          "attributeRelation": "geo.silent",
+          "type": "radio",
+          "options": [{"title": "是", "value": false}, {"title": "否", "value": true}],
+          "defaultOption": false
+        },
+
+        {
+          "displayName": "地图颜色",
+          "attributeName": "geo_itemStyle_normal_color",
+          "attributeRelation": "geo.itemStyle.normal.color",
+          "type": "color",
+          "defaultOption": "#eee"
+        },
+        {
+          "displayName": "地图边线颜色",
+          "attributeName": "geo_itemStyle_normal_borderColor",
+          "attributeRelation": "geo.itemStyle.normal.borderColor",
+          "type": "color",
+          "defaultOption": "#444"
+        },
+        {
+          "displayName": "地图边线宽度",
+          "attributeName": "geo_itemStyle_normal_borderWidth",
+          "attributeRelation": "geo.itemStyle.normal.borderWidth",
+          "type": "input",
+          "defaultOption": 0.5,
+          "dataType": "float"
+        },
+
+        {
+          "displayName": "地图选中颜色",
+          "attributeName": "geo_itemStyle_emphasis_color",
+          "attributeRelation": "geo.itemStyle.emphasis.color",
+          "type": "color",
+          "defaultOption": "#ffd700"
+        },
+        {
+          "displayName": "地图选中边线颜色",
+          "attributeName": "geo_itemStyle_emphasis_borderColor",
+          "attributeRelation": "geo.itemStyle.emphasis.borderColor",
+          "type": "color",
+          "defaultOption": "#444"
+        },
+        {
+          "displayName": "地图选中边线宽度",
+          "attributeName": "geo_itemStyle_emphasis_borderWidth",
+          "attributeRelation": "geo.itemStyle.emphasis.borderWidth",
+          "type": "input",
+          "defaultOption": 0.5,
+          "dataType": "float"
+        },
+
+        {
+          "displayName": "显示地图文本",
+          "attributeName": "geo_label_emphasis_show",
+          "attributeRelation": "geo.label.emphasis.show",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": false
+        },
+        {
+          "displayName": "文本字体颜色",
+          "attributeName": "geo_label_emphasis_textStyle_color",
+          "attributeRelation": "geo.label.emphasis.textStyle.color",
+          "type": "color",
+          "defaultOption": "#fff"
+        },
+        {
+          "displayName": "文本字体风格",
+          "attributeName": "geo_label_emphasis_textStyle_fontStyle",
+          "attributeRelation": "geo.label.emphasis.textStyle.fontStyle",
+          "type": "radio",
+          "options": [{"title": "标准", "value": "normal"}, {"title": "斜体", "value": "italic"}, {"title": "倾斜", "value": "oblique"}],
+          "defaultOption": "normal"
+        },
+        {
+          "displayName": "文本字体粗细",
+          "attributeName": "geo_label_emphasis_textStyle_fontWeight",
+          "attributeRelation": "geo.label.emphasis.textStyle.fontWeight",
+          "type": "radio",
+          "options": [{"title": "标准", "value": "normal"}, {"title": "加粗", "value": "bold"}, {"title": "更粗", "value": "bolder"}, {"title": "更细", "value": "lighter"}],
+          "defaultOption": "normal"
+        },
+        {
+          "displayName": "文本字体大小",
+          "attributeName": "geo_label_emphasis_textStyle_fontSize",
+          "attributeRelation": "geo.label.emphasis.textStyle.fontSize",
+          "type": "input",
+          "defaultOption": 12,
+          "dataType": "int"
+        }
+      ]
+    },
+
+    {
+      "displayName": "视觉映射",
+      "attributeName": "visualMap",
+      "attributeRelation": "visualMap",
+      "propertyItems": [{
+          "displayName": "水平位置",
+          "attributeName": "visualMap_left",
+          "attributeRelation": "visualMap.left",
+          "type": "radio",
+          "options": [{"title": "左", "value": "left"}, {"title": "中", "value": "center"}, {"title": "右", "value": "right"}],
+          "defaultOption": "left"
+        }, {
+          "displayName": "垂直位置",
+          "attributeName": "visualMap_top",
+          "attributeRelation": "visualMap.top",
+          "type": "radio",
+          "options": [{"title": "上", "value": "top"}, {"title": "中", "value": "middle"}, {"title": "下", "value": "bottom"}],
+          "defaultOption": "bottom"
+        }
+      ]
+    },
+
+    {
+      "displayName": "系列",
+      "attributeName": "series",
+      "attributeRelation": "series",
+      "multiple": true,
+      "propertyItems": [
+        {
+          "displayName": "悬浮提示动画",
+          "attributeName": "series_hoverAnimation",
+          "attributeRelation": "series[{idx}].hoverAnimation",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": true
+        },
+        {
+          "displayName": "标记图形",
+          "attributeName": "series_symbol",
+          "attributeRelation": "series[{idx}].symbol",
+          "type": "radio",
+          "options": [
+            {"title":"圆", "value":"circle"},{"title":"矩形", "value":"rect"},{"title":"圆角", "value":"roundRect"},
+            {"title":"三角形", "value":"triangle"},{"title":"菱形", "value":"diamond"}, {"title":"标记", "value":"pin"},
+            {"title":"箭头", "value":"arrow"}],
+          "defaultOption": "circle"
+        },
+        {
+          "displayName": "标记旋转角度",
+          "attributeName": "series_symbolRotate",
+          "attributeRelation": "series[{idx}].symbolRotate",
+          "type": "input",
+          "defaultOption": 0,
+          "dataType": "int"
+        },
+        {
+          "displayName": "标记偏移位置",
+          "attributeName": "series_symbolOffset",
+          "attributeRelation": "series[{idx}].symbolOffset",
+          "type": "multi-input",
+          "options": [{"title": "X轴"}, {"title": "Y轴"}],
+          "defaultOption": [0, 0]
+        },
+        {
+          "displayName": "大规模散点优化",
+          "attributeName": "series_large",
+          "attributeRelation": "series[{idx}].large",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": true
+        },
+
+        {
+          "displayName": "文本标签位置",
+          "attributeName": "series_label_normal_position",
+          "attributeRelation": "series[{idx}].label.normal.position",
+          "type": "radio",
+          "options": [{"title": "上部", "value": "top"}, {"title": "左侧", "value": "left"}, {"title": "右侧", "value": "right"}, {"title": "底部", "value": "bottom"}, {"title": "内部", "value": "inside"}],
+          "defaultOption": "top"
+        },
+        {
+          "displayName": "文本字体颜色",
+          "attributeName": "series_label_normal_textStyle_color",
+          "attributeRelation": "series[{idx}].label.normal.textStyle.color",
+          "type": "color",
+          "defaultOption": ""
+        },
+        {
+          "displayName": "文本字体风格",
+          "attributeName": "series_label_normal_textStyle_fontStyle",
+          "attributeRelation": "series[{idx}].label.normal.textStyle.fontStyle",
+          "type": "radio",
+          "options": [{"title": "标准", "value": "normal"}, {"title": "斜体", "value": "italic"}, {"title": "倾斜", "value": "oblique"}],
+          "defaultOption": "normal"
+        },
+        {
+          "displayName": "文本字体粗细",
+          "attributeName": "series_label_normal_textStyle_fontWeight",
+          "attributeRelation": "series[{idx}].label.normal.textStyle.fontWeight",
+          "type": "radio",
+          "options": [{"title": "标准", "value": "normal"}, {"title": "加粗", "value": "bold"}, {"title": "更粗", "value": "bolder"}, {"title": "更细", "value": "lighter"}],
+          "defaultOption": "normal"
+        },
+        {
+          "displayName": "文本字体大小",
+          "attributeName": "series_label_normal_textStyle_fontSize",
+          "attributeRelation": "series[{idx}].label.normal.textStyle.fontSize",
+          "type": "input",
+          "defaultOption": 12,
+          "dataType": "int"
+        }
+      ]
+    }
+  ]
+}

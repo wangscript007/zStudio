@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.51ksy.zstudio.support</groupId>
+    <artifactId>support-parent</artifactId>
+    <version>0.5.0-20170116-SNAPSHOT</version>
+    <relativePath>../support-parent</relativePath>
+  </parent>
+  <groupId>com.51ksy.zstudio.support</groupId>
+  <artifactId>support-distro</artifactId>
+  <packaging>pom</packaging>
+  <name>ksy/support/${project.artifactId}</name>
+
+  <properties>
+    <support-server.war.dir>ums-server/procs/ppus/bcp.ppu/support.pmu/support.ear/support.war/</support-server.war.dir>
+    <support-tool.dir>tools/support/</support-tool.dir>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <appendAssemblyId>false</appendAssemblyId><!-- -->
+          <finalName>support-${project.version}</finalName>
+          <outputDirectory>${project.build.directory}/${project.artifactId}</outputDirectory>
+        </configuration>
+        <executions>
+          <execution>
+            <id>assembly</id>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <phase>package</phase>
+            <configuration>
+              <descriptors>
+                <descriptor>src/assembly/bin.xml</descriptor>
+              </descriptors>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>wagon-maven-plugin</artifactId>
+          <configuration>
+            <url>${ftp.url}</url>
+            <toDir>${downloadDirectory.zip}</toDir>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.51ksy.zstudio.support</groupId>
+      <artifactId>support-web</artifactId>
+      <version>${project.version}</version>
+      <type>war</type>
+    </dependency>
+  </dependencies>
+</project>

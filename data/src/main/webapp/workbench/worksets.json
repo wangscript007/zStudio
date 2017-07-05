@@ -1,0 +1,8 @@
+{
+  "baseUri": "module",
+  "mode": "maocomponent",
+  "worksets": [{
+      "name": "datavisual",
+      "path": "datavisual"
+    }]
+}

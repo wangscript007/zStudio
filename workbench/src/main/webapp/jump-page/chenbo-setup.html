@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="../js/lib/jquery/jquery.min.js"></script>
+		<script src="../js/bcp/EnvBase.js"></script>
+	</head>
+
+	<body>
+
+		<script type="text/javascript">
+			var envBase = new EnvBase();
+			var username = envBase.getCurrentUserName();
+			var password = envBase.getCurrentUserPassword();
+			var tenantId = envBase.getCurrentTenantId();
+			var path =  "../chenbo-setup.html?operator=add" ;
+			src = path+'&username='+username+'&password='+password+'&tenantid='+tenantId;
+			window.location.href = src;
+		</script>			
+	</body>
+</html>

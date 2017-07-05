@@ -1,0 +1,10 @@
+root null ../mao-createdb-mysql.sql
+root null mao-createdb-design-mysql.sql
+mao D_GLOBAL ../mao-global-mysql.sql
+mao D_TENANT ../mao-tenant-mysql.sql
+mao D_TENANT mao-createtenant-design-mysql.sql
+
+root null ../operation/mao-createdb-operation-mysql.sql
+mao GLOBAL ../mao-global-mysql.sql
+mao TENANT ../mao-tenant-mysql.sql
+mao TENANT ../operation/mao-createtenant-operation-mysql.sql

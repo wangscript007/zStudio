@@ -1,0 +1,20 @@
+{
+  "id": "col12",
+  "thumbnail": "col12.png",
+  "js": "col12.js",
+  "instanceName": "Col12",
+  "displayName": "12/自定义",
+
+  "properties": [{
+    "displayName": "布局",
+    "propertyItems": [
+      {
+        "displayName": "布局比例",
+        "attributeName": "ratio",
+        "attributeRelation": "ratio",
+        "type": "input",
+        "defaultOption": "12",
+        "dataType": "string"
+      }]
+  }]
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>zChart - 图表设计器</title>
+    <link href="css/lib/jquery-ui/jquery-ui.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/frame/layoutit.css" rel="stylesheet"/>
+    <link href="css/frame/easyui/default/form.css" type="text/css" rel="stylesheet"/>
+    <link href="css/frame/easyui/icon.css" type="text/css" rel="stylesheet"/>
+    <link href="css/bootstrap/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap/bootstrap-table.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap/bootstrap-table-reorder-rows.css" rel="stylesheet"/>
+    <link href="css/bootstrap/fileinput/css/fileinput.css" media="all" rel="stylesheet"/>
+    <link href="css/frame/pick-a-color-1.2.3.min.css" media="all" rel="stylesheet"/>
+    <link href="css/bootstrap/select2/select2.min.css" media="all" rel="stylesheet"/>
+    <link href="css/bootstrap/bootstrap-chinese-region.min.css" media="all" rel="stylesheet"/>
+    <link href="css/component/myAdmin.css" media="all" rel="stylesheet"/>
+    <link href="css/lib/mCustomScrollbar/jquery.mCustomScrollbar.min.css" media="all" rel="stylesheet"/>
+    <link href="js/lib/cranberry/cranberry.css" rel="stylesheet"/>
+    <link href="js/lib/artdialog/ui-dialog.css" rel="stylesheet"/>
+    <link href="module/datavisual/css/datavisual.css" rel="stylesheet"/>
+    <link href="module/datavisual/css/z3-font.css" rel="stylesheet"/>
+    <link href="module/datavisual/css/popup-menu.css" rel="stylesheet"/>
+    <link href="module/datavisual/css/spectrum/spectrum.css" rel="stylesheet"/>
+    <link href="module/datavisual/plugins/chart/chart.css" rel="stylesheet"/>
+    <link href="module/datavisual/plugins/table/table.css" rel="stylesheet"/>
+
+	
+    <script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/frame/lib/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js/frame/lib/jquery.tablednd.js"></script>
+    <script type="text/javascript" src="js/frame/lib/jquery.htmlClean.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery.i18n.properties-1.0.9.js"></script>
+    <script type="text/javascript" src="js/lib/fileinput/fileinput.js"></script>
+    <script type="text/javascript" src="js/lib/fileinput/fileinput_locale_zh.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="js/lib/moment-with-locales.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/frame/lib/jquery.layout.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/frame/lib/pick-a-color-1.2.3.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/frame/lib/tinycolor-0.9.15.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/lib/select2/select2.min.js"></script>
+    <script type="text/javascript" src="js/lib/lodash.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-zh-CN.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-reorder-rows.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-toolbar.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/frame/lib/HTMLFormat.js"></script>
+    <script src="js/lib/waypoints/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/lib/chinese-region/bootstrap-chinese-region.js"></script>
+    <script type="text/javascript" src="js/lib/cranberry/cranberry.js"></script>
+    <script type="text/javascript" src="js/lib/artdialog/dialog-min.js"></script>
+
+    <script type="text/javascript" src="js/commTools.js"></script>
+    <script type="text/javascript" src="js/frame/datasource/datasource-manage.js"></script>
+    <script type="text/javascript" src="js/frame/datasource/datasource-orm.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageTable.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageDialog.js"></script>
+
+    <!-- datavisual begin -->
+    <script type="text/javascript" src="module/datavisual/js/lib/echarts/echarts.min.js"></script>
+    <!--script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=L5rglNsfmEd9D6CQxHGNgTLG"></script -->
+    <script type="text/javascript" src="module/datavisual/js/lib/echarts/extension/bmap.js"></script>
+    <script type="text/javascript" src="module/datavisual/js/lib/echarts/extension/china.js"></script>
+    <script type="text/javascript" src="module/datavisual/js/lib/echarts/extension/world.js"></script>
+    <script type="text/javascript" src="module/datavisual/js/lib/spectrum/spectrum.js"></script>
+    <script type="text/javascript" src="module/datavisual/js/lib/requireJS/require.js"></script>
+
+    <script type="text/javascript" src="js/workbench/ui/ui-common.js"></script>
+    <script type="text/javascript" src="js/workbench/api.js"></script>
+    <script type="text/javascript" src="js/workbench/ui-manager.js"></script>
+    <script type="text/javascript" src="js/workbench/workset-manager.js"></script>
+    <script type="text/javascript" src="js/workbench/datasource-manager.js"></script>
+    <script type="text/javascript" src="js/workbench/IWorkset.js"></script>
+    <script type="text/javascript" src="js/workbench/project-manager.js"></script>
+    <script type="text/javascript" src="js/workbench/guide-manager.js"></script>
+    <script type="text/javascript" src="module/datavisual/js/frame/layout/frame-operation.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body class="edit index-body">
+	<!--header 开始 -->
+    <div class="navbar navbar-fixed-top navbar-header">
+        <div class="navbar-header-logo">
+            <img src="img/logo.png"/>
+        </div>
+        <div class="navbar-header-menu">
+            <div class="btn-group">
+                <button type="button" id="new" class="btn btn-link" style="display:none;"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 新建</button>
+                <button type="button" id="edit" class="btn btn-link" style="display:none;"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> 打开</button>
+                <button type="button" id="btn-save" class="btn btn-link" data-target="#shareModal" style="display:none;"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> 保存</button>
+                <button type="button"  id="export" class="btn btn-link" data-toggle="modal" data-target="#export" style="display:none;"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> 导出</button>
+                <a class="btn btn-link" id="btn-preview" target="_blank" style="display:none;"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 预览</a>
+				<button type="button" id="btn-back" class="btn btn-link" style="display:none;"> 返回设计平台</button>
+            </div>
+        </div>
+        <div class="navbar-header-menu fr">
+            <div class="btn-group">
+                <button type="button" id="project" class="btn  btn-link" data-toggle="modal" data-target="#projectModal" style="display:none;"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 工程管理</button>
+				<a class="btn btn-link" target="_blank" id="serviceOnline" style="display:none;"> 使用演示</a>
+				<a class="btn btn-link" target="_blank" id="helpOnline" style="display:none;"> 在线帮助</a>
+            </div>
+        </div>
+    </div>
+    <!--header 结束 -->
+
+<div class="container">
+    <div class="row">
+
+        <!--组件面板内容开始-->
+        <div class="form-layout-expand-west form-layout-spliter"></div>
+
+        <div class="form-layout-west mCustomScrollbar" data-mcs-theme="light">
+			<div class="form-panel">
+                <div id="zstudio-component">
+                </div>
+			</div>
+        </div>
+
+        <!--组件面板内容结束-->
+
+        <!--内容区域 开始-->
+		<!-- 列、行 -->
+		<div id="zstudio-control-panel">
+		</div>
+
+        <div class="demo" style="border:0px; margin:0px;padding:0px; height:605px;background-color:#fff;">
+            <div id="design-view" class="droppable-component" style="width:100%;min-height:600px;overflow: hidden; margin-bottom: 5px;padding: 10px 10px 20px;"></div>
+        </div>
+
+        <!--内容区域 结束-->
+
+        <!--图表面板 开始-->
+        <!--div class="form-layout-expand-east form-layout-spliter"></div>
+        <div id="position"></div-->
+        <div class="form-layout-east">
+			<div class="file"></div>
+            <div class="form-panel height100">
+                <div id="rightConfigPanel" class="form-panel-body height100">
+                    <div id ="zstudio-east-tabs" class="tabs-container height100">
+                        <div class="tabs-header" style="width: 698px;">
+                            <div class="tabs-wrap">
+                                <ul class="tabs" style="position: fixed;">
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tabs-panels height90">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--配置面板 结束-->
+
+    </div>
+    <!--/row-->
+</div>
+<!--/.fluid-container-->
+
+<!--项目管理对话框-->
+<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" style="height:800px;width:1100px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">工程管理</h4>
+            </div>
+            <div class="modal-body" style="overflow:auto;height:600px;">
+                <iframe name="projectFrame" width="98%" height="98%" frameborder="0"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button id="closeProjectDialog" type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--打开框架对话框-->
+<div id="openFrameDialog" class="modal fade" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" style="width:1000px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">
+
+                </h4>
+            </div>
+            <div class="modal-body">
+                <table id="frameFileTable">
+
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="confirmFrameBtn">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 备用 -->
+<div id="export" class="modal fade" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" style="height:400px;width:600px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">
+                    导出
+                </h4>
+            </div>
+            <div class="modal-body" style="height: 240px;">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-md-2 col-xs-2 col-sm-2 col-lg-2 control-label">导出包名:</label>
+
+                        <div class="col-md-10 col-xs-10 col-sm-10 col-lg-10"
+                             style="padding-left:0px;padding-right:30px;">
+                            <input type="text" id="txtExportName" class="form-control" placeholder="导出包名称"/>
+                        </div>
+                    </div>
+                </form>
+
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 control-label"><label>导出选项:</label></div>
+                        <div class="col-md-10 col-xs-10 col-sm-10 col-lg-10">
+                            <div type="checkbox" class="form-control form-group">
+                                <input name="checkbox" id="export_frame" type="checkbox" checked><span>设计文件：页面对应的设计器可识别的源文件</span>
+                            </div>
+                            <div type="checkbox" class="form-control form-group">
+                                <input name="checkbox" id="export_war" type="checkbox"><span>页面文件war：设计器做出来的页面文件</span>
+                            </div>
+                            <div type="checkbox" class="form-control form-group">
+                                <input name="checkbox" id="export_contain_orm" type="checkbox"><span>后台服务： ORM功能</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnExportConfirm">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

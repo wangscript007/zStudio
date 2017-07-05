@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/bootstrap/select2/select2.min.css" rel="stylesheet">
+    <link href="css/component/m-layout.css" rel="stylesheet">
+    <link href="css/jquery/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/component/m-label.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-table.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-ID-CN.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+    <script type="text/javascript" src="js/lib/lodash.min.js"></script>
+    <script type="text/javascript" src="js/lib/select2/select2.min.js"></script>
+    <script type="text/javascript" src="js/lib/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery.i18n.properties-1.0.9.js"></script>
+    <script type="text/javascript" src="js/lib/chinese-region/bootstrap-chinese-region.js"></script>
+    <script type="text/javascript" src="js/commTools.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPagei18n.js"></script>
+    <script type="text/javascript" src="js/page/init/page-cache-init.js"></script>
+    <script type="text/javascript" src="js/component/m-layout.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/component/m-label.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-editable.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-zh-CN.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-toolbar.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-pagination.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageTable.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageDialog.js"></script>
+    <script type="text/javascript" src="js/lib/avalon.js"></script>
+    <script type="text/javascript" src="default_common.js"></script>
+    <script type="text/javascript" src="process_package.js"></script>
+    <script type="text/javascript" src="js/mao/process_package_logic.js"></script>
+</head> 
+<body>
+<div class="container container-top">
+	<div type="layout" compid="vm1474426515308" ms-controller="vm1474426515308" id="vm1474426515308" bfd-operation-params="%7B%22model%22%3A%22vm1474426515308%22%2C%22service%22%3A%22bcp%22%2C%22set%22%3A%22bcp_re_processpackage%22%2C%22operations%22%3A%5B%7B%22method%22%3A%22POST%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdsp%2Form%2Ftable%2Fbcp_re_processpackage%22%2C%22name%22%3A%22add%22%7D%2C%7B%22method%22%3A%22PUT%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdsp%2Form%2Ftable%2Fbcp_re_processpackage%22%2C%22name%22%3A%22update%22%7D%2C%7B%22method%22%3A%22DELETE%22%2C%22submit%22%3A%22delete%22%2C%22url%22%3A%22%2Fdsp%2Form%2Ftable%2Fbcp_re_processpackage%22%2C%22name%22%3A%22delete%22%7D%2C%7B%22method%22%3A%22GET%22%2C%22submit%22%3A%22initVMData%22%2C%22url%22%3A%22%2Fdsp%2Form%2Ftable%2Fbcp_re_processpackage%22%2C%22name%22%3A%22query%22%7D%5D%2C%22post_in%22%3A%5B%5D%2C%22put_in%22%3A%5B%5D%2C%22get_out%22%3A%5B%5D%7D" dstype="orm" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+				<div type="layout" compid="layout1471947636968" id="layout1471947636968" class="form-group">
+					<div class="row">
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+							<div type="image" compid="image1471947010479">
+								<img src="img/demo/pro_type.jpg" class="fancybox" alt="图片1" width="100px" height="100px">
+							</div>
+						</div>
+						<div class="col-md-11 col-xs-11 col-sm-11 col-lg-11 column">
+							<div type="layout" compid="layout1471947655197" id="layout1471947655197" class="form-group">
+								<div class="row" width="100px">
+									<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+										<div type="label" compid="label1471947055432" class="layout-align-left">
+											 <label class="control-label" id="label1471947055432" i18nkey="什么是业务应用包" style="font-size: 16px; color: rgb(0, 0, 255);">什么是业务应用包</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" compid="layout1471947659668" id="layout1471947659668" class="form-group">
+								<div class="row">
+									<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+										<div type="label" compid="label1471947083215" class="layout-align-left">
+											 <label class="control-label" id="label1471947083215" i18nkey="业务应用包是一个或多个流程模型的集合，业务应用包中包括流程所使用的数据模型、数据模型对应的表单，流程模型等内容。业务应用包管理提供了业务应用包的增加、删除、修改、查查、设计、模拟、导入、导出等功能。业务应用包设计可以快速完成流程数据模型设计、表单设计、流程模型的设计。设计好的业务应用包经过模拟之后可以导出，并在运行平台上导入部署，进行流程上线前的测试。导出的业务应用包，也可以再导入到设计平台中重新进行修改设计。" style="font-weight: normal;">业务应用包是一个或多个流程模型的集合，业务应用包中包括流程所使用的数据模型、数据模型对应的表单，流程模型等内容。业务应用包管理提供了业务应用包的增加、删除、修改、查查、设计、模拟、导入、导出等功能。业务应用包设计可以快速完成流程数据模型设计、表单设计、流程模型的设计。设计好的业务应用包经过模拟之后可以导出，并在运行平台上导入部署，进行流程上线前的测试。导出的业务应用包，也可以再导入到设计平台中重新进行修改设计。</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="vm1471947593039" ms-controller="vm1471947593039" id="vm1471947593039" class="form-group form-horizontal">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="separator" compid="separator1471945693165">
+								<ul class="layout-separator" id="separator1471945693165" ms-duplex-string="separator1471945693165" ms-attr-disabled="separator1471945693165_form_disabled" style="border-color: rgb(130, 130, 130);">
+									<li class="layout-separator-selected ">
+										 <a class="layout-separator-inner"><span class="icon glyphicon glyphicon-th"></span> <span class="title" i18nkey="业务应用包管理">业务应用包管理</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="vm1471945478067" ms-controller="vm1471945478067" id="vm1471945478067" class="form-group form-horizontal">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="layout" compid="layout1471945491235" id="layout1471945491235" class="form-group">
+								<div class="row">
+									<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+										<div type="label" class="layout-align-right" compid="label1471945497750">
+											 <label class="control-label" id="label1471945497750" i18nkey="包标识">包标识</label>
+										</div>
+									</div>
+									<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="layout1471945491235" name="layout1471945491235" ms-duplex-string="layout1471945491235" ms-attr-disabled="layout1471945491235_form_disabled" data-bv-group=".group">
+										</div>
+									</div>
+									<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+										<div type="label" class="layout-align-right" compid="label1471945515047">
+											 <label class="control-label" id="label1471945515047" i18nkey="包名称">包名称</label>
+										</div>
+									</div>
+									<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="layout1471945491235" name="layout1471945491235" ms-duplex-string="layout1471945491235" ms-attr-disabled="layout1471945491235_form_disabled" data-bv-group=".group">
+										</div>
+									</div>
+									<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+										<div type="label" class="layout-align-right" compid="label1471945523511">
+											 <label class="control-label" id="label1471945523511" i18nkey="包描述">包描述</label>
+										</div>
+									</div>
+									<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="layout1471945491235" name="layout1471945491235" ms-duplex-string="layout1471945491235" ms-attr-disabled="layout1471945491235_form_disabled" data-bv-group=".group">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div type="layout" compid="layout1471945494881" id="layout1471945494881" class="form-group">
+								<div class="row">
+									<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+										<div type="label" class="layout-align-right" compid="label1471945542823">
+											 <label class="control-label" id="label1471945542823" i18nkey="创建时间">创建时间</label>
+										</div>
+									</div>
+									<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="layout1471945494881" name="layout1471945494881" ms-duplex-string="layout1471945494881" ms-attr-disabled="layout1471945494881_form_disabled" data-bv-group=".group">
+										</div>
+									</div>
+									<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+										<div type="label" class="layout-align-right" compid="label1471945555060">
+											 <label class="control-label" id="label1471945555060" i18nkey="修改时间">修改时间</label>
+										</div>
+									</div>
+									<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="layout1471945494881" name="layout1471945494881" ms-duplex-string="layout1471945494881" ms-attr-disabled="layout1471945494881_form_disabled" data-bv-group=".group">
+										</div>
+									</div>
+									<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+										<div type="label" class="layout-align-right" compid="label1471945566074">
+											 <label class="control-label" id="label1471945566074" i18nkey="状态">状态</label>
+										</div>
+									</div>
+									<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+										<div type="input_text" class="group">
+											<input type="text" class="form-control" id="layout1471945494881" name="layout1471945494881" ms-duplex-string="layout1471945494881" ms-attr-disabled="layout1471945494881_form_disabled" data-bv-group=".group">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1475046117973" id="layout1475046117973" class="form-group">
+					<div class="row">
+						<div class="col-md-7 col-xs-7 col-sm-7 col-lg-7 column">
+							<div type="button_group" class="layout-align-left" compid="button_group1474426541919">
+								<button type="button" class="btn btn-primary" i18nkey="新增" onclick="newPackage()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增</button> <button type="button" class="btn btn-primary" i18nkey="修改" onclick="modifyPackage()"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>修改</button> <button type="button" class="btn btn-primary" i18nkey="删除" onclick="removePackage()"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除</button> <button type="button" class="btn btn-primary" i18nkey="设计" onclick="designClick()"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>设计</button> <button type="button" class="btn btn-primary" i18nkey="模拟" onclick="mockClick()"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>模拟</button> <button type="button" class="btn btn-primary" i18nkey="导出" onclick="exportClick()"><span class="glyphicon glyphicon-download" aria-hidden="true"></span>导出</button> <button type="button" class="btn btn-primary" i18nkey="导入" onclick="importClick()"><span class="glyphicon glyphicon-upload" aria-hidden="true"></span>导入</button>
+							</div>
+						</div>
+						<div class="col-md-5 col-xs-5 col-sm-5 col-lg-5 column">
+							<div type="layout" compid="layout1475046187117" id="layout1475046187117" class="form-group">
+								<div class="row">
+									<div class="col-md-5 col-xs-5 col-sm-5 col-lg-5 column">
+										<div type="input_text" compid="input_text1474426328061" placeholder="%E6%B5%81%E7%A8%8B%E5%8C%85%E5%90%8D%E7%A7%B0" class="group">
+											<input type="text" class="form-control" id="input_text1474426328061" name="input_text1474426328061" placeholder="名称" i18nkeyforph="名称" data-bv-group=".group">
+										</div>
+									</div>
+									<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+									</div>
+									<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+										<div type="button" compid="button1475046205281" class="layout-align-right" componentevent="%7B%22type%22%3A%22button%22%2C%22id%22%3A%22button1475046205281%22%2C%22events%22%3A%5B%22name%3Dclick%2Cvalue%3DsearchPackage()%3B%22%5D%7D">
+											 <button type="button" class="btn btn-primary" id="button1475046205281" name="button1475046205281" i18nkey="查询"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1474426518904" id="layout1474426518904" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+						</div>
+						<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1474426714356" id="layout1474426714356" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="table_base" style="overflow-x: auto; overflow-y: auto;" compid="table_base1474433182558">
+								<table id="table_base1474433182558">
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div>
+		<div id="dialog1474446352221" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" data-ly-params="{&quot;compwidth&quot;:&quot;380px&quot;,&quot;compheight&quot;:&quot;200px&quot;}">
+				<div class="modal-content">
+					<div class="modal-header">
+						 <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span></button>
+						<h4 class="modal-title" id="myModalLabel">
+							标题
+						</h4>
+					</div>
+					<div class="modal-body">
+					</div>
+					<div class="modal-footer">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+</body>
+</html>

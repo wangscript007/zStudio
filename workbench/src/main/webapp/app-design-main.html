@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>应用开发</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="js/lib/cranberry/cranberry.css" rel="stylesheet">
+
+    <link href="css/component/myAdmin.css" rel="stylesheet">
+	<link href="css/common-style.css" rel="stylesheet">
+    <link href="css/icons/style.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/app-design-main.css" rel="stylesheet">
+	<link href="css/workbench-style.css" rel="stylesheet">	
+</head>
+
+<body style="overflow-x: hidden;"> 
+  <div class="container"> 
+   <div type="layout" id="vm1489401734315" class="form-horizontal"> 
+    <div class="row"> 
+     <div class="col-sm-12 column"> 
+      <div type="layout" compid="layout1489401738059" compname="layout1489401738059" id="layout1489401738059" class="form-group"> 
+       <div class="row"> 
+        <div id="appMenu" class="col-md-3 col-xs-3 col-sm-3 col-lg-2 column"> 
+         <div class="row app-menu-head"> 
+          <div class="col-sm-12 column title"> 
+           <span>应用</span> 
+           <span id="totalApps" class="badge total" title="应用总数">1</span> 
+           <button id="addNewApp" class="btn btn-default btn-sm pull-right"> <span class="ict-new" title="新增"></span>&nbsp;新增</button> 
+          </div> 
+         </div> 
+         <div class="col-sm-12 column app-menu-spliter"></div> 
+         <div class="app-menu-container"> 
+          <div class="list-group app-menu-body"></div> 
+         </div> 
+        </div> 
+        <div class="col-md-9 col-xs-9 col-sm-9 col-lg-10 column" style="padding-right: 0px"> 
+         <div class="tab-content app-tab-content"> 
+          <div role="tabpanel" class="tab-pane active" id="appcontent"> 
+           <div class="form-group app-info"> 
+            <div class="row modelRow"> 
+             <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column"> 
+              <div class="row app-menu-head"> 
+               <div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column"> 
+                <div class="title"> 
+                 <span>应用名称:</span> 
+                 <span id="appName"></span> 
+                </div> 
+               </div> 
+               <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column"> 
+                <button id="testApp" title="测试部署" class="btn btn-default btn-sm pull-right"> <span class="ict-userDispatch"></span>测试部署</button> 
+               </div> 
+              </div> 
+              <div class="col-sm-12 column app-menu-spliter"></div> 
+              <div class="row"> 
+               <div class="col-md-8 col-xs-8 col-sm-8 col-lg-9 column"> 
+                <span class="app-descValueToLong">创建人:</span> 
+                <span id="appCreator" class="app-descValueToLong"></span> 
+                         <span id="appDesc" class="app-descValueToLong"></span> 
+               </div>
+               <div class="col-md-4 col-xs-4 col-sm-4 col-lg-3 column"> 
+                <div class="fr">
+                  <span>修改时间:</span> 
+                  <span id="appModifyTime"></span> 
+                </div>
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+           <div type="layout" compid="layout1487148302366" compname="layout1487148302366" id="layout1487148302366" class="form-group app-tab-panel"> 
+            <div class="row modelRow"> 
+             <div id="appModel" class="col-md-6 col-xs-12 col-sm-12 col-lg-6 column"> 
+              <div class="app-row-ext"> 
+               <div class="row app-menu-head"> 
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column"> 
+                 <div> 
+                  <i class="title glyphicon glyphicon-credit-card"></i> 
+                  <span class="title">数据模型</span> 
+                  <span id="one_total_454545221155321" btn="white" class="badge total"></span> 
+                 </div> 
+                </div> 
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column tools"> 
+                 <button id="addNewModel" btn="headBtn" class="btn btn-default btn-sm headBtn" onclick="model_DataModel.operate('new','');"> <span class="ict-new" title="新增"></span>&nbsp;新增 </button> 
+                </div> 
+               </div> 
+               <div class="col-sm-12 column app-menu-spliter"></div> 
+               <div class="row"> 
+                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column"> 
+                 <table class="table modelTable"> 
+                  <thead> 
+                   <tr> 
+                    <td class="tableHeadTd" style="width:45px;padding-left:0;padding-right:0;">场景</td> 
+                    <td class="tableHeadTd" style="width:191px;padding-left:0;padding-right:0;">模型名称</td> 
+                    <td class="tableHeadTd" style="width:139px;padding-left:0;padding-right:0;">创建人</td> 
+                    <td class="tableHeadTd" style="width:220px;padding-left:0;padding-right:0;">更新时间</td> 
+                    <td class="tableHeadTd" style="width:76px;padding-left:0;padding-right:0;">操作</td> 
+                   </tr> 
+                  </thead> 
+                 </table> 
+                </div> 
+                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column"> 
+                 <table id="one_454545221155321" class="table modelTable"> 
+                  <thead> 
+                   <tr> 
+                    <td class="tableHeadTd" style="width:45px;padding-left:0;padding-right:0;"></td> 
+                    <td class="tableHeadTd" style="width:191px;padding-left:0;padding-right:0;"></td> 
+                    <td class="tableHeadTd" style="width:139px;padding-left:0;padding-right:0;"></td> 
+                    <td class="tableHeadTd" style="width:220px;padding-left:0;padding-right:0;"></td> 
+                    <td class="tableHeadTd" style="width:76px;padding-left:0;padding-right:0;"></td> 
+                   </tr> 
+                  </thead> 
+                  <tbody> 
+                  </tbody> 
+                 </table> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+             <div id="appForm" class="col-md-6 col-xs-12 col-sm-12 col-lg-6 column"> 
+              <div class="app-row-ext"> 
+               <div class="row app-menu-head"> 
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column"> 
+                 <div> 
+                  <i class="title glyphicon glyphicon-tasks"></i> 
+                  <span class="title" span="">表单</span> 
+                  <span id="form_total" btn="white" class="badge modelTotal total"></span> 
+                 </div> 
+                </div> 
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column tools"> 
+                 <button id="addNewForm" btn="headBtn" class="btn btn-default btn-sm headBtn" onclick="mainIndexLogic.operate('new','','two');"> <span class="ict-new" title="新增"></span>&nbsp;新增 </button> 
+                </div> 
+               </div> 
+               <div class="col-sm-12 column app-menu-spliter"></div> 
+               <div class="row"> 
+                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column" style="background-color: #FFFFFF;"> 
+                 <table class="table modelTable"> 
+                  <thead> 
+                   <tr> 
+                    <td class="tableHeadTd" style="width:110px;padding-left:0;padding-right:0;">名称</td> 
+                    <td class="tableHeadTd" style="width:94px;padding-left:0;padding-right:0;">模型名称</td> 
+                    <td class="tableHeadTd" style="width:100px;padding-left:0;padding-right:0;">创建人</td> 
+                    <td class="tableHeadTd" style="width:220px;padding-left:0;padding-right:0;">创建时间</td> 
+                    <td class="tableHeadTd" style="width:76px;padding-left:0;padding-right:0;">操作</td> 
+                   </tr> 
+                  </thead> 
+                 </table> 
+                </div>
+                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column" style="background-color: #FFFFFF;"> 
+                 <table id="form_table" class="table modelTable"> 
+                  <thead> 
+                    <tr> 
+                     <td class="tableHeadTd" style="width:160px;padding-left:0;padding-right:0;"></td> 
+                     <td class="tableHeadTd" style="width:94px;padding-left:0;padding-right:0;"></td> 
+                     <td class="tableHeadTd" style="width:100px;padding-left:0;padding-right:0;"></td> 
+                     <td class="tableHeadTd" style="width:220px;padding-left:0;padding-right:0;"></td> 
+                     <td class="tableHeadTd" style="width:76px;padding-left:0;padding-right:0;"></td> 
+                    </tr> 
+                   </thead>
+                  <tbody> 
+                  </tbody> 
+                 </table> 
+                </div>
+               </div>
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+           <!--第三、四个div开始--> 
+           <div type="layout" compid="layout1487148302366" compname="layout1487148302366" id="layout14871483023661" class="form-group app-tab-panel"> 
+            <div class="row modelRow"> 
+             <div id="appList" class="col-md-6 col-xs-12 col-sm-12 col-lg-6 column"> 
+              <div class="app-row-ext"> 
+               <div class="row app-menu-head"> 
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column"> 
+                 <div> 
+                  <i class="title glyphicon glyphicon-list-alt"></i> 
+                  <span class="title" span="">列表</span> 
+                  <span id="list_total" btn="white" class="badge total"></span> 
+                 </div> 
+                </div> 
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column tools"> 
+                 <button id="addNewList" btn="headBtn" class="btn btn-default btn-sm headBtn" onclick="mainIndexLogic.operate('new','','three');"> <span class="ict-new" title="新增"></span>&nbsp;新增 </button> 
+                </div> 
+               </div> 
+               <div class="col-sm-12 column app-menu-spliter"></div> 
+               <div class="row"> 
+                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column"> 
+                 <table class="table modelTable"> 
+                  <thead> 
+                   <tr> 
+                    <td class="tableHeadTd" style="width:110px;padding-left:0;padding-right:0;">名称</td> 
+                    <td class="tableHeadTd" style="width:94px;padding-left:0;padding-right:0;">模型名称</td> 
+                    <td class="tableHeadTd" style="width:100px;padding-left:0;padding-right:0;">创建人</td> 
+                    <td class="tableHeadTd" style="width:220px;padding-left:0;padding-right:0;">创建时间</td> 
+                    <td class="tableHeadTd" style="width:76px;padding-left:0;padding-right:0;">操作</td> 
+                   </tr> 
+                  </thead> 
+                 </table> 
+                </div>
+                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column"> 
+                 <table id="list_table" class="table modelTable"> 
+                  <thead> 
+                   <tr> 
+                    <td class="tableHeadTd" style="width:160px;padding-left:0;padding-right:0;"></td> 
+                    <td class="tableHeadTd" style="width:94px;padding-left:0;padding-right:0;"></td> 
+                    <td class="tableHeadTd" style="width:100px;padding-left:0;padding-right:0;"></td> 
+                    <td class="tableHeadTd" style="width:220px;padding-left:0;padding-right:0;"></td> 
+                    <td class="tableHeadTd" style="width:76px;padding-left:0;padding-right:0;"></td> 
+                   </tr> 
+                  </thead> 
+                  <tbody> 
+                  </tbody> 
+                 </table> 
+                </div>
+               </div> 
+              </div> 
+             </div> 
+             <div id="appChart" class="col-md-6 col-xs-12 col-sm-12 col-lg-6 column"> 
+              <div class="app-row-ext"> 
+               <div class="row app-menu-head"> 
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column"> 
+                 <div> 
+                  <i class="title glyphicon glyphicon-picture"></i> 
+                  <span class="title" span="">图表</span> 
+                  <span id="chart_total" btn="white" class="badge total" onclick="mainIndexLogic.operate('more','','four');" title="前往图表"></span> 
+                 </div> 
+                </div> 
+                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column tools"> 
+                 <button id="addNewChart" btn="headBtn" class="btn btn-default btn-sm headBtn" onclick="mainIndexLogic.operate('new','','four');"> <span class="ict-new" title="新增"></span>&nbsp;新增 </button> 
+                </div> 
+               </div> 
+               <div class="col-sm-12 column app-menu-spliter"></div> 
+               <div class="row"> 
+                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column" style="background-color: #FFFFFF;"> 
+                 <table class="table modelTable"> 
+                  <thead> 
+                   <tr> 
+                    <td class="tableHeadTd" style="width:110px;padding-left:0;padding-right:0;">名称</td> 
+                    <td class="tableHeadTd" style="width:94px;padding-left:0;padding-right:0;">模型名称</td> 
+                    <td class="tableHeadTd" style="width:100px;padding-left:0;padding-right:0;">创建人</td> 
+                    <td class="tableHeadTd" style="width:220px;padding-left:0;padding-right:0;">创建时间</td> 
+                    <td class="tableHeadTd" style="width:76px;padding-left:0;padding-right:0;">操作</td> 
+                   </tr> 
+                  </thead> 
+                 </table> 
+                </div>
+                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column" style="background-color: #FFFFFF;"> 
+                 <table id="chart_table" class="table modelTable"> 
+                  <thead> 
+                   <tr> 
+                    <td class="tableHeadTd" style="width:160px;padding-left:0;padding-right:0;"></td> 
+                    <td class="tableHeadTd" style="width:94px;padding-left:0;padding-right:0;"></td> 
+                    <td class="tableHeadTd" style="width:100px;padding-left:0;padding-right:0;"></td> 
+                    <td class="tableHeadTd" style="width:220px;padding-left:0;padding-right:0;"></td> 
+                    <td class="tableHeadTd" style="width:76px;padding-left:0;padding-right:0;"></td> 
+                   </tr> 
+                  </thead> 
+                  <tbody> 
+                  </tbody> 
+                 </table> 
+                </div>  
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div>
+    <div id="dialogApp" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" data-ly-params="{&quot;compwidth&quot;:&quot;400px&quot;,&quot;compheight&quot;:&quot;250px&quot;}">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        标题
+                    </h4>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+	<script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="js/lib/lodash.min.js"></script>
+    <script type="text/javascript" src="js/commTools.js"></script>    
+    <script type="text/javascript" src="js/mao/tip-box.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    
+    <script type="text/javascript" src="js/lib/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-editable.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-zh-CN.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-toolbar.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-pagination.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-ID-CN.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>	
+    <script type="text/javascript" src="js/lib/cranberry/cranberry.js"></script>  
+	<script type="text/javascript" src="js/lib/avalon.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageTable.js"></script>
+    <script type="text/javascript" src="js/common/generate-form.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageDialog.js"></script>    	
+	<script type="text/javascript" src="default_common.js"></script>
+    <script type="text/javascript" src="js/common/designer-orm-base.js"></script>
+    <script type="text/javascript" src="js/mao/mao-env-base.js"></script>
+    <script type="text/javascript" src="js/mao/mao-orm-base.js"></script>  
+	<script type="text/javascript" src="js/common/data_model_column_data.js"></script>	
+	<script type="text/javascript" src="js/mao/aes.js"></script>
+	<script type="text/javascript" src="js/mao/framework-util.js"></script>
+	<script type="text/javascript" src="js/ksy-common.js"></script>
+    <script type="text/javascript" src="js/mao/package_process_logic.js"></script>
+	<script type="text/javascript" src="js/mao/main_page_logic.js"></script>
+    <script type="text/javascript" src="js/mao/app-design-main.js"></script>
+	
+</body>
+
+</html>

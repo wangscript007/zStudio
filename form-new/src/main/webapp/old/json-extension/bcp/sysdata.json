@@ -1,0 +1,5 @@
+﻿[{"id":"systemdata","name":"系统数据项","type":"systemdata","open":false},
+  { "id":11, "pId":"systemdata","name":"发起人","column":"username","companentType":"标签","colType":"string","length":255,"defaultVal":""},
+  { "id":12, "pId":"systemdata","name":"发起时间","column":"originatedate","companentType":"标签","colType":"string","length":255,"defaultVal":""},
+  { "id":13, "pId":"systemdata","name":"所属组织","column":"ouname","companentType":"标签","colType":"string","length":255,"defaultVal":""},
+  { "id":14, "pId":"systemdata","name":"流水号","column":"sequenceno","companentType":"标签","colType":"string","length":255,"defaultVal":""}]

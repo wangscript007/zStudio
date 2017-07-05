@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">		
+	<title></title>
+	<meta name="description" content="The portal of UEP project" />
+	<link rel="icon" type="image/png" href="./img/title.png"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width,height=device-height,initial-scale=1.0" name="viewport">	
+	<link href="./component/thirdparty/css/fakeLoader/fakeLoader.css" rel="stylesheet" type="text/css">
+	<link href="./component/thirdparty/css/fontawesome/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="./component/thirdparty/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="./css/frame/style-responsive.css" rel="stylesheet" type="text/css">	
+	<link href="./css/frame/style.css" rel="stylesheet" type="text/css">	
+	<link href="./css/frame/zte-style.css" rel="stylesheet" type="text/css">
+	<link href="./css/frame/style-custom.css" rel="stylesheet" type="text/css">
+	<link href="./css/frame/themes/ztebluelight4.css" rel="stylesheet" type="text/css" id="style_color">
+	<script type="text/javascript" src="./component/thirdparty/js/jquery/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="./component/thirdparty/js/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+	<script type="text/javascript" src="./plugins/jquery/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootbox.js"></script>
+	<script type="text/javascript" src="default_common.js"></script>
+	<script type="text/javascript" src="js/ksy-common.js"></script>	
+	<script type="text/javascript" src="js/mao/mao-env-base.js"></script>
+	<script type="text/javascript" src="js/mao/mao-orm-base.js"></script>
+	<script type="text/javascript" src="./js/frame/main.js"></script>
+	<script>
+		$(document).ready(function() {
+		var platform_type = $.cookie("platform_type"),
+			name = "";
+		if($base_url == "workbench"){
+			name = "设计平台";
+		}else if($base_url == "server"){
+			if(platform_type === 'runtime'){
+				name = "运行平台";
+			}else{
+				name = "在线测试平台";
+				$("#servername").text("在线测试平台");
+			}
+		}
+		$("title").html("应用管理-快手云 " + name);
+		$("#f_hormenu").find("li").on("click",function(){
+			$("title").html($(this).find("span:first").text() + "-快手云 "+name);
+		})
+		$('.zte-navbar-brand').attr('href', portal_Url).attr('target', '_blank');
+	  });
+	</script>
+</head>
+<body>	 
+	<div class="header navbar mega-menu navbar-static-top">
+		<div class="header-inner">
+			<a class="navbar-brand zte-navbar-brand hidden-sm hidden-xs">
+				<img src="./img/nav-logo.svg" alt="logo" style="margin-top: 1px;margin-left: 78px;height: 50px;">
+			</a>
+			<div id="servername" class="hor-menu hidden-sm hidden-xs" style="margin-left:0px;color: #E8E8E8;line-height: 60px;font-family: SimHei;font-size: 17px;">
+				运行平台
+			</div>
+			<div class="hor-menu hidden-sm hidden-xs">
+				<ul class="nav navbar-nav hormenu" style="display: block;" id="f_hormenu"></ul>
+			</div>	
+			<ul class="nav navbar-nav pull-right" style="margin-top: 9px;">					
+				<li class="dropdown user" id="header_dropdown_user" style="display: block;">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<span class="ict-user"></span>
+						<span class="username" id="currentUser">admin</span>
+						<i class="fa fa-angle-down">
+						</i>
+					</a>
+					<ul class="dropdown-menu">
+						<div id="uep_ict_help_div">
+							<li class="divider">
+							</li>
+						</div>						
+						
+						<li class="divider" id="full_logout_divider" style="display: none;">
+						</li>
+						<div id="trigger_fullscreen_div">
+						</div>
+						<div id="trigger_logout_div">
+						<li>
+							<a id="trigger_logout" href="#">
+								<i class="fa fa-key">
+								</i>
+								<span id="logout_label">注销</span>
+							</a>
+						</li>
+						</div>
+					</ul>
+				</li>
+			</ul>			
+		</div>
+	</div>
+	<div class="page-container">	
+		<div class="page-sidebar navbar-collapse collapse" style="z-index: 9999;height:300px;over-flow:auto;"></div>			
+		<div class="page-content-wrapper">
+			<div class="page-content" style="margin-left: 225px;">			
+				<div class="page-content-body">
+					<div class="page-breadcrumb breadcrumb"></div>
+					<div id="pdiv_page-mainIframefm">
+						<iframe src="welcome.html" width="100%" height="400px" scrolling="auto" marginheight="0" frameborder="0" id="page-mainIframefm" name="page-mainIframefm" class="page-mainIframefm" allowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen="" webkitallowfullscreen=""></iframe>
+					</div>
+				</div>	
+			</div>			
+		</div>		
+	</div>
+	</body>
+</html>

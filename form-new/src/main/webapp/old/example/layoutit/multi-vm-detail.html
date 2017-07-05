@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/bootstrap/select2/select2.min.css" rel="stylesheet">
+    <link href="css/component/m-layout.css" rel="stylesheet">
+    <link href="css/component/myAdmin.css" rel="stylesheet">
+    <link href="css/lib/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="css/lib/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/component/m-label.css" rel="stylesheet">
+    <script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-ID-CN.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+    <script type="text/javascript" src="js/lib/lodash.min.js"></script>
+    <script type="text/javascript" src="js/lib/select2/select2.min.js"></script>
+    <script type="text/javascript" src="js/lib/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery.i18n.properties-1.0.9.js"></script>
+    <script type="text/javascript" src="js/lib/chinese-region/bootstrap-chinese-region.js"></script>
+    <script type="text/javascript" src="js/commTools.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPagei18n.js"></script>
+    <script type="text/javascript" src="js/page/init/page-cache-init.js"></script>
+    <script type="text/javascript" src="js/component/m-layout.js"></script>
+    <script type="text/javascript" src="js/component/panel.js"></script>
+    <script type="text/javascript" src="js/component/m-label.js"></script>
+    <script type="text/javascript" src="js/lib/avalon.js"></script>
+    <script type="text/javascript" src="default_common.js"></script>
+    <script type="text/javascript" src="multi-vm-detail.js"></script>
+</head> 
+<body>
+<div class="container container-top">
+	<div type="layout" compid="vm1475892201536" ms-controller="vm1475892201536" id="vm1475892201536" dstype="orm" bfd-operation-params="%7B%22model%22%3A%22vm1475892201536%22%2C%22service%22%3A%22bcp%22%2C%22set%22%3A%22asset_area%22%2C%22operations%22%3A%5B%7B%22method%22%3A%22POST%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_area%22%2C%22name%22%3A%22add%22%7D%2C%7B%22method%22%3A%22PUT%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_area%22%2C%22name%22%3A%22update%22%7D%2C%7B%22method%22%3A%22DELETE%22%2C%22submit%22%3A%22delete%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_area%22%2C%22name%22%3A%22delete%22%7D%2C%7B%22method%22%3A%22GET%22%2C%22submit%22%3A%22initVMData%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_area%22%2C%22name%22%3A%22query%22%7D%5D%2C%22post_in%22%3A%5B%5D%2C%22put_in%22%3A%5B%5D%2C%22get_out%22%3A%5B%5D%7D" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+				<div type="bfd_panel" class="bfd-panel sort-disable mb50 bfd-panel-sortable bfd-panel-info bfd-panel-border top" id="p3" compid="bfd_panel1475892213479" bfd-panel-scrollbar-style="dark">
+					<div class="bfd-panel-heading">
+						<div class="row">
+							<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+								<div type="label" class="layout-align-left layout-align-right" compid="label1475892250765">
+									 <label class="control-label" id="label1475892250765" i18nkey="区域信息">区域信息</label>
+								</div>
+							</div>
+							<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+								<div type="bfd_icon" class="bfd-panel-default-controls layout-block-align-right" compid="bfd_icon1475911368175">
+									<a id="btnCollapse" class="icon glyphicon glyphicon-minus"></a>
+								</div>
+							</div>
+						</div><hr>
+					</div>
+					<div class="bfd-panel-body">
+						<div class="row">
+							<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+								<div type="layout" compid="layout1475892222434" id="layout1475892222434" class="form-group">
+									<div class="row">
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+											<div type="label" class="layout-align-right" compid="label1475892238116">
+												 <label class="control-label" id="label1475892238116" i18nkey="ID">ID</label>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+											<div type="input_text" compid="input_text1475892224292" field="ID" class="group">
+												<input type="text" class="form-control" id="input_text1475892224292" name="input_text1475892224292" ms-attr-disabled="ID_form_disabled" ms-duplex-number="ID" data-bv-group=".group">
+											</div>
+										</div>
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+											<div type="label" class="layout-align-right" compid="label1475892244356">
+												 <label class="control-label" id="label1475892244356" i18nkey="NAME">NAME</label>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+											<div type="input_text" compid="input_text1475892234475" field="NAME" class="group">
+												<input type="text" class="form-control" id="input_text1475892234475" name="input_text1475892234475" ms-attr-disabled="NAME_form_disabled" ms-duplex-string="NAME" data-bv-group=".group">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div type="layout" compid="vm1475892268221" ms-controller="vm1475892268221" id="vm1475892268221" dstype="orm" bfd-operation-params="%7B%22model%22%3A%22vm1475892268221%22%2C%22service%22%3A%22bcp%22%2C%22set%22%3A%22asset_inst_base%22%2C%22operations%22%3A%5B%7B%22method%22%3A%22POST%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_inst_base%22%2C%22name%22%3A%22add%22%7D%2C%7B%22method%22%3A%22PUT%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_inst_base%22%2C%22name%22%3A%22update%22%7D%2C%7B%22method%22%3A%22DELETE%22%2C%22submit%22%3A%22delete%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_inst_base%22%2C%22name%22%3A%22delete%22%7D%2C%7B%22method%22%3A%22GET%22%2C%22submit%22%3A%22initVMData%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_inst_base%22%2C%22name%22%3A%22query%22%7D%5D%2C%22post_in%22%3A%5B%5D%2C%22put_in%22%3A%5B%5D%2C%22get_out%22%3A%5B%5D%7D" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column" style="background-color: rgb(241, 243, 250);">
+				<div type="bfd_panel" class="bfd-panel sort-disable mb50 bfd-panel-sortable bfd-panel-info bfd-panel-border top" id="p3" compid="bfd_panel1475892275265" bfd-panel-scrollbar-style="dark">
+					<div class="bfd-panel-heading">
+						<div class="row">
+							<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+								<div type="label" class="layout-align-left layout-align-right" compid="label1475892277383">
+									 <label class="control-label" id="label1475892277383" i18nkey="资产信息">资产信息</label>
+								</div>
+							</div>
+							<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+								<div type="bfd_icon" class="bfd-panel-default-controls layout-block-align-right">
+									<a id="btnCollapse" class="icon glyphicon glyphicon-minus"></a>
+								</div>
+							</div>
+						</div><hr>
+					</div>
+					<div class="bfd-panel-body">
+						<div class="row">
+							<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+								<div type="layout" compid="layout1475892296684" id="layout1475892296684" class="form-group">
+									<div class="row">
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+											<div type="label" class="layout-align-right" compid="label1475892300558">
+												 <label class="control-label" id="label1475892300558" i18nkey="ID">ID</label>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+											<div type="input_text" compid="input_text1475892298753" field="ID" class="group">
+												<input type="text" class="form-control" id="input_text1475892298753" name="input_text1475892298753" ms-attr-disabled="ID_form_disabled" ms-duplex-number="ID" data-bv-group=".group">
+											</div>
+										</div>
+										<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+											<div type="label" class="layout-align-right" compid="label1475892338322">
+												 <label class="control-label" id="label1475892338322" i18nkey="NAME">NAME</label>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+											<div type="input_text" compid="input_text1475892303632" field="NAME" class="group">
+												<input type="text" class="form-control" id="input_text1475892303632" name="input_text1475892303632" ms-attr-disabled="NAME_form_disabled" ms-duplex-string="NAME" data-bv-group=".group">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

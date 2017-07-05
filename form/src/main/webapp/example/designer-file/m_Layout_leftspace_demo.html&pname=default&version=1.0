@@ -1,0 +1,524 @@
+<div class="demo_parent" style="height: 819px; min-height: 580px;">
+	<div class="demo ui-sortable" style="min-height: 560px;">
+		<div class="lyrow ui-draggable leftspace" style="display: block;">
+			<a href="#close" class="remove label label-danger">
+				<i class="glyphicon-remove glyphicon">
+				</i>
+			</a>
+			<div class="preview">
+				12/自定义
+			</div>
+			<div class="view">
+				<div type="layout" ratio="12" compid="vm1466990679589" compname="vm1466990679589"
+				layoutstyle="leftspace" ms-controller="vm1466990679589" id="vm1466990679589">
+					<div class="row clearfix">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+						style="padding-bottom: 5px;">
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									12/自定义
+								</div>
+								<div class="view">
+									<div type="layout" ratio="6,6" compid="layout1466990717328" compname="layout1466990717328"
+									layoutstyle="" id="layout1466990717328">
+										<div class="row clearfix">
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable" style="padding-bottom: 7px;">
+												<div class="box box-element ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-left" alignstyle="layout-align-left"
+														compid="label1466990759081" compname="label1466990759081" lablefontsize="12"
+														labelfontweight="false" labelfontcolor="" defaultvalue="%E8%AE%A2%E5%8D%95%E5%8F%B7%EF%BC%9A21316565">
+															<label class="control-label title" id="label1466990759081" name="label1466990759081"
+															i18nkey="订单号：21316565" style="font-size: 12px;">
+																订单号：21316565
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable" style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-right" alignstyle="layout-align-right"
+														compid="label1466990761049" compname="label1466990761049" lablefontsize="12"
+														labelfontweight="false" labelfontcolor="ff0000" defaultvalue="%E5%BE%85%E8%AF%84%E4%BB%B7">
+															<label class="control-label title" id="label1466990761049" name="label1466990761049"
+															i18nkey="待评价" style="font-size: 12px; color: rgb(255, 0, 0);">
+																待评价
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									分隔栏
+								</div>
+								<div class="view draggableHandle">
+									<div type="layout" compid="vm1466991048115" compname="vm1466991048115"
+									layoutstyle="" id="vm1466991048115">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														分隔栏
+													</div>
+													<div class="view draggableHandle">
+														<div type="separator" init="true" picklinecolor="eaedf1" compid="separator1466991051471"
+														compname="separator1466991051471" picklineheight="1px">
+															<ul class="layout-separator" id="separator1466991051471" name="separator1466991051471"
+															ms-duplex-string="separator1466991051471" ms-attr-disabled="separator1466991051471_form_disabled"
+															style="border-color: rgb(234, 237, 241);">
+																<li class="layout-separator-selected ">
+																	<a class="layout-separator-inner">
+																		<span class="icon">
+																		</span>
+																		<span class="title">
+																		</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									12/自定义
+								</div>
+								<div class="view">
+									<div type="layout" ratio="12" compid="layout1466990849371" compname="layout1466990849371"
+									layoutstyle="" id="layout1466990849371">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-left" alignstyle="layout-align-left"
+														compid="label1466990850713" compname="label1466990850713" lablefontsize="12"
+														labelfontweight="false" labelfontcolor="" defaultvalue="128%20MB%20Flash%20ROM%EF%BC%8CUEFI%20AMI%20BIOS%EF%BC%8CPnP%EF%BC%8CDMI3.0%EF%BC%8CWfM2.0%EF%BC%8CSM%20BIOS%203.0%20ACPI%205.0%EF%BC%8C%E5%A4%9A%E5%9B%BD%E8%AF%AD%E8%A8%80%20BIOS%EF%BC%8CASUS%20EZ%20Flash%203%EF%BC%8CCrashFree%20BIOS%203%EF%BC%8CF11%20%E8%AE%BE%E7%BD%AE%E5%90%91%E5%AF%BC%EF%BC%8CF6%20Qfan%E6%8E%A7%E5%88%B6%EF%BC%8CF3%20%E6%94%B6%E8%97%8F%E5%A4%B9%EF%BC%8C%E5%BF%AB%E6%8D%B7%E4%BE%BF%E7%AD%BE%EF%BC%8C%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95%EF%BC%8CF12%20%E6%88%AA%E5%B1%8F%EF%BC%8CF3%20%E5%BF%AB%E6%8D%B7%E9%94%AE%EF%BC%8C%E4%BB%A5%E5%8F%8A%20ASUS%20DRAM%20SPD(Serial%20Presence%20Detect)%E5%86%85%E5%AD%98%E4%BF%A1%E6%81%AF">
+															<label class="control-label title" id="label1466990850713" name="label1466990850713"
+															i18nkey="128 MB Flash ROM，UEFI AMI BIOS，PnP，DMI3.0，WfM2.0，SM BIOS 3.0 ACPI 5.0，多国语言 BIOS，ASUS EZ Flash 3，CrashFree BIOS 3，F11 设置向导，F6 Qfan控制，F3 收藏夹，快捷便签，历史记录，F12 截屏，F3 快捷键，以及 ASUS DRAM SPD(Serial Presence Detect)内存信息"
+															style="font-size: 12px;">
+																128 MB Flash ROM，UEFI AMI BIOS，PnP，DMI3.0，WfM2.0，SM BIOS 3.0 ACPI 5.0，多国语言
+																BIOS，ASUS EZ Flash 3，CrashFree BIOS 3，F11 设置向导，F6 Qfan控制，F3 收藏夹，快捷便签，历史记录，F12
+																截屏，F3 快捷键，以及 ASUS DRAM SPD(Serial Presence Detect)内存信息
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									分隔栏
+								</div>
+								<div class="view draggableHandle">
+									<div type="layout" compid="vm1466991068508" compname="vm1466991068508"
+									layoutstyle="" id="vm1466991068508">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														分隔栏
+													</div>
+													<div class="view draggableHandle">
+														<div type="separator" init="true" picklinecolor="eaedf1" compid="separator1466991070727"
+														compname="separator1466991070727" picklineheight="1px">
+															<ul class="layout-separator" id="separator1466991070727" name="separator1466991070727"
+															ms-duplex-string="separator1466991070727" ms-attr-disabled="separator1466991070727_form_disabled"
+															style="border-color: rgb(234, 237, 241);">
+																<li class="layout-separator-selected ">
+																	<a class="layout-separator-inner">
+																		<span class="icon">
+																		</span>
+																		<span class="title">
+																		</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box box-element ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									标签
+								</div>
+								<div class="view draggableHandle">
+									<div type="label" class="layout-align-right" alignstyle="layout-align-right"
+									compid="label1466990870892" compname="label1466990870892" lablefontsize="12"
+									labelfontweight="false" labelfontcolor="ff0000" defaultvalue="%E8%AF%84%E4%BB%B7">
+										<label class="control-label title" id="label1466990870892" name="label1466990870892"
+										i18nkey="评价" style="font-size: 12px; color: rgb(255, 0, 0);">
+											评价
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lyrow ui-draggable" style="display: block;">
+			<a href="#close" class="remove label label-danger">
+				<i class="glyphicon-remove glyphicon">
+				</i>
+			</a>
+			<div class="preview">
+				12/自定义
+			</div>
+			<div class="view">
+				<div type="layout" ratio="12" compid="vm1466990892079" compname="vm1466990892079"
+				layoutstyle="" ms-controller="vm1466990892079" id="vm1466990892079">
+					<div class="row clearfix">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+						style="padding-bottom: 5px;">
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									分隔栏
+								</div>
+								<div class="view draggableHandle">
+									<div type="layout" compid="vm1466990895140" compname="vm1466990895140"
+									layoutstyle="" id="vm1466990895140">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														分隔栏
+													</div>
+													<div class="view draggableHandle">
+														<div type="separator" init="true" picklinecolor="eaedf1" compid="separator1466990902053"
+														compname="separator1466990902053" picklineheight="5px">
+															<ul class="layout-separator" id="separator1466990902053" name="separator1466990902053"
+															ms-duplex-string="separator1466990902053" ms-attr-disabled="separator1466990902053_form_disabled"
+															style="border-color: rgb(234, 237, 241); border-width: 0px 0px 5px;">
+																<li class="layout-separator-selected ">
+																	<a class="layout-separator-inner">
+																		<span class="icon">
+																		</span>
+																		<span class="title">
+																		</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lyrow ui-draggable leftspace" style="display: block;">
+			<a href="#close" class="remove label label-danger">
+				<i class="glyphicon-remove glyphicon">
+				</i>
+			</a>
+			<div class="preview">
+				12/自定义
+			</div>
+			<div class="view">
+				<div type="layout" ratio="12" compid="vm1466990938229" compname="vm1466990938229"
+				layoutstyle="leftspace" ms-controller="vm1466990938229" id="vm1466990938229">
+					<div class="row clearfix">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+						style="padding-bottom: 5px;">
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									12/自定义
+								</div>
+								<div class="view">
+									<div type="layout" ratio="6,6" compid="layout1466990946603" compname="layout1466990946603"
+									layoutstyle="" id="layout1466990946603">
+										<div class="row clearfix">
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable" style="padding-bottom: 7px;">
+												<div class="box box-element ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-left" alignstyle="layout-align-left"
+														compid="label1466990959162" compname="label1466990959162" lablefontsize="12"
+														labelfontweight="false" labelfontcolor="" defaultvalue="%E8%AE%A2%E5%8D%95%E5%8F%B7%EF%BC%9A21316565">
+															<label class="control-label title" id="label1466990959162" name="label1466990959162"
+															i18nkey="订单号：21316565" style="font-size: 12px;">
+																订单号：21316565
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable" style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-right" alignstyle="layout-align-right"
+														compid="label1466990961112" compname="label1466990961112" lablefontsize="12"
+														labelfontweight="false" labelfontcolor="ff0000" defaultvalue="%E5%BE%85%E8%AF%84%E4%BB%B7">
+															<label class="control-label title" id="label1466990961112" name="label1466990961112"
+															i18nkey="待评价" style="font-size: 12px; color: rgb(255, 0, 0);">
+																待评价
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									分隔栏
+								</div>
+								<div class="view draggableHandle">
+									<div type="layout" compid="vm1466991079546" compname="vm1466991079546"
+									layoutstyle="" id="vm1466991079546">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														分隔栏
+													</div>
+													<div class="view draggableHandle">
+														<div type="separator" init="true" picklinecolor="eaedf1" compid="separator1466991081704"
+														compname="separator1466991081704" picklineheight="1px">
+															<ul class="layout-separator" id="separator1466991081704" name="separator1466991081704"
+															ms-duplex-string="separator1466991081704" ms-attr-disabled="separator1466991081704_form_disabled"
+															style="border-color: rgb(234, 237, 241);">
+																<li class="layout-separator-selected ">
+																	<a class="layout-separator-inner">
+																		<span class="icon">
+																		</span>
+																		<span class="title">
+																		</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									12/自定义
+								</div>
+								<div class="view">
+									<div type="layout" ratio="12" compid="layout1466990986139" compname="layout1466990986139"
+									layoutstyle="" id="layout1466990986139">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable" style="display: block; position: relative; opacity: 1; z-index: 0;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-left" alignstyle="layout-align-left"
+														compid="label1466990989236" compname="label1466990989236" lablefontsize="12"
+														labelfontweight="false" labelfontcolor="" defaultvalue="128%20MB%20Flash%20ROM%EF%BC%8CUEFI%20AMI%20BIOS%EF%BC%8CPnP%EF%BC%8CDMI3.0%EF%BC%8CWfM2.0%EF%BC%8CSM%20BIOS%203.0%20ACPI%205.0%EF%BC%8C%E5%A4%9A%E5%9B%BD%E8%AF%AD%E8%A8%80%20BIOS%EF%BC%8CASUS%20EZ%20Flash%203%EF%BC%8CCrashFree%20BIOS%203%EF%BC%8CF11%20%E8%AE%BE%E7%BD%AE%E5%90%91%E5%AF%BC%EF%BC%8CF6%20Qfan%E6%8E%A7%E5%88%B6%EF%BC%8CF3%20%E6%94%B6%E8%97%8F%E5%A4%B9%EF%BC%8C%E5%BF%AB%E6%8D%B7%E4%BE%BF%E7%AD%BE%EF%BC%8C%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95%EF%BC%8CF12%20%E6%88%AA%E5%B1%8F%EF%BC%8CF3%20%E5%BF%AB%E6%8D%B7%E9%94%AE%EF%BC%8C%E4%BB%A5%E5%8F%8A%20ASUS%20DRAM%20SPD(Serial%20Presence%20Detect)%E5%86%85%E5%AD%98%E4%BF%A1%E6%81%AF">
+															<label class="control-label title" id="label1466990989236" name="label1466990989236"
+															i18nkey="128 MB Flash ROM，UEFI AMI BIOS，PnP，DMI3.0，WfM2.0，SM BIOS 3.0 ACPI 5.0，多国语言 BIOS，ASUS EZ Flash 3，CrashFree BIOS 3，F11 设置向导，F6 Qfan控制，F3 收藏夹，快捷便签，历史记录，F12 截屏，F3 快捷键，以及 ASUS DRAM SPD(Serial Presence Detect)内存信息"
+															style="font-size: 12px;">
+																128 MB Flash ROM，UEFI AMI BIOS，PnP，DMI3.0，WfM2.0，SM BIOS 3.0 ACPI 5.0，多国语言
+																BIOS，ASUS EZ Flash 3，CrashFree BIOS 3，F11 设置向导，F6 Qfan控制，F3 收藏夹，快捷便签，历史记录，F12
+																截屏，F3 快捷键，以及 ASUS DRAM SPD(Serial Presence Detect)内存信息
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									分隔栏
+								</div>
+								<div class="view draggableHandle">
+									<div type="layout" compid="vm1466991090484" compname="vm1466991090484"
+									layoutstyle="" id="vm1466991090484">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														分隔栏
+													</div>
+													<div class="view draggableHandle">
+														<div type="separator" init="true" picklinecolor="eaedf1" compid="separator1466991092371"
+														compname="separator1466991092371" picklineheight="1px">
+															<ul class="layout-separator" id="separator1466991092371" name="separator1466991092371"
+															ms-duplex-string="separator1466991092371" ms-attr-disabled="separator1466991092371_form_disabled"
+															style="border-color: rgb(234, 237, 241);">
+																<li class="layout-separator-selected ">
+																	<a class="layout-separator-inner">
+																		<span class="icon">
+																		</span>
+																		<span class="title">
+																		</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box box-element ui-draggable" style="display: block; position: relative; opacity: 1; z-index: 0;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									标签
+								</div>
+								<div class="view draggableHandle">
+									<div type="label" class="layout-align-right" alignstyle="layout-align-right"
+									compid="label1466991011244" compname="label1466991011244" lablefontsize="12"
+									labelfontweight="false" labelfontcolor="ff0000" defaultvalue="%E8%AF%84%E4%BB%B7">
+										<label class="control-label title" id="label1466991011244" name="label1466991011244"
+										i18nkey="评价" style="font-size: 12px; color: rgb(255, 0, 0);">
+											评价
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer-bg ui-sortable">
+</div>

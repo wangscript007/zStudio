@@ -1,0 +1,227 @@
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-table.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-editable.css" rel="stylesheet">
+    <link href="css/bootstrap/fileinput/css/fileinput.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/zTreeStyle/zTreeStyle.css" rel="stylesheet">
+    <link href="css/bootstrap/select2/select2.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+    <script type="text/javascript" src="js/lib/fileinput/fileinput.js"></script>
+    <script type="text/javascript" src="js/lib/fileinput/fileinput_locale_zh.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-zh-CN.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-editable.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-toolbar.js"></script>
+    <script type="text/javascript" src="js/lib/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/lib/select2/select2.min.js"></script>
+    <script type="text/javascript" src="js/lib/lodash.min.js"></script>
+    <script type="text/javascript" src="js/lib/avalon.js"></script>
+    <script type="text/javascript" src="js/lib/echarts-all.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.ztree.all-3.5.js"></script>
+    <script type="text/javascript" src="js/lib/waypoints/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/commTools.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageTable.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageDialog.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageCharts.js"></script>
+    <script type="text/javascript" src="js/page/zTree.js"></script>
+    <script type="text/javascript" src="js/page/layoutitWaypoint.js"></script>
+    <script type="text/javascript" src="js/page/layoutitNavigation.js"></script>
+    <script type="text/javascript" src="default_common.js"></script>
+    <script type="text/javascript" src="role-main.js"></script>
+    <script type="text/javascript" src="js/mao/role-main-logic.js"></script>
+</head> 
+<body>
+<div class="container container-top">
+	<div type="layout" ms-controller="vm1449647616006" id="vm1449647616006" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+				<div type="layout" id="layout1449647619387" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right">
+								 <label class="control-label" id="label1449647624444">角色名</label>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+							<div type="input_text" class="group">
+								<input type="text" class="form-control" id="input_text1449647629235" name="input_text1449647629235" ms-duplex-string="NAME" ms-attr-disabled="NAME_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right">
+								 <label class="control-label" id="label1449647626546">说明</label>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+							<div type="input_text" class="group">
+								<input type="text" class="form-control" id="input_text1449647633140" name="input_text1449647633140" ms-duplex-string="DESC" ms-attr-disabled="DESC_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" id="layout1449647667742" class="form-group">
+					<div class="row">
+						<div class="col-md-11 col-xs-11 col-sm-11 col-lg-11 column">
+						</div>
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+							<div type="button" class="layout-align-right">
+								 <button type="button" class="btn btn-primary" id="button1449647694316" name="button1449647694316"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> 查询</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" id="layout1449649070122" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="button_group" class="btn-group layout-align-right">
+								 <button type="button" class="btn btn-primary" onclick="roleModule.addRole()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 新建</button> <button type="button" class="btn btn-primary" onclick="roleModule.editRole()"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 修改</button> <button type="button" class="btn btn-primary" onclick="roleModule.refreshRole()"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> 刷新</button> <button type="button" class="btn btn-primary" onclick="roleModule.deleteRole()"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 删除</button> <button type="button" class="btn btn-primary" onclick="roleModule.queryRoleInfo()"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span> 查看</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" id="layout1449647715918" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="table_base" style="overflow-x: auto; overflow-y: auto;">
+								<table id="table_base1449647721791">
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div type="layout" ms-controller="vm1449825112639" id="vm1449825112639" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+				<div type="layout" id="layout1449825265342" class="form-group">
+					<div class="row">
+						<div class="col-md-8 col-xs-8 col-sm-8 col-lg-8 column">
+							<div type="layout" id="layout1449825491464" class="form-group">
+								<div class="row">
+									<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+										<div type="layout" id="layout1449825496405" class="form-group">
+											<div class="row">
+												<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+													<div type="label" class="layout-align-right">
+														 <label class="control-label" id="label1449825657294">ID</label>
+													</div>
+												</div>
+												<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+													<div type="input_text" class="group">
+														<input type="text" class="form-control" id="input_text1449825703041" name="input_text1449825703041" data-bv-group=".group">
+													</div>
+												</div>
+												<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+													<div type="label" class="layout-align-right">
+														 <label class="control-label" id="label1449825706274">功能ID</label>
+													</div>
+												</div>
+												<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+													<div type="input_text" class="group">
+														<input type="text" class="form-control" id="input_text1449825975718" name="input_text1449825975718" data-bv-group=".group">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div type="layout" id="layout1449825575846" class="form-group">
+											<div class="row">
+												<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+													<div type="label" class="layout-align-right">
+														 <label class="control-label" id="label1449825738004">角色名</label>
+													</div>
+												</div>
+												<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+													<div type="input_text" class="group">
+														<input type="text" class="form-control" id="input_text1449825740672" name="input_text1449825740672" data-bv-group=".group">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div type="layout" id="layout14498255758461" class="form-group">
+											<div class="row">
+												<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+													<div type="label" class="layout-align-right">
+														 <label class="control-label" id="label14498257380041">权限</label>
+													</div>
+												</div>
+												<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+													<div type="input_text" class="group">
+														<input type="text" class="form-control" placeholder="点击此处选择所属部门信息" id="input_text14498257406721" name="input_text14498257406721" data-bv-group=".group">
+														<div id="layout1449825544691" style="position:absolute;z-index:100; border-radius: 4px;background-color:#fff !important;box-shadow: 10px 10px 5px;box-shadow: 0 6px 12px rgba(0,0,0,.175);webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div type="layout" id="layout1449825871268" class="form-group">
+											<div class="row">
+												<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+													<div type="label" class="layout-align-right">
+														 <label class="control-label" id="label1449825903003">说明</label>
+													</div>
+												</div>
+												<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+													<div type="textarea">
+														<textarea class="form-control" rows="2" id="textarea1449826032992" name="textarea1449826032992">														</textarea>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div type="layout" id="layout1449830585894" class="form-group">
+											<div class="row">
+												<div class="col-md-8 col-xs-8 col-sm-8 col-lg-8 column">
+												</div>
+												<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+													<div type="button_group" class="layout-align-right">
+														<button id="btn-1521521255-ok" type="button" class="btn btn-primary" onclick="roleOperateModule.saveRole();"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>确定</button><button type="button" class="btn btn-primary" onclick="publicRoleControl.goMain();"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>返回</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div type="layout" id="layout1449825839007" class="form-group">
+											<div class="row">
+												<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 
+						<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+							<div type="layout" id="layout1449825544691" class="form-group">
+								<div class="row">
+									<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+									</div>
+								</div>
+							</div>
+						</div>
+						 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

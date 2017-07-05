@@ -1,0 +1,75 @@
+.appItemli {
+	float: left;;
+    color: #499FD6;
+    text-align: center;
+}
+
+.appItemSetp {
+	padding-bottom: 49px;
+	padding-top: 49px;
+	padding-left: 126px;
+	padding-right: 126px;
+    border: 1px solid #a7d5f3;
+}
+
+
+.appItemToRight {
+	padding-top: 80px;
+    padding-left: 10px;
+    padding-bottom: 77px;
+    padding-right: 10px;
+}
+
+.deployItemToRight {
+	padding-top: 78px;
+	padding-left: 10px;
+	padding-bottom: 77px;
+	padding-right: 10px;
+}
+
+.testAppItemTitle {
+	width: 70px;
+}
+
+.deployAppItemTitle {
+	width: 112px;
+}
+
+.local_deploy_environment_ready {
+	padding-bottom: 34px;
+	padding-top: 31px;
+	border: 1px solid #a7d5f3;
+}
+
+.onLinecontentColumn {
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+.contentColumn {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.appItemSetpNoClick {
+	padding-bottom: 49px;
+	padding-top: 49px;
+	padding-left: 108px;
+	padding-right: 108px;
+	border: 1px solid #a7d5f3;
+}
+
+.localDeployAppItemSetp {
+	padding-bottom: 49px;
+	padding-top: 47px;
+	padding-left: 108px;
+	padding-right: 108px;
+	border: 1px solid #a7d5f3;
+}
+
+.btn_a {
+	padding: 0;
+}
+.contentStyle {
+	background-color: #e6edf7;
+}

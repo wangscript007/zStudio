@@ -1,0 +1,342 @@
+<div class="demo_parent" style="height: 639px; min-height: 580px;">
+	<div class="demo ui-sortable" style="min-height: 560px;">
+		<div class="lyrow ui-draggable" style="display: block;">
+			<a href="#close" class="remove label label-danger">
+				<i class="glyphicon-remove glyphicon">
+				</i>
+			</a>
+			<div class="preview">
+				12/自定义
+			</div>
+			<div class="view">
+				<div type="layout" ratio="12" compid="vm1466989471632" compname="vm1466989471632"
+				layoutstyle="" ms-controller="vm1466989471632" id="vm1466989471632">
+					<div class="row clearfix">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+						style="padding-bottom: 5px;">
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									12/自定义
+								</div>
+								<div class="view">
+									<div type="layout" ratio="6,6" compid="layout1466989492210" compname="layout1466989492210"
+									layoutstyle="" id="layout1466989492210">
+										<div class="row clearfix">
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable" style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable" style="display: block; position: relative; opacity: 1; z-index: 0;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-left" alignstyle="layout-align-left"
+														compid="label1466989505564" compname="label1466989505564" lablefontsize="12"
+														labelfontweight="false" labelfontcolor="" defaultvalue="%E8%AE%A2%E5%8D%95%E5%8F%B7%EF%BC%9A0505512555">
+															<label class="control-label title" id="label1466989505564" name="label1466989505564"
+															i18nkey="订单号：0505512555" style="font-size: 12px;">
+																订单号：0505512555
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable" style="padding-bottom: 7px;">
+												<div class="box box-element ui-draggable" style="display: block; position: relative; opacity: 1; z-index: 0;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-right" alignstyle="layout-align-right"
+														compid="label1466989507034" compname="label1466989507034" lablefontsize="12"
+														labelfontweight="false" labelfontcolor="ff0000" defaultvalue="%E5%8D%96%E5%AE%B6%E5%B7%B2%E5%8F%91%E8%B4%A7">
+															<label class="control-label title" id="label1466989507034" name="label1466989507034"
+															i18nkey="卖家已发货" style="font-size: 12px; color: rgb(255, 0, 0);">
+																卖家已发货
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lyrow ui-draggable gray" style="display: block;">
+								<a href="#close" class="remove label label-danger showRemove">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									12/自定义
+								</div>
+								<div class="view form-component_active">
+									<div type="layout" ratio="12" compid="layout1466989572044" compname="layout1466989572044"
+									layoutstyle="gray" id="layout1466989572044">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-left" alignstyle="layout-align-left"
+														compid="label1466989587025" compname="label1466989587025" lablefontsize="12"
+														labelfontweight="false" labelfontcolor="" defaultvalue="%E5%95%86%E5%93%81%E4%BF%A1%E6%81%AF%EF%BC%9A%E9%9B%86%E6%88%90Realtek%20ALC887%208%E5%A3%B0%E9%81%93%E9%9F%B3%E6%95%88%E8%8A%AF%E7%89%87%E6%9D%BF%E8%BD%BDRealtek%20RTL8111H%E5%8D%83%E5%85%86%E7%BD%91%E5%8D%A1%EF%BC%8C%E7%AC%AC6%E4%BB%A3Core%20i7%2Fi5%2Fi3%2FPentium%2FCeleron%20%EF%BC%8C%E6%94%AF%E6%8C%81%E5%8F%8C%E9%80%9A%E9%81%93DDR4%202133MHz%E5%86%85%E5%AD%98">
+															<label class="control-label title" id="label1466989587025" name="label1466989587025"
+															i18nkey="商品信息：集成Realtek ALC887 8声道音效芯片板载Realtek RTL8111H千兆网卡，第6代Core i7/i5/i3/Pentium/Celeron ，支持双通道DDR4 2133MHz内存"
+															style="font-size: 12px;">
+																商品信息：集成Realtek ALC887 8声道音效芯片板载Realtek RTL8111H千兆网卡，第6代Core i7/i5/i3/Pentium/Celeron
+																，支持双通道DDR4 2133MHz内存
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box box-element ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									标签
+								</div>
+								<div class="view draggableHandle">
+									<div type="label" class="layout-align-right" alignstyle="layout-align-right"
+									compid="label1466989715207" compname="label1466989715207" lablefontsize="12"
+									labelfontweight="false" labelfontcolor="ff0000" defaultvalue="%E7%A1%AE%E8%AE%A4%E6%94%B6%E8%B4%A7">
+										<label class="control-label title" id="label1466989715207" name="label1466989715207"
+										i18nkey="确认收货" style="font-size: 12px; color: rgb(255, 0, 0);">
+											确认收货
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lyrow ui-draggable" style="display: block;">
+			<a href="#close" class="remove label label-danger">
+				<i class="glyphicon-remove glyphicon">
+				</i>
+			</a>
+			<div class="preview">
+				12/自定义
+			</div>
+			<div class="view">
+				<div type="layout" ratio="12" compid="vm1466989742705" compname="vm1466989742705"
+				layoutstyle="" ms-controller="vm1466989742705" id="vm1466989742705">
+					<div class="row clearfix">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+						style="padding-bottom: 5px;">
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									分隔栏
+								</div>
+								<div class="view draggableHandle">
+									<div type="layout" compid="vm1466989747764" compname="vm1466989747764"
+									layoutstyle="" id="vm1466989747764">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														分隔栏
+													</div>
+													<div class="view draggableHandle">
+														<div type="separator" init="true" picklinecolor="eaedf1" compid="separator1466989749770"
+														compname="separator1466989749770" picklineheight="5px">
+															<ul class="layout-separator" id="separator1466989749770" name="separator1466989749770"
+															ms-duplex-string="separator1466989749770" ms-attr-disabled="separator1466989749770_form_disabled"
+															style="border-color: rgb(234, 237, 241); border-width: 0px 0px 5px;">
+																<li class="layout-separator-selected ">
+																	<a class="layout-separator-inner">
+																		<span class="icon">
+																		</span>
+																		<span class="title">
+																		</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lyrow ui-draggable" style="display: block;">
+			<a href="#close" class="remove label label-danger">
+				<i class="glyphicon-remove glyphicon">
+				</i>
+			</a>
+			<div class="preview">
+				12/自定义
+			</div>
+			<div class="view">
+				<div type="layout" ratio="12" compid="vm1466990068069" compname="vm1466990068069"
+				layoutstyle="" ms-controller="vm1466990068069" id="vm1466990068069">
+					<div class="row clearfix">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+						style="padding-bottom: 5px;">
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									12/自定义
+								</div>
+								<div class="view">
+									<div type="layout" ratio="6,6" compid="layout1466990071444" compname="layout1466990071444"
+									layoutstyle="" id="layout1466990071444">
+										<div class="row clearfix">
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable" style="padding-bottom: 7px;">
+												<div class="box box-element ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-left" alignstyle="layout-align-left"
+														compid="label1466990081123" compname="label1466990081123" lablefontsize="12"
+														labelfontweight="false" labelfontcolor="" defaultvalue="%E8%AE%A2%E5%8D%95%E5%8F%B7%EF%BC%9A0505512654">
+															<label class="control-label title" id="label1466990081123" name="label1466990081123"
+															i18nkey="订单号：0505512654" style="font-size: 12px;">
+																订单号：0505512654
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable" style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable" style="display: block; position: relative; opacity: 1; z-index: 0;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-right" alignstyle="layout-align-right"
+														compid="label1466990098235" compname="label1466990098235" lablefontsize="12"
+														labelfontweight="false" labelfontcolor="ff0000" defaultvalue="%E5%8D%96%E5%AE%B6%E5%B7%B2%E5%8F%91%E8%B4%A7">
+															<label class="control-label title" id="label1466990098235" name="label1466990098235"
+															i18nkey="卖家已发货" style="color: rgb(255, 0, 0); font-size: 12px;">
+																卖家已发货
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lyrow ui-draggable gray" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									12/自定义
+								</div>
+								<div class="view">
+									<div type="layout" ratio="12" compid="layout1466990118961" compname="layout1466990118961"
+									layoutstyle="gray" id="layout1466990118961">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-left" alignstyle="layout-align-left"
+														compid="label1466990130838" compname="label1466990130838" lablefontsize="12"
+														labelfontweight="false" labelfontcolor="" defaultvalue="%E5%95%86%E5%93%81%E4%BF%A1%E6%81%AF%EF%BC%9A%E9%9B%86%E6%88%90Realtek%20ALC887%208%E5%A3%B0%E9%81%93%E9%9F%B3%E6%95%88%E8%8A%AF%E7%89%87%E6%9D%BF%E8%BD%BDRealtek%20RTL8111H%E5%8D%83%E5%85%86%E7%BD%91%E5%8D%A1%EF%BC%8C%E7%AC%AC6%E4%BB%A3Core%20i7%2Fi5%2Fi3%2FPentium%2FCeleron%20%EF%BC%8C%E6%94%AF%E6%8C%81%E5%8F%8C%E9%80%9A%E9%81%93DDR4%202133MHz%E5%86%85%E5%AD%98">
+															<label class="control-label title" id="label1466990130838" name="label1466990130838"
+															i18nkey="商品信息：集成Realtek ALC887 8声道音效芯片板载Realtek RTL8111H千兆网卡，第6代Core i7/i5/i3/Pentium/Celeron ，支持双通道DDR4 2133MHz内存"
+															style="font-size: 12px;">
+																商品信息：集成Realtek ALC887 8声道音效芯片板载Realtek RTL8111H千兆网卡，第6代Core i7/i5/i3/Pentium/Celeron
+																，支持双通道DDR4 2133MHz内存
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box box-element ui-draggable" style="display: block; position: relative; opacity: 1; z-index: 0;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									标签
+								</div>
+								<div class="view draggableHandle">
+									<div type="label" class="layout-align-right" alignstyle="layout-align-right"
+									compid="label1466990143331" compname="label1466990143331" lablefontsize="12"
+									labelfontweight="false" labelfontcolor="ff0000" defaultvalue="%E7%A1%AE%E8%AE%A4%E6%94%B6%E8%B4%A7">
+										<label class="control-label title" id="label1466990143331" name="label1466990143331"
+										i18nkey="确认收货" style="color: rgb(255, 0, 0); font-size: 12px;">
+											确认收货
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer-bg ui-sortable">
+</div>

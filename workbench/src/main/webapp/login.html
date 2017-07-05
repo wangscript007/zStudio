@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>UAP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
+    <meta name="author" content="Muhammad Usman">
+
+    <!-- The styles -->
+    <link id="bs-css" href="plugins/bootstrap/css/bootstrap-cerulean.min.css" rel="stylesheet">
+    <link  href="plugins/bootstrapvalidator/css/bootstrapValidator.min.css" rel="stylesheet">
+
+    <link href="css/index.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+<div class="ch-container">
+    <div class="row">
+
+        <div class="row">
+            <div class="center login-header">
+                <h2>后台管理登录</h2>
+            </div>
+            <!--/span-->
+        </div><!--/row-->
+
+        <div class="row">
+            <div class="well col-md-5 center login-box">
+                <div class="alert alert-info">
+                    请输入用户名和密码登录.
+                </div>
+                <form id="loginForm">
+
+                    <div class="form-group">
+                        <label class="sr-only" for="userName">用户名</label>
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-user green"></i></div>
+                            <input type="input" class="form-control" name="userName" id="userName" placeholder="用户名" />
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="password">密码</label>
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-lock green"></i></div>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="密码" />
+                        </div>
+                    </div>
+
+                    <!--<div class="checkbox">-->
+                        <!--<label>-->
+                            <!--<input type="checkbox" name="rememberMe"> 记住我-->
+                        <!--</label>-->
+                    <!--</div>-->
+
+                    <div class="form-group">
+                        <div class="btn-group btn-group-w-md" >
+                            <div class="col-md-6" style="height: 53px; line-height: 500%;">
+                                <a href="register.html">项目注册</a>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="submit"  class="btn btn-primary submit">登录</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+            <!--/span-->
+        </div><!--/row-->
+    </div><!--/fluid-row-->
+
+</div><!--/.fluid-container-->
+
+<!-- external javascript -->
+
+<!-- jQuery -->
+<script src="js/lib/jquery/jquery.min.js"></script>
+<script src="plugins/jquery/jquery.cookie.js"></script>
+<script src="plugins/bootstrapvalidator/js/bootstrapValidator.min.js"></script>
+<script src="plugins/bootstrapvalidator/js/zh_CN.js"></script>
+<script src="default_common.js"></script>
+<script src="js/mao/mao-env-base.js"></script>
+<script type="text/javascript" src="js/mao/aes.js"></script>
+<script type="text/javascript" src="js/mao/framework-util.js"></script>
+<script src="js/login.js"></script>
+<script src="js/tools.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿{
+  "base": {
+    "icon": "icon-input.png",
+    "name": "文本框",
+    "js": [],
+    "css": []
+  },
+  "properties": [
+    {
+      "name": "属性",
+      "order": "1",
+      "content": [
+        {
+          "displayName": "显示名称",
+          "attribute": "text",
+          "componentClass": "InputText",
+          "componentParam": {
+            "validation": {
+              "trigger": "focusout",
+              "expression": "^\\d{1,4}$",
+              "message": "高度属性只能输入整数。"
+            },
+            "placeholder": "高度",
+            "default": "600",
+            "valueType": "int",
+            "event": [
+              {
+                "type": "focusout",
+                "function": "eventFocusout"
+              }
+            ]
+          },
+          "tip": "提示信息"
+        }
+      ]
+    }
+
+  ],
+  "events":[
+
+  ]
+}

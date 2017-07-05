@@ -1,0 +1,35 @@
+{
+  "id": "heatmap_bmap",
+  "thumbnail": "heatmap_bmap.png",
+  "js": "heatmap_bmap.js",
+  "instanceName": "Heatmap_bmap",
+  "displayName": "基于百度地图的热力图",
+  "unsupportedBaseProperties": [
+    "legend",
+    "tooltip",
+    "toolbox",
+    "backgroundColor"
+  ],
+  "properties": [{
+      "displayName": "百度地图",
+      "attributeName": "bmap",
+      "propertyItems": [{
+          "displayName": "中心坐标",
+          "attributeName": "bmap_center",
+          "attributeRelation": "bmap.center",
+          "type": "multi-input",
+          "options": [{"title": "经度坐标"}, {"title": "纬度坐标"}],
+          "defaultOption": [107.638532, 37.538248],
+          "dataType": "float"
+        },{
+          "displayName": "缩放级别",
+          "attributeName": "bmap_zoom",
+          "attributeRelation": "bmap.zoom",
+          "type": "slider",
+          "defaultOption": 5,
+          "min": 1,
+          "max": 19
+        }
+      ]
+    }]
+}

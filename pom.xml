@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.51ksy.zstudio</groupId>
+    <artifactId>parent</artifactId>
+    <version>0.5.0-20170116-SNAPSHOT</version>
+    <relativePath>./10.parent</relativePath>
+  </parent>
+  <groupId>com.51ksy.zstudio</groupId>
+  <artifactId>mao</artifactId>
+  <packaging>pom</packaging>
+  <name>ksy</name>
+  <scm>
+    <connection>scm:svn:${base.svndev.url}</connection>
+    <developerConnection>scm:svn:${base.svndev.url}</developerConnection>
+    <url>${base.svndev.url}</url>
+  </scm>
+
+  <modules>
+    <module>10.parent</module>
+    <module>common</module>
+    <module>data</module> 
+    <module>form</module>
+    <module>server</module>
+    <module>support</module>
+    <module>workbench</module>
+    <!--module>swagger-component</module-->
+  </modules>
+
+  <profiles>
+    <profile>
+      <id>distro</id>
+      <activation>
+        <property>
+          <name>distro</name>
+        </property>
+      </activation>
+      <modules>
+        <module>20.distribution</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>all</id>
+      <activation>
+        <property>
+          <name>all</name>
+        </property>
+      </activation>
+      <modules>
+        <module>20.distribution</module>
+      </modules>
+    </profile>
+  </profiles>
+</project>

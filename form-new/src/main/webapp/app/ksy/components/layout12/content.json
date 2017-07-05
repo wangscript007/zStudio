@@ -1,0 +1,63 @@
+﻿{
+  "base": {
+    "icon": "ly-12.png",
+    "name": "自定义布局",
+	"group": "layout",
+    "js": [],
+    "css": []
+  },
+  "properties": [
+    {
+      "name": "属性",
+      "order": 1,
+      "content": [
+        {
+          "predefineProperty": "id"
+        },
+        {
+          "predefineProperty": "name"
+        },
+        {
+          "displayName": "布局比例",
+          "attribute": "ratio",
+          "componentClass": "InputText",
+          "componentParam": {
+            "validation": {
+              "customerValid": "functionname"
+            },
+            "placeholder": "比例以逗号分隔,和为12",
+            "default": "12",
+            "valueType": "string"
+          },
+          "events": [
+            {
+              "type": "focusout",
+              "func": "eventFocusout"
+            }
+          ],
+          "tip": "输入形式如6,6/2,4,2,4等"
+        },
+        {
+          "displayName": "隐藏",
+          "attribute": "hidden",
+          "componentClass": "Radio",
+          "componentParam": {
+            "option": [
+              {
+                "name": "否",
+                "value": "false"
+              },
+              {
+                "name": "是",
+                "value": "true"
+              }
+            ],
+            "default": "false",
+            "valueType": "boolean"
+          },
+          "tip": "隐藏组件后该组件在运行期不会显示"
+        }
+      ]
+    }
+  ]
+}

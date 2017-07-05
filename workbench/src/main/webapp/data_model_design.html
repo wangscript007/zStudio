@@ -1,0 +1,201 @@
+<div class="container container-top">
+	<div type="layout" compid="vm1481533389021" compname="vm1481533389021" id="vm1481533389021" ms-controller="vm1481533389021" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+
+				<div type="bfd_panel" class="bfd-panel sort-disable mb50 bfd-panel-sortable" id="p31" compid="bfd_panel14876430477513" compname="bfd_panel14876430477513" bfd-panel-scrollbar-style="dark">
+					<div class="bfd-panel-heading">
+						<div class="row clearfix">
+							<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+								<div type="label" class="layout-align-left layout-align-right" compid="label148764304177530" compname="label141876430477530">
+									<label class="control-label" id="label148764304717530" i18nkey="模型设计">模型设计</label>
+								</div>
+							</div>
+							<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+							</div>
+						</div><hr>
+					</div>
+					<div class="bfd-panel-body">
+						<div class="row clearfix">
+							<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+
+				<div type="layout" compid="layout1481539461130" compname="layout1481539461130" id="layout1481539461130" class="form-group">
+					<div class="row">
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+							<div type="label" compid="label14815327969080" compname="label14815327969080" class="layout-align-right">
+								 <label class="control-label" id="label14815327969080" i18nkey="数据表名">数据表名</label>
+							</div>
+						</div>
+						<div class="col-md-11 col-xs-11 col-sm-11 col-lg-11 column">
+							<div type="input_text" compid="input_text14815329095180" compname="input_text14815329095180" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" class="group">
+								<input type="text" class="form-control" id="input_text14815329095180" name="input_text14815329095180" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1482980374608" compname="layout1482980374608" id="layout1482980374608" class="form-group">
+					<div class="row">
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+							<div type="label" compid="label14815327988430" compname="label14815327988430" class="layout-align-right">
+								 <label class="control-label" id="label14815327988430" i18nkey="布局模板">布局模板</label>
+							</div>
+						</div>
+						<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column">
+							<div type="select_dynamic" compid="select_dynamic14815329159480" compname="select_dynamic14815329159480" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D">
+								 <select style="display : inline;width:100%;" class="form-control" id="select_dynamic14815329159480" name="select_dynamic14815329159480" ms-duplex-string="select_dynamic14815329159480"><option></option></select>
+							</div>
+						</div>
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column" style="text-align: left; padding-top: 7px;">
+							<a href="#" id="upload_file_aaa212211doc" style="text-decoration: none;" title="如何制作">
+							如何制作
+							</a>
+							<a href="#" id="loadLayoutTemplateBtn" style="text-decoration: none;" title="下载布局模板示例文件">
+							下载模板
+							</a>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1481530769639" compname="layout1481530769639" id="layout1481530769639" class="form-group">
+					<div class="row">
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+						<div type="label" compid="label14815332605660" compname="label14815332605660" class="layout-align-right">
+							<label class="control-label" id="label148153326056601" i18nkey="上传">上传</label>
+							</div>
+						</div>
+						<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column" style="padding-right: 0;">
+						<form id="uploadFormFile"  method= "post" enctype ="multipart/form-data">
+							<input type="file" class="form-control" name="files" id="file_aaa4535432124535" title="请选择布局模板文件">
+							</form>
+						</div>
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column"  style="text-align:left; padding-top: 2px;">
+						<button type="button" class="btn btn-default btn-sm" id="upload_file_aaa212211" title="上传布局模板文件">
+							<span class="glyphicon glyphicon-upload"></span>
+							</button> 
+						<button type="button" class="btn btn-default btn-sm" id="trash_file_aaa212211" title="清空选择文件">
+							<span class="glyphicon glyphicon-trash"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1481532808827" compname="layout1481532808827" id="layout1481532808827" class="form-group">
+					<div class="row">
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+							<div type="label" compid="label14815332605660" compname="label14815332605660" class="layout-align-right">
+								 <label class="control-label" id="label14815332605660" i18nkey="数据项">数据项</label>
+							</div>
+						</div>
+						<div class="col-md-11 col-xs-11 col-sm-11 col-lg-11 column">
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1481533272076" compname="layout1481533272076" id="layout1481533272076" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column" id="groupLayout1481533278120">
+							<div class="btn-toolbar" role="toolbar">
+								<div class="btn-group">
+									 <button type="button" class="btn btn-primary btn-sm" id="toolbar-button14815332780130" name="toolbar-button14815332780130" i18nkey="新增"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 新增</button>
+								</div>
+								<div class="btn-group">
+									 <button type="button" class="btn btn-primary btn-sm" id="toolbar-button14815332810070" name="toolbar-button14815332810070" i18nkey="删除"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 删除</button>
+								</div>
+								<div class="btn-group">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1481533152309" compname="layout1481533152309" id="layout1481533152309" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="table_base_local" style="overflow-x: auto; overflow-y: auto;" >
+								<table id="table_base_local1481533395638">
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+	<div type="layout" compid="vm1481532540285" compname="vm1481532540285" ms-controller="vm1481532540285" id="vm1481532540285" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+
+				<div class="row clearfix">
+				<label class="control-label" id="sql_title">
+					SQL编辑器 </label> <br>
+				<div class="alert alert-info" role="alert">
+					<p>
+						<span class="glyphicon glyphicon-info-sign"></span>
+						<span>请在下面编辑框中输入SQL。</span>
+						</p>
+					<p>
+						<span class="glyphicon glyphicon-info-sign"></span>
+						<span>注意：只支持一条CREATE TABLE或者CREATE VIEW语句。（不区分大小写）</span>
+						</p>
+					</div>
+				</div>
+				<div class="row clearfix">
+				<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+					<div type="layout" compid="layout1476151584460" id="layout1476151584460" style="padding-bottom: 10px;">
+						<div class="row clearfix">
+							<div id="editor" class="edit ace_editor ace-iplastic" style="font-size: 20px;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div type="layout" compid="vm1481532544268" compname="vm1481532544268" ms-controller="vm1481532544268" id="vm1481532544268" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+				<div type="layout" compid="layout1481532723345" compname="layout1481532723345" id="layout1481532723345" class="form-group">
+					<div class="row">
+						<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 column">
+						</div>
+						<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column" style="text-align: right;">
+								 <button type="button" class="btn btn-primary btn-sm" id="button14815327374599" name="button14815327374599" i18nkey="取消">取消</button>
+								 <button type="button" class="btn btn-primary btn-sm" id="button14815327374600" name="button14815327374600" i18nkey="上一步">上一步</button>
+								 <button type="button" class="btn btn-primary btn-sm" id="button14815327398760" name="button14815327398760" i18nkey="下一步">下一步</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="doc_aaaaaa231312121" class="modal fade">
+	<div class="modal-dialog" style="width: 800px;">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">布局模板文件文档</h4>
+				</div>
+			<div class="modal-body">
+				<div class="row">
+					<iframe frameborder="0" style="padding: 0px; width: 100%; height: 300px;" src="data_model_design_upload_doc.html"></iframe>
+					</div>
+				</div>
+			<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="js/mao/suspension-window.js"></script>
+<script type="text/javascript" src="js/common/data_model_column_data.js"></script>
+<script type="text/javascript" src="js/mao/data_model_design_item_logic.js"></script>
+<script type="text/javascript" src="js/mao/data_model_design_logic.js"></script>

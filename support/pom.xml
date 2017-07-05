@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.51ksy.zstudio</groupId>
+    <artifactId>parent</artifactId>
+    <version>0.5.0-20170116-SNAPSHOT</version>
+    <relativePath>../10.parent</relativePath>
+  </parent>
+  <groupId>com.51ksy.zstudio</groupId>
+  <artifactId>support</artifactId>
+  <packaging>pom</packaging>
+  <name>ksy/${project.artifactId}</name>
+
+  <modules>
+    <module>support-parent</module>
+    <module>support-core</module>
+    <module>support-orm</module>
+    <module>support-mysql</module>
+    <module>support-mssql</module>
+    <module>support-web</module>
+    <module>support-mongo</module>
+  </modules>
+
+  <profiles>
+    <profile>
+      <id>distro</id>
+      <activation>
+        <property>
+          <name>distro</name>
+        </property>
+      </activation>
+      <modules>
+        <module>support-distro</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>all</id>
+      <activation>
+        <property>
+          <name>all</name>
+        </property>
+      </activation>
+      <modules>
+        <module>support-distro</module>
+        <module>support-demo</module>
+      </modules>
+    </profile>
+  </profiles>
+</project>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zte.ums.bcp.orm.tabledata.dao.GeneralMapper">
+
+  <insert id="insert" parameterType="map">
+    ${sql}
+  </insert>
+
+  <insert id="inserts" parameterType="map">
+    ${sql}
+  </insert>
+
+  <select id="select" parameterType="map" resultType="java.util.LinkedHashMap">
+    <!-- sqlbean.sql -->
+    ${sql}
+  </select>
+
+  <delete id="delete" parameterType="map">
+    ${sql}
+  </delete>
+
+  <update id="update" parameterType="map">
+    ${sql}
+  </update>
+
+  <select id="relatequery" parameterType="map"
+    resultType="java.util.LinkedHashMap">
+    ${sql}
+  </select>
+
+  <select id="selectBySql" parameterType="map"
+    resultType="java.util.LinkedHashMap">
+    ${sql}
+  </select>
+
+  <select id="selectCount" parameterType="map" resultType="java.lang.Integer">
+    ${sql}
+  </select>
+
+  <select id="selectPriKeySql" parameterType="map"
+    resultType="java.util.LinkedHashMap">
+    ${sql}
+  </select>
+
+  <select id="selectMysqlAutoIncrementVal" resultType="java.lang.Integer">
+    SELECT LAST_INSERT_ID() autoIncrementVal
+  </select>
+
+  <select id="selectMSsqlAutoIncrementVal" resultType="java.lang.Integer">
+    SELECT @@IDENTITY autoIncrementVal
+  </select>
+
+  <select id="getAutoIncrementCol" resultType="java.util.LinkedHashMap">
+    SELECT [name] name FROM syscolumns WHERE id = object_id(N'${tablename}') AND
+    COLUMNPROPERTY(id, name, 'IsIdentity') = 1
+  </select>
+
+  <select id="testSelect" resultType="java.util.LinkedHashMap">
+    select * from process_res
+  </select>
+</mapper>
+
+

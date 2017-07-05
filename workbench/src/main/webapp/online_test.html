@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    
+    <head>
+        <title>
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link href="css/page.css" rel="stylesheet">
+        <link href="css/common-style.css" rel="stylesheet">
+        <link href="css/icons/style.css" rel="stylesheet">
+        <link href="css/lib/mCustomScrollbar/jquery.mCustomScrollbar.min.css"
+        rel="stylesheet">
+        <link href="css/app-design-main.css" rel="stylesheet">
+        <link href="css/component/myAdmin.css" rel="stylesheet">
+        <link href="css/workbench-style.css" rel="stylesheet">
+    </head>
+    
+    <body class="contentStyle" style="background-color:#F1F7FD">
+        <div class="container container-top bg-color contentStyle">
+            <div type="layout" class="form-horizontal pd15 tip-border mb15 bg-white">
+                <p class="fz20">
+                    <b>
+                        测试部署
+                    </b>
+                </p>
+                <p>
+                    在线测试是一个可以在线预览页面效果的环境。用户开发应用页面后，点击在线测试功能，即可看到该页面在真实环境中的运行效果；通过导出应用，将包含的表单、报表、图表等文件和信息打包成ZIP文件。
+                </p>
+                <p>
+                    本地部署是一个运行用户开发页面的本地运行环境。用户在下载本地运行环境后，配置JDK和Mysql数据库后即可启动环境。经在线测试后，用户先导出应用，再通过本地环境导入应用运行。
+                </p>
+            </div>
+            <div type="layout" compid="vm1488333127369" compname="vm1488333127369"
+            ms-controller="vm1488333127369" id="vm1488333127369">
+                <div class="row clearfix">
+                    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+                        <div class="bg-white pd15 testdeployment-leftInfoDiv">
+                            <div type="layout" compid="layout1474426714356" id="layout1474426714356"
+                            class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column app-col-ext"
+                                    style="padding-left:30px">
+                                        <div class="app-online-row-ext testdeployment-pt-0">
+                                            <div class="row app-menu-head testdeployment-pt-0">
+                                                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+                                                    <div>
+                                                        <span class="title" span="" style="font-size: 16px;">
+                                                            应用列表
+                                                        </span>
+                                                        <span id="app_total" btn="white" class="badge total">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="app-menu-spliter">
+                                            </div>
+                                            <div class="row app-menu-head">
+                                                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column" style="background-color: #FFFFFF;padding-left: 10px!important;">
+                                                    <table class="table modelTable">
+                                                        <thead>
+                                                            <tr style="font-weight: bold;">
+                                                                <td class="tableHeadTd testdeployment-pl-0 testdeployment-pr-0" style="width:145px;">
+                                                                    应用名称
+                                                                </td>
+                                                                <td class="tableHeadTd testdeployment-pl-0 testdeployment-pr-0" style="width:87px;">
+                                                                    表单
+                                                                </td>
+                                                                <td class="tableHeadTd testdeployment-pl-0 testdeployment-pr-0" style="width:87px;">
+                                                                    列表
+                                                                </td>
+                                                                <td class="tableHeadTd testdeployment-pl-0 testdeployment-pr-0" style="width:87px;">
+                                                                    图表
+                                                                </td>
+                                                                <td class="tableHeadTd testdeployment-pl-0 testdeployment-pr-0" style="width:113px;">
+                                                                    创建人
+                                                                </td>
+                                                                <td class="tableHeadTd testdeployment-pl-0 testdeployment-pr-0" style="width:187px;">
+                                                                    创建时间
+                                                                </td>
+                                                                <td class="tableHeadTd testdeployment-pl-0 testdeployment-pr-0" style="width:180px;">
+                                                                    操作
+                                                                </td>
+                                                            </tr>
+                                                        </thead>
+                                                    </table>
+                                                </div>
+                                                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column" style="background-color: #FFFFFF;">
+                                                    <table id="app_table" class="table modelTable">
+                                                        <thead>
+                                                            <tr style="font-weight: bold;">
+                                                                <td class="tableHeadTd testdeployment-pl-0 testdeployment-pr-0" style="width:165px;">
+                                                                </td>
+                                                                <td class="tableHeadTd testdeployment-pl-0 testdeployment-pr-0" style="width:87px;">
+                                                                </td>
+                                                                <td class="tableHeadTd testdeployment-pl-0 testdeployment-pr-0" style="width:87px;">
+                                                                </td>
+                                                                <td class="tableHeadTd testdeployment-pl-0 testdeployment-pr-0" style="width:87px;">
+                                                                </td>
+                                                                <td class="tableHeadTd testdeployment-pl-0 testdeployment-pr-0" style="width:113px;">
+                                                                </td>
+                                                                <td class="tableHeadTd testdeployment-pl-0 testdeployment-pr-0" style="width:187px;">
+                                                                </td>
+                                                                <td class="tableHeadTd testdeployment-pl-0 testdeployment-pr-0" style="width:180px;">
+                                                                </td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+                                        <!--分页 -->
+                                        <div id="paging_div" class="fixed-table-pagination" style="display: block;">
+                                        </div>
+                                        <!--分页x结束 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white pd15 testdeployment-rightInfoDiv">
+                            <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column" style="font-size: 16px;">
+                                本地部署
+                            </div>
+                            <div class="app-menu-spliter">
+                            </div>
+                            <div class="testdeployment-rightInfoDivBody" id="rightInfoDiv">
+                                <div class="divRightLabel testdeployment-imgdiv">
+                                    <div style="text-align: center;">
+                                        <img src="img/app-svg/app-test.svg" class="testdeployment-img">
+                                    </div>
+                                    <div item="title" id="onlineTestDiv" class="buleBoberBottom testdeployment-title">
+                                        <a id="onlineTest" href="" style="cursor:pointer;">
+                                            在线测试
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="appItemli appItemToRight" style="text-align: center;">
+                                    <img class="testdeployment-imgrotate-90" src="img/icon/arrow.png">
+                                </div>
+                                <div class="divRightLabel testdeployment-imgdiv">
+                                    <div style="text-align: center;">
+                                        <img src="img/app-svg/export-app.svg" class="testdeployment-img">
+                                    </div>
+                                    <div item="title" id="exportDiv" class="buleBoberBottom testdeployment-title">
+                                        <span title="导出">
+                                            导出
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="appItemli appItemToRight" style="text-align: center;">
+                                    <img class="testdeployment-imgrotate-90" src="img/icon/arrow.png">
+                                </div>
+                                <div class="divRightLabel testdeployment-imgdiv">
+                                    <div style="text-align: center;">
+                                        <img src="img/app-svg/download.svg" class="testdeployment-img">
+                                    </div>
+                                    <div item="title" class="buleBoberBottom testdeployment-title">
+                                        <a id="localDownload" href="" style="cursor:pointer;">
+                                            本地运行环境下载
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="appItemli appItemToRight" style="text-align: center;">
+                                    <img class="testdeployment-imgrotate-90" src="img/icon/arrow.png">
+                                </div>
+                                <div class="divRightLabel testdeployment-imgdiv">
+                                    <div class="testdeployment-imginfo">
+                                        <img src="img/app-svg/local-deploy.svg" class="testdeployment-img">
+                                    </div>
+                                    <div item="title" class="buleBoberBottom testdeployment-title">
+                                        <span title="部署应用">
+                                            部署应用
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/lib/jquery/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="default_common.js">
+        </script>
+        <script type="text/javascript" src="js/common/designer-orm-base.js">
+        </script>
+		<script type="text/javascript" src="js/commTools.js"></script>
+        <script type="text/javascript" src="js/mao/mao-orm-base.js">
+        </script>
+        <script type="text/javascript" src="js/mao/mao-env-base.js">
+        </script>
+        <script type="text/javascript" src="js/mao/aes.js">
+        </script>
+        <script type="text/javascript" src="js/lib/jquery.mCustomScrollbar.concat.min.js">
+        </script>
+        <script type="text/javascript" src="js/mao/package_process_logic.js">
+        </script>
+        <script type="text/javascript" src="js/mao/framework-util.js">
+        </script>
+        <script type="text/javascript" src="js/ksy-common.js">
+        </script>
+        <script type="text/javascript" src="js/mao/online_test_app_logic.js">
+        </script>
+        <script type="text/javascript" src="js/mao/tip-box.js">
+        </script>
+        <script type="text/javascript" src="js/common-util.js">
+        </script>
+    </body>
+
+</html>

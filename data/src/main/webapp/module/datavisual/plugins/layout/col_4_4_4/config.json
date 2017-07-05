@@ -1,0 +1,20 @@
+{
+  "id": "col_4_4_4",
+  "thumbnail": "col_4_4_4.png",
+  "js": "col_4_4_4.js",
+  "instanceName": "Col_4_4_4",
+  "displayName": "4,4,4",
+
+  "properties": [{
+    "displayName": "布局",
+    "propertyItems": [
+      {
+        "displayName": "布局比例",
+        "attributeName": "ratio",
+        "attributeRelation": "ratio",
+        "type": "input",
+        "defaultOption": "4,4,4",
+        "dataType": "string"
+      }]
+  }]
+}

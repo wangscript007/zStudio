@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        数据集字段选择
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="../css/bootstrap/bootstrap-table.min.css" rel="stylesheet">
+    <link href="../css/page.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrapvalidator/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrap-table-zh-CN.min.js"></script>
+    <script type="text/javascript" src="../js/frame/lib/jquery.bootstrap.wizard.js"></script>
+    <script type="text/javascript" src="../js/commTools.js"></script>
+    <script type="text/javascript" src="../js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="../js/page/layoutitPageDialog.js"></script>
+    <script type="text/javascript" src="../js/frame/datasource/datasource-manage.js"></script>
+    <script type="text/javascript" src="../js/frame/datasource/datasource-orm.js"></script>
+    <script type="text/javascript" src="../js/frame/multitable/multitable-base.js"></script>
+    <script type="text/javascript" src="../js/frame/multitable/multitable-edit.js"></script>
+</head>
+<body>
+<div class="container container-top" id="fieldSelectContainer">
+    <div class="row">
+        <div class = col-md-6>
+            <div class="panel panel-default">
+                <div class="panel-heading" id="master_TableName">
+                </div>
+                <table class="table table-bordered" id="master_TableField">
+
+                </table>
+            </div>
+        </div>
+        <div class = col-md-6>
+                <button id="relationSetBtn" type="button" class="btn btn-primary" data-target="#relationShipSet">关系设置</button>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    主从表关系列表
+                </div>
+                <table class="table table-bordered" id="relation_Set">
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" id="slaveTableContainer">
+
+</div>
+<div clas="row">
+    <div type="button_group" class="span7 text-center">
+        <button id="btnSave" type="button" class="btn btn-primary">确定</button>
+        <button id="btnCancel" type="button" class="btn btn-primary">取消</button>
+    </div>
+</div>
+
+<div id="relationShipSet" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:1200px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">
+                    关系设置
+                </h4>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="relationReviewBtn">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

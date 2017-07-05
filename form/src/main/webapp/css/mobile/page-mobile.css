@@ -1,0 +1,53 @@
+.edit .demo_parent1 {
+    height: 650px;
+    width: 325px;
+    background-image: url(../../img/frame/icon/iphone.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+    padding: 70px 16px 70px 16px;
+}
+
+.edit .demo_parent {
+    height: 492px;
+    width: 295px;
+    margin: auto;
+}
+
+.edit .demo {
+    min-height: 300px;
+    background-color: transparent;
+    padding-top: 10px;
+}
+
+.title {
+    font-weight:normal !important;
+    font-size:16px;
+    max-width: 90%;
+    margin-bottom: 5px !important;
+}
+.m-btn {
+    width: 100%;
+}
+.displaynone {
+    display: none;
+}
+
+.edit .demo_parent1 .mCS-3d-dark.mCSB_scrollTools, .mCS-3d.mCSB_scrollTools {
+    margin-top: 10px;
+}
+
+.zoom {
+    height: 22px;
+    width:22px;
+    padding: 4px;
+    border: 0px;
+    margin-right:10px;
+}
+.zoom:hover,
+.zoom:focus {
+    background-color: #5c5d5d;
+    border-radius: 3px;
+    cursor: pointer;
+}

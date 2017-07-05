@@ -1,0 +1,373 @@
+<div class="demo ui-sortable" style="min-height: 619px;">
+	<div class="lyrow ui-draggable" style="display: block;">
+		<a href="#close" class="remove label label-danger">
+			<i class="glyphicon-remove glyphicon">
+			</i>
+		</a>
+		<div class="preview">
+			12/自定义
+		</div>
+		<div class="view">
+			<div type="layout" ratio="12" compid="vm1475892201536" compname="vm1475892201536"
+			layoutstyle="" ms-controller="vm1475892201536" id="vm1475892201536" input_dataset_1475892201639="asset_area"
+			uri="asset_area" dsname="bcp" dstype="orm" bfd-operation-params="%7B%22model%22%3A%22vm1475892201536%22%2C%22service%22%3A%22bcp%22%2C%22set%22%3A%22asset_area%22%2C%22operations%22%3A%5B%7B%22method%22%3A%22POST%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_area%22%2C%22name%22%3A%22add%22%7D%2C%7B%22method%22%3A%22PUT%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_area%22%2C%22name%22%3A%22update%22%7D%2C%7B%22method%22%3A%22DELETE%22%2C%22submit%22%3A%22delete%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_area%22%2C%22name%22%3A%22delete%22%7D%2C%7B%22method%22%3A%22GET%22%2C%22submit%22%3A%22initVMData%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_area%22%2C%22name%22%3A%22query%22%7D%5D%2C%22post_in%22%3A%5B%5D%2C%22put_in%22%3A%5B%5D%2C%22get_out%22%3A%5B%5D%7D"
+			bfd_set_param_type="in">
+				<div class="row clearfix">
+					<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+					style="padding-bottom: 0px;">
+						<div class="lyrow ui-draggable" style="display: block;">
+							<a href="#close" class="remove label label-danger">
+								<i class="glyphicon-remove glyphicon">
+								</i>
+							</a>
+							<div class="preview">
+								panel
+							</div>
+							<div class="view">
+								<div type="bfd_panel" class="bfd-panel sort-disable mb50 bfd-panel-sortable bfd-panel-info bfd-panel-border top"
+								id="p3" data-panel-color="false" data-panel-remove="false" data-panel-title="false"
+								data-panel-collapse="false" compid="bfd_panel1475892213479" compname="bfd_panel1475892213479"
+								bfd-panel-heading="checked" bfd-panel-body-style="panel_info_top" bfd-panel-scrollbar-style="dark"
+								bfd-panel-sortable="checked" panel_body_style="panel_info_top">
+									<div class="bfd-panel-heading">
+										<div class="row clearfix">
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable">
+												<div class="box box-element ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标题
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" lablefontsize="16" labelfontweight="true" labelfontcolor=""
+														class="layout-align-left layout-align-right" compid="label1475892250765"
+														compname="label1475892250765" defaultvalue="%E5%8C%BA%E5%9F%9F%E4%BF%A1%E6%81%AF">
+															<label class="control-label" id="label1475892250765" name="label1475892250765"
+															i18nkey="区域信息">
+																区域信息
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable">
+												<div class="box box-element layout-block-align-right ui-draggable">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														图标
+													</div>
+													<div class="view draggableHandle">
+														<div type="bfd_icon" alignstyle="layout-block-align-right" class="bfd-panel-default-controls"
+														compid="bfd_icon1475911368175" compname="bfd_icon1475911368175">
+															<a id="btnCollapse" class="icon glyphicon glyphicon-minus">
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<hr>
+									</div>
+									<div class="bfd-panel-body">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 0px;">
+												<div class="lyrow ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														2,4,2,4
+													</div>
+													<div class="view">
+														<div type="layout" ratio="2,4,2,4" compid="layout1475892222434" compname="layout1475892222434"
+														layoutstyle="" id="layout1475892222434">
+															<div class="row clearfix">
+																<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 21px;">
+																	<div class="box box-element ui-draggable" style="display: block;">
+																		<a href="#close" class="remove label label-danger">
+																			<i class="glyphicon-remove glyphicon">
+																			</i>
+																		</a>
+																		<div class="preview">
+																			标签
+																		</div>
+																		<div class="view draggableHandle">
+																			<div type="label" lablefontsize="16" labelfontweight="true" labelfontcolor=""
+																			class="layout-align-right" compid="label1475892238116" compname="label1475892238116"
+																			defaultvalue="ID">
+																				<label class="control-label" id="label1475892238116" name="label1475892238116"
+																				i18nkey="ID">
+																					ID
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 5px;">
+																	<div class="box box-element ui-draggable" style="display: block;">
+																		<a href="#close" class="remove label label-danger">
+																			<i class="glyphicon-remove glyphicon">
+																			</i>
+																		</a>
+																		<div class="preview">
+																			文本框
+																		</div>
+																		<div class="view draggableHandle">
+																			<div type="input_text" compid="input_text1475892224292" compname="input_text1475892224292"
+																			editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D"
+																			textboxtype="text" vnotempty="true" fieldtype="int" field="ID">
+																				<input type="text" class="form-control" id="input_text1475892224292" name="input_text1475892224292"
+																				ms-attr-disabled="ID_form_disabled" ms-duplex-number="ID">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 21px;">
+																	<div class="box box-element ui-draggable" style="display: block;">
+																		<a href="#close" class="remove label label-danger">
+																			<i class="glyphicon-remove glyphicon">
+																			</i>
+																		</a>
+																		<div class="preview">
+																			标签
+																		</div>
+																		<div class="view draggableHandle">
+																			<div type="label" lablefontsize="16" labelfontweight="true" labelfontcolor=""
+																			class="layout-align-right" compid="label1475892244356" compname="label1475892244356"
+																			defaultvalue="NAME">
+																				<label class="control-label" id="label1475892244356" name="label1475892244356"
+																				i18nkey="NAME">
+																					NAME
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 5px;">
+																	<div class="box box-element ui-draggable" style="display: block;">
+																		<a href="#close" class="remove label label-danger">
+																			<i class="glyphicon-remove glyphicon">
+																			</i>
+																		</a>
+																		<div class="preview">
+																			文本框
+																		</div>
+																		<div class="view draggableHandle">
+																			<div type="input_text" compid="input_text1475892234475" compname="input_text1475892234475"
+																			editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D"
+																			textboxtype="text" vnotempty="true" fieldtype="string" field="NAME">
+																				<input type="text" class="form-control" id="input_text1475892234475" name="input_text1475892234475"
+																				ms-attr-disabled="NAME_form_disabled" ms-duplex-string="NAME">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lyrow ui-draggable" style="display: block;">
+		<a href="#close" class="remove label label-danger">
+			<i class="glyphicon-remove glyphicon">
+			</i>
+		</a>
+		<div class="preview">
+			12/自定义
+		</div>
+		<div class="view">
+			<div type="layout" ratio="12" compid="vm1475892268221" compname="vm1475892268221"
+			layoutstyle="" ms-controller="vm1475892268221" id="vm1475892268221" input_dataset_1475892314917="asset_inst_base"
+			uri="asset_inst_base" dsname="bcp" dstype="orm" bfd-operation-params="%7B%22model%22%3A%22vm1475892268221%22%2C%22service%22%3A%22bcp%22%2C%22set%22%3A%22asset_inst_base%22%2C%22operations%22%3A%5B%7B%22method%22%3A%22POST%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_inst_base%22%2C%22name%22%3A%22add%22%7D%2C%7B%22method%22%3A%22PUT%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_inst_base%22%2C%22name%22%3A%22update%22%7D%2C%7B%22method%22%3A%22DELETE%22%2C%22submit%22%3A%22delete%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_inst_base%22%2C%22name%22%3A%22delete%22%7D%2C%7B%22method%22%3A%22GET%22%2C%22submit%22%3A%22initVMData%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_inst_base%22%2C%22name%22%3A%22query%22%7D%5D%2C%22post_in%22%3A%5B%5D%2C%22put_in%22%3A%5B%5D%2C%22get_out%22%3A%5B%5D%7D"
+			bfd_set_param_type="in">
+				<div class="row clearfix">
+					<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+					style="padding-bottom: 0px; background-color: rgb(241, 243, 250);">
+						<div class="lyrow ui-draggable" style="display: block;">
+							<a href="#close" class="remove label label-danger showRemove">
+								<i class="glyphicon-remove glyphicon">
+								</i>
+							</a>
+							<div class="preview">
+								panel
+							</div>
+							<div class="view form-component_active">
+								<div type="bfd_panel" class="bfd-panel sort-disable mb50 bfd-panel-sortable bfd-panel-info bfd-panel-border top"
+								id="p3" data-panel-color="false" data-panel-remove="false" data-panel-title="false"
+								data-panel-collapse="false" compid="bfd_panel1475892275265" compname="bfd_panel1475892275265"
+								bfd-panel-heading="checked" bfd-panel-body-style="panel_info_top" bfd-panel-scrollbar-style="dark"
+								bfd-panel-sortable="checked" panel_body_style="panel_info_top">
+									<div class="bfd-panel-heading">
+										<div class="row clearfix">
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable" style="padding-bottom: 0px;">
+												<div class="box box-element ui-draggable" style="display: block; position: relative; opacity: 1; z-index: 0;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标题
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" lablefontsize="16" labelfontweight="true" labelfontcolor=""
+														class="layout-align-left layout-align-right" compid="label1475892277383"
+														compname="label1475892277383" defaultvalue="%E8%B5%84%E4%BA%A7%E4%BF%A1%E6%81%AF">
+															<label class="control-label" id="label1475892277383" name="label1475892277383"
+															i18nkey="资产信息">
+																资产信息
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable" style="padding-bottom: 2px;">
+												<div class="box box-element layout-block-align-right ui-draggable">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														图标
+													</div>
+													<div class="view">
+														<div type="bfd_icon" alignstyle="layout-block-align-right" class="bfd-panel-default-controls">
+															<a id="btnCollapse" class="icon glyphicon glyphicon-minus">
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<hr>
+									</div>
+									<div class="bfd-panel-body">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 0px;">
+												<div class="lyrow ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														2,4,2,4
+													</div>
+													<div class="view">
+														<div type="layout" ratio="2,4,2,4" compid="layout1475892296684" compname="layout1475892296684"
+														layoutstyle="" id="layout1475892296684">
+															<div class="row clearfix">
+																<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 21px;">
+																	<div class="box box-element ui-draggable" style="display: block;">
+																		<a href="#close" class="remove label label-danger">
+																			<i class="glyphicon-remove glyphicon">
+																			</i>
+																		</a>
+																		<div class="preview">
+																			标签
+																		</div>
+																		<div class="view draggableHandle">
+																			<div type="label" lablefontsize="16" labelfontweight="true" labelfontcolor=""
+																			class="layout-align-right" compid="label1475892300558" compname="label1475892300558"
+																			defaultvalue="ID">
+																				<label class="control-label" id="label1475892300558" name="label1475892300558"
+																				i18nkey="ID">
+																					ID
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 5px;">
+																	<div class="box box-element ui-draggable" style="display: block;">
+																		<a href="#close" class="remove label label-danger">
+																			<i class="glyphicon-remove glyphicon">
+																			</i>
+																		</a>
+																		<div class="preview">
+																			文本框
+																		</div>
+																		<div class="view draggableHandle">
+																			<div type="input_text" compid="input_text1475892298753" compname="input_text1475892298753"
+																			editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D"
+																			textboxtype="text" vnotempty="true" fieldtype="int" field="ID">
+																				<input type="text" class="form-control" id="input_text1475892298753" name="input_text1475892298753"
+																				ms-attr-disabled="ID_form_disabled" ms-duplex-number="ID">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column ui-sortable" style="padding-bottom: 21px;">
+																	<div class="box box-element ui-draggable" style="display: block;">
+																		<a href="#close" class="remove label label-danger">
+																			<i class="glyphicon-remove glyphicon">
+																			</i>
+																		</a>
+																		<div class="preview">
+																			标签
+																		</div>
+																		<div class="view draggableHandle">
+																			<div type="label" lablefontsize="16" labelfontweight="true" labelfontcolor=""
+																			class="layout-align-right" compid="label1475892338322" compname="label1475892338322"
+																			defaultvalue="NAME">
+																				<label class="control-label" id="label1475892338322" name="label1475892338322"
+																				i18nkey="NAME">
+																					NAME
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column ui-sortable" style="padding-bottom: 5px;">
+																	<div class="box box-element ui-draggable" style="display: block;">
+																		<a href="#close" class="remove label label-danger">
+																			<i class="glyphicon-remove glyphicon">
+																			</i>
+																		</a>
+																		<div class="preview">
+																			文本框
+																		</div>
+																		<div class="view draggableHandle">
+																			<div type="input_text" compid="input_text1475892303632" compname="input_text1475892303632"
+																			editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D"
+																			textboxtype="text" vnotempty="true" fieldtype="string" field="NAME">
+																				<input type="text" class="form-control" id="input_text1475892303632" name="input_text1475892303632"
+																				ms-attr-disabled="NAME_form_disabled" ms-duplex-string="NAME">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer-bg ui-sortable">
+</div>

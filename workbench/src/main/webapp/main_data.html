@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/bootstrap/select2/select2.min.css" rel="stylesheet">
+    <link href="css/component/m-layout.css" rel="stylesheet">
+    <link href="css/jquery/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/component/m-label.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-table.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-ID-CN.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+    <script type="text/javascript" src="js/lib/lodash.min.js"></script>
+    <script type="text/javascript" src="js/lib/select2/select2.min.js"></script>
+    <script type="text/javascript" src="js/lib/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery.i18n.properties-1.0.9.js"></script>
+    <script type="text/javascript" src="js/lib/chinese-region/bootstrap-chinese-region.js"></script>
+    <script type="text/javascript" src="js/lib/chinese-region/bootstrap-chinese-region-areas.json"></script>
+    <script type="text/javascript" src="js/commTools.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPagei18n.js"></script>
+    <script type="text/javascript" src="js/page/init/page-cache-init.js"></script>
+    <script type="text/javascript" src="js/component/m-layout.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/component/m-label.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-editable.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-zh-CN.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-toolbar.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageTable.js"></script>
+    <script type="text/javascript" src="js/lib/avalon.js"></script>
+    <script type="text/javascript" src="default_common.js"></script>
+    <script type="text/javascript" src="main_data.js"></script>
+</head> 
+<body>
+<div class="container container-top">
+	<div type="layout" compid="vm1474957430162" ms-controller="vm1474957430162" id="vm1474957430162" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+				<div type="image" compid="image1474957478030">
+					<img src="img/demo/pro_type.jpg" class="fancybox" alt="图片1" width="150px" height="150px">
+				</div>
+			</div>
+			<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+				<div type="label" compid="label1474958128714" class="layout-align-left">
+					 <label class="control-label" id="label1474958128714" i18nkey="主数据（MD Master Data）指系统间共享数据（例如，客户、供应商、账户和组织部门相关数据）。与记录业务活动，波动较大的交易数据相比，主数据（也称基准数据）变化缓慢。在正规的关系数据模型中，交易记录（例如，订单行项）可通过关键字（例如，订单头或发票编号和产品代码）调出主数据。">主数据（MD Master Data）指系统间共享数据（例如，客户、供应商、账户和组织部门相关数据）。与记录业务活动，波动较大的交易数据相比，主数据（也称基准数据）变化缓慢。在正规的关系数据模型中，交易记录（例如，订单行项）可通过关键字（例如，订单头或发票编号和产品代码）调出主数据。</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div type="layout" compid="vm1474957450763" ms-controller="vm1474957450763" id="vm1474957450763" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+				<div type="layout" compid="layout1474959347399" id="layout1474959347399" class="form-group">
+					<div class="row">
+						<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+							<div type="label" compid="label1474957542305" class="layout-align-left">
+								 <label class="control-label" id="label1474957542305" i18nkey="主数据">主数据</label>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+							<div type="button" compid="button1474959383242" class="layout-align-right">
+								 <button type="button" class="btn btn-primary" id="button1474959383242" name="button1474959383242" i18nkey="添加">添加</button>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column">
+							<div type="button" compid="button1474959385293" class="layout-align-right">
+								 <button type="button" class="btn btn-primary" id="button1474959385293" name="button1474959385293" i18nkey="删除" ms-duplex-string="button1474959385293" ms-attr-disabled="button1474959385293_form_disabled">删除</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1474959177778" id="layout1474959177778" class="form-group">
+					<div class="row">
+						<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+							<div type="label" compid="label1474957663476" class="layout-align-left">
+								 <label class="control-label" id="label1474957663476" i18nkey="关联审批单">关联审批单</label>
+							</div>
+						</div>
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="image" compid="image1474959189310">
+								<img src="img/demo/edit_icon.jpg" class="fancybox" alt="图片1" width="16px" height="16px">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1474957643621" id="layout1474957643621" class="form-group">
+					<div class="row">
+						<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+							<div type="label" compid="label1474957701660" class="layout-align-left">
+								 <label class="control-label" id="label1474957701660" i18nkey="用户数据">用户数据</label>
+							</div>
+						</div>
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="image" compid="image1474959218262">
+								<img src="img/demo/edit_icon.jpg" class="fancybox" alt="图片1" width="16px" height="16px">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1474957699239" id="layout1474957699239" class="form-group">
+					<div class="row">
+						<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+							<div type="label" compid="label1474957718683" class="layout-align-left">
+								 <label class="control-label" id="label1474957718683" i18nkey="其他数据">其他数据</label>
+							</div>
+						</div>
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="image" compid="image1474959246135">
+								<img src="img/demo/edit_icon.jpg" class="fancybox" alt="图片1" height="16px" width="16px">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+				<div type="layout" compid="layout1474958251850" id="layout1474958251850" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="separator" compid="separator1474958258252">
+								<ul class="layout-separator" id="separator1474958258252" ms-duplex-string="separator1474958258252" ms-attr-disabled="separator1474958258252_form_disabled" style="border-color: rgb(130, 130, 130);">
+									<li class="layout-separator-selected ">
+										 <a class="layout-separator-inner"><span class="icon"></span> <span class="title" i18nkey="基本信息">基本信息</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1474958328983" id="layout1474958328983" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right" compid="label1474958335297">
+								 <label class="control-label" id="label1474958335297" i18nkey="编码">编码</label>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+							<div type="input_text" class="group">
+								<input type="text" class="form-control" id="layout1474958328983" name="layout1474958328983" ms-duplex-string="layout1474958328983" ms-attr-disabled="layout1474958328983_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right" compid="label1474958343015">
+								 <label class="control-label" id="label1474958343015" i18nkey="名称">名称</label>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+							<div type="input_text" class="group">
+								<input type="text" class="form-control" id="layout1474958328983" name="layout1474958328983" ms-duplex-string="layout1474958328983" ms-attr-disabled="layout1474958328983_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1474958253553" id="layout1474958253553" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" compid="label1474958355520" class="layout-align-right">
+								 <label class="control-label" id="label1474958355520" i18nkey="描述">描述</label>
+							</div>
+						</div>
+						<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+							<div type="textarea" compid="textarea1474958368840">
+								<textarea class="form-control" rows="2" id="textarea1474958368840" name="textarea1474958368840" ms-duplex-string="textarea1474958368840" ms-attr-disabled="textarea1474958368840_form_disabled">								</textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1474958275072" id="layout1474958275072" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="separator" compid="separator1474958284352">
+								<ul class="layout-separator" id="separator1474958284352" ms-duplex-string="separator1474958284352" ms-attr-disabled="separator1474958284352_form_disabled" style="border-color: rgb(130, 130, 130);">
+									<li class="layout-separator-selected ">
+										 <a class="layout-separator-inner"><span class="icon"></span> <span class="title" i18nkey="数据项">数据项</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1474958298610" id="layout1474958298610" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="table_base_local" style="overflow-x: auto; overflow-y: auto;" compid="table_base_local1474958302070" field="id%3Did%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3Dname%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3Dtype%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3Dlength%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3Ddefault%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3DisIndex%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3DisPublished%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40">
+								<table id="table_base_local1474958302070">
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

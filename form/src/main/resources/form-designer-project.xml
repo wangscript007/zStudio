@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root isCsvFile="true" frameFilePath="{tomcat.home}/webapps/designer-frame-files">
+    <project previewPrefix="designer/layoutit/" previewPort="8080" commoncssPath="css/common" commonjsPath="js/common" publishPath="{tomcat.home}/webapps/designer/layoutit" localPath="{tomcat.home}/webapps/designer/layoutit" name="default" isI18n="false">
+        <sourceItem uriPrefix="/dataservice/orm" port="" ip="" displayName="BCP-OR" name="bcp" type="orm"/>
+    </project>
+</root>

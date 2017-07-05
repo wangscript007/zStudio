@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root frameFilePath="{tomcat.home}/webapps/datavisual/src" isCsvFile="true">
+    <project name="default" localPath="{tomcat.home}/webapps/datavisual/project/default/" publishPath="{tomcat.home}/webapps/datavisual/project/default/" commonjsPath="js/common" commoncssPath="css/common" previewPort="8080" previewPrefix="/datavisual/project/default/" isI18n="false">
+    </project>
+</root>

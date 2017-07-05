@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/bootstrap/select2/select2.min.css" rel="stylesheet">
+    <link href="css/component/m-layout.css" rel="stylesheet">
+    <link href="css/component/m-label.css" rel="stylesheet">   
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-ID-CN.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+  
+    <script type="text/javascript" src="js/commTools.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPagei18n.js"></script>
+    <script type="text/javascript" src="js/page/init/page-cache-init.js"></script>
+    <script type="text/javascript" src="js/component/m-layout.js"></script>
+    <script type="text/javascript" src="js/component/m-label.js"></script>
+    <script type="text/javascript" src="js/lib/avalon.js"></script>
+    <script type="text/javascript" src="default_common.js"></script>
+    <script type="text/javascript" src="add_package_page.js"></script>
+</head> 
+<body>
+<div class="container container-top">
+    <div type="layout" compid="vm1474531931934" ms-controller="vm1474531931934" id="vm1474531931934" dstype="orm"  class="form-horizontal">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+				<div type="layout" compid="layout1474531933444" id="layout1474531933444" class="form-group">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+                            <div type="label" compid="label1474531946869" class="layout-align-right">
+                                <label class="control-label" id="label1474531946869" i18nkey="URL">文件名&nbsp;<span style="color: red;vertical-align: middle;">*</span></label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+                            <div type="input_text" compid="input_text1474531957274" field="FORMURL" class="group">
+                                <input type="text" class="form-control" id="input_text1474531957274" name="input_text1474531957274" data-bv-group=".group" placeholder="不超过20字符">
+                            </div>
+                        </div>
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column" style="padding: 0px;">
+                            <p id="suffix" style="margin: 8px 0 0 0;font-size: 16px;">.html</p>
+                        </div>
+                    </div>
+                </div>
+                <div type="layout" compid="layout1474531933444" id="layout14745311933444" class="form-group">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+                            <div type="label" compid="label1474531946868" class="layout-align-right">
+                                <label class="control-label" id="label1474531946868" i18nkey="页面名称">名称&nbsp;<span style="color: red;vertical-align: middle;">*</span></label>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-xs-8 col-sm-8 col-lg-8 column">
+                            <div type="input_text" compid="input_text1474531957273" field="NAME" class="group">
+                                <input type="text" class="form-control" id="input_text1474531957273" name="input_text1474531957273" data-bv-group=".group" placeholder="不超过20字符">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div type="layout" compid="layout1474532014722" id="layout1474532014722" class="form-group">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+                            <div type="label" class="layout-align-right">
+                                <label i18nkey="数据模型">数据模型&nbsp;<span style="color: red;vertical-align: middle;">*</span></label>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-xs-8 col-sm-8 col-lg-8 column">
+                            <div type="select_dynamic" compid="select_dynamic14871255964280" compname="select_dynamic14871255964280" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D">
+                                <select style="display : inline;width:100%;" class="form-control" id="select_dynamic14871255964280" name="select_dynamic14871255964280"> <option>下拉框选项1</option> <option>下拉框选项2</option></select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<hr/>
+                <div type="layout" compid="layout1474531940022" id="layout1474531940022" class="form-group">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column layout-align-right">
+                            <div class="btn-group">
+                                 <button type="button" class="btn btn-default btn-sm" id="button1474533166516" name="button1474533166516">确定</button>
+                            </div>
+                            <div class="btn-group">
+                                 <button type="button" class="btn btn-primary btn-sm" id="button14919595968970" name="button14919595968970" i18nkey="确定并设计">确定并设计</button>
+                            </div>
+                            <div class="btn-group">
+                                 <button type="button" class="btn btn-default btn-sm" id="button1474533168929" name="button1474533168929" i18nkey="取消">取消</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

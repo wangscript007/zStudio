@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root isCsvFile="true" frameFilePath="../layoutit/frame/">
+    <project previewPrefix="/cos/formfiles" previewPort="80" commoncssPath="css/common" commonjsPath="js/common" publishPath="../webapps/cos/formfiles" localPath="../webapps/cos/formfiles" name="default">
+        <sourceItem uriPrefix="$base_url/orm" port="8080" ip="10.74.216.122" displayName="BCP-OR" name="bcp"/>
+    </project>
+</root>

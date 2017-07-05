@@ -1,0 +1,1 @@
+{"id":"testModelDef1","name":"测试模型定义1","nodeList":[{"id":"group1","name":"分组1","nodeList":[{"id":"field1","name":"字段1","attributeMap":{"length":10,"default":"100","nullable":false},"type":1}],"type":2},{"id":"field2","name":"字段2","attributeMap":{"length":10,"default":"100","nullable":false},"type":1}],"type":0}

@@ -1,0 +1,437 @@
+{
+  "id": "gauge",
+  "thumbnail": "gauge.png",
+  "js": "gauge.js",
+  "instanceName": "Gauge",
+  "displayName": "仪表",
+  "unsupportedBaseProperties": [
+    "legend", "toolbox"
+  ],
+
+  "properties": [{
+    "displayName": "图表",
+    "propertyItems": [
+	  {
+        "displayName": "高度",
+        "attributeName": "chart_height",
+        "attributeRelation": "chart_height",
+        "type": "input",
+        "defaultOption": "300px",
+		"dataType": "string"
+      },
+      {
+        "displayName": "背景颜色",
+        "attributeName": "backgroundColor",
+        "attributeRelation": "backgroundColor",
+        "type": "color",
+        "defaultOption": "transparent"
+      },
+      {
+        "displayName": "是否开启动画",
+        "attributeName": "animation",
+        "attributeRelation": "animation",
+        "type": "radio",
+        "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+        "defaultOption": true
+      }]
+  },{
+    "displayName": "标题",
+    "attributeName": "title",
+    "propertyItems": [
+      {
+        "displayName": "是否显示",
+        "attributeName": "title_show",
+        "attributeRelation": "title.show",
+        "type": "radio",
+        "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+        "defaultOption": true
+      }, {
+        "displayName": "主标题",
+        "attributeName": "title_text",
+        "attributeRelation": "title.text",
+        "type": "input",
+        "defaultOption": "主标题",
+        "dataType": "string"
+      }, {
+        "displayName": "主标题颜色",
+        "attributeName": "title_textStyle_color",
+        "attributeRelation": "title.textStyle.color",
+        "type": "color",
+        "defaultOption": "#333"
+      },{
+        "displayName": "副标题",
+        "attributeName": "title_subtext",
+        "attributeRelation": "title.subtext",
+        "type": "input",
+        "defaultOption": "副标题",
+        "dataType": "string"
+      },  {
+        "displayName": "副标题颜色",
+        "attributeName": "title_subtextStyle_color",
+        "attributeRelation": "title.subtextStyle.color",
+        "type": "color",
+        "defaultOption": "#aaa"
+      },{
+        "displayName": "水平位置",
+        "attributeName": "title_left",
+        "attributeRelation": "title.left",
+        "type": "radio",
+        "options": [{"title": "左", "value": "left"}, {"title": "中", "value": "center"}, {"title": "右", "value": "right"}],
+        "defaultOption": "left"
+      }, {
+        "displayName": "垂直位置",
+        "attributeName": "title_top",
+        "attributeRelation": "title.top",
+        "type": "radio",
+        "options": [{"title": "上", "value": "top"}, {"title": "中", "value": "middle"}, {"title": "下", "value": "bottom"}],
+        "defaultOption": "top"
+      }, {
+        "displayName": "背景颜色",
+        "attributeName": "title_backgroundColor",
+        "attributeRelation": "title.backgroundColor",
+        "type": "color",
+        "defaultOption": "transparent"
+      }]
+  },
+    {
+      "displayName": "提示框",
+      "attributeName": "tooltip",
+      "propertyItems": [{
+        "displayName": "是否显示",
+        "attributeName": "tooltip_show",
+        "attributeRelation": "tooltip.show",
+        "type": "radio",
+        "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+        "defaultOption": true
+      }, {
+        "displayName": "触发类型",
+        "attributeName": "tooltip_trigger",
+        "attributeRelation": "tooltip.trigger",
+        "type": "radio",
+        "options": [{"title": "数据", "value": "item"}, {"title": "坐标", "value": "axis"}],
+        "defaultOption": "item"
+      }]
+    },
+    {
+      "displayName": "系列",
+      "attributeName": "series",
+      "attributeRelation": "series",
+      "multiple": true,
+      "propertyItems": [
+        {
+          "displayName": "最小值",
+          "attributeName": "series_min",
+          "attributeRelation": "series[{idx}].min",
+          "type": "input",
+          "defaultOption": 0,
+          "dataType": "float"
+        },
+        {
+          "displayName": "最大值",
+          "attributeName": "series_max",
+          "attributeRelation": "series[{idx}].max",
+          "type": "input",
+          "defaultOption": 100,
+          "dataType": "float"
+        },
+        {
+          "displayName": "半径",
+          "attributeName": "series_radius",
+          "attributeRelation": "series[{idx}].radius",
+          "type": "input",
+          "defaultOption": "75%",
+          "dataType": "string"
+        },
+        {
+          "displayName": "中心坐标",
+          "attributeName": "series_center",
+          "attributeRelation": "series[{idx}].center",
+          "type": "multi-input",
+          "options": [{"title": "X轴"}, {"title": "Y轴"}],
+          "defaultOption": ["50%", "50%"],
+          "dataType": "string"
+        },
+        {
+          "displayName": "起始角度",
+          "attributeName": "series_startAngle",
+          "attributeRelation": "series[{idx}].startAngle",
+          "type": "input",
+          "defaultOption": 225,
+          "dataType": "int"
+        },
+        {
+          "displayName": "结束角度",
+          "attributeName": "series_endAngle",
+          "attributeRelation": "series[{idx}].endAngle",
+          "type": "input",
+          "defaultOption": -45,
+          "dataType": "int"
+        },
+        {
+          "displayName": "顺时针",
+          "attributeName": "series_clockwise",
+          "attributeRelation": "series[{idx}].clockwise",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": true
+        },
+        {
+          "displayName": "刻度分割段数",
+          "attributeName": "series_splitNumber",
+          "attributeRelation": "series[{idx}].splitNumber",
+          "type": "input",
+          "defaultOption": 10,
+          "dataType": "int"
+        },
+        {
+          "displayName": "轴线宽度",
+          "attributeName": "series_axisLine_lineStyle_width",
+          "attributeRelation": "series[{idx}].axisLine.lineStyle.width",
+          "type": "input",
+          "defaultOption": 30,
+          "dataType": "int"
+        },
+        {
+          "displayName": "轴线阴影模糊",
+          "attributeName": "series_axisLine_lineStyle_shadowBlur",
+          "attributeRelation": "series[{idx}].axisLine.lineStyle.shadowBlur",
+          "type": "input",
+          "defaultOption": 0,
+          "dataType": "int"
+        },
+        {
+          "displayName": "轴线阴影颜色",
+          "attributeName": "series_axisLine_lineStyle_shadowColor",
+          "attributeRelation": "series[{idx}].axisLine.lineStyle.shadowColor",
+          "type": "color",
+          "defaultOption": ""
+        },
+        {
+          "displayName": "轴线阴影水平偏移",
+          "attributeName": "series_axisLine_lineStyle_shadowOffsetX",
+          "attributeRelation": "series[{idx}].axisLine.lineStyle.shadowOffsetX",
+          "type": "input",
+          "defaultOption": 0,
+          "dataType": "int"
+        },
+        {
+          "displayName": "轴线阴影垂直偏移",
+          "attributeName": "series_axisLine_lineStyle_shadowOffsetY",
+          "attributeRelation": "series[{idx}].axisLine.lineStyle.shadowOffsetY",
+          "type": "input",
+          "defaultOption": 0,
+          "dataType": "int"
+        },
+        {
+          "displayName": "轴线透明度",
+          "attributeName": "series_axisLine_lineStyle_opacity",
+          "attributeRelation": "series[{idx}].axisLine.lineStyle.opacity",
+          "type": "input",
+          "defaultOption": 1,
+          "dataType": "float"
+        },
+        {
+          "displayName": "显示分割线",
+          "attributeName": "series_splitLine_show",
+          "attributeRelation": "series[{idx}].splitLine.show",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": true
+        },
+        {
+          "displayName": "分割线长度",
+          "attributeName": "series_splitLine_length",
+          "attributeRelation": "series[{idx}].splitLine.length",
+          "type": "input",
+          "defaultOption": 30,
+          "dataType": "int"
+        },
+        {
+          "displayName": "分割线颜色",
+          "attributeName": "series_splitLine_lineStyle_color",
+          "attributeRelation": "series[{idx}].splitLine.lineStyle.color",
+          "type": "color",
+          "defaultOption": "#eee"
+        },
+        {
+          "displayName": "分割线宽度",
+          "attributeName": "series_splitLine_lineStyle_width",
+          "attributeRelation": "series[{idx}].splitLine.lineStyle.width",
+          "type": "input",
+          "defaultOption": 2,
+          "dataType": "int"
+        },
+        {
+          "displayName": "分割线样式",
+          "attributeName": "series_splitLine_lineStyle_type",
+          "attributeRelation": "series[{idx}].splitLine.lineStyle.type",
+          "type": "radio",
+          "options": [{"title": "实线", "value": "solid"}, {"title": "虚线", "value": "dashed"}, {"title": "点线", "value": "dotted"}],
+          "defaultOption": "solid"
+        },
+
+        {
+          "displayName": "显示刻度线",
+          "attributeName": "series_axisTick_show",
+          "attributeRelation": "series[{idx}].axisTick.show",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": true
+        },
+        {
+          "displayName": "刻度线长度",
+          "attributeName": "series_axisTick_length",
+          "attributeRelation": "series[{idx}].axisTick.length",
+          "type": "input",
+          "defaultOption": 8,
+          "dataType": "int"
+        },
+        {
+          "displayName": "刻度线颜色",
+          "attributeName": "series_axisTick_lineStyle_color",
+          "attributeRelation": "series[{idx}].axisTick.lineStyle.color",
+          "type": "color",
+          "defaultOption": "#eee"
+        },
+        {
+          "displayName": "刻度线宽度",
+          "attributeName": "series_axisTick_lineStyle_width",
+          "attributeRelation": "series[{idx}].axisTick.lineStyle.width",
+          "type": "input",
+          "defaultOption": 1,
+          "dataType": "int"
+        },
+        {
+          "displayName": "刻度线样式",
+          "attributeName": "series_axisTick_lineStyle_type",
+          "attributeRelation": "series[{idx}].axisTick.lineStyle.type",
+          "type": "radio",
+          "options": [{"title": "实线", "value": "solid"}, {"title": "虚线", "value": "dashed"}, {"title": "点线", "value": "dotted"}],
+          "defaultOption": "solid"
+        },
+
+        {
+          "displayName": "指针长度",
+          "attributeName": "series_pointer_length",
+          "attributeRelation": "series[{idx}].pointer.length",
+          "type": "input",
+          "defaultOption": "80%",
+          "dataType": "string"
+        },
+        {
+          "displayName": "指针宽度",
+          "attributeName": "series_pointer_width",
+          "attributeRelation": "series[{idx}].pointer.width",
+          "type": "input",
+          "defaultOption": 8,
+          "dataType": "int"
+        },
+        {
+          "displayName": "仪表盘标题",
+          "attributeName": "series_title_show",
+          "attributeRelation": "series[{idx}].title.show",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": true
+        },
+        {
+          "displayName": "标题偏移位置",
+          "attributeName": "series_title_offsetCenter",
+          "attributeRelation": "series[{idx}].title.offsetCenter",
+          "type": "multi-input",
+          "options": [{"title": "水平方向"}, {"title": "垂直方向"}],
+          "defaultOption": [0, "-40%"]
+        },
+        {
+          "displayName": "标题颜色",
+          "attributeName": "series_title_textStyle_color",
+          "attributeRelation": "series[{idx}].title.textStyle.color",
+          "type": "color",
+          "defaultOption": "#333"
+        },
+        {
+          "displayName": "标题字体风格",
+          "attributeName": "series_title_textStyle_fontStyle",
+          "attributeRelation": "series[{idx}].title.textStyle.fontStyle",
+          "type": "radio",
+          "options": [{"title": "标准", "value": "normal"}, {"title": "斜体", "value": "italic"}, {"title": "倾斜", "value": "oblique"}],
+          "defaultOption": "normal"
+        },
+        {
+          "displayName": "标题字体粗细",
+          "attributeName": "series_title_textStyle_fontWeight",
+          "attributeRelation": "series[{idx}].title.textStyle.fontWeight",
+          "type": "radio",
+          "options": [{"title": "标准", "value": "normal"}, {"title": "加粗", "value": "bold"}, {"title": "更粗", "value": "bolder"}, {"title": "更细", "value": "lighter"}],
+          "defaultOption": "normal"
+        },
+        {
+          "displayName": "标题字体大小",
+          "attributeName": "series_title_textStyle_fontSize",
+          "attributeRelation": "series[{idx}].title.textStyle.fontSize",
+          "type": "input",
+          "defaultOption": 12,
+          "dataType": "int"
+        },
+
+        {
+          "displayName": "显示明细",
+          "attributeName": "series_detail_show",
+          "attributeRelation": "series[{idx}].detail.show",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": true
+        },
+        {
+          "displayName": "明细偏移位置",
+          "attributeName": "series_detail_offsetCenter",
+          "attributeRelation": "series[{idx}].detail.offsetCenter",
+          "type": "multi-input",
+          "options": [{"title": "水平方向"}, {"title": "垂直方向"}],
+          "defaultOption": [0, "40%"]
+        },
+        {
+          "displayName": "明细字体风格",
+          "attributeName": "series_detail_textStyle_fontStyle",
+          "attributeRelation": "series[{idx}].detail.textStyle.fontStyle",
+          "type": "radio",
+          "options": [{"title": "标准", "value": "normal"}, {"title": "斜体", "value": "italic"}, {"title": "倾斜", "value": "oblique"}],
+          "defaultOption": "normal"
+        },
+        {
+          "displayName": "明细字体粗细",
+          "attributeName": "series_detail_textStyle_fontWeight",
+          "attributeRelation": "series[{idx}].detail.textStyle.fontWeight",
+          "type": "radio",
+          "options": [{"title": "标准", "value": "normal"}, {"title": "加粗", "value": "bold"}, {"title": "更粗", "value": "bolder"}, {"title": "更细", "value": "lighter"}],
+          "defaultOption": "normal"
+        },
+        {
+          "displayName": "明细字体大小",
+          "attributeName": "series_detail_textStyle_fontSize",
+          "attributeRelation": "series[{idx}].detail.textStyle.fontSize",
+          "type": "input",
+          "defaultOption": 30,
+          "dataType": "int"
+        },
+
+        {
+          "displayName": "响应鼠标事件",
+          "attributeName": "series_silent",
+          "attributeRelation": "series[{idx}].silent",
+          "type": "radio",
+          "options": [{"title": "是", "value": false}, {"title": "否", "value": true}],
+          "defaultOption": false
+        },
+        {
+          "displayName": "开启动画",
+          "attributeName": "series_animation",
+          "attributeRelation": "series[{idx}].animation",
+          "type": "radio",
+          "options": [{"title": "是", "value": true}, {"title": "否", "value": false}],
+          "defaultOption": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  metadata-complete="false" version="3.0">
+  <display-name>workbench</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 指Spring Bean募目录默WEB-INF目录 -->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:applicationContext.xml</param-value>
+  </context-param>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+
+  <filter>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>utf-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>sessionFilter</filter-name>
+    <filter-class>com.zte.mao.common.filter.SessionFilter</filter-class>
+    <init-param>
+      <param-name>excludedPages</param-name>
+      <param-value>user-page.html,browser-validate.html</param-value>
+    </init-param>
+    <init-param>
+      <param-name>ignoreTypes</param-name>
+      <param-value>gif,bmp,png,jpg,js,flash,css,woff,tff,svg</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>sessionFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>dataServiceFilter</filter-name>
+    <filter-class>com.zte.mao.common.filter.DataServiceFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>dataServiceFilter</filter-name>
+    <url-pattern>/orm/*</url-pattern>
+  </filter-mapping>
+
+  <servlet>
+    <servlet-name>springMVC</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <!-- 远servlet.xml募位煤疲默为WEB-INF目录拢为[<servlet-name>]-servlet.xmlspring-servlet.xml -->
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath*:spring-mvc.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>springMVC</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DruidStatView</servlet-name>
+    <servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
+    <init-param>
+      <!-- 允许清空统计数据 -->
+      <param-name>resetEnable</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <init-param>
+      <!-- 用户名 -->
+      <param-name>loginUsername</param-name>
+      <param-value>ksy</param-value>
+    </init-param>
+    <init-param>
+      <!-- 密码 -->
+      <param-name>loginPassword</param-name>
+      <param-value>51ksy_Z</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DruidStatView</servlet-name>
+    <url-pattern>/druid/*</url-pattern>
+  </servlet-mapping>
+</web-app>

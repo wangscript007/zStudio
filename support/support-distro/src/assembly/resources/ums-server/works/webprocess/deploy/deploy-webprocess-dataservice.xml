@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<ppus>
+  <ppu name="bcp">
+    <pmu name="dataservice" function="web" />
+  </ppu>
+</ppus>

@@ -1,0 +1,529 @@
+<div class="demo ui-sortable" style="min-height: 619px;">
+	<div class="lyrow ui-draggable" style="display: block;">
+		<a href="#close" class="remove label label-danger">
+			<i class="glyphicon-remove glyphicon">
+			</i>
+		</a>
+		<div class="preview">
+			12/自定义
+		</div>
+		<div class="view">
+			<div type="layout" ratio="12" compid="vm1475890587222" compname="vm1475890587222"
+			layoutstyle="" ms-controller="vm1475890587222" id="vm1475890587222" input_dataset_1475890594129="asset_area"
+			uri="asset_area" dsname="bcp" dstype="orm" bfd-operation-params="%7B%22model%22%3A%22vm1475890587222%22%2C%22service%22%3A%22bcp%22%2C%22set%22%3A%22asset_area%22%2C%22operations%22%3A%5B%7B%22method%22%3A%22POST%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_area%22%2C%22name%22%3A%22add%22%7D%2C%7B%22method%22%3A%22PUT%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_area%22%2C%22name%22%3A%22update%22%7D%2C%7B%22method%22%3A%22DELETE%22%2C%22submit%22%3A%22delete%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_area%22%2C%22name%22%3A%22delete%22%7D%2C%7B%22method%22%3A%22GET%22%2C%22submit%22%3A%22initVMData%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_area%22%2C%22name%22%3A%22query%22%7D%5D%2C%22post_in%22%3A%5B%5D%2C%22put_in%22%3A%5B%5D%2C%22get_out%22%3A%5B%5D%7D"
+			bfd_set_param_type="in">
+				<div class="row clearfix">
+					<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+					style="padding-bottom: 0px;">
+						<div class="box box-element ui-draggable" style="display: block; position: relative; opacity: 1; z-index: 0;">
+							<a href="#close" class="remove label label-danger">
+								<i class="glyphicon-remove glyphicon">
+								</i>
+							</a>
+							<div class="preview">
+								远程表格
+							</div>
+							<div class="view draggableHandle">
+								<div type="table_base" style="overflow-x: auto; overflow-y: auto;" pagesize="20"
+								tableheight="200" tablemodel="radiotable" tableheaderalign="left" tablecolumnalign="left"
+								compid="table_base1475890591243" compname="table_base1475890591243" hidebox="false"
+								rowdata="%5B%7B%22title%22%3A%22AREA_ID%22%2C%22field%22%3A%22AREA_ID%22%2C%22order%22%3A%22asc%22%2C%22hide%22%3Afalse%2C%22primarykey%22%3Afalse%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22formatter%22%3A%22%22%2C%22width%22%3A%22%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D%2C%7B%22title%22%3A%22ID%22%2C%22field%22%3A%22ID%22%2C%22order%22%3A%22asc%22%2C%22hide%22%3Afalse%2C%22primarykey%22%3Afalse%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22formatter%22%3A%22%22%2C%22width%22%3A%22%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22state%22%3Atrue%7D%2C%7B%22title%22%3A%22NAME%22%2C%22field%22%3A%22NAME%22%2C%22order%22%3A%22asc%22%2C%22hide%22%3Afalse%2C%22primarykey%22%3Afalse%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22formatter%22%3A%22%22%2C%22width%22%3A%22%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22state%22%3Atrue%7D%2C%7B%22title%22%3A%22PARENT_ID%22%2C%22field%22%3A%22PARENT_ID%22%2C%22order%22%3A%22asc%22%2C%22hide%22%3Afalse%2C%22primarykey%22%3Afalse%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22formatter%22%3A%22%22%2C%22width%22%3A%22%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D%5D"
+								parameter="%7B%22method%22%3A%22get%22%2C%22contentType%22%3Anull%2C%22url%22%3A%22http%3A%2F%2F10.74.216.90%3A8080%2Fdataservice%2Form%2Ftable%2Fasset_area%3Fparam%3D%257B%2522columns%2522%253A%255B%257B%2522cname%2522%253A%2522ID%2522%257D%252C%257B%2522cname%2522%253A%2522NAME%2522%257D%255D%252C%2522orders%2522%253A%255B%255D%252C%2522condition%2522%253A%257B%257D%257D%22%2C%22cache%22%3Afalse%2C%22pagination%22%3Atrue%2C%22pageSize%22%3A%2220%22%2C%22pageList%22%3A%5B10%2C20%2C50%2C100%2C200%5D%2C%22height%22%3A%22200%22%2C%22search%22%3Afalse%2C%22showColumns%22%3Afalse%2C%22selectItemName%22%3A%22btSelectItemtable_base1475890591243%22%2C%22showRefresh%22%3Afalse%2C%22sidePagination%22%3A%22server%22%2C%22sortable%22%3Atrue%2C%22clickToSelect%22%3Afalse%2C%22advancedSearch%22%3Afalse%2C%22searchcondition%22%3A%5B%5D%2C%22idTable%22%3A%22table_base1475890591243%22%2C%22defaultcondition%22%3A%5B%5D%2C%22responseHandler%22%3A%22tableResponseHandler%22%2C%22pk%22%3A%5B%5D%2C%22editable%22%3Atrue%2C%22columns%22%3A%5B%7B%22field%22%3A%22state_form_disabled%22%2C%22radio%22%3Atrue%7D%2C%7B%22title%22%3A%22ID%22%2C%22field%22%3A%22ID%22%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22align%22%3A%22left%22%2C%22halign%22%3A%22left%22%2C%22valign%22%3A%22middle%22%2C%22primarykey%22%3Afalse%2C%22visible%22%3Atrue%2C%22formatter%22%3A%22%22%2C%22tableId%22%3A%22table_base1475890591243%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D%2C%7B%22title%22%3A%22NAME%22%2C%22field%22%3A%22NAME%22%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22align%22%3A%22left%22%2C%22halign%22%3A%22left%22%2C%22valign%22%3A%22middle%22%2C%22primarykey%22%3Afalse%2C%22visible%22%3Atrue%2C%22formatter%22%3A%22%22%2C%22tableId%22%3A%22table_base1475890591243%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D%5D%7D"
+								toobarhtml="" querycolumns="%7B%22columns%22%3A%5B%7B%22cname%22%3A%22ID%22%7D%2C%7B%22cname%22%3A%22NAME%22%7D%5D%7D">
+									<div class="bootstrap-table">
+										<div class="fixed-table-toolbar">
+										</div>
+										<div class="fixed-table-container" style="height: 151px; padding-bottom: 40px;">
+											<div class="fixed-table-header" style="margin-right: 0px;">
+												<table class="table table-hover" style="width: 881px;" name="table_base1475890591243"
+												ms-duplex-string="table_base1475890591243" ms-attr-disabled="table_base1475890591243_form_disabled">
+													<thead>
+														<tr>
+															<th class="bs-checkbox " style="width: 36px; " data-field="state_form_disabled"
+															tabindex="0">
+																<div class="th-inner ">
+																</div>
+																<div class="fht-cell" style="width: 36px;">
+																</div>
+															</th>
+															<th style="text-align: left; vertical-align: middle; " data-field="ID"
+															tabindex="0">
+																<div class="th-inner ">
+																	ID
+																</div>
+																<div class="fht-cell" style="width: 163px;">
+																</div>
+															</th>
+															<th style="text-align: left; vertical-align: middle; " data-field="NAME"
+															tabindex="0">
+																<div class="th-inner ">
+																	NAME
+																</div>
+																<div class="fht-cell" style="width: 680px;">
+																</div>
+															</th>
+														</tr>
+													</thead>
+												</table>
+											</div>
+											<div class="fixed-table-body">
+												<div class="fixed-table-loading" style="top: 41px; display: none;">
+													正在努力地加载数据中，请稍候……
+												</div>
+												<table id="table_base1475890591243" class="table table-hover" style="margin-top: -40px;"
+												name="table_base14758905912431" ms-duplex-string="table_base14758905912431"
+												ms-attr-disabled="table_base14758905912431_form_disabled">
+													<thead>
+														<tr>
+															<th class="bs-checkbox " style="width: 36px; " data-field="state_form_disabled"
+															tabindex="0">
+																<div class="th-inner ">
+																</div>
+																<div class="fht-cell">
+																</div>
+															</th>
+															<th style="text-align: left; vertical-align: middle; " data-field="ID"
+															tabindex="0">
+																<div class="th-inner ">
+																	ID
+																</div>
+																<div class="fht-cell">
+																</div>
+															</th>
+															<th style="text-align: left; vertical-align: middle; " data-field="NAME"
+															tabindex="0">
+																<div class="th-inner ">
+																	NAME
+																</div>
+																<div class="fht-cell">
+																</div>
+															</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr data-index="0">
+															<td class="bs-checkbox ">
+																<input data-index="0" name="table_base14758905912432" type="radio" ms-duplex-string="table_base14758905912432"
+																ms-attr-disabled="table_base14758905912432_form_disabled">
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																1
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																北京 北京市 东城区
+															</td>
+														</tr>
+														<tr data-index="1">
+															<td class="bs-checkbox ">
+																<input data-index="1" name="table_base14758905912433" type="radio" ms-duplex-string="table_base14758905912433"
+																ms-attr-disabled="table_base14758905912433_form_disabled">
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																2
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																天津 天津市 和平区
+															</td>
+														</tr>
+														<tr data-index="2">
+															<td class="bs-checkbox ">
+																<input data-index="2" name="table_base14758905912434" type="radio" ms-duplex-string="table_base14758905912434"
+																ms-attr-disabled="table_base14758905912434_form_disabled">
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																11
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																s
+															</td>
+														</tr>
+														<tr data-index="3">
+															<td class="bs-checkbox ">
+																<input data-index="3" name="table_base14758905912435" type="radio" ms-duplex-string="table_base14758905912435"
+																ms-attr-disabled="table_base14758905912435_form_disabled">
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																20
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																成都
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="fixed-table-footer" style="display: none;">
+												<table name="table_base14758905912436" ms-duplex-string="table_base14758905912436"
+												ms-attr-disabled="table_base14758905912436_form_disabled">
+													<tbody>
+														<tr>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="fixed-table-pagination" style="display: block;">
+												<div class="pull-left pagination-detail">
+													<span class="pagination-info">
+														显示第 1 到第 4 条记录，总共 4 条记录
+													</span>
+													<span class="page-list" style="display: none;">
+														每页显示
+														<span class="btn-group dropup">
+															<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+															name="table_base14758905912437" ms-duplex-string="table_base14758905912437"
+															ms-attr-disabled="table_base14758905912437_form_disabled">
+																<span class="page-size">
+																	20
+																</span>
+																<span class="caret">
+																</span>
+															</button>
+															<ul class="dropdown-menu" role="menu">
+																<li>
+																	<a href="javascript:void(0)">
+																		10
+																	</a>
+																</li>
+															</ul>
+														</span>
+														条记录
+													</span>
+												</div>
+												<div class="pull-right pagination" style="display: none;">
+													<ul class="pagination">
+														<li class="page-pre">
+															<a href="javascript:void(0)">
+																‹
+															</a>
+														</li>
+														<li class="page-number active">
+															<a href="javascript:void(0)">
+																1
+															</a>
+														</li>
+														<li class="page-next">
+															<a href="javascript:void(0)">
+																›
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="clearfix">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lyrow ui-draggable" style="display: block;">
+		<a href="#close" class="remove label label-danger">
+			<i class="glyphicon-remove glyphicon">
+			</i>
+		</a>
+		<div class="preview">
+			12/自定义
+		</div>
+		<div class="view">
+			<div type="layout" ratio="12" compid="vm1475890635178" compname="vm1475890635178"
+			layoutstyle="" ms-controller="vm1475890635178" id="vm1475890635178" input_dataset_1475890645765="asset_inst_base"
+			uri="asset_inst_base" dsname="bcp" dstype="orm" bfd-operation-params="%7B%22model%22%3A%22vm1475890635178%22%2C%22service%22%3A%22bcp%22%2C%22set%22%3A%22asset_inst_base%22%2C%22operations%22%3A%5B%7B%22method%22%3A%22POST%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_inst_base%22%2C%22name%22%3A%22add%22%7D%2C%7B%22method%22%3A%22PUT%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_inst_base%22%2C%22name%22%3A%22update%22%7D%2C%7B%22method%22%3A%22DELETE%22%2C%22submit%22%3A%22delete%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_inst_base%22%2C%22name%22%3A%22delete%22%7D%2C%7B%22method%22%3A%22GET%22%2C%22submit%22%3A%22initVMData%22%2C%22url%22%3A%22%2Fdataservice%2Form%2Ftable%2Fasset_inst_base%22%2C%22name%22%3A%22query%22%7D%5D%2C%22post_in%22%3A%5B%5D%2C%22put_in%22%3A%5B%5D%2C%22get_out%22%3A%5B%5D%7D"
+			bfd_set_param_type="in">
+				<div class="row clearfix">
+					<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+					style="padding-bottom: 0px;">
+						<div class="box box-element ui-draggable" style="display: block; position: relative; opacity: 1; z-index: 0;">
+							<a href="#close" class="remove label label-danger">
+								<i class="glyphicon-remove glyphicon">
+								</i>
+							</a>
+							<div class="preview">
+								远程表格
+							</div>
+							<div class="view draggableHandle">
+								<div type="table_base" style="overflow-x: auto; overflow-y: auto;" pagesize="20"
+								tableheight="200" tablemodel="radiotable" tableheaderalign="left" tablecolumnalign="left"
+								compid="table_base1475890644611" compname="table_base1475890644611" hidebox="false"
+								rowdata="%5B%7B%22title%22%3A%22AREA_ID%22%2C%22field%22%3A%22AREA_ID%22%2C%22order%22%3A%22asc%22%2C%22hide%22%3Afalse%2C%22primarykey%22%3Afalse%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22formatter%22%3A%22%22%2C%22width%22%3A%22%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D%2C%7B%22title%22%3A%22ID%22%2C%22field%22%3A%22ID%22%2C%22order%22%3A%22asc%22%2C%22hide%22%3Afalse%2C%22primarykey%22%3Afalse%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22formatter%22%3A%22%22%2C%22width%22%3A%22%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22state%22%3Atrue%7D%2C%7B%22title%22%3A%22NAME%22%2C%22field%22%3A%22NAME%22%2C%22order%22%3A%22asc%22%2C%22hide%22%3Afalse%2C%22primarykey%22%3Afalse%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22formatter%22%3A%22%22%2C%22width%22%3A%22%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22state%22%3Atrue%7D%2C%7B%22title%22%3A%22ORGANIZATION%22%2C%22field%22%3A%22ORGANIZATION%22%2C%22order%22%3A%22asc%22%2C%22hide%22%3Afalse%2C%22primarykey%22%3Afalse%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22formatter%22%3A%22%22%2C%22width%22%3A%22%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D%2C%7B%22title%22%3A%22PARENT_ID%22%2C%22field%22%3A%22PARENT_ID%22%2C%22order%22%3A%22asc%22%2C%22hide%22%3Afalse%2C%22primarykey%22%3Afalse%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22formatter%22%3A%22%22%2C%22width%22%3A%22%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D%2C%7B%22title%22%3A%22PINCIPAL%22%2C%22field%22%3A%22PINCIPAL%22%2C%22order%22%3A%22asc%22%2C%22hide%22%3Afalse%2C%22primarykey%22%3Afalse%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22formatter%22%3A%22%22%2C%22width%22%3A%22%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D%2C%7B%22title%22%3A%22POSITION%22%2C%22field%22%3A%22POSITION%22%2C%22order%22%3A%22asc%22%2C%22hide%22%3Afalse%2C%22primarykey%22%3Afalse%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22formatter%22%3A%22%22%2C%22width%22%3A%22%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D%2C%7B%22title%22%3A%22TERMINAL_ID%22%2C%22field%22%3A%22TERMINAL_ID%22%2C%22order%22%3A%22asc%22%2C%22hide%22%3Afalse%2C%22primarykey%22%3Afalse%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22formatter%22%3A%22%22%2C%22width%22%3A%22%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D%2C%7B%22title%22%3A%22TERMINAL_TYPE%22%2C%22field%22%3A%22TERMINAL_TYPE%22%2C%22order%22%3A%22asc%22%2C%22hide%22%3Afalse%2C%22primarykey%22%3Afalse%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22formatter%22%3A%22%22%2C%22width%22%3A%22%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D%2C%7B%22title%22%3A%22TYPE%22%2C%22field%22%3A%22TYPE%22%2C%22order%22%3A%22asc%22%2C%22hide%22%3Afalse%2C%22primarykey%22%3Afalse%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22formatter%22%3A%22%22%2C%22width%22%3A%22%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22state%22%3Atrue%7D%5D"
+								parameter="%7B%22method%22%3A%22get%22%2C%22contentType%22%3Anull%2C%22url%22%3A%22http%3A%2F%2F10.74.216.90%3A8080%2Fdataservice%2Form%2Ftable%2Fasset_inst_base%3Fparam%3D%257B%2522columns%2522%253A%255B%257B%2522cname%2522%253A%2522ID%2522%257D%252C%257B%2522cname%2522%253A%2522NAME%2522%257D%252C%257B%2522cname%2522%253A%2522TYPE%2522%257D%255D%252C%2522orders%2522%253A%255B%255D%252C%2522condition%2522%253A%257B%257D%257D%22%2C%22cache%22%3Afalse%2C%22pagination%22%3Atrue%2C%22pageSize%22%3A%2220%22%2C%22pageList%22%3A%5B10%2C20%2C50%2C100%2C200%5D%2C%22height%22%3A%22200%22%2C%22search%22%3Afalse%2C%22showColumns%22%3Afalse%2C%22selectItemName%22%3A%22btSelectItemtable_base1475890644611%22%2C%22showRefresh%22%3Afalse%2C%22sidePagination%22%3A%22server%22%2C%22sortable%22%3Atrue%2C%22clickToSelect%22%3Afalse%2C%22advancedSearch%22%3Afalse%2C%22searchcondition%22%3A%5B%5D%2C%22idTable%22%3A%22table_base1475890644611%22%2C%22defaultcondition%22%3A%5B%5D%2C%22responseHandler%22%3A%22tableResponseHandler%22%2C%22pk%22%3A%5B%5D%2C%22editable%22%3Atrue%2C%22columns%22%3A%5B%7B%22field%22%3A%22state_form_disabled%22%2C%22radio%22%3Atrue%7D%2C%7B%22title%22%3A%22ID%22%2C%22field%22%3A%22ID%22%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22align%22%3A%22left%22%2C%22halign%22%3A%22left%22%2C%22valign%22%3A%22middle%22%2C%22primarykey%22%3Afalse%2C%22visible%22%3Atrue%2C%22formatter%22%3A%22%22%2C%22tableId%22%3A%22table_base1475890644611%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D%2C%7B%22title%22%3A%22NAME%22%2C%22field%22%3A%22NAME%22%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22align%22%3A%22left%22%2C%22halign%22%3A%22left%22%2C%22valign%22%3A%22middle%22%2C%22primarykey%22%3Afalse%2C%22visible%22%3Atrue%2C%22formatter%22%3A%22%22%2C%22tableId%22%3A%22table_base1475890644611%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D%2C%7B%22title%22%3A%22TYPE%22%2C%22field%22%3A%22TYPE%22%2C%22editable%22%3Afalse%2C%22validate%22%3A%22%22%2C%22align%22%3A%22left%22%2C%22halign%22%3A%22left%22%2C%22valign%22%3A%22middle%22%2C%22primarykey%22%3Afalse%2C%22visible%22%3Atrue%2C%22formatter%22%3A%22%22%2C%22tableId%22%3A%22table_base1475890644611%22%2C%22defaultcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22searchcondition%22%3A%7B%22checked%22%3Afalse%2C%22condition%22%3A%22%22%2C%22value%22%3A%22%22%7D%7D%5D%7D"
+								toobarhtml="" querycolumns="%7B%22columns%22%3A%5B%7B%22cname%22%3A%22ID%22%7D%2C%7B%22cname%22%3A%22NAME%22%7D%2C%7B%22cname%22%3A%22TYPE%22%7D%5D%7D">
+									<div class="bootstrap-table">
+										<div class="fixed-table-toolbar">
+										</div>
+										<div class="fixed-table-container" style="height: 151px; padding-bottom: 40px;">
+											<div class="fixed-table-header" style="margin-right: 0px;">
+												<table class="table table-hover" style="width: 881px;" name="table_base1475890644611"
+												ms-duplex-string="table_base1475890644611" ms-attr-disabled="table_base1475890644611_form_disabled">
+													<thead>
+														<tr>
+															<th class="bs-checkbox " style="width: 36px; " data-field="state_form_disabled"
+															tabindex="0">
+																<div class="th-inner ">
+																</div>
+																<div class="fht-cell" style="width: 36px;">
+																</div>
+															</th>
+															<th style="text-align: left; vertical-align: middle; " data-field="ID"
+															tabindex="0">
+																<div class="th-inner ">
+																	ID
+																</div>
+																<div class="fht-cell" style="width: 192px;">
+																</div>
+															</th>
+															<th style="text-align: left; vertical-align: middle; " data-field="NAME"
+															tabindex="0">
+																<div class="th-inner ">
+																	NAME
+																</div>
+																<div class="fht-cell" style="width: 339px;">
+																</div>
+															</th>
+															<th style="text-align: left; vertical-align: middle; " data-field="TYPE"
+															tabindex="0">
+																<div class="th-inner ">
+																	TYPE
+																</div>
+																<div class="fht-cell" style="width: 311px;">
+																</div>
+															</th>
+														</tr>
+													</thead>
+												</table>
+											</div>
+											<div class="fixed-table-body">
+												<div class="fixed-table-loading" style="top: 41px; display: none;">
+													正在努力地加载数据中，请稍候……
+												</div>
+												<table id="table_base1475890644611" class="table table-hover" style="margin-top: -40px;"
+												name="table_base14758906446111" ms-duplex-string="table_base14758906446111"
+												ms-attr-disabled="table_base14758906446111_form_disabled">
+													<thead>
+														<tr>
+															<th class="bs-checkbox " style="width: 36px; " data-field="state_form_disabled"
+															tabindex="0">
+																<div class="th-inner ">
+																</div>
+																<div class="fht-cell">
+																</div>
+															</th>
+															<th style="text-align: left; vertical-align: middle; " data-field="ID"
+															tabindex="0">
+																<div class="th-inner ">
+																	ID
+																</div>
+																<div class="fht-cell">
+																</div>
+															</th>
+															<th style="text-align: left; vertical-align: middle; " data-field="NAME"
+															tabindex="0">
+																<div class="th-inner ">
+																	NAME
+																</div>
+																<div class="fht-cell">
+																</div>
+															</th>
+															<th style="text-align: left; vertical-align: middle; " data-field="TYPE"
+															tabindex="0">
+																<div class="th-inner ">
+																	TYPE
+																</div>
+																<div class="fht-cell">
+																</div>
+															</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr data-index="0">
+															<td class="bs-checkbox ">
+																<input data-index="0" name="table_base14758906446112" type="radio" ms-duplex-string="table_base14758906446112"
+																ms-attr-disabled="table_base14758906446112_form_disabled">
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																1
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																11
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																-
+															</td>
+														</tr>
+														<tr data-index="1">
+															<td class="bs-checkbox ">
+																<input data-index="1" name="table_base14758906446113" type="radio" ms-duplex-string="table_base14758906446113"
+																ms-attr-disabled="table_base14758906446113_form_disabled">
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																3
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																3
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																-
+															</td>
+														</tr>
+														<tr data-index="2">
+															<td class="bs-checkbox ">
+																<input data-index="2" name="table_base14758906446114" type="radio" ms-duplex-string="table_base14758906446114"
+																ms-attr-disabled="table_base14758906446114_form_disabled">
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																11
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																11
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																-
+															</td>
+														</tr>
+														<tr data-index="3">
+															<td class="bs-checkbox ">
+																<input data-index="3" name="table_base14758906446115" type="radio" ms-duplex-string="table_base14758906446115"
+																ms-attr-disabled="table_base14758906446115_form_disabled">
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																20
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																车辆
+															</td>
+															<td style="text-align: left; vertical-align: middle; ">
+																-
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="fixed-table-footer" style="display: none;">
+												<table name="table_base14758906446116" ms-duplex-string="table_base14758906446116"
+												ms-attr-disabled="table_base14758906446116_form_disabled">
+													<tbody>
+														<tr>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="fixed-table-pagination" style="display: block;">
+												<div class="pull-left pagination-detail">
+													<span class="pagination-info">
+														显示第 1 到第 4 条记录，总共 4 条记录
+													</span>
+													<span class="page-list" style="display: none;">
+														每页显示
+														<span class="btn-group dropup">
+															<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+															name="table_base14758906446117" ms-duplex-string="table_base14758906446117"
+															ms-attr-disabled="table_base14758906446117_form_disabled">
+																<span class="page-size">
+																	20
+																</span>
+																<span class="caret">
+																</span>
+															</button>
+															<ul class="dropdown-menu" role="menu">
+																<li>
+																	<a href="javascript:void(0)">
+																		10
+																	</a>
+																</li>
+															</ul>
+														</span>
+														条记录
+													</span>
+												</div>
+												<div class="pull-right pagination" style="display: none;">
+													<ul class="pagination">
+														<li class="page-pre">
+															<a href="javascript:void(0)">
+																‹
+															</a>
+														</li>
+														<li class="page-number active">
+															<a href="javascript:void(0)">
+																1
+															</a>
+														</li>
+														<li class="page-next">
+															<a href="javascript:void(0)">
+																›
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="clearfix">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lyrow ui-draggable" style="display: block;">
+		<a href="#close" class="remove label label-danger">
+			<i class="glyphicon-remove glyphicon">
+			</i>
+		</a>
+		<div class="preview">
+			12/自定义
+		</div>
+		<div class="view">
+			<div type="layout" ratio="12" compid="vm1475912541457" compname="vm1475912541457"
+			layoutstyle="" ms-controller="vm1475912541457" id="vm1475912541457">
+				<div class="row clearfix">
+					<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+					style="padding-bottom: 0px;">
+						<div class="box box-element ui-draggable" style="display: block; position: relative; opacity: 1; z-index: 0;">
+							<a href="#close" class="remove label label-danger showRemove">
+								<i class="glyphicon-remove glyphicon">
+								</i>
+							</a>
+							<div class="preview">
+								按钮
+							</div>
+							<div class="view draggableHandle form-component_active">
+								<div type="button" data-color="btn-primary" data-size=" " compid="button1475894529098"
+								compname="button1475894529098" class="layout-align-left" defaultvalue="%E6%9F%A5%E7%9C%8B%E8%AF%A6%E6%83%85"
+								alignstyle="layout-align-left" tab-target="#tab1" componentevent="%7B%22type%22%3A%22button%22%2C%22id%22%3A%22button1475894529098%22%2C%22events%22%3A%5B%22name%3Dclick%2Cvalue%3DshowDetail()%3B%22%5D%7D"
+								eventrowdata="%5B%7B%22title%22%3A%22%3Cselect%20class%3D%5C%22form-textbox%20form-combo%20col-md-12%5C%22%20id%3D%5C%22selecttitle0%5C%22%3E%3Coption%20value%3D%5C%22%5C%22%20param%3D%5C%22%5C%22%3E%E8%AF%B7%E9%80%89%E6%8B%A9%3C%2Foption%3E%20%3Coption%20value%3D%5C%22click%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%20selected%3D%5C%22selected%5C%22%3Eclick%3C%2Foption%3E%20%3Coption%20value%3D%5C%22change%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Echange%3C%2Foption%3E%20%3Coption%20value%3D%5C%22blur%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eblur%3C%2Foption%3E%20%3Coption%20value%3D%5C%22dblclick%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Edblclick%3C%2Foption%3E%20%3Coption%20value%3D%5C%22keydown%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Ekeydown%3C%2Foption%3E%20%3Coption%20value%3D%5C%22keypress%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Ekeypress%3C%2Foption%3E%20%3Coption%20value%3D%5C%22keyup%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Ekeyup%3C%2Foption%3E%20%3Coption%20value%3D%5C%22mousedown%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Emousedown%3C%2Foption%3E%20%3Coption%20value%3D%5C%22mouseup%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Emouseup%3C%2Foption%3E%20%3Coption%20value%3D%5C%22ready%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eready%3C%2Foption%3E%20%3Coption%20value%3D%5C%22unbind%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eunbind%3C%2Foption%3E%20%3Coption%20value%3D%5C%22unload%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eunload%3C%2Foption%3E%3C%2Fselect%3E%22%2C%22event%22%3A%22%3Ctextarea%20class%3D%5C%22form-textbox%20form-textbox-text%20col-md-12%5C%22%20id%3D%5C%22tableevent0%5C%22%20style%3D%5C%22height%3A%2080px%3B%5C%22%20defaultvalue%3D%5C%22%E8%BE%93%E5%85%A5%E5%87%BD%E6%95%B0%E5%86%85%E5%AE%B9%EF%BC%8C%E5%8F%82%E6%95%B0%E4%B8%BA%3A%20%E6%97%A0%5C%22%20event%3D%5C%22click%5C%22%3EshowDetail()%3B%3C%2Ftextarea%3E%22%7D%2C%7B%22title%22%3A%22%3Cselect%20class%3D%5C%22form-textbox%20form-combo%20col-md-12%5C%22%20id%3D%5C%22selecttitle1%5C%22%3E%3Coption%20value%3D%5C%22%5C%22%20param%3D%5C%22%5C%22%20selected%3D%5C%22selected%5C%22%3E%E8%AF%B7%E9%80%89%E6%8B%A9%3C%2Foption%3E%20%3Coption%20value%3D%5C%22click%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eclick%3C%2Foption%3E%20%3Coption%20value%3D%5C%22change%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Echange%3C%2Foption%3E%20%3Coption%20value%3D%5C%22blur%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eblur%3C%2Foption%3E%20%3Coption%20value%3D%5C%22dblclick%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Edblclick%3C%2Foption%3E%20%3Coption%20value%3D%5C%22keydown%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Ekeydown%3C%2Foption%3E%20%3Coption%20value%3D%5C%22keypress%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Ekeypress%3C%2Foption%3E%20%3Coption%20value%3D%5C%22keyup%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Ekeyup%3C%2Foption%3E%20%3Coption%20value%3D%5C%22mousedown%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Emousedown%3C%2Foption%3E%20%3Coption%20value%3D%5C%22mouseup%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Emouseup%3C%2Foption%3E%20%3Coption%20value%3D%5C%22ready%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eready%3C%2Foption%3E%20%3Coption%20value%3D%5C%22unbind%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eunbind%3C%2Foption%3E%20%3Coption%20value%3D%5C%22unload%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eunload%3C%2Foption%3E%3C%2Fselect%3E%22%2C%22event%22%3A%22%3Ctextarea%20class%3D%5C%22form-textbox%20form-textbox-text%20col-md-12%5C%22%20id%3D%5C%22tableevent1%5C%22%20style%3D%5C%22height%3A%2080px%3B%5C%22%3E%3C%2Ftextarea%3E%22%7D%2C%7B%22title%22%3A%22%3Cselect%20class%3D%5C%22form-textbox%20form-combo%20col-md-12%5C%22%20id%3D%5C%22selecttitle2%5C%22%3E%3Coption%20value%3D%5C%22%5C%22%20param%3D%5C%22%5C%22%20selected%3D%5C%22selected%5C%22%3E%E8%AF%B7%E9%80%89%E6%8B%A9%3C%2Foption%3E%20%3Coption%20value%3D%5C%22click%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eclick%3C%2Foption%3E%20%3Coption%20value%3D%5C%22change%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Echange%3C%2Foption%3E%20%3Coption%20value%3D%5C%22blur%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eblur%3C%2Foption%3E%20%3Coption%20value%3D%5C%22dblclick%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Edblclick%3C%2Foption%3E%20%3Coption%20value%3D%5C%22keydown%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Ekeydown%3C%2Foption%3E%20%3Coption%20value%3D%5C%22keypress%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Ekeypress%3C%2Foption%3E%20%3Coption%20value%3D%5C%22keyup%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Ekeyup%3C%2Foption%3E%20%3Coption%20value%3D%5C%22mousedown%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Emousedown%3C%2Foption%3E%20%3Coption%20value%3D%5C%22mouseup%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Emouseup%3C%2Foption%3E%20%3Coption%20value%3D%5C%22ready%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eready%3C%2Foption%3E%20%3Coption%20value%3D%5C%22unbind%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eunbind%3C%2Foption%3E%20%3Coption%20value%3D%5C%22unload%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eunload%3C%2Foption%3E%3C%2Fselect%3E%22%2C%22event%22%3A%22%3Ctextarea%20class%3D%5C%22form-textbox%20form-textbox-text%20col-md-12%5C%22%20id%3D%5C%22tableevent2%5C%22%20style%3D%5C%22height%3A%2080px%3B%5C%22%3E%3C%2Ftextarea%3E%22%7D%2C%7B%22title%22%3A%22%3Cselect%20class%3D%5C%22form-textbox%20form-combo%20col-md-12%5C%22%20id%3D%5C%22selecttitle3%5C%22%3E%3Coption%20value%3D%5C%22%5C%22%20param%3D%5C%22%5C%22%20selected%3D%5C%22selected%5C%22%3E%E8%AF%B7%E9%80%89%E6%8B%A9%3C%2Foption%3E%20%3Coption%20value%3D%5C%22click%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eclick%3C%2Foption%3E%20%3Coption%20value%3D%5C%22change%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Echange%3C%2Foption%3E%20%3Coption%20value%3D%5C%22blur%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eblur%3C%2Foption%3E%20%3Coption%20value%3D%5C%22dblclick%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Edblclick%3C%2Foption%3E%20%3Coption%20value%3D%5C%22keydown%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Ekeydown%3C%2Foption%3E%20%3Coption%20value%3D%5C%22keypress%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Ekeypress%3C%2Foption%3E%20%3Coption%20value%3D%5C%22keyup%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Ekeyup%3C%2Foption%3E%20%3Coption%20value%3D%5C%22mousedown%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Emousedown%3C%2Foption%3E%20%3Coption%20value%3D%5C%22mouseup%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Emouseup%3C%2Foption%3E%20%3Coption%20value%3D%5C%22ready%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eready%3C%2Foption%3E%20%3Coption%20value%3D%5C%22unbind%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eunbind%3C%2Foption%3E%20%3Coption%20value%3D%5C%22unload%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eunload%3C%2Foption%3E%3C%2Fselect%3E%22%2C%22event%22%3A%22%3Ctextarea%20class%3D%5C%22form-textbox%20form-textbox-text%20col-md-12%5C%22%20id%3D%5C%22tableevent3%5C%22%20style%3D%5C%22height%3A%2080px%3B%5C%22%3E%3C%2Ftextarea%3E%22%7D%2C%7B%22title%22%3A%22%3Cselect%20class%3D%5C%22form-textbox%20form-combo%20col-md-12%5C%22%20id%3D%5C%22selecttitle4%5C%22%3E%3Coption%20value%3D%5C%22%5C%22%20param%3D%5C%22%5C%22%20selected%3D%5C%22selected%5C%22%3E%E8%AF%B7%E9%80%89%E6%8B%A9%3C%2Foption%3E%20%3Coption%20value%3D%5C%22click%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eclick%3C%2Foption%3E%20%3Coption%20value%3D%5C%22change%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Echange%3C%2Foption%3E%20%3Coption%20value%3D%5C%22blur%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eblur%3C%2Foption%3E%20%3Coption%20value%3D%5C%22dblclick%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Edblclick%3C%2Foption%3E%20%3Coption%20value%3D%5C%22keydown%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Ekeydown%3C%2Foption%3E%20%3Coption%20value%3D%5C%22keypress%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Ekeypress%3C%2Foption%3E%20%3Coption%20value%3D%5C%22keyup%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Ekeyup%3C%2Foption%3E%20%3Coption%20value%3D%5C%22mousedown%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Emousedown%3C%2Foption%3E%20%3Coption%20value%3D%5C%22mouseup%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Emouseup%3C%2Foption%3E%20%3Coption%20value%3D%5C%22ready%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eready%3C%2Foption%3E%20%3Coption%20value%3D%5C%22unbind%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eunbind%3C%2Foption%3E%20%3Coption%20value%3D%5C%22unload%5C%22%20param%3D%5C%22%E6%97%A0%5C%22%3Eunload%3C%2Foption%3E%3C%2Fselect%3E%22%2C%22event%22%3A%22%3Ctextarea%20class%3D%5C%22form-textbox%20form-textbox-text%20col-md-12%5C%22%20id%3D%5C%22tableevent4%5C%22%20style%3D%5C%22height%3A%2080px%3B%5C%22%3E%3C%2Ftextarea%3E%22%7D%5D">
+									<button type="button" class="btn btn-primary" id="button1475894529098"
+									name="button1475894529098" i18nkey="查看详情">
+										查看详情
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer-bg ui-sortable">
+	<div class="box-hide box-element ui-draggable col-md-2" style="display: block;">
+		<a href="#close" class="remove label label-danger">
+			<i class="glyphicon-remove glyphicon">
+			</i>
+		</a>
+		<div class="preview" style="border-color: rgb(237, 22, 22);">
+			JS脚本jsscript1475892640268
+		</div>
+		<div class="view">
+			<div type="jsscript" compid="jsscript1475892640268" compname="jsscript1475892640268"
+			jspath="js%26%23x2F%3Bcommon%26%23x2F%3Bmulti-vm-list-logic.js%20%20">
+			</div>
+		</div>
+	</div>
+</div>

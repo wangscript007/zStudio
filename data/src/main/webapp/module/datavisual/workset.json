@@ -1,0 +1,61 @@
+{
+  "id": "datavisual",
+  "disabledFunctions": ["new", "edit", "export", "project"],
+
+  "js": [
+    "oop.js",
+    "js/frame/property/propertyComponent.js",
+    "orm-common.js",
+    "datavisual.js",
+
+    "js/frame/common/design-file-info.js",
+    "js/frame/common/runtime-reference.js",
+
+    "js/frame/component/control-item.js",
+
+    "js/frame/view/component-wrapper.js",
+    "js/frame/view/datasource-view.js",
+    "js/frame/view/popup-menu.js",
+    "js/frame/view/conditionPanel.js",
+
+    "plugins/chart/chart_base.js",
+    "plugins/table/table_base.js",
+    "plugins/layout/col_base.js",
+    "js/plugin/datavisual-plugin-manager.js"
+  ],
+  "instanceName": "DataVisual",
+
+  "runtime": {
+    "css": [
+      "css/bootstrap/bootstrap.min.css",
+
+      "runtime/datavisual/css/datavisual.css",
+      "runtime/datavisual/css/plugins/chart/chart.css",
+      "runtime/datavisual/css/plugins/table/table.css"
+    ],
+    "js": [
+      "runtime/datavisual/js/lib/lodash.min.js",
+      "runtime/datavisual/js/lib/jquery/jquery.min.js",
+      "runtime/datavisual/js/lib/echarts/echarts.min.js",
+      "runtime/datavisual/js/lib/echarts/extension/bmap.js",
+      "runtime/datavisual/js/lib/echarts/extension/china.js",
+      "runtime/datavisual/js/lib/echarts/extension/world.js",
+
+      "runtime/datavisual/js/orm-common.js",
+      "runtime/datavisual/js/parser.js",
+
+      "runtime/datavisual/js/plugins/chart/bar/bar.js",
+      "runtime/datavisual/js/plugins/chart/radar/radar.js",
+      "runtime/datavisual/js/plugins/chart/pie/pie.js",
+      "runtime/datavisual/js/plugins/chart/line/line.js",
+      "runtime/datavisual/js/plugins/chart/scatter_map/scatter_map.js",
+      "runtime/datavisual/js/plugins/chart/parallel/parallel.js",
+      "runtime/datavisual/js/plugins/chart/scatter/scatter.js",
+      "runtime/datavisual/js/plugins/chart/map/map.js",
+      "runtime/datavisual/js/plugins/chart/funnel/funnel.js",
+      "runtime/datavisual/js/plugins/chart/gauge/gauge.js",
+
+      "runtime/datavisual/js/plugins/table/table_detail/table_detail.js"
+    ]
+  }
+}

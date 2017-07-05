@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GB2312"?>
+<locales>
+	<locale language-country="zh_CN">
+		<pair label-key="bcp.dataservice" label-value="ORM数据服务" />
+		<pair label-key="bcp.dataservice.orm.rest" label-value="ORM数据服务REST接口" />
+	</locale>
+	<locale language-country="en_US">
+		<pair label-key="bcp.dataservice" label-value="ORM Data Service" />
+		<pair label-key="bcp.dataservice.orm.rest" label-value="ORM RESTful Web Services" />
+	</locale>
+</locales>

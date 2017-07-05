@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GBK"?>
+<zip id="ums.install.production.bcpdataservice" visiable="true" defaultInstall="false" order="0" type="server">
+	<!-- 该zip文件的描述 -->
+	<description>
+		<locale en="BCPDataService"/>
+		<locale zh="BCP数据服务"/>
+	</description>
+	<!-- 该zip文件所属的ppu，如果一个ppu对应多个zip文件，那么这儿定义的描述最好为一致的，如果不一致则采取最先一个zip包的描述 -->
+	<owner-ppu id="ManageComponent" visiable="true">
+		<description>
+			<locale en="ManageComponent"/>
+			<locale zh="管理组件"/>
+		</description>
+	</owner-ppu>
+	<!-- zip文件依赖的其他的zip文件，该依赖决定了后面的脚本执行顺序。 -->
+	<!--
+	<depend>
+		<zip id="ums.install.production.usf.all"/>
+	</depend>
+	-->
+	<product name="bcpdataservice"/>
+</zip>

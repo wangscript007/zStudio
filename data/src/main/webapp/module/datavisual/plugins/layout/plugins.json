@@ -1,0 +1,17 @@
+{
+  "id": "layout",
+  "name": "布局组件",
+  "baseUri": "module/datavisual/plugins/layout",
+  "guide": "guide.js",
+  "plugins": [{
+      "name": "col12",
+      "path": "col12"
+    }, {
+      "name": "col_6_6",
+      "path": "col_6_6"
+    }, {
+      "name": "col_4_4_4",
+      "path": "col_4_4_4"
+    }
+  ]
+}

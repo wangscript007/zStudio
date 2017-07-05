@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.51ksy.zstudio.support</groupId>
+    <artifactId>support-parent</artifactId>
+    <version>0.5.0-20170116-SNAPSHOT</version>
+    <relativePath>../support-parent</relativePath>
+  </parent>
+  <artifactId>support-mssql</artifactId>
+  <packaging>jar</packaging>
+  <name>ksy/support/${project.artifactId}</name>
+
+  <dependencies>
+    <!-- Project Begin -->
+    <dependency>
+      <groupId>com.51ksy.zstudio.support</groupId>
+      <artifactId>support-orm</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <!-- Project End -->
+    <!-- UT Begin -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-all</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <!-- UT End -->
+    <!-- Provided Begin -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <!-- Provided End -->
+    <!-- Runtime Begin -->
+    <dependency>
+      <groupId>com.microsoft.sqlserver</groupId>
+      <artifactId>sqljdbc4</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <!-- Runtime End -->
+  </dependencies>
+</project>

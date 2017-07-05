@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>数据集列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="../css/bootstrap/bootstrap-table.min.css" rel="stylesheet">
+    <link href="../css/page.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrapvalidator/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+
+    <script type="text/javascript" src="../js/lib/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrap-table-zh-CN.min.js"></script>
+    <script type="text/javascript" src="../js/frame/lib/jquery.bootstrap.wizard.js"></script>
+    <script type="text/javascript" src="../js/commTools.js"></script>
+    <script type="text/javascript" src="../js/frame/datasource/datasource-manage.js"></script>
+    <script type="text/javascript" src="../js/frame/datasource/datasource-orm.js"></script>
+    <script type="text/javascript" src="../js/frame/multitable/multitable-base.js"></script>
+    <script type="text/javascript" src="../js/frame/multitable/multitable-list.js"></script>
+</head>
+<body>
+<div class="container container-top">
+    <div class="panel panel-default">
+        <div class="panel-heading">新增数据集</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="layout-align-right">
+                        <label class="control-label">数据集：</label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" id="inputDefinitionName" class="form-control">
+                </div>
+                <div class="col-md-1">
+                    <div class="layout-align-right">
+                        <label class="control-label ">数据源：</label>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <select class="form-control" id="source_select" name="source_select">
+                    </select>
+                </div>
+                <div class="col-md-1">
+                    <div class="layout-align-right">
+                        <label class="control-label">主表名：</label>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <select class="form-control" id="master_Table" name="master_Table">
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <div class="layout-align-right">
+                        <button id="btnDataSourceAdd" type="button" class="btn btn-primary">
+                            新增数据集
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            数据集列表
+        </div>
+        <table class="table table-bordered" id="datasource_List" height="200px;">
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

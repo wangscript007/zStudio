@@ -1,0 +1,13 @@
+{
+  "id": "table_pivot",
+  "thumbnail": "table_pivot.png",
+  "js": "table_pivot.js",
+  "instanceName": "Table_pivot",
+  "displayName": "交叉表",
+  "unsupportedBaseProperties": [
+  ],
+
+  "properties": [
+
+  ]
+}

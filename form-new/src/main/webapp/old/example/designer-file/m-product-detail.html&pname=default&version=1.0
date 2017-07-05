@@ -1,0 +1,283 @@
+<div class="demo_parent" style="height: 639px; min-height: 639px;">
+	<div class="demo ui-sortable" style="min-height: 619px;">
+		<div class="lyrow ui-draggable" style="display: block;">
+			<a href="#close" class="remove label label-danger">
+				<i class="glyphicon-remove glyphicon">
+				</i>
+			</a>
+			<div class="preview">
+				12/自定义
+			</div>
+			<div class="view">
+				<div type="layout" ratio="12" compid="vm1467103504651" compname="vm1467103504651"
+				layoutstyle="" ms-controller="vm1467103504651" id="vm1467103504651" uri="goods"
+				dsname="bcp">
+					<div class="row clearfix">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+						style="padding-bottom: 5px;">
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									标题栏
+								</div>
+								<div class="view draggableHandle">
+									<div type="layout" compid="vm1467103964839" compname="vm1467103964839"
+									layoutstyle="" id="vm1467103964839">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-left: 0px; padding-right: 0px;">
+												<div class="box box-element ui-draggable">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标题栏
+													</div>
+													<div class="view draggableHandle">
+														<div type="m_header" compid="m_header1467103968150" compname="m_header1467103968150"
+														data-title="%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85">
+															<header compid="NaN" compname="NaN">
+																<div id="NaN" name="NaN">
+																	<header class="bfd-header">
+																		<div class="bfd-header-bar" compid="NaN" compname="NaN">
+																			<div id="NaN" class="bfd-header-icon-back" name="NaN">
+																				<span>
+																				</span>
+																			</div>
+																			<div class="header-title">
+																				产品详情
+																			</div>
+																		</div>
+																	</header>
+																</div>
+															</header>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									12/自定义
+								</div>
+								<div class="view">
+									<div type="layout" ratio="12" compid="layout1467103520880" compname="layout1467103520880"
+									layoutstyle="" id="layout1467103520880">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable" style="position: relative; opacity: 1; z-index: 0;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														图片
+													</div>
+													<div class="view draggableHandle">
+														<div type="image" init="true" compid="image1467103522458" compname="image1467103522458"
+														imgalt="图片" zoomin="true" field="GOODS_IMG_URL" ms-attr-disabled="GOODS_IMG_URL_form_disabled"
+														ms-duplex="GOODS_IMG_URL" srcfield="GOODS_IMG_URL">
+															<img src="img/nopicture.jpg" class="fancybox" alt="图片" field="GOODS_IMG_URL"
+															ms-attr-disabled="GOODS_IMG_URL_form_disabled" ms-duplex="GOODS_IMG_URL"
+															srcfield="GOODS_IMG_URL">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lyrow ui-draggable">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									分隔栏
+								</div>
+								<div class="view draggableHandle">
+									<div type="layout" compid="vm1467104017783" compname="vm1467104017783"
+									layoutstyle="" id="vm1467104017783">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														分隔栏
+													</div>
+													<div class="view draggableHandle">
+														<div type="separator" init="true" picklinecolor="f5f5f5" compid="separator1467104019182"
+														compname="separator1467104019182" picklineheight="1px">
+															<ul class="layout-separator" id="separator1467104019182" name="separator1467104019182"
+															ms-duplex-string="separator1467104019182" ms-attr-disabled="separator1467104019182_form_disabled"
+															style="border-color: rgb(245, 245, 245);">
+																<li class="layout-separator-selected ">
+																	<a class="layout-separator-inner">
+																		<span class="icon">
+																		</span>
+																		<span class="title">
+																		</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="box box-element ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger showRemove">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle form-component_active">
+														<div type="label" class="layout-align-left" alignstyle="layout-align-left"
+														compid="label1467104052587" compname="label1467104052587" lablefontsize="16"
+														labelfontweight="false" labelfontcolor="" fieldtype="string" field="GOODS_NAME"
+														defaultvalue="%E4%BA%A7%E5%93%81%E5%90%8D%E7%A7%B0">
+															<label class="control-label title" id="label1467104052587" name="label1467104052587"
+															ms-text="GOODS_NAME" i18nkey="产品名称">
+																产品名称
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="box box-element ui-draggable" style="position: relative; opacity: 1; z-index: 0;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														分隔栏
+													</div>
+													<div class="view draggableHandle">
+														<div type="separator" init="true" picklinecolor="f5f5f5" compid="separator1467104609439"
+														compname="separator1467104609439" picklineheight="1px">
+															<ul class="layout-separator" id="separator1467104609439" name="separator1467104609439"
+															ms-duplex-string="separator1467104609439" ms-attr-disabled="separator1467104609439_form_disabled"
+															style="border-color: rgb(245, 245, 245);">
+																<li class="layout-separator-selected ">
+																	<a class="layout-separator-inner">
+																		<span class="icon">
+																		</span>
+																		<span class="title">
+																		</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="box box-element ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-left" alignstyle="layout-align-left"
+														compid="label1467104626135" compname="label1467104626135" lablefontsize="16"
+														labelfontweight="true" labelfontcolor="ff0000" defaultvalue="%E4%BB%B7%E6%A0%BC"
+														fieldtype="decimal" field="GOODS_PRICE">
+															<label class="control-label labelfontweight" id="label1467104626135" name="label1467104626135"
+															i18nkey="价格" ms-text="GOODS_PRICE" style="color: rgb(255, 0, 0);">
+																价格
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="box box-element ui-draggable" style="position: relative; opacity: 1; z-index: 0;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														分隔栏
+													</div>
+													<div class="view draggableHandle">
+														<div type="separator" init="true" picklinecolor="f5f5f5" compid="separator1467104653736"
+														compname="separator1467104653736" picklineheight="1px">
+															<ul class="layout-separator" id="separator1467104653736" name="separator1467104653736"
+															ms-duplex-string="separator1467104653736" ms-attr-disabled="separator1467104653736_form_disabled"
+															style="border-color: rgb(245, 245, 245);">
+																<li class="layout-separator-selected ">
+																	<a class="layout-separator-inner">
+																		<span class="icon">
+																		</span>
+																		<span class="title">
+																		</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="box box-element ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-left" alignstyle="layout-align-left"
+														compid="label1467104671070" compname="label1467104671070" lablefontsize="16"
+														labelfontweight="false" labelfontcolor="" fieldtype="string" field="GOODS_PROVIDER"
+														defaultvalue="%E4%BE%9B%E8%B4%A7%E5%95%86">
+															<label class="control-label title" id="label1467104671070" name="label1467104671070"
+															ms-text="GOODS_PROVIDER" i18nkey="供货商">
+																供货商
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer-bg ui-sortable">
+	<div class="box-hide box-element ui-draggable col-md-2" style="display: block;">
+		<a href="#close" class="remove label label-danger">
+			<i class="glyphicon-remove glyphicon">
+			</i>
+		</a>
+		<div class="preview" style="border-color: rgb(237, 22, 22);">
+			JS脚本jsscript1467103464678
+		</div>
+		<div class="view">
+			<div type="jsscript" compid="jsscript1467103464678" compname="jsscript1467103464678"
+			format_detail_url_method="formatDetailUrl" data-params="%7B%22dataView%22%3A%7B%22formatDetailUrlMethod%22%3A%22formatDetailUrl%22%7D%7D"
+			jspath="js%26%23x2F%3Bcommon%26%23x2F%3Bm-product-list-demo.js%20%20">
+			</div>
+		</div>
+	</div>
+</div>

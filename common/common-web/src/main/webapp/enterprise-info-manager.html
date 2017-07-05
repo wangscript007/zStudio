@@ -1,0 +1,232 @@
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-table.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-editable.css" rel="stylesheet">
+    <link href="css/bootstrap/fileinput/css/fileinput.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/zTreeStyle/zTreeStyle.css" rel="stylesheet">
+    <link href="css/bootstrap/select2/select2.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+    <script type="text/javascript" src="js/lib/fileinput/fileinput.js"></script>
+    <script type="text/javascript" src="js/lib/fileinput/fileinput_locale_zh.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-zh-CN.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-editable.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-toolbar.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-editable.js"></script>
+    <script type="text/javascript" src="js/lib/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/lib/select2/select2.min.js"></script>
+    <script type="text/javascript" src="js/lib/lodash.min.js"></script>
+    <script type="text/javascript" src="js/lib/avalon.js"></script>
+    <script type="text/javascript" src="js/lib/echarts-all.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.ztree.all-3.5.js"></script>
+    <script type="text/javascript" src="js/lib/waypoints/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/commTools.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageTable.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageDialog.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageCharts.js"></script>
+    <script type="text/javascript" src="js/page/zTree.js"></script>
+    <script type="text/javascript" src="js/page/layoutitWaypoint.js"></script>
+    <script type="text/javascript" src="js/page/layoutitNavigation.js"></script>
+    <script type="text/javascript" src="default_common.js"></script>
+    <script type="text/javascript" src="enterprise-info-manager.js"></script>
+    <script type="text/javascript" src="js/mao/enterprise-info-manager-logic.js"></script>
+</head> 
+<body>
+<div class="container container-top">
+	<div type="layout" ms-controller="vm1450086018892" id="vm1450086018892" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+				<div type="layout" id="layout1450086061723" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right">
+								 <label class="control-label" id="label1450086072216">企业名称:</label>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+							<div type="input_text" class="group">
+								<input type="text" class="form-control" id="input_text1450086556584" name="input_text1450086556584" ms-duplex-string="ENTERPRISE" ms-attr-disabled="ENTERPRISE_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right">
+								 <label class="control-label" id="label1450086074195">法人:</label>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+							<div type="input_text" class="group">
+								<input type="text" class="form-control" id="input_text1450086566243" name="input_text1450086566243" ms-duplex-string="LEGAL_PERSON" ms-attr-disabled="LEGAL_PERSON_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" id="layout1450086037853" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right">
+								 <label class="control-label" id="label1450086075760">雇员数:</label>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+							<div type="input_text" class="group">
+								<input type="text" class="form-control" id="input_text1450086558907" name="input_text1450086558907" ms-duplex-number="EMPLOYEES" ms-attr-disabled="EMPLOYEES_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right">
+								 <label class="control-label" id="label1450086039932">设备数:</label>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+							<div type="input_text" class="group">
+								<input type="text" class="form-control" id="input_text1450086568645" name="input_text1450086568645" ms-duplex-number="DEVICES" ms-attr-disabled="DEVICES_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" id="layout1450086036318" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right">
+								 <label class="control-label" id="label1450086041244">联系人:</label>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+							<div type="input_text" class="group">
+								<input type="text" class="form-control" id="input_text1450086561179" name="input_text1450086561179" ms-duplex-string="CONTACT_NAME" ms-attr-disabled="CONTACT_NAME_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right">
+								 <label class="control-label" id="label1450086077526">联系电话:</label>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+							<div type="input_text" class="group">
+								<input type="text" class="form-control" id="input_text1450086570591" name="input_text1450086570591" ms-duplex-string="CONTACT_NUMBER" ms-attr-disabled="CONTACT_NUMBER_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" id="layout1450086035149" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right">
+								 <label class="control-label" id="label1450086042299">企业标签:</label>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+							<div type="input_text" placeholder="%E5%A4%9A%E4%B8%AA%E6%8C%89%E9%80%97%E5%8F%B7%E5%88%86%E5%89%B2" class="group">
+								<input type="text" class="form-control" id="input_text1450086563572" name="input_text1450086563572" placeholder="多个按逗号分割" ms-duplex-string="TAG" ms-attr-disabled="TAG_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right">
+								 <label class="control-label" id="label1450086079918">所属行业:</label>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column">
+							<div type="input_text" class="group">
+								<input type="text" class="form-control" id="input_text1450086574745" name="input_text1450086574745" ms-duplex-string="INDUSTRY" ms-attr-disabled="INDUSTRY_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" id="layout1450086033928" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right">
+								 <label class="control-label" id="label1450086082131">联系地址:</label>
+							</div>
+						</div>
+						<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+							<div type="input_text" class="group">
+								<input type="text" class="form-control" id="input_text1450086578958" name="input_text1450086578958" ms-duplex-string="ADDRESS" ms-attr-disabled="ADDRESS_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right">
+								 <label class="control-label" id="label1450086088357">邮编:</label>
+							</div>
+						</div>
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="input_text" class="group">
+								<input type="text" class="form-control" id="input_text1450086581802" name="input_text1450086581802" ms-duplex-string="POSTCODE" ms-attr-disabled="POSTCODE_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" id="layout1450086942099" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right">
+								 <label class="control-label" id="label1450086953720">企业LOGO:</label>
+							</div>
+						</div>
+						<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+							<div type="input_text" placeholder="%E8%AF%B7%E8%BE%93%E5%85%A5%E5%8F%AF%E8%AE%BF%E9%97%AE%E7%9A%84logo%20url" class="group">
+								<input type="text" class="form-control" id="input_text1450086972665" name="input_text1450086972665" placeholder="请输入可访问的logo url" ms-duplex-string="LOGO" ms-attr-disabled="LOGO_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" id="layout1450086032259" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right">
+								 <label class="control-label" id="label1450086395664">业务范围:</label>
+							</div>
+						</div>
+						<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+							<div type="input_text" class="group">
+								<input type="text" class="form-control" id="input_text1450086552803" name="input_text1450086552803" ms-duplex-string="BUSINESS_SCOPE" ms-attr-disabled="BUSINESS_SCOPE_form_disabled" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" id="layout1450086422382" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" class="layout-align-right">
+								 <label class="control-label" id="label1450086408499">企业介绍:</label>
+							</div>
+						</div>
+						<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+							<div type="textarea">
+								<textarea class="form-control" rows="4" id="textarea1450086588317" name="textarea1450086588317" ms-duplex-string="INTRODUCE" ms-attr-disabled="INTRODUCE_form_disabled">								</textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" id="layout1450086595866" class="form-group">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+							<div type="button" class="layout-align-right">
+								 <button type="button" class="btn btn-primary" id="button1450086599273" name="button1450086599273" ms-click="submit">修改</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zte.ums.bcp.orm.tablemessage.dao.MetaDataMapper">
+  <!--使用LinkedHashMap的目的是为了保序 -->
+  <select id="queryTableName" resultType="java.util.LinkedHashMap">
+    ${sql}  </select>
+
+  <select id="queryResourceId" resultType="java.util.LinkedHashMap">
+    select r.id
+    FROM multi_table_definition_table r;
+  </select>
+
+  <select id="querytablefield" parameterType="java.lang.String"
+    resultType="java.util.LinkedHashMap">
+    ${sql}
+  </select>
+
+  <select id="queryMultiField" parameterType="java.lang.String"
+    resultType="java.util.LinkedHashMap">
+    ${sql}
+  </select>
+
+  <select id="findResourceId" parameterType="java.lang.String"
+    resultType="java.util.LinkedHashMap">
+    select combinative_table COMBINATIVE_TABLE, id from
+    <if test="database != null and database != ''">
+        ${database}.multi_table_definition_table 
+    </if>
+    multi_table_definition_table
+    where id = #{resourceid};  </select>
+  
+  <select id="isExistMultiTable" resultType="java.lang.Integer">
+    ${sql}
+  </select>
+</mapper>

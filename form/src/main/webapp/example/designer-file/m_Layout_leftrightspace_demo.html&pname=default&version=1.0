@@ -1,0 +1,484 @@
+<div class="demo_parent" style="height: 619px; min-height: 580px;">
+	<div class="demo ui-sortable" style="min-height: 560px;">
+		<div class="lyrow ui-draggable leftrightspace" style="display: block;">
+			<a href="#close" class="remove label label-danger showRemove">
+				<i class="glyphicon-remove glyphicon">
+				</i>
+			</a>
+			<div class="preview">
+				12/自定义
+			</div>
+			<div class="view form-component_active">
+				<div type="layout" ratio="12" compid="vm1466991263571" compname="vm1466991263571"
+				layoutstyle="leftrightspace" ms-controller="vm1466991263571" id="vm1466991263571">
+					<div class="row clearfix">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+						style="padding-bottom: 5px;">
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									12/自定义
+								</div>
+								<div class="view">
+									<div type="layout" ratio="6,6" compid="layout1466991279890" compname="layout1466991279890"
+									layoutstyle="" id="layout1466991279890">
+										<div class="row clearfix">
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable" style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable" style="display: block; position: relative; opacity: 1; z-index: 0;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-left" alignstyle="layout-align-left"
+														compid="label1466991290040" compname="label1466991290040" lablefontsize="12"
+														labelfontweight="true" labelfontcolor="" defaultvalue="%E8%AE%A2%E5%8D%95%E5%8F%B7%EF%BC%9A524621653">
+															<label class="control-label labelfontweight" id="label1466991290040" name="label1466991290040"
+															i18nkey="订单号：524621653" style="font-size: 12px;">
+																订单号：524621653
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable" style="padding-bottom: 7px;">
+												<div class="box box-element ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-right" alignstyle="layout-align-right"
+														compid="label1466991292976" compname="label1466991292976" lablefontsize="12"
+														labelfontweight="false" labelfontcolor="ff6600" defaultvalue="%E5%B7%B2%E7%AD%BE%E6%94%B6">
+															<label class="control-label title" id="label1466991292976" name="label1466991292976"
+															i18nkey="已签收" style="font-size: 12px; color: rgb(255, 102, 0);">
+																已签收
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									分隔栏
+								</div>
+								<div class="view draggableHandle">
+									<div type="layout" compid="vm1466991361566" compname="vm1466991361566"
+									layoutstyle="" id="vm1466991361566">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable" style="position: relative; opacity: 1; z-index: 0;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														分隔栏
+													</div>
+													<div class="view draggableHandle">
+														<div type="separator" init="true" picklinecolor="eaedf1" compid="separator1466991364281"
+														compname="separator1466991364281" picklineheight="1px">
+															<ul class="layout-separator" id="separator1466991364281" name="separator1466991364281"
+															ms-duplex-string="separator1466991364281" ms-attr-disabled="separator1466991364281_form_disabled"
+															style="border-color: rgb(234, 237, 241);">
+																<li class="layout-separator-selected ">
+																	<a class="layout-separator-inner">
+																		<span class="icon">
+																		</span>
+																		<span class="title">
+																		</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box box-element ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									标签
+								</div>
+								<div class="view draggableHandle">
+									<div type="label" class="layout-align-left" alignstyle="layout-align-left"
+									compid="label1466991379621" compname="label1466991379621" lablefontsize="12"
+									labelfontweight="false" labelfontcolor="" defaultvalue="%E5%86%85%E5%AE%B9%EF%BC%9A1%C3%97USB3.1%20Type-C%E6%8E%A5%E5%8F%A3%EF%BC%9B6%C3%97USB3.0%E6%8E%A5%E5%8F%A3%EF%BC%884%E5%86%85%E7%BD%AE%2B2%E8%83%8C%E6%9D%BF%EF%BC%89%EF%BC%9B6%C3%97USB2.0%E6%8E%A5%E5%8F%A3%EF%BC%884%E5%86%85%E7%BD%AE%2B2%E8%83%8C%E6%9D%BF%EF%BC%89%20HDMI%E6%8E%A5%E5%8F%A31%C3%97HDMI%E6%8E%A5%E5%8F%A3%20%E5%A4%96%E6%8E%A5%E7%AB%AF%E5%8F%A31%C3%97VGA%E6%8E%A5%E5%8F%A3%2F1%C3%97DVI%E6%8E%A5%E5%8F%A3%20%E7%BA%A0%E9%94%99%20PS%2F2%E6%8E%A5%E5%8F%A3PS%2F2%E9%BC%A0%E6%A0%87%EF%BC%8CPS%2F2%E9%94%AE%E7%9B%98%E6%8E%A5%E5%8F%A3%20%E5%85%B6%E5%AE%83%E6%8E%A5%E5%8F%A31%C3%97RJ45%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%8F%A3%20%E9%9F%B3%E9%A2%91%E6%8E%A5%E5%8F%A3">
+										<label class="control-label title" id="label1466991379621" name="label1466991379621"
+										i18nkey="内容：1×USB3.1 Type-C接口；6×USB3.0接口（4内置+2背板）；6×USB2.0接口（4内置+2背板） HDMI接口1×HDMI接口 外接端口1×VGA接口/1×DVI接口 纠错 PS/2接口PS/2鼠标，PS/2键盘接口 其它接口1×RJ45网络接口 音频接口"
+										style="font-size: 12px;">
+											内容：1×USB3.1 Type-C接口；6×USB3.0接口（4内置+2背板）；6×USB2.0接口（4内置+2背板） HDMI接口1×HDMI接口
+											外接端口1×VGA接口/1×DVI接口 纠错 PS/2接口PS/2鼠标，PS/2键盘接口 其它接口1×RJ45网络接口 音频接口
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									分隔栏
+								</div>
+								<div class="view draggableHandle">
+									<div type="layout" compid="vm1466991415248" compname="vm1466991415248"
+									layoutstyle="" id="vm1466991415248">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														分隔栏
+													</div>
+													<div class="view draggableHandle">
+														<div type="separator" init="true" picklinecolor="eaedf1" compid="separator1466991417336"
+														compname="separator1466991417336" picklineheight="1px">
+															<ul class="layout-separator" id="separator1466991417336" name="separator1466991417336"
+															ms-duplex-string="separator1466991417336" ms-attr-disabled="separator1466991417336_form_disabled"
+															style="border-color: rgb(234, 237, 241);">
+																<li class="layout-separator-selected ">
+																	<a class="layout-separator-inner">
+																		<span class="icon">
+																		</span>
+																		<span class="title">
+																		</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box box-element ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									标签
+								</div>
+								<div class="view draggableHandle">
+									<div type="label" class="layout-align-right" alignstyle="layout-align-right"
+									compid="label1466991433977" compname="label1466991433977" lablefontsize="12"
+									labelfontweight="false" labelfontcolor="878787" defaultvalue="%E7%89%A9%E6%B5%81%E8%AF%A6%E6%83%85">
+										<label class="control-label title" id="label1466991433977" name="label1466991433977"
+										i18nkey="物流详情" style="color: rgb(135, 135, 135); font-size: 12px;">
+											物流详情
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lyrow ui-draggable" style="display: block;">
+			<a href="#close" class="remove label label-danger">
+				<i class="glyphicon-remove glyphicon">
+				</i>
+			</a>
+			<div class="preview">
+				12/自定义
+			</div>
+			<div class="view">
+				<div type="layout" ratio="12" compid="vm1466991466789" compname="vm1466991466789"
+				layoutstyle="" ms-controller="vm1466991466789" id="vm1466991466789">
+					<div class="row clearfix">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+						style="padding-bottom: 5px;">
+							<div class="lyrow ui-draggable" style="display: block; position: relative; opacity: 1; z-index: 0;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									分隔栏
+								</div>
+								<div class="view draggableHandle">
+									<div type="layout" compid="vm1466991468776" compname="vm1466991468776"
+									layoutstyle="" id="vm1466991468776">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														分隔栏
+													</div>
+													<div class="view draggableHandle">
+														<div type="separator" init="true" picklinecolor="eaedf1" compid="separator1466991471898"
+														compname="separator1466991471898" picklineheight="5px">
+															<ul class="layout-separator" id="separator1466991471898" name="separator1466991471898"
+															ms-duplex-string="separator1466991471898" ms-attr-disabled="separator1466991471898_form_disabled"
+															style="border-color: rgb(234, 237, 241); border-width: 0px 0px 5px;">
+																<li class="layout-separator-selected ">
+																	<a class="layout-separator-inner">
+																		<span class="icon">
+																		</span>
+																		<span class="title">
+																		</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lyrow ui-draggable leftrightspace" style="display: block;">
+			<a href="#close" class="remove label label-danger">
+				<i class="glyphicon-remove glyphicon">
+				</i>
+			</a>
+			<div class="preview">
+				12/自定义
+			</div>
+			<div class="view">
+				<div type="layout" ratio="12" compid="vm1466991488657" compname="vm1466991488657"
+				layoutstyle="leftrightspace" ms-controller="vm1466991488657" id="vm1466991488657">
+					<div class="row clearfix">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+						style="padding-bottom: 5px;">
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									12/自定义
+								</div>
+								<div class="view">
+									<div type="layout" ratio="6,6" compid="layout1466991491947" compname="layout1466991491947"
+									layoutstyle="" id="layout1466991491947">
+										<div class="row clearfix">
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable" style="padding-bottom: 9px;">
+												<div class="box box-element ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-left" alignstyle="layout-align-left"
+														compid="label1466991506577" compname="label1466991506577" lablefontsize="12"
+														labelfontweight="false" labelfontcolor="" defaultvalue="%E8%AE%A2%E5%8D%95%E5%8F%B7%EF%BC%9A524621653">
+															<label class="control-label title" id="label1466991506577" name="label1466991506577"
+															i18nkey="订单号：524621653" style="font-size: 12px;">
+																订单号：524621653
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable" style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable" style="display: block;">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														标签
+													</div>
+													<div class="view draggableHandle">
+														<div type="label" class="layout-align-right" alignstyle="layout-align-right"
+														compid="label1466991516652" compname="label1466991516652" lablefontsize="12"
+														labelfontweight="false" labelfontcolor="ff6600" defaultvalue="%E5%B7%B2%E7%AD%BE%E6%94%B6">
+															<label class="control-label title" id="label1466991516652" name="label1466991516652"
+															i18nkey="已签收" style="color: rgb(255, 102, 0); font-size: 12px;">
+																已签收
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									分隔栏
+								</div>
+								<div class="view draggableHandle">
+									<div type="layout" compid="vm1466991541846" compname="vm1466991541846"
+									layoutstyle="" id="vm1466991541846">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														分隔栏
+													</div>
+													<div class="view draggableHandle">
+														<div type="separator" init="true" picklinecolor="eaedf1" compid="separator1466991548358"
+														compname="separator1466991548358" picklineheight="1px">
+															<ul class="layout-separator" id="separator1466991548358" name="separator1466991548358"
+															ms-duplex-string="separator1466991548358" ms-attr-disabled="separator1466991548358_form_disabled"
+															style="border-color: rgb(234, 237, 241);">
+																<li class="layout-separator-selected ">
+																	<a class="layout-separator-inner">
+																		<span class="icon">
+																		</span>
+																		<span class="title">
+																		</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box box-element ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									标签
+								</div>
+								<div class="view draggableHandle">
+									<div type="label" class="layout-align-left" alignstyle="layout-align-left"
+									compid="label1466991559971" compname="label1466991559971" lablefontsize="12"
+									labelfontweight="false" labelfontcolor="" defaultvalue="%E5%86%85%E5%AE%B9%EF%BC%9A1%C3%97USB3.1%20Type-C%E6%8E%A5%E5%8F%A3%EF%BC%9B6%C3%97USB3.0%E6%8E%A5%E5%8F%A3%EF%BC%884%E5%86%85%E7%BD%AE%2B2%E8%83%8C%E6%9D%BF%EF%BC%89%EF%BC%9B6%C3%97USB2.0%E6%8E%A5%E5%8F%A3%EF%BC%884%E5%86%85%E7%BD%AE%2B2%E8%83%8C%E6%9D%BF%EF%BC%89%20HDMI%E6%8E%A5%E5%8F%A31%C3%97HDMI%E6%8E%A5%E5%8F%A3%20%E5%A4%96%E6%8E%A5%E7%AB%AF%E5%8F%A31%C3%97VGA%E6%8E%A5%E5%8F%A3%2F1%C3%97DVI%E6%8E%A5%E5%8F%A3%20%E7%BA%A0%E9%94%99%20PS%2F2%E6%8E%A5%E5%8F%A3PS%2F2%E9%BC%A0%E6%A0%87%EF%BC%8CPS%2F2%E9%94%AE%E7%9B%98%E6%8E%A5%E5%8F%A3%20%E5%85%B6%E5%AE%83%E6%8E%A5%E5%8F%A31%C3%97RJ45%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%8F%A3%20%E9%9F%B3%E9%A2%91%E6%8E%A5%E5%8F%A3">
+										<label class="control-label title" id="label1466991559971" name="label1466991559971"
+										i18nkey="内容：1×USB3.1 Type-C接口；6×USB3.0接口（4内置+2背板）；6×USB2.0接口（4内置+2背板） HDMI接口1×HDMI接口 外接端口1×VGA接口/1×DVI接口 纠错 PS/2接口PS/2鼠标，PS/2键盘接口 其它接口1×RJ45网络接口 音频接口"
+										style="font-size: 12px;">
+											内容：1×USB3.1 Type-C接口；6×USB3.0接口（4内置+2背板）；6×USB2.0接口（4内置+2背板） HDMI接口1×HDMI接口
+											外接端口1×VGA接口/1×DVI接口 纠错 PS/2接口PS/2鼠标，PS/2键盘接口 其它接口1×RJ45网络接口 音频接口
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="lyrow ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									分隔栏
+								</div>
+								<div class="view draggableHandle">
+									<div type="layout" compid="vm1466991586206" compname="vm1466991586206"
+									layoutstyle="" id="vm1466991586206">
+										<div class="row clearfix">
+											<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column ui-sortable"
+											style="padding-bottom: 5px;">
+												<div class="box box-element ui-draggable">
+													<a href="#close" class="remove label label-danger">
+														<i class="glyphicon-remove glyphicon">
+														</i>
+													</a>
+													<div class="preview">
+														分隔栏
+													</div>
+													<div class="view draggableHandle">
+														<div type="separator" init="true" picklinecolor="eaedf1" compid="separator1466991592424"
+														compname="separator1466991592424" picklineheight="1px">
+															<ul class="layout-separator" id="separator1466991592424" name="separator1466991592424"
+															ms-duplex-string="separator1466991592424" ms-attr-disabled="separator1466991592424_form_disabled"
+															style="border-color: rgb(234, 237, 241);">
+																<li class="layout-separator-selected ">
+																	<a class="layout-separator-inner">
+																		<span class="icon">
+																		</span>
+																		<span class="title">
+																		</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box box-element ui-draggable" style="display: block;">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									标签
+								</div>
+								<div class="view draggableHandle">
+									<div type="label" class="layout-align-right" alignstyle="layout-align-right"
+									compid="label1466991602115" compname="label1466991602115" lablefontsize="12"
+									labelfontweight="false" labelfontcolor="8a8a8a" defaultvalue="%E7%89%A9%E6%B5%81%E8%AF%A6%E6%83%85">
+										<label class="control-label title" id="label1466991602115" name="label1466991602115"
+										i18nkey="物流详情" style="color: rgb(138, 138, 138); font-size: 12px;">
+											物流详情
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer-bg ui-sortable">
+</div>

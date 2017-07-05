@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JS脚本编辑器-布局设计器</title>
+    <link href="../css/lib/jquery-ui.min.css" rel="stylesheet"/>
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/frame/layoutit.css" rel="stylesheet"/>
+    <link href="../css/frame/easyui/default/form.css" type="text/css" rel="stylesheet"/>
+    <link href="../css/bootstrap/bootstrap-table.min.css" rel="stylesheet"/>
+    <link href="../css/bootstrap/bootstrapValidator.min.css" rel="stylesheet"/>
+    <link href="../css/lib/mCustomScrollbar/jquery.mCustomScrollbar.min.css" media="all" rel="stylesheet"/>
+    <style type="text/css">
+        body {
+            overflow: auto;
+            background-color: #3f3f3f;
+        }
+
+        .bb-alert {
+            position: fixed;
+            top: 40%;
+            right: 40%;
+            margin-bottom: 0;
+            font-size: 1.2em;
+            padding: 1em 1.3em;
+            z-index: 2000;
+        }
+        .edit{
+            position: relative;
+            height: 700px;
+        }
+        #pathNav ol{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #header{
+            margin-top: 5px;
+        }
+
+        #fileMenu>ul.nav-tabs{
+            background-color: #F5F5F5;
+        }
+        #fileMenu>ul.nav-tabs>li>a{
+            border-radius: 4px 25px 0px 0;
+        }
+        .postfix{
+            padding-left:1px;
+            padding-top: 5px
+        }
+        .nav-tabs>li.active>a {
+            color: #ffffff;
+            font-size: 12px;
+            border: 0px;
+            border-bottom: 2px solid #009DDA;
+        }
+
+        .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+            border: 0px;
+            border-bottom: 2px solid #009DDA !important;
+        }
+        .nav-tabs>li>a:hover {
+            border: 0px;
+        }
+        #fileMenu>ul.nav-tabs>li>a {
+            border-radius:0;
+        }
+        .nav-tabs>li>a {
+            color: #ffffff;
+            font-size: 12px;
+        }
+        .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+            color: #ffffff;
+            background-color: #3f3f3f;
+        }
+        .nav-tabs {
+            border-bottom: 1px solid #5a5a5a;
+        }
+        .nav>li>a:hover, .nav>li>a:focus {
+            background-color: #3f3f3f;
+        }
+        button.close {
+            font-size: 16px;
+            color: #ffffff;
+            opacity:1;
+        }
+        .glyphicon-asterisk {
+            padding-right: 5px;
+        }
+        .ace-iplastic {
+            background-color: #ffffff !important;
+        }
+        .ace-iplastic .ace_gutter {
+            background: #ebebeb !important;
+        }
+
+        .edit {
+            height: 650px;
+        }
+
+        /* js 编辑器新增帮助功能*/
+        .body-helper {
+            margin-right:310px;
+        }
+
+        .list-group-item>.badge {
+            float: left;
+        }
+
+        .form-layout-east .body .form-panel .title{
+            border-bottom: 1px solid #5a5a5a;
+        }
+
+        .form-layout-east .body .form-panel .name{
+            padding-left:5px;
+        }
+
+        .form-layout-east .body .form-panel .add{
+            cursor: pointer;
+            word-break: break-word;
+        }
+
+        .badge {
+            display: inline-block;
+            min-width: 10px;
+            padding: 6px 7px;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1;
+            color: #ffffff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            background-color: #5d6a74;
+            border-radius: 3px;
+        }
+
+        .content{
+            padding-left: 10px;
+            line-height: 2;
+            word-break: break-word;
+        }
+
+
+    </style>
+</head>
+<body>
+        <div  id="successTip" style="display: none"><span class="bb-alert alert alert-info"></span></div>
+
+        <div class="row">
+        <!--    <div id="header" class="col-md-6">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#createModal">
+                        <span class="glyphicon glyphicon-plus"></span>新建</button>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#openModal">
+                        <span class="glyphicon glyphicon-folder-open"></span>打开</button>
+                    <button type="button" id="saveCloudFile" class="btn btn-default">
+                        <span class="glyphicon glyphicon-cloud-upload"></span>保存
+                    </button>
+                </div>
+
+                <div class="btn-group">
+                    <a type="button" class="btn btn-default" href="docs.html" target="_blank">
+                        <span class="glyphicon glyphicon-tags"></span>本地接口</a>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#linkModal">
+                        <span class="glyphicon glyphicon-share-alt"></span>外部资源</button>
+                </div>
+            </div>
+
+            <div id="pathNav" class="col-md-6">
+
+            </div>-->
+            <div class="navbar navbar-fixed-top navbar-header">
+                <div class="navbar-header-logo">
+                    <img src="../img/logo.png"/>
+                </div>
+                <div class="navbar-header-menu">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#createModal"> 新建</button>
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#openModal"> 打开</button>
+                        <button type="button" id="saveCloudFile" class="btn btn-link"> 保存</button>
+                    </div>
+                    <!--<span class="fl split">|</span>
+
+                    <div class="btn-group">
+                        <a type="button" class="btn btn-link" href="docs.html" target="_blank"> 本地接口</a>
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#linkModal"> 外部资源</button>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <div  class="row" style="padding: 0px; margin: 0px">
+             <div id="fileMenu" class="col-md-12">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist" style="background-color: #3f3f3f;">
+
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content" style="margin-top: 10px;">
+
+                </div>
+             </div>
+        </div>
+
+
+
+        <!-- js编辑器中新增函数帮助功能 -->
+        <div class="form-layout-east">
+            <div class="form-panel" style="height: 100%;">
+                <div class="title">
+                    <em class="glyphicon glyphicon-question-sign"></em>
+                    <span>帮助手册</span>
+                </div>
+
+                <div class="body" style="height: 95%;color:white" >
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <select class="form-control" id="cmbFunctionList" style="width: 150px"></select>
+                        </span>
+                        <input id="txtFunctionKey" class="form-control form-textbox" type="text" placeholder="输入关键字"/>
+                        <span id="btnQueryByKey" title="查询" class="glyphicon glyphicon-search advanced_select_button" aria-hidden="true" style="position:absolute;right:0px;z-index:2;width:34px;height:34px;line-height:34px;text-align:center;cursor:pointer;top:0px"></span>
+                    </div>
+
+                    <div id="functionListContainer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- 新建 -->
+        <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="myModalLabel">文件管理</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form id="createForm" class="form-horizontal">
+                            <div class="form-group">
+                                <label for="projectName" class="col-md-2 control-label">项目名称</label>
+                                <div class="col-md-10">
+                                    <input type="input" class="form-control" name="projectName" disabled id="projectName" placeholder="项目名称">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="rootPath" class="col-md-2 control-label">根路径</label>
+                                <div class="col-md-10">
+                                    <input type="input" class="form-control" name="rootPath" disabled id="rootPath" placeholder="工程路径">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="relativePath" class="col-md-2 control-label">相对路径</label>
+                                <div class="col-md-10">
+                                    <input type="input" class="form-control" disabled name="relativePath" id="relativePath" placeholder="相对路径">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="customPath" class="col-md-2 control-label">自定义路径</label>
+                                <div class="col-md-10">
+                                    <input type="input" class="form-control" name="customPath" id="customPath" placeholder="自定义路径">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="fileName" class="col-md-2 control-label">文件名</label>
+                                <div class="col-md-9" style="padding-right: 1px">
+                                    <input type="input" class="form-control" name="fileName" id="fileName" placeholder="文件名">
+                                </div>
+                                <div class="col-md-1 postfix">.js</div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="saveFile" class="btn btn-primary">保存</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 打开 -->
+        <div id="openModal" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="width:1000px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="myModalLabel">
+
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <table id="filesTable"
+                               class="table"
+                               data-toggle="table"
+                               data-pagination="true"
+                               data-maintain-selected = "true"
+                               data-search="true"
+                               data-click-to-select="true"
+                               >
+                            <thead>
+                            <tr>
+                                <th data-field="state" data-radio="true"></th>
+                                <!--<th data-field="projectName">项目名称</th>-->
+                                <th data-field="fileName">文件名</th>
+                                <th data-field="filePath">文件路径</th>
+                                <!--<th data-field="relativePath">相对路径</th>-->
+                                <th data-field="modifyTime">最后修改时间</th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="loadAceEditor">确定</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="linkModal" class="modal fade" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title">
+
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <h2>学习资料</h2>
+                        <h3><a href="http://www.w3school.com.cn" target="_blank">w3school 在线教程官网</a></h3>
+                        <h3><a href="http://www.runoob.com" target="_blank">w3school菜鸟教程</a></h3>
+                        <h3><a href="http://v3.bootcss.com" target="_blank">Bootstrap中文网</a></h3>
+
+                        <h2>参考手册</h2>
+                        <h3><a href="http://www.jquery123.com" target="_blank">jQuery中文网站</a></h3>
+                        <h3><a href="http://www.php100.com/manual/jquery" target="_blank">jQuery手册(chm)</a></h3>
+
+                        <h2>第三方插件</h2>
+                        <h3><a href="https://github.com/ajaxorg/ace" target="_blank">Ace编辑器</a></h3>
+                        <h3><a href="https://github.com/lodash/lodash" target="_blank">Lodash.js(JavaScript工具类)</a></h3>
+                        <h3><a href="https://github.com/vitalets/x-editable" target="_blank">x-editable(Bootstrap风格的编辑组件)</a></h3>
+                        <h3><a href="https://github.com/wenzhixin/bootstrap-table" target="_blank">Bootstrap风格的表格</a></h3>
+
+                        <h2>小工具</h2>
+                        <h3><a href="http://www.bejson.com/" target="_blank">Json格式验证</a></h3>                         <!--<div class="row">-->
+                            <!--<div class="col-md-2">-->
+                                <!--&lt;!&ndash; Nav tabs &ndash;&gt;-->
+                                <!--<ul class="nav nav-pills nav-stacked" role="tablist">-->
+                                    <!--<li role="presentation" class="active">-->
+                                        <!--<a href="#document" aria-controls="document" role="tab" data-toggle="tab">学习资料</a>-->
+                                    <!--</li>-->
+                                    <!--<li role="presentation">-->
+                                        <!--<a href="#plugin" aria-controls="plugin" role="tab" data-toggle="tab">插件</a>-->
+                                    <!--</li>-->
+                                    <!--<li role="presentation">-->
+                                        <!--<a href="#tools" aria-controls="tools" role="tab" data-toggle="tab">小工具</a>-->
+                                    <!--</li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-10">-->
+                                <!--&lt;!&ndash; Tab panes &ndash;&gt;-->
+                                <!--<div class="tab-content">-->
+                                    <!--<div role="tabpanel" class="tab-pane active" id="document">home</div>-->
+                                    <!--<div role="tabpanel" class="tab-pane" id="plugin">profile</div>-->
+                                    <!--<div role="tabpanel" class="tab-pane" id="tools">message</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-toggle="ace"></div>
+
+
+
+
+
+
+    <script type="text/javascript" src="../js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrap-table-zh-CN.min.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrapvalidator/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="../js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+    <script type="text/javascript" src="../js/lib/lodash.min.js"></script>
+    <script type="text/javascript" src="../js/frame/lib/ace/ace.js"></script>
+    <script type="text/javascript" src="../js/commTools.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="../js/frame/editor/ace_editor.js"></script>
+
+</body>
+</html>

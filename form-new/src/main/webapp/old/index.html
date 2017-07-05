@@ -1,0 +1,1503 @@
+
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>zForm - 页面设计器</title>
+    <link href="css/lib/jquery-ui.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/frame/layoutit.css" rel="stylesheet"/>
+    <link href="css/frame/easyui/default/form.css" type="text/css" rel="stylesheet"/>
+    <link href="css/frame/easyui/icon.css" type="text/css" rel="stylesheet"/>
+    <link href="css/bootstrap/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap/bootstrap-table.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap/bootstrap-table-reorder-rows.css" rel="stylesheet"/>
+    <link href="css/bootstrap/fileinput/css/fileinput.css" media="all" rel="stylesheet"/>
+    <link href="css/frame/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet"/>
+    <link href="css/frame/pick-a-color-1.2.3.min.css" media="all" rel="stylesheet"/>
+    <link href="css/bootstrap/select2/select2.min.css" media="all" rel="stylesheet"/>
+    <link href="css/bootstrap/bootstrap-chinese-region.min.css" media="all" rel="stylesheet"/>
+    <link href="css/component/myAdmin.css" media="all" rel="stylesheet"/>
+    <link href="css/lib/mCustomScrollbar/jquery.mCustomScrollbar.min.css" media="all" rel="stylesheet"/>
+    <link href="js/lib/cranberry/cranberry.css" rel="stylesheet">
+	<link href="css/component/jquery-accordion-menu.css" rel="stylesheet" type="text/css"/>
+    <link href="css/component/font-awesome.css" rel="stylesheet" type="text/css" />
+	<link href="css/component/m-layout.css" media="all" rel="stylesheet"/>
+    <link href="css/frame/icons/style.css" media="all" rel="stylesheet"/>
+    <link href="css/page.css" media="all" rel="stylesheet"/>
+    <script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/frame/lib/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js/frame/lib/jquery.tablednd.js"></script>
+    <script type="text/javascript" src="js/frame/lib/jquery.htmlClean.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery.i18n.properties-1.0.9.js"></script>
+    <script type="text/javascript" src="js/lib/fileinput/fileinput.js"></script>
+    <script type="text/javascript" src="js/lib/fileinput/fileinput_locale_zh.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="js/lib/moment-with-locales.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/lib/jquery.ztree.all-3.5.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/frame/lib/jquery.layout.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/frame/lib/pick-a-color-1.2.3.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/frame/lib/tinycolor-0.9.15.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/lib/select2/select2.min.js"></script>
+    <script type="text/javascript" src="js/lib/lodash.min.js"></script>
+    <!--script type="text/javascript" src="js/lib/avalon.js"></script-->
+    <script type="text/javascript" src="js/lib/bootstrap-table.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-zh-CN.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-reorder-rows.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-toolbar.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/frame/lib/HTMLFormat.js"></script>
+    <script src="js/lib/echarts.common.min.js" type="text/javascript"></script>
+    <script src="js/lib/waypoints/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/lib/chinese-region/bootstrap-chinese-region.js"></script>    
+    <script type="text/javascript" src="js/frame/frameConfig.js"></script>
+    <script type="text/javascript" src="js/frame/EntityObj.js"></script>
+    <script type="text/javascript" src="js/commTools.js"></script>
+    <script type="text/javascript" src="js/frame/frameComponentOperator.js"></script>
+    <script type="text/javascript" src="js/frame/referenceManage.js"></script>
+    <script type="text/javascript" src="js/frame/frame.js"></script>
+    <script type="text/javascript" src="js/component/iframe.js"></script>
+    <script type="text/javascript" src="js/frame/scripts.min.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageTable.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageDialog.js"></script>
+    <script type="text/javascript" src="js/page/zTree.js"></script>
+    <script type="text/javascript" src="js/page/layoutitWaypoint.js"></script>
+    <script type="text/javascript" src="js/frame/property/BasicComponent.js"></script>
+    <script type="text/javascript" src="js/frame/property/BasicComponentCustom.js"></script>
+    <script type="text/javascript" src="js/frame/property/CustomEvent.js"></script>
+    <script type="text/javascript" src="js/frame/property/AdvanceComponentCustom.js"></script>
+    <script type="text/javascript" src="js/frame/property/AdvanceChartComponent.js"></script>
+    <script type="text/javascript" src="js/frame/property/AdvanceMultiChartComponent.js"></script>
+    <script type="text/javascript" src="js/frame/property/EChartsComponent.js"></script>
+    <script type="text/javascript" src="js/frame/property/EventComponent.js"></script>
+    <script type="text/javascript" src="js/frame/property/comp/vm-fields-manage.js"></script>
+    <script type="text/javascript" src="js/frame/property/comp/layout-prop.js"></script>
+    <script type="text/javascript" src="js/frame/property/comp/button-prop.js"></script>
+    <script type="text/javascript" src="js/frame/property/comp/panel-prop.js"></script>
+    <script type="text/javascript" src="js/frame/property/comp/dataset-options-prop.js"></script>
+    <script type="text/javascript" src="js/frame/form-generator/component-api.js"></script>
+    <script type="text/javascript" src="js/frame/form-generator/template-generator.js"></script>
+    <script type="text/javascript" src="js/frame/property/user-defined-component.js"></script>
+    <script type="text/javascript" src="js/frame/layout/frame-layout.js"></script>
+    <script type="text/javascript" src="js/frame/layout/frame-operation.js"></script>    
+    <script type="text/javascript" src="js/frame/datasource/datasource-manage.js"></script>
+    <script type="text/javascript" src="js/frame/datasource/datasource-orm.js"></script>
+    <script type="text/javascript" src="js/frame/datasource/datasource-json.js"></script>
+    <script type="text/javascript" src="template/relationModel/relationModelTemplate.js"></script>
+    <script type="text/javascript" src="js/frame/property/propertyPanel.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPagei18n.js"></script>
+    <script type="text/javascript" src="js/component/m-label.js"></script>
+    <script type="text/javascript" src="js/component/tabs.js"></script>
+    <script type="text/javascript" src="js/frame/component/btn-group.js"></script>
+    <script type="text/javascript" src="js/frame/component/bfd-icon.js"></script>
+    <script type="text/javascript" src="js/frame/component/bfd-panel.js"></script>
+    <script type="text/javascript" src="js/frame/property/comp/tab-prop.js"></script>
+    <script type="text/javascript" src="js/frame/pc/frame-pc.js"></script>
+	<script type="text/javascript" src="js/common/data_model_column_data.js"></script>
+	<script src="js/component/jquery-accordion-menu.js" type="text/javascript"></script>
+    <script src="js/component/vertical_list.js" type="text/javascript"></script>
+    <script src="js/component/vertical_list_property.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/component/m-layout.js"></script>
+    <script type="text/javascript" src="js/lib/cranberry/cranberry.js"></script>
+    <script type="text/javascript" src="js/frame/layout/frame-guide.js"></script>
+</head>
+<body class="edit index-body">
+    <!--header 开始 -->
+    <div class="navbar navbar-fixed-top navbar-header">
+        <div class="navbar-header-logo">
+            <img src="img/logo.png"/>
+        </div>
+        <div id="formTools" class="navbar-header-menu">
+            <div class="btn-group">
+                <button type="button" id="new" class="btn btn-link"> 新建</button>
+                <button type="button" id="edit" class="btn btn-link"> 打开</button>
+                <button type="button" id="button-share-modal" class="btn btn-link" data-target="#shareModal"> 保存
+                </button>
+                <button type="button" class="btn btn-link" id="btnSaveAsMenu" data-toggle="modal"
+                        data-target="#saveASModal"> 另存为
+                </button>
+                <button type="button" class="btn btn-link" id="btnExport" data-toggle="modal" data-target="#export">
+                    导出
+                </button>
+                <a class="btn btn-link" id="button-preview" target="_blank"> 预览</a>
+            </div>
+            <span class="fl split">|</span>
+
+            <div class="btn-group">
+                <a class="btn btn-link" href="html/editor.html?mode=js" id="button-jsedit" target="_blank"> JS编辑器</a>
+                <a class="btn btn-link" href="html/editor.html?mode=css" id="button-cssedit" target="_blank">
+                    CSS编辑器</a>
+                 <a class="btn btn-link" href="#" id="button-back">返回设计平台</a>
+
+                <a class="btn btn-link" href="html/multitable-list.html" id="button-datasourceset" target="_blank">
+                    数据集设置</a>
+
+                <!--<button type="button" id="i18nChange" class="btn  btn-link">中/英文切换</button>-->
+            </div>
+        </div>
+        <div id="formHelper" class="navbar-header-menu fr">
+            <div class="btn-group">
+                <button type="button" id="project" class="btn  btn-link" data-toggle="modal"
+                        data-target="#projectModal"> 工程管理
+                </button>
+				<a class="btn btn-link" target="_blank" id="serviceOnline" > 使用演示</a>
+				<a class="btn btn-link" target="_blank" id="helpOnline" > 在线帮助</a>
+                <a class="btn btn-link" href="doc/layoutDesignerManual.docx" id="button-api" target="_self"> 使用手册</a>
+            </div>
+        </div>
+    </div>
+    <!--header 结束 -->
+
+<div class="container">
+    <div class="row">
+
+        <!--组件面板内容开始-->
+        <div class="form-layout-expand-west form-layout-spliter"></div>
+
+        <div class="form-layout-west mCustomScrollbar" data-mcs-theme="light">
+            <div class="form-panel">
+                <div >
+                    <!--数据项加载由树结构改为平铺模式，树加载代码在page/zTree.js initTree方法中-->
+                    <!--<div class="form-panel" id="dataproject">
+                        <div class="form-panel-header form-accordion-header form-panel-header-noborder">
+                            <div class="form-panel-title form-panel-with-icon">数据项</div>
+                            <div class="form-panel-icon"></div>
+                            <div class="form-panel-tool"><a href="javascript:void(0)"
+                                                            class="form-accordion-collapse "></a></div>
+                        </div>
+                        <div class="form-panel-body" style="padding:2px;border:0px;max-height:550px;">
+                            <div>
+                                <ul id="ztree" class="dataTree ztree"></ul>
+                            </div>
+                        </div>
+                    </div>-->
+
+                    <div class="form-panel" id="process-sysdata" style="display: none;">
+                        <div class="title">
+                            <em class="glyphicon glyphicon-th-large icon1"></em>
+                            <span>系统数据项</span>
+                        </div>
+                        <div class="body">
+                        </div>
+                    </div>
+                    <div class="form-panel" id="process-procdata" style="display: none;">
+                        <div class="title">
+                            <em class="glyphicon glyphicon-th-large icon1"></em>
+                            <span>流程数据项</span>
+                        </div>
+                        <div class="body">
+                        </div>
+                    </div>
+                    <div id="layoutCompPanel" class="form-panel">
+                        <div class="title">
+                            <em class="glyphicon glyphicon-th-large icon1"></em>
+                            <span>布局组件</span>
+                        </div>
+                        <div class="body">
+                            <div class="lyrow">
+                                <a href="#add" class="add label label-primary" title="添加"><i class="glyphicon glyphicon-plus"></i> </a>
+                                <a href="#close" class="remove label label-danger" title="删除"><i class="glyphicon-remove glyphicon"></i> </a>
+                                <div class="preview">
+                                    <div class="img-left"><img src="img/frame/icon/ly-12.png" /></div>12/自定义
+                                </div>
+                                <div class="view">
+                                    <div type="layout" ratio="12" class="bc-white">
+                                        <div class="row clearfix">
+                                            <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							
+							<div class="lyrow">
+                                <a href="#add" class="add label label-primary" title="添加"><i class="glyphicon glyphicon-plus"></i> </a>
+                                <a href="#close" class="remove label label-danger" title="删除"><i class="glyphicon-remove glyphicon"></i> </a>
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/ly-2424.png" /></div>6,6</div>
+                                <div class="view">
+                                    <div type="layout" ratio="6,6" class="bc-white">
+                                        <div class="row clearfix">
+                                            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column"
+                                                 style="padding-bottom: 21px;">
+                                                
+                                            </div>
+											
+											<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column"
+                                                 style="padding-bottom: 21px;">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							
+                            <div class="lyrow">
+                                <a href="#add" class="add label label-primary" title="添加"><i class="glyphicon glyphicon-plus"></i> </a>
+                                <a href="#close" class="remove label label-danger" title="删除"><i class="glyphicon-remove glyphicon"></i> </a>
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/ly-2424.png" /></div>2,4,2,4</div>
+                                <div class="view">
+                                    <div type="layout" ratio="2,4,2,4" class="bc-white">
+                                        <div class="row clearfix">
+                                            <div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column"
+                                                 style="padding-bottom: 21px;">
+                                                <div class="box box-element ui-draggable" style="display: block;">
+                                                    <a href="#close" class="remove label label-danger showRemove"><i
+                                                            class="glyphicon-remove glyphicon"></i></a>
+
+                                                    <div class="preview">标签</div>
+                                                    <div class="view draggableHandle form-component_active">
+                                                        <div type="label" lablefontsize="16" labelfontweight="true"
+                                                             labelfontcolor="" class="layout-align-right">
+                                                            <label class="control-label">label</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column"
+                                                 style="padding-bottom: 5px;">
+                                                <div class="box box-element ui-draggable" style="display: block;">
+                                                    <a href="#close" class="remove label label-danger">
+                                                        <i class="glyphicon-remove glyphicon">
+                                                        </i>
+                                                    </a>
+
+                                                    <div class="preview">
+                                                        文本框
+                                                    </div>
+                                                    <div class="view draggableHandle">
+                                                        <div type="input_text">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column"
+                                                 style="padding-bottom: 21px;">
+                                                <div class="box box-element ui-draggable" style="display: block;">
+                                                    <a href="#close" class="remove label label-danger showRemove"><i
+                                                            class="glyphicon-remove glyphicon"></i></a>
+
+                                                    <div class="preview">标签</div>
+                                                    <div class="view draggableHandle form-component_active">
+                                                        <div type="label" lablefontsize="16" labelfontweight="true"
+                                                             labelfontcolor="" class="layout-align-right">
+                                                            <label class="control-label">label</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4 col-sm-4 col-lg-4 column"
+                                                 style="padding-bottom: 5px;">
+                                                <div class="box box-element ui-draggable" style="display: block;">
+                                                    <a href="#close" class="remove label label-danger">
+                                                        <i class="glyphicon-remove glyphicon">
+                                                        </i>
+                                                    </a>
+
+                                                    <div class="preview">
+                                                        文本框
+                                                    </div>
+                                                    <div class="view draggableHandle">
+                                                        <div type="input_text">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lyrow">
+                                <a href="#add" class="add label label-primary" title="添加"><i class="glyphicon glyphicon-plus"></i> </a>
+                                <a href="#close" class="remove label label-danger" title="删除"><i class="glyphicon-remove glyphicon"></i> </a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/ly-13.png" /></div>1,3,1,3,1,3</div>
+                                <div class="view">
+                                    <div type="layout" ratio="1,3,1,3,1,3" class="bc-white">
+                                        <div class="row clearfix">
+                                            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column"
+                                                 style="padding-bottom: 21px;">
+                                                <div class="box box-element ui-draggable" style="display: block;">
+                                                    <a href="#close" class="remove label label-danger showRemove"><i
+                                                            class="glyphicon-remove glyphicon"></i></a>
+
+                                                    <div class="preview">标签</div>
+                                                    <div class="view draggableHandle form-component_active">
+                                                        <div type="label" lablefontsize="16" labelfontweight="true"
+                                                             labelfontcolor="" class="layout-align-right">
+                                                            <label class="control-label">label</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column"
+                                                 style="padding-bottom: 5px;">
+                                                <div class="box box-element ui-draggable" style="display: block;">
+                                                    <a href="#close" class="remove label label-danger">
+                                                        <i class="glyphicon-remove glyphicon">
+                                                        </i>
+                                                    </a>
+
+                                                    <div class="preview">
+                                                        文本框
+                                                    </div>
+                                                    <div class="view draggableHandle">
+                                                        <div type="input_text">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column"
+                                                 style="padding-bottom: 21px;">
+                                                <div class="box box-element ui-draggable" style="display: block;">
+                                                    <a href="#close" class="remove label label-danger showRemove"><i
+                                                            class="glyphicon-remove glyphicon"></i></a>
+
+                                                    <div class="preview">标签</div>
+                                                    <div class="view draggableHandle form-component_active">
+                                                        <div type="label" lablefontsize="16" labelfontweight="true"
+                                                             labelfontcolor="" class="layout-align-right">
+                                                            <label class="control-label">label</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column"
+                                                 style="padding-bottom: 5px;">
+                                                <div class="box box-element ui-draggable" style="display: block;">
+                                                    <a href="#close" class="remove label label-danger">
+                                                        <i class="glyphicon-remove glyphicon">
+                                                        </i>
+                                                    </a>
+
+                                                    <div class="preview">
+                                                        文本框
+                                                    </div>
+                                                    <div class="view draggableHandle">
+                                                        <div type="input_text">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column"
+                                                 style="padding-bottom: 21px;">
+                                                <div class="box box-element ui-draggable" style="display: block;">
+                                                    <a href="#close" class="remove label label-danger showRemove"><i
+                                                            class="glyphicon-remove glyphicon"></i></a>
+
+                                                    <div class="preview">标签</div>
+                                                    <div class="view draggableHandle form-component_active">
+                                                        <div type="label" lablefontsize="16" labelfontweight="true"
+                                                             labelfontcolor="" class="layout-align-right">
+                                                            <label class="control-label">label</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 column"
+                                                 style="padding-bottom: 5px;">
+                                                <div class="box box-element ui-draggable" style="display: block;">
+                                                    <a href="#close" class="remove label label-danger">
+                                                        <i class="glyphicon-remove glyphicon">
+                                                        </i>
+                                                    </a>
+
+                                                    <div class="preview">
+                                                        文本框
+                                                    </div>
+                                                    <div class="view draggableHandle">
+                                                        <div type="input_text">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lyrow">
+                                <a href="#add" class="add label label-primary" title="添加"><i class="glyphicon glyphicon-plus"></i> </a>
+                                <a href="#close" class="remove label label-danger" title="删除"><i class="glyphicon-remove glyphicon"></i> </a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/panel.png" /></div>panel</div>
+                                <div class="view">
+                                    <div type="bfd_panel" class="bfd-panel sort-disable mb50" id="p3"
+                                         data-panel-color="false" data-panel-remove="false" data-panel-title="false"
+                                         data-panel-collapse="false">
+                                        <div class="bfd-panel-heading">
+                                            <div class="row clearfix">
+                                                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+                                                    <div class="box box-element ui-draggable" style="display: block;">
+                                                        <a href="#close" class="remove label label-danger showRemove"><i
+                                                                class="glyphicon-remove glyphicon"></i></a>
+
+                                                        <div class="preview">标题</div>
+                                                        <div class="view draggableHandle form-component_active">
+                                                            <div type="label" lablefontsize="16" labelfontweight="true"
+                                                                 labelfontcolor="" class="layout-align-left">
+                                                                <label class="control-label">标题</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column">
+                                                    <div class="box box-element layout-block-align-right">
+                                                        <a href="#close" class="remove label label-danger"><i
+                                                                class="glyphicon-remove glyphicon"></i></a>
+
+                                                        <div class="preview">图标</div>
+                                                        <div class="view">
+                                                            <div type="bfd_icon" alignstyle="layout-block-align-right"
+                                                                 class="bfd-panel-default-controls">
+                                                                <a id="btnCollapse"
+                                                                   class="icon glyphicon glyphicon-minus"></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr/>
+                                        </div>
+                                        <div class="bfd-panel-body">
+                                            <div class="row clearfix">
+                                                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="baseCompPanel" class="form-panel">
+                        <div class="title">
+                            <em class="glyphicon glyphicon-th-large icon1"></em>
+                            <span>基础组件</span>
+                        </div>
+                        <div class="body">
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i class="glyphicon-remove glyphicon"></i></a>
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/label.png" /></div>标签</div>
+                                <div class="view">
+                                    <div type="label">
+                                        <label class="control-label">label</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/text-area.png" /></div>文本框</div>
+                                <div class="view">
+                                    <div type="input_text">
+                                        <input type="text" class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/text-field.png" /></div>文本域</div>
+                                <div class="view">
+                                    <div type="textarea">
+                                        <textarea class="form-control" rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/dropdown.png" /></div>下拉框</div>
+                                <div class="view">
+                                    <div type="select_dynamic" init="true">
+                                        <select style="display : inline;width:100%;" class="form-control">
+                                            <option>下拉框选项1</option>
+                                            <option>下拉框选项2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/radio.png" /></div>单选框</div>
+                                <div class="view">
+                                    <div type="input_radio" init="true" class="form-control">
+                                        <input name="fruit" type="radio" value="1"/><span class="pr10">选项1</span>
+                                        <input name="fruit" type="radio" value="2"/><span class="pr10">选项2</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/checkbox.png" /></div>多选框</div>
+                                <div class="view">
+                                    <div type="checkbox" init="true" class="form-control">
+                                        <input name="sports" type="checkbox" value="football"/><span class="pr10">选项1</span>
+                                        <input name="sports" type="checkbox" value="basketball"/><span class="pr10">选项2</span>
+                                        <input name="sports" type="checkbox" value="baseball"/><span class="pr10">选项3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/date.png" /></div>日期</div>
+                                <div class="view">
+                                    <div type="input_datetime" data-defaultvalue="none"
+                                         vcontent="date%3A%7Bformat%3A%20'YYYY-MM-DD%20h%3Am%3As'%7D"
+                                         datetimeformat="YYYY-MM-DD%20HH%3Amm%3Ass" vtype="datetime">
+                                        <input class="form-control form_time" placeholder="YYYY-MM-DD HH:mm:ss"
+                                               datetimeformat="YYYY-MM-DD%20HH%3Amm%3Ass"
+                                               vcontent="date%3A%7Bformat%3A%20'YYYY-MM-DD%20h%3Am%3As'%7D"
+                                               vtype="datetime" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/upload.png" /></div>上传</div>
+                                <div class="view">
+                                    <div type="input_fileinput" init="true">
+                                        <input type="file" class="file" data-show-preview="false"/>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/pic.png" /></div>图片</div>
+                                <div class="view">
+                                    <div type="image" init="true">
+                                        <img src="img/nopicture.jpg" class="fancybox" alt="图片1"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/button.png" /></div>按钮</div>
+                                <div class="view">
+                                    <div type="button" data-color="btn-primary" data-size="btn-sm">
+                                        <button type="button" class="btn btn-primary btn-sm"> 按钮</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element fl">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/toolbar-button.png" /></div>工具栏按钮</div>
+                                <div class="view">
+                                    <div type="toolbar-button" data-type="toolbar-button" data-split="false"
+                                         data-color="btn-primary" data-size="btn-sm">
+                                        <button type="button" class="btn btn-primary btn-sm"> 工具栏按钮</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element layout-block-align-left">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/icon-button.png" /></div>图标按钮</div>
+                                <div class="view">
+                                    <div type="bfd_icon" alignstyle="layout-block-align-left">
+                                        <a class="icon glyphicon glyphicon-plus"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/remotely-table.png" /></div>远程表格</div>
+                                <div class="view">
+                                    <div type="table_base" style="overflow-x: auto; overflow-y: auto;" pagesize="20"
+                                         tableheight="500" tablemodel="none" tableheaderalign="left"
+                                         tablecolumnalign="left" class="bc-white">
+                                        <table data-toggle="table">
+                                            <thead>
+                                            <tr>
+                                                <th data-field="id" data-align="right">唯一编号</th>
+                                                <th data-field="name" data-align="center">名称</th>
+                                                <th data-field="price">价格</th>
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/table.png" /></div>本地表格</div>
+                                <div class="view">
+                                    <div type="table_base_local" style="overflow-x: auto; overflow-y: auto;"
+                                         pagesize="20" tableheight="500" tablemodel="none" tableheaderalign="left"
+                                         tablecolumnalign="left" class="bc-white">
+                                        <table data-toggle="table">
+                                            <thead>
+                                            <tr>
+                                                <th data-field="id" data-align="right">序号</th>
+                                                <th data-field="name" data-align="center">名称</th>
+                                                <th data-field="format">定制</th>
+                                                <th data-field="editable">是否可编辑</th>
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/tree.png" /></div>树</div>
+                                <div class="view">
+                                    <div type="tree" init="true">
+                                        <ul class="ztree" style="overflow:auto;"></ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/seperate-line.png" /></div>分隔栏</div>
+                                <div class="view">
+                                    <div type="separator" init="true" picklinecolor="828282">
+                                        <ul class="layout-separator">
+                                            <li class="layout-separator-selected ">
+                                                <a class="layout-separator-inner">
+                                                    <span class="icon"></span>
+                                                    <span class="title"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/frame.png" /></div>iframe</div>
+                                <div class="view">
+                                    <div type="iframe" compheight="100%25" compWidth="100%25" data-hide-iframe="true">
+                                        <iframe style="border: 0px;" width="100%" height="100%"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/tab.png" /></div>Tab</div>
+                                <div class="view">
+                                    <div type="tab" data-tools-options="%5B%5D" data-close="false" data-tabdirection="top">
+                                        <!-- Nav tabs -->
+                                        <div class="content p25">
+                                            <div class="panel-heading">
+                                                <ul class="nav panel-tabs-border panel-tabs panel-tabs-left">
+                                                    <li class="active">
+                                                        <a href="#" data-toggle="tab" aria-expanded="true">tab示例1</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#" data-toggle="tab" aria-expanded="false">tab示例2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-toggle="tab">tab示例3</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="panel-body br-t">
+                                                <div class="tab-content pn br-n">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/region-select.png" /></div>区域选择</div>
+                                <div class="view">
+                                    <div type="chinese_region">
+                                        <div class="bs-chinese-region flat dropdown" data-submit-type="id"
+                                             data-min-level="1" data-max-level="3">
+                                            <input type="text" class="form-control" name="areacode"
+                                                   data-toggle="dropdown" value="" style="display:none">
+                                            <input type="text" class="form-control" name="areaname"
+                                                   data-toggle="dropdown" value="" style="display:none">
+                                            <input type="text" class="form-control" name="areaselect"
+                                                   placeholder="选择你的地区" data-toggle="dropdown" readonly="" value="">
+
+                                            <div class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                                <div>
+                                                    <ul class="nav nav-tabs" role="tablist">
+                                                        <li role="presentation" class="active"><a href="#province"
+                                                                                                  data-next="city"
+                                                                                                  role="tab"
+                                                                                                  data-toggle="tab">省份</a>
+                                                        </li>
+                                                        <li role="presentation"><a href="#city" data-next="district"
+                                                                                   role="tab" data-toggle="tab">城市</a>
+                                                        </li>
+                                                        <li role="presentation"><a href="#district" data-next="street"
+                                                                                   role="tab" data-toggle="tab">县区</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tab-content">
+                                                        <div role="tabpanel" class="tab-pane active" id="province">--
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane" id="city">--</div>
+                                                        <div role="tabpanel" class="tab-pane" id="district">--</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i class="glyphicon-remove glyphicon"></i></a>
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/select.png" /></div>选择组件</div>
+                                <div class="view">
+                                    <div type="advanced_select" style="position: relative" class="form-group" fieldtype="object">
+                                        <input type="text" class="form-control advanced_select_value" style="display: none" />
+                                        <div class="form-control advanced_select_text"></div>
+                                    <span  class="glyphicon glyphicon-zoom-in advanced_select_button" aria-hidden="true"
+                                        style="position:absolute;right:0px;z-index:2;width:34px;height:34px;line-height:34px;text-align:center;cursor:pointer;top:0px"></span>
+
+                                        <div id="advanced_select_dialog" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="myModalLabel">标题</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary advanced_select_confirm" id="advanced_select_confirm">确定</button>
+                                                        <button type="button" class="btn btn-default advanced_select_close" data-dismiss="modal">关闭</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="box box-element">
+								<a href="#close" class="remove label label-danger">
+									<i class="glyphicon-remove glyphicon">
+									</i>
+								</a>
+								<div class="preview">
+									<div class="img-left">
+										<img src="img/frame/icon/tree.png" />
+									</div>
+									列表组件
+								</div>
+								<div class="view">
+									<div type="vertical_list" class="vertical_list panel" init="true">
+										<div>
+											<div type="layout">
+												<div class="row clearfix" style="line-height:30px">
+													<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable">
+														<div class="box ui-draggable" style="display: block;">
+															<a href="#close" class="remove label label-danger showRemove">
+																<i class="glyphicon-remove glyphicon">
+																</i>
+															</a>
+															<div class="preview">
+																标题
+															</div>
+															<div class="view draggableHandle form-component_active">
+																<div type="label" lablefontsize="16" labelfontweight="true" labelfontcolor=""
+																class="layout-align-left">
+																	<label class="control-label" style="padding-left:20px">
+																		标题
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 column ui-sortable">
+														<div class="box layout-block-align-right">
+															<a href="#close" class="remove label label-danger">
+																<i class="glyphicon-remove glyphicon">
+																</i>
+															</a>
+															<div class="preview">
+																图标
+															</div>
+															<div class="view">
+																<div type="bfd_icon" alignstyle="layout-block-align-right" class="verticallist-controls bfd-panel-default-controls">
+																	<a id="verticallistCollapse" class="icon glyphicon glyphicon-minus" style="padding-right:40px;text-decoration: none;cursor: pointer;">
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="jquery-accordion-menu white clearfix">
+											<ul id="demo-list">
+												<li>
+													<a href="javascript:;">
+														Home
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;">
+														Events
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;">
+														Gallery
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;">
+														Services
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;">
+														Portfolio
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;">
+														About
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i class="glyphicon-remove glyphicon"></i></a>
+                                <div class="preview">
+                                    <div class="img-left" style="padding-top: 10px;"><span class="ict-advice" style="font-size: 30px; color: #169BD5;"></span></div>卡片
+                                </div>
+                                <div class="view">
+                                    <div type="dashboard-card" dc-background-color="#3598dc" buttonicon="glyphicon%20glyphicon-plus"
+                                         dc-status="1000" dc-desc="描述信息" style="height: 100%;" class="bc-white">
+                                        <div class="dashboard-card" style="background-color: #3598dc" href="#">
+                                            <div class="visual">
+                                                <em class="glyphicon glyphicon-plus"></em>
+                                            </div>
+                                            <div class="details">
+                                                <div class="number">
+                                                    1000
+                                                </div>
+                                                <div class="desc"> 描述信息 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i class="glyphicon-remove glyphicon"></i></a>
+                                <div class="preview">折叠组件</div>
+                                <div class="view">
+                                    <div type="collapse">
+                                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab">
+                                                    <h4 class="panel-title">
+                                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                            Col#1
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                    <div class="panel-body">
+                                                        Collapsible Group Item #1
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab">
+                                                    <h4 class="panel-title">
+                                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                            Col#2
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                    <div class="panel-body">
+                                                        Collapsible Group Item #2
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab">
+                                                    <h4 class="panel-title">
+                                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                            Col#3
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                    <div class="panel-body">
+                                                        Collapsible Group Item #3
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>-->
+                            <!--<div class="box box-element">
+                                <a href="#close" class="remove label label-danger"><i class="glyphicon-remove glyphicon"></i></a>
+                                <div class="preview">路标导航</div>
+                                <div class="view">
+                                    <div type="layoutitWaypoint">
+
+                                    </div>
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+
+                    <div id="hiddenCompPanel" class="form-panel">
+                        <div class="title">
+                            <em class="glyphicon glyphicon-th-large icon1"></em>
+                            <span>隐藏组件</span>
+                        </div>
+                        <div class="body">
+                            <div class="box-hide box-element">
+                                <a href="#close" class="remove label"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/js.png" /></div>JS脚本</div>
+                                <div class="view">
+                                    <div type="jsscript">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="box-hide box-element">
+                                <a href="#close" class="remove label"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/i18n.png" /></div>国际化文件</div>
+                                <div class="view">
+                                    <div type="i18nfile">
+                                    </div>
+                                </div>
+                            </div>-->
+                            <div class="box-hide box-element">
+                                <a href="#close" class="remove label"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/css.png" /></div>CSS脚本</div>
+                                <div class="view">
+                                    <div type="cssscript">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-hide box-element">
+                                <a href="#close" class="remove label"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/dialog.png" /></div>对话框</div>
+                                <div class="view">
+                                    <div type="modal_dialog" isAddRightBtn="false">
+                                        <div id="myModal" class="modal fade" tabindex="-1" role="dialog"
+                                             aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close"><span
+                                                                aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="myModalLabel">标题</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+
+                                                    </div>
+                                                    <div class="modal-footer"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="form-panel" style="border:0px">
+                        <div class="title">
+                            <em class="glyphicon glyphicon-th-large icon1"></em>
+                            <span>图形组件</span>
+                        </div>
+                        <div class="body">
+                            <div class="box box-image">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/bar.png" /></div>柱状图</div>
+                                <div class="view">
+                                    <div type="imgBar">
+                                        <div class="showImg" style="height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-image">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/line-chart.png" /></div>折线图</div>
+                                <div class="view">
+                                    <div type="imgLine">
+                                        <div class="showImg" style="height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-image">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/pie-chart.png" /></div>饼图</div>
+                                <div class="view">
+                                    <div type="imgPie" data-toggle="echarts">
+                                        <div class="showImg" style="height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-image">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"><div class="img-left"><img src="img/frame/icon/multi.png" /></div>多图联动</div>
+                                <div class="view">
+                                    <div type="imgConnect">
+                                        <div class="showImg" style="height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+
+                    <div class="form-panel" style="border:0px; display: none">
+                        <div class="title">
+                            <em class="glyphicon glyphicon-th-large icon1"></em>
+                            <span>自定义组件</span>
+                        </div>
+                        <div id="user-defined-component-container" class="body">
+                            <div class="lyrow" style="display: none">
+                                <a href="#close" class="remove label label-danger"><i
+                                        class="glyphicon-remove glyphicon"></i></a>
+
+                                <div class="preview"></div>
+                                <div class="view">
+                                    <div type="user_defined_component">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--组件面板内容结束-->
+
+        <!--内容区域 开始-->
+
+        <div id="container_data" style="border:0px; margin:0px;padding:0px;">
+            <div class="demo_parent" style="margin: 0px;padding: 0px;background-color: #ffffff;position: relative;word-wrap: break-word;height: 645px;overflow: auto;">
+                <div class="demo"></div>
+            </div>
+            <div class="footer-bg ui-sortable"></div>
+        </div>
+
+        <!--内容区域 结束-->
+        <!--内容区域 结束-->
+        <div id="download-layout">
+            <!-- 可编辑内容区域 开始 -->
+            <div class="container"></div>
+            <!-- 可编辑内容区域 结束 -->
+        </div>
+
+        <!--配置面板 开始
+        <div class="form-layout-expand-east form-layout-spliter"></div>-->
+        <div class="form-layout-east">
+            <div class="file"></div>
+            <div class="form-panel height100">
+                <div id="rightConfigPanel" class="form-panel-body height100 ">
+                    <div class="tabs-container height100">
+                        <div class="tabs-header">
+                            <div class="tabs-wrap">
+                                <ul class="tabs" style="position: fixed;">
+                                    <li class="tabs-selected" id="tab1" panel-target="#panel1">
+                                        <a href="javascript:void(0)" class="tabs-inner" >
+                                            <span class="tabs-title">属性</span>
+                                        </a>
+                                    </li>
+                                    <li class="hide events" id="tab2" panel-target="#panel2">
+                                        <a href="javascript:void(0)" class="tabs-inner"
+                                           style="height: 25px; line-height: 25px;">
+                                            <span class="tabs-title">事件</span>
+                                        </a>
+                                    </li>
+                                    <li class="hide advance" id="tab3" panel-target="#panel3">
+                                        <a href="javascript:void(0)" class="tabs-inner"
+                                           style="height: 25px; line-height: 25px;">
+                                            <span class="tabs-title">高级属性</span>
+                                            <span class="tabs-icon"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tabs-panels height100 mCustomScrollbar" data-mcs-theme="light">
+                            <div class="panel height100" id="panel1">
+                                <div class="form-panel properties height100">
+                                    <div class="form-panel-body form-panel-body-noborder"
+                                         style="padding:2px;height:95%;">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="panel hide" id="panel2">
+                                <div class="form-panel events height100">
+                                    <div class="form-panel-body form-panel-body-noborder height100" style="padding:2px;">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel hide height100" id="panel3">
+                                <div class="form-panel advance height100" style="border:0px;">
+                                    <div class="form-panel-body form-panel-body-noborder"
+                                         style="height:95%;padding:2px;">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--配置面板 结束-->
+    </div>
+    <!--/row-->
+</div>
+<!--/.fluid-container-->
+
+<div class="modal fade" id="iconModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">图标选择</h4>
+            </div>
+            <div class="modal-body" style="overflow:auto;height:450px;">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="saveIconStyle" data-dismiss="modal">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--项目管理对话框-->
+<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="height:800px;width:1100px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">工程管理</h4>
+            </div>
+            <div class="modal-body" style="overflow:auto;height:600px;">
+                <iframe name="projectFrame" width="98%" height="98%" frameborder="0"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button id="closeProjectDialog" type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--表格列设置对话框-->
+<div id="tableColumnDialog" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:1200px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">
+                    表格列设置
+                </h4>
+            </div>
+            <div class="modal-body">
+                <table id="table-column-setting">
+
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="confirmBtn">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--打开模板配置对话框-->
+<div id="templateConfigDialog" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:1000px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">
+
+                </h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnSubmitTemplate">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="relationModelConfigDialog" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:1000px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">
+
+                </h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnGenerateTemplate">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--打开框架对话框-->
+<div id="openFrameDialog" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:1000px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">
+
+                </h4>
+            </div>
+            <div class="modal-body">
+                <table id="frameFileTable">
+
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="confirmFrameBtn">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--用户自定义属性配置-->
+<div id="openCustomPropertyDialog" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:300px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">
+                    用户自定义属性配置
+                </h4>
+            </div>
+            <div class="modal-body" style="overflow:auto;height:200px;">
+                <table class="table table-bordered">
+                    <tr>
+                        <td>属性标题名称：</td>
+                        <td>
+                            <input type="text" class="form-control" id="customPropertyTitle" placeholder="属性标题"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>属性标签名称：</td>
+                        <td>
+                            <input type="text" class="form-control" id="customPropertyValue" placeholder="属性标签">
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="CustomPropertyBtn">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--下拉框数据集配置-->
+<div class="modal fade" id="datasetConfigDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" style="height:280px;width:700px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">
+                    数据集配置
+                </h4>
+            </div>
+            <div class="modal-body" style="overflow:auto;height:370px;">
+                <iframe name="datasetConfigFrame" width="98%" height="98%" frameborder="0"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="datasetconfig">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="saveASModal" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="height:300px;width:600px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">
+                    另存为组件
+                </h4>
+            </div>
+            <div class="modal-body" style="height: 90px;">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">组件名称:</label>
+
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="txtUserComponentName" placeholder="组件名称"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnSaveASComponent">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="export" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="height:400px;width:600px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">
+                    导出
+                </h4>
+            </div>
+            <div class="modal-body" style="height: 280px;">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-md-2 col-xs-2 col-sm-2 col-lg-2 control-label">导出包名:</label>
+
+                        <div class="col-md-10 col-xs-10 col-sm-10 col-lg-10"
+                             style="padding-left:0px;padding-right:30px;">
+                            <input type="text" id="txtExportName" class="form-control" placeholder="导出包名称"/>
+                        </div>
+                    </div>
+                </form>
+
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 control-label"><label>导出选项:</label></div>
+                        <div class="col-md-10 col-xs-10 col-sm-10 col-lg-10">
+                            <div type="checkbox" class="form-control form-group">
+                                <input name="checkbox" id="export_frame" type="checkbox" checked><span>设计文件：页面对应的设计器可识别的源文件</span>
+                            </div>
+                            <div type="checkbox" class="form-control form-group">
+                                <input name="checkbox" id="export_war" type="checkbox"><span>页面文件war：设计器做出来的页面文件
+</span>
+                            </div>
+                            <div type="checkbox" class="form-control form-group">
+                                <input name="checkbox" id="export_contain_orm" type="checkbox"><span>后台服务： ORM功能</span>
+                            </div>
+                            <div type="checkbox" class="form-control form-group">
+                                <input name="checkbox" id="export_docker_images" type="checkbox"><span>Docker镜像</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnExportConfirm">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

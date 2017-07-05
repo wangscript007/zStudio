@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bootstrap - 简洁、直观、强悍、移动设备优先的前端开发框架，让web开发更迅速、简单。">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap,ace">
+    <meta name="author" content="丁伟,谢吉龙,付志胜">
+
+    <title>
+
+        表单设计器接口说明文档
+
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../css/pc/frame/patch.css" rel="stylesheet">
+
+    <!-- Documentation extras -->
+
+    <link href="../css/pc/frame/docs.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+<a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
+
+<div class="container bs-docs-container">
+
+    <div class="row">
+        <div class="col-md-9" role="main">
+            <div class="bs-docs-section">
+                <h1 id="url-params" class="page-header">表单页面URL参数</h1>
+
+                <h2 id="url-params-editable">表单设计“可编辑性”选项</h2>
+                <p>该选项是通过表单<code>url</code>中的参数<code>operator</code>进行判断的。新增表单时需要传入<code>operator=add</code>、修改时传入<code>operator=edit</code>、查看时传入<code>operaor=view</code>?、表格查询时传入<code>operator=query</code>。</p>
+
+                <div class="bs-callout bs-callout-danger" id="callout-overview-url-error">
+                    <h4>如果参数传入有误则设置的可编辑性无法正确显示。</h4>
+                </div>
+
+                <h2 id="url-params-get">URL参数获取getUrlParam(name, search)</h2>
+                <p>根据参数名获取<code>url</code>参数 </p>
+                <p><code>* @param name 参数名</code> </p>
+                <p><code>* @param search url所有参数</code> </p>
+
+                <div class="bs-callout bs-callout-warning" id="callout-overview-url-get">
+                    <h4>调用<code>showModalDialog</code></h4>
+                    <p>如果是调用<code>showModalDialog("dialog1", "新增表单","chenbo-form.html?operator=add")</code>打开页面，需要获取该<code>url</code>中参数，<code>search</code>使用<code>pageParams</code>（该对象为框架定义的全局变量)</p>
+                </div>
+
+                <h2 id="url-params-orm">ORM支持查询条件</h2>
+                <h3>格式说明</h3>
+
+                <h4>多个条件使用</h4>
+                <div class="highlight">
+                    <pre>
+                        <code class="language-html" data-lang="html">
+            <span class="nt">"condition" : {</span>
+            <span class="nt">   "and" : [</span>
+            <span class="nt">       {"cname" : "a","value" : 1,"compare" : "="},</span>
+            <span class="nt">       {</span>
+            <span class="nt">           "or" : [</span>
+            <span class="nt">                   {"cname" : "b","value" : 1, "compare" : "="},</span>
+            <span class="nt">                   {"cname" : "c","value" : 1, "compare" : "="}</span>
+            <span class="nt">                  ]</span>
+            <span class="nt">       }</span>
+            <span class="nt">   ]</span>
+            <span class="nt">}</span>
+
+                        </code>
+                    </pre>
+                </div>
+
+                <h4>单个条件使用</h4>
+                <div class="hight">
+                    <pre>
+                        <code class="language-json" data-lang="json">
+            <span class="nt">"condition": {"cname" : "id","value" : 1,"compare" : "="}</span></code>
+                    </pre>
+                </div>
+
+                <h3>一层条件组织</h3>
+                <p>例如：<code>where a=1 and b=2 and c=3</code>这种形式。</p>
+                <div class="highlight">
+                    <pre>
+                        <code class="language-js" data-lang="js">
+            /**
+            * 根据查询条件数组组装条件
+            * @param conditions 条件数组
+            * eg:
+            var conditions = [];
+            var condition = new QueryCondition();
+            condition.setCName("columnname");
+            condition.setValue("columnvalue");
+            condition.setCompare("=");
+            conditions.push(condition); // 多个条件push多个
+            * @param operator 只能输入and/or字符串
+            * @returns 条件对象
+            */
+            function generateCondition(conditions, operator)
+
+                        </code>
+                    </pre>
+                </div>
+
+                <p>例如:<code>where c1=1 and (c2=2 or c3=1)</code>这种组织形式</p>
+                <div class="highlight">
+                    <pre>
+                        <code class="language-js" data-lang="js">
+            var c1 = new QueryCondition();
+            c1.setCName("c1").setCompare("=").setValue("1");
+            var c2 = new new QueryCondition();
+            c2.setCName("c2".setCompare("=").setValue("2");
+            var c3 = new QueryCondition();
+            c3.setCName("c3").setCompare("=").setValue("1");
+            var c23 = generateCondition([c2,c3],"or");
+            var call = generateCondition([c1,c23],"and");
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="bs-docs-section">
+                    <h1 id="table">表格接口</h1>
+                    <p>源码路径: <code>js/page/layoutitPageTable.js</code></p>
+
+                    <h2 id="table-select-row">获取表格选中行接口(远程/本地表格通用)</h2>
+                    <p>获取表格选中数据，需要传入表格id参数</p>
+                    <p><code>* @param id 表格id</code></p>
+
+                    <div class="highlight">
+                        <pre>
+                            <code class="language-js" data-lang="js">function getTableSelectData(id)</code>
+                        </pre>
+                    </div>
+
+                    <h2 id="table-select-rows">获取表格所有行接口(远程/本地表格通用)</h2>
+                    <p>获取表格所有数据，需要传入表格id参数</p>
+                    <p><code>* @param id 表格id</code></p>
+
+                    <div class="highlight">
+                        <pre>
+                            <code class="language-js" data-lang="js">function getTalbeAllData(id)</code>
+                        </pre>
+                    </div>
+
+                    <h2 id="table-refresh">表格刷新(远程/本地表格通用)</h2>
+                    <p>刷新表格数据，如果不传入options则只做刷新</p>
+                    <p><code>* @param id 表格id</code></p>
+                    <p><code>* @param options 表格支持的属性</code></p>
+
+                    <div class="highlight">
+                        <pre>
+                            <code class="language-js" data-lang="js">function refreshTable(id,options)</code>
+                        </pre>
+                    </div>
+
+                    <h2 id="table-attributes">获取表格属性(远程/本地表格通用)</h2>
+                    <p>根据表格id和属性名称获取表格属性</p>
+                    <p><code>@param id 表格id</code></p>
+                    <p><code>@param option 表格选项</code></p>
+                    <p>例如： <code>columns</code>包含所有字段，拿到数据后需要过滤掉不需要字段。<code>url</code>为具体url</p>
+
+                    <div class="highlight">
+                        <pre>
+                            <code class="language-js" data-lang="js">function getTableOptions(id, option)</code>
+                        </pre>
+                    </div>
+
+                    <h2 id="table-remote-query">远程表格查询接口</h2>
+
+                    <p><code>@param id 表格id</code></p>
+                    <p><code>@param conditions 过滤条件</code></p>
+                    <div class="highlight">
+                        <pre>
+                            <code class="language-js" data-lang="js">function queryRemoteTable( id, conditions)</code>
+                        </pre>
+                    </div>
+                    <div class="bs-callout bs-callout-warning">
+                        <h4>单个条件设置方法</h4>
+                        <p><code>var condition = new QueryCondition();</code></p>
+                        <p><code>   condition.setCName("columnname");</code></p>
+                        <p><code>   condition.setValue("columnvalue");</code></p>
+                        <p><code>   condition.setCompare("=");</code></p>
+                        <p>  注意:需要把条件放到数组中</p>
+                    </div>
+
+
+                    <h2 id="table-remote-delete">远程表格删除接口</h2>
+                    <p>删除远程表格数据</p>
+                    <p><code>@param id 表格id</code></p>
+                    <p><code>@param condition 删除条件</code></p>
+                    <div class="highlight">
+                        <pre>
+                            <code class="language-js" data-lang="js">function deleteRemoteTableData(id,  condition)</code>
+                        </pre>
+                    </div>
+                    <div class="bs-callout bs-callout-warning">
+                        <h4>删除条件</h4>
+                        <p>该条件为组织好的查询条件，单层条件可以使用<code>generateCondition</code>方法组织，嵌套条件</p>
+                    </div>
+
+                    <h2 id="table-remote-generate-condition">generateCondition</h2>
+                    <p> 根据查询条件数组组装条件</p>
+                    <p><code>@param conditions 条件数组</code></p>
+                    <p><code>@param operator 只能输入and/or字符串</code></p>
+                    <p><code>@returns 条件对象</code></p>
+                    <div class="highlight">
+                        <pre>
+                            <code class="language-js" data-lang="js">function generateCondition(conditions, operator)
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="bs-callout bs-callout-warning">
+                        <h4>条件数组组装条件</h4>
+                        <div class="highlight">
+                        <pre>
+                            <code class="language-js" data-lang="js">var conditions = [];
+var condition = new QueryCondition();
+condition.setCName("columnname").setCompare("=").setValue("columnvalue");
+conditions.push(condition);
+                            </code>
+                        </pre>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="col-md-3" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+                <ul class="nav bs-docs-sidenav">
+
+                    <li>
+                        <a href="#url-params">表单页面URL参数</a>
+                        <ul class="nav">
+                            <li><a href="#url-params-editable">表单设计可编辑性</a></li>
+                            <li><a href="#url-params-get">URL参数获取</a></li>
+                            <li><a href="#url-params-orm">ORM支持查询条件</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#table">表格接口</a>
+                        <ul class="nav">
+                            <li><a href="#table-select-row">获取表格选中行</a></li>
+                            <li><a href="#table-select-rows">获取表格所有行</a></li>
+                            <li><a href="#table-refresh">表格刷新</a></li>
+                            <li><a href="#table-attributes">获取表格属性</a></li>
+                            <li><a href="#table-remote-query">远程表格查询接口</a></li>
+                            <li><a href="#table-remote-delete">远程表格删除接口</a></li>
+                            <li><a href="#table-remote-generate-condition">generateCondition</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="back-to-top" href="#top">
+                    返回顶部
+                </a>
+
+                <!--<a href="#" class="bs-docs-theme-toggle" role="button">-->
+                    <!--主题预览-->
+                <!--</a>-->
+
+            </nav>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer
+================================================== -->
+<footer class="bs-docs-footer" role="contentinfo">
+
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../js/lib/jquery/jquery.min.js"></script>
+
+
+<script src="../js/lib/bootstrap.min.js"></script>
+
+
+
+<script src="../js/frame/lib/docs.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+/********************系统公共css定义 开始 ********************************/
+.fz20 {
+    font-size: 20px;
+}
+
+.fz14 {
+    font-size: 14px;
+}
+
+.color-black {
+    color: #000000;
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+
+/********************系统公共css定义 结束 ********************************/
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.close {
+    display: inline-block;
+    margin-top: 0px;
+    margin-right: 0px;
+    width: 9px;
+    height: 9px;
+    background-repeat: no-repeat !important;
+    text-indent: -10000px;
+    outline: none;
+    background-image: url(../img/remove-icon-small.png) !important;
+}
+.frmTipBoxTransition {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0,50%);
+    -ms-transform: translate(0,50%);
+    -o-transform: translate(0,50%);
+    transform: translate(0,50%);
+}
+
+#frmTipBox {
+    position: absolute;
+    width: 400px;
+    margin: 10px auto;
+    left: 30%;
+    right:30%;
+    top: 10%;
+}
+
+
+.error {
+    color: #cf2247;
+    background-color: #f9c5c8;
+    /* border-color: #cf2247; */
+}
+
+.info {
+    color: #4378a3;
+    background-color: #c3e7f7;
+    /* border-color: #906505; */
+}
+
+.red-star{
+    color: red;
+    vertical-align: middle;
+}
+

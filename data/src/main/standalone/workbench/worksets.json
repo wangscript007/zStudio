@@ -1,0 +1,8 @@
+{
+  "baseUri": "module",
+  "mode": "standalone",
+  "worksets": [{
+      "name": "datavisual",
+      "path": "datavisual"
+    }]
+}

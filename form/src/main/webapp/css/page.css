@@ -1,0 +1,447 @@
+body {
+    font-family: microsoft yahei !important;
+    color: #333 !important;
+    font-size: 14px;
+}
+.bc-white {
+    background-color: #ffffff;
+}
+.layout-modal-lg {
+    width: 1080px;
+    height: 720px;
+}
+.layout-row-width {
+    width: 100%;
+}
+.container-top {
+    padding-top: 5px;
+}
+
+/** 调整Bootstrap单元格之间间距为10px,解决在不同分辨率下边距宽度不一致问题*/
+.container {
+    width: auto !important;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0;
+}
+.row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.modal {
+	overflow-x: hidden !important;
+	overflow-y: hidden !important;
+}
+
+/***
+Responsive & Scrollable Tables
+***/
+.layout-table-scrollable {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    border: 1px solid #dddddd;
+    margin: 0px 0 !important;
+}
+.layout-table-scrollable > .table {
+    width: 100% !important;
+    margin: 0 !important;
+    margin-bottom: 0;    /* background-color: #fff; */
+}
+.layout-table-scrollable > .table > thead > tr > th, .layout-table-scrollable > .table > tbody > tr > th, .layout-table-scrollable > .table > tfoot > tr > th, .layout-table-scrollable > .table > thead > tr > td, .layout-table-scrollable > .table > tbody > tr > td, .layout-table-scrollable > .table > tfoot > tr > td {
+    white-space: nowrap;
+}
+.layout-table-scrollable > .table-bordered {
+    border: 0;
+}
+.layout-table-scrollable > .table-bordered > thead > tr > th:first-child, .layout-table-scrollable > .table-bordered > tbody > tr > th:first-child, .layout-table-scrollable > .table-bordered > tfoot > tr > th:first-child, .layout-table-scrollable > .table-bordered > thead > tr > td:first-child, .layout-table-scrollable > .table-bordered > tbody > tr > td:first-child, .layout-table-scrollable > .table-bordered > tfoot > tr > td:first-child {
+    border-left: 0;
+}
+.layout-table-scrollable > .table-bordered > thead > tr > th:last-child, .layout-table-scrollable > .table-bordered > tbody > tr > th:last-child, .layout-table-scrollable > .table-bordered > tfoot > tr > th:last-child, .layout-table-scrollable > .table-bordered > thead > tr > td:last-child, .layout-table-scrollable > .table-bordered > tbody > tr > td:last-child, .layout-table-scrollable > .table-bordered > tfoot > tr > td:last-child {
+    border-right: 0;
+}
+.layout-table-scrollable > .table-bordered > thead > tr:last-child > th, .layout-table-scrollable > .table-bordered > tbody > tr:last-child > th, .layout-table-scrollable > .table-bordered > tfoot > tr:last-child > th, .layout-table-scrollable > .table-bordered > thead > tr:last-child > td, .layout-table-scrollable > .table-bordered > tbody > tr:last-child > td, .layout-table-scrollable > .table-bordered > tfoot > tr:last-child > td {
+    border-bottom: 0;
+}
+
+/***
+Bootstrap Tables
+***/
+.layout-table thead > tr > th {
+    border-bottom: 0;
+}
+.layout-table tbody tr.active td, .layout-table tbody tr.active th {
+    background-color: #e9e9e9 !important;
+}
+.layout-table tbody tr.active:hover td, .layout-table tbody tr.active:hover th {
+    background-color: #e1e1e1 !important;
+}
+.layout-table-striped tbody tr.active:nth-child(odd) td, .layout-table-striped tbody tr.active:nth-child(odd) th {
+    background-color: #017ebc;
+}
+.layout-table .heading > th {
+    background-color: #ffffff !important;
+}
+.bootstrap-table .table > thead > tr > th {
+    border-bottom: 0px !important;
+}
+.layout-table thead tr th {
+    font-size: 14px;
+    font-weight: 600;
+}
+.layout-table tbody tr td {
+    font-size: 14px;
+}
+
+/**
+radio **/
+.layout-radio-group {
+    text-align: left !important;
+}
+.layout-radio-group span {
+    margin-right: 10px;
+}
+.layout-radio-group input {
+    cursor: pointer;
+}
+.layout-separator {
+    list-style-type: none;
+    height: 26px;
+    margin-bottom: 10px;
+    padding: 0px;
+    padding-left: 4px;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+.layout-separator li {
+    float: left;
+    display: inline-block;
+    margin: 0 4px -1px 0;
+    padding: 0;
+    position: relative;
+    border: 0;
+}
+.layout-separator li a.layout-separator-inner {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    white-space: nowrap;
+    border-width: 0px;
+    border-style: solid;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+.layout-separator li.layout-separator-selected a.layout-separator-inner {
+    font-weight: bold;
+    outline: none;
+}
+.form-group {
+    margin-bottom: 6px;
+}
+.form-horizontal .form-group {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.layout-align-right {
+    text-align: right;
+}
+.layout-align-center {
+    text-align: center;
+}
+.layout-align-left {
+    text-align: left;
+}
+.nav-tabs {
+    margin-bottom: 10px;
+}
+label {
+    display: inline !important;
+    line-height: 30px;
+}
+#label1440406282841 {
+    font-size: 16px;
+    color: #ff0000;
+}
+a.col-a-popover:link {
+    text-decoration: none;
+    color: black
+}
+a.col-a-popover:active {
+    text-decoration: none;
+    color: black
+}
+a.col-a-popover:hover {
+    text-decoration: none;
+    color: black
+}
+a.col-a-popover:visited {
+    text-decoration: none;
+    color: black
+}
+.layout-waypoint {
+    position: fixed;
+}
+.layout-waypoint ul li {
+    list-style: none;
+    border-left-style: dotted;
+    border-left-width: 2px;
+    border-left-color: #000000;
+}
+.layout-waypoint .circle {
+    width: 32px;
+    height: 32px;
+    color: white;
+    position: relative;
+    left: -16px;
+    line-height: 32px;
+    text-align: center;
+    background-color: #F60;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.layout-waypoint .title {
+    width: 100px;
+    color: black;
+    position: relative;
+    left: -50px;
+    text-align: center;
+}
+.layout-navigation {
+    position: fixed;
+    left: 5;
+    height: 100%;
+    overflow: auto;
+}
+.layout-navigation ul li {
+    list-style: none;
+    border-left-style: dotted;
+    border-left-width: 2px;
+    border-left-color: #000000;
+}
+.layout-navigation .tab {
+    width: 80px;
+    color: black;
+    position: relative;
+    left: -40px;
+    text-align: center;
+}
+.navigation_select {
+    border: dotted 1px dodgerblue
+}
+.panel {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) !important;
+}
+.bfd-panel .bfd-panel-heading + .bfd-panel-body {
+    margin-top: 0px;
+}
+.layout-block-align-right {
+    float: right;
+}
+.layout-block-align-center {
+    float: right;
+    position: relative;
+    right: 50%;
+}
+.layout-block-align-left {
+    float: left;
+}
+.page-common {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 15px 25px 25px;
+    box-shadow: 1px 2px 0 #e5eaee;
+}
+.pr10 {
+    padding-right: 10px;
+}
+.btn-primary {
+    color: #ffffff !important;
+    background-color: #52ACD2 !important;
+    border-color: transparent !important;
+}
+.tip-title {
+    font-size: 16px;
+    color: #1C89B8;
+}
+.tip-content {
+    font-weight: normal;
+    line-height: 150% !important;
+}
+.dashboard-card {
+    display: block !important;
+    margin-bottom: 25px;
+    overflow: hidden;
+    display: table;
+}
+.dashboard-card .visual {
+    width: 80px;
+    height: 80px;
+    display: block;
+    float: left;
+    padding-left: 15px;
+    font-size: 35px;
+    line-height: 35px;
+    padding-top: 35px;
+    margin-bottom: 40px;
+}
+.dashboard-card .visual>em {
+    color: #FFF;
+    opacity: .1;
+    margin-left: -35px;
+    font-size: 110px;
+    line-height: 110px;
+}
+.dashboard-card .details {
+    position: absolute;
+    right: 15px;
+    padding-right: 15px;
+}
+.dashboard-card .details .number {
+    color: #FFF;
+    padding-top: 25px;
+    text-align: right;
+    font-size: 34px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+.dashboard-card .details .desc {
+    color: #FFF;
+    opacity: 1;
+    text-align: right;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 300;
+}
+.divfixed {
+    border-width: 0 0 1px;
+    position: fixed;
+    z-index: 1030;
+}
+.divabsolute {
+    position: absolute;
+}
+.guide-highlight {
+
+    /* font-weight: bold; */
+    color: #FB8C00;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+
+/**
+ * 布局器样式
+ */
+.demo .lyrow,
+.layout .form-group {
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*padding-left: 5px;
+    padding-right: 5px;*/
+}
+
+.demo .lyrow {
+    margin-bottom: 0px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 5px;
+}
+
+
+.demo .lyrow .column:nth-child(odd),
+.layout.layout-default .column:nth-child(odd),
+.layout .form-group .column:nth-child(odd) {
+    border: 1px solid #ddd;
+    border-right: 0px;    
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 2px;
+    background-color: #f5f5f5;   
+}
+
+.demo .lyrow .column:nth-child(even),
+.layout.layout-default .column:nth-child(even),
+.layout .form-group .column:nth-child(even) {
+    border: 1px solid #ddd;
+    border-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 2px;
+    background-color:white;   
+}
+
+.demo .lyrow .column:last-child,
+.layout.layout-default .column:last-child,
+.layout .form-group .column:last-child {
+    border-right: 1px solid #ddd;
+}
+
+.demo .lyrow .column{
+    margin: 0px !important;    
+}
+
+.layout.form-group .row:last-child,
+.layout .form-group .row:last-child {
+     margin-bottom: -2px;
+}
+
+/**
+ * 布局器样式---默认
+ */
+.layout.layout-default>div>.column:nth-child(odd),
+.layout .layout-default>div>.column:nth-child(odd){
+   background-color: #f5f5f5;   
+}
+
+
+/**
+ * 布局器样式---白色
+ * 不显示边框
+ */
+.demo .lyrow .layout.layout-white>div>.column,
+.demo .lyrow .layout .layout-white>div>.column{      
+   background-color: white;   
+}
+
+
+.layout.form-group.layout-white>div>.column,
+.layout .form-group.layout-white>div>.column,
+.layout .form-group .layout-white>div>.column{      
+   background-color: white;   
+}
+
+.layout.form-group.layout-white>div>.column,
+.layout .form-group.layout-white>div>.column,
+.layout .form-group .layout-white>div>.column{   
+   border:0px;   
+}
+
+.layout.layout-white.form-horizontal>div>.col-sm-12{
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+}
+
+/**
+ * 面板头部白色
+ */
+.layout .bfd-panel .bfd-panel-heading .column{
+    background-color: white !important;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+	<link href="css/page.css" rel="stylesheet">
+	<link href="css/bootstrap/select2/select2.min.css" rel="stylesheet">
+	<link href="css/component/m-layout.css" rel="stylesheet">
+	<link href="css/component/m-label.css" rel="stylesheet">
+	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootbox.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-ID-CN.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>	
+	<script type="text/javascript" src="js/commTools.js"></script>
+	<script type="text/javascript" src="js/page/layoutitPage.js"></script>
+	<script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+	<script type="text/javascript" src="js/page/layoutitPagei18n.js"></script>
+	<script type="text/javascript" src="js/page/init/page-cache-init.js"></script>
+	<script type="text/javascript" src="js/component/m-layout.js"></script>
+	<script type="text/javascript" src="js/component/m-label.js"></script>
+	<script type="text/javascript" src="js/lib/avalon.js"></script>
+	<script type="text/javascript" src="default_common.js"></script>
+	<script type="text/javascript" src="js/bcp/jquery.base64.js"></script>
+	<script type="text/javascript" src="js/mao/mao-orm-base.js"></script>
+    <script type="text/javascript" src="add_package_info.js"></script>
+</head> 
+<body>
+<div class="container container-top">
+	<div type="layout" compid="vm1487320279839" compname="vm1487320279839" ms-controller="vm1487320279839" id="vm1487320279839" dstype="orm" bfd-operation-params="%7B%22dsType%22%3A%22orm%22%2C%22model%22%3A%22vm1487320279839%22%2C%22source%22%3A%22bcp%22%2C%22service%22%3A%22bcp%22%2C%22set%22%3A%22bcp_re_processpackage%22%2C%22operations%22%3A%5B%7B%22method%22%3A%22POST%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fworkbench%2Form%2Ftable%2Fbcp_re_processpackage%22%2C%22name%22%3A%22add%22%7D%2C%7B%22method%22%3A%22PUT%22%2C%22submit%22%3A%22formOperator%22%2C%22url%22%3A%22%2Fworkbench%2Form%2Ftable%2Fbcp_re_processpackage%22%2C%22name%22%3A%22update%22%7D%2C%7B%22method%22%3A%22DELETE%22%2C%22submit%22%3A%22delete%22%2C%22url%22%3A%22%2Fworkbench%2Form%2Ftable%2Fbcp_re_processpackage%22%2C%22name%22%3A%22delete%22%7D%2C%7B%22method%22%3A%22GET%22%2C%22submit%22%3A%22initVMData%22%2C%22url%22%3A%22%2Fworkbench%2Form%2Ftable%2Fbcp_re_processpackage%22%2C%22name%22%3A%22query%22%7D%5D%2C%22post_in%22%3A%5B%5D%2C%22put_in%22%3A%5B%5D%2C%22get_out%22%3A%5B%5D%7D" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+				<div type="layout" compid="layout1487321077232" compname="layout1487321077232" id="layout1487321077232" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" compid="label14873210966900" compname="label14873210966900" class="layout-align-right">
+								 <label class="control-label" id="label14873210966900" i18nkey="名称">名称 <span class="red-star">*</span></label>
+							</div>
+						</div>
+						<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+							<div type="input_text" compid="input_text14873211687290" compname="input_text14873211687290" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" field="PACKAGENAME" class="group">
+								<input type="text" class="form-control" id="input_text14873211687290" name="input_text14873211687290" ms-duplex-string="PACKAGENAME" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1487321079392" compname="layout1487321079392" id="layout1487321079392" class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2 col-sm-2 col-lg-2 column">
+							<div type="label" compid="label14873210984380" compname="label14873210984380" class="layout-align-right">
+								 <label class="control-label" id="label14873210984380" i18nkey="描述">描述</label>
+							</div>
+						</div>
+						<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 column">
+							<div type="textarea" compid="textarea14873211716080" compname="textarea14873211716080" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" field="DESC">
+								<textarea class="form-control" rows="2" id="textarea14873211716080" name="textarea14873211716080" ms-duplex-string="DESC">								</textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div type="layout" compid="layout1487321075261" compname="layout1487321075261" id="layout1487321075261" class="form-group" style="margin-top:25px;">
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column layout-align-right">						
+							<div class="btn-group">
+								<div type="button" compid="button14873211447040" compname="button14873211447040" class="layout-align-right" style="margin-left:30px;">
+									 <button type="button" class="btn btn-primary btn-sm" id="button14873211447040" name="button14873211447040" ms-click="submit" i18nkey="确定">确定</button>
+								</div>
+							</div>
+							<div class="btn-group">
+								<div type="button" compid="button14873211465030" compname="button14873211465030" class="layout-align-right">
+									 <button type="button" class="btn btn-default btn-sm" id="button14873211465030" name="button14873211465030" i18nkey="取消">取消</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

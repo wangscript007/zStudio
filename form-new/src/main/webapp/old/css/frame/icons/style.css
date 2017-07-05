@@ -1,0 +1,1179 @@
+@font-face {
+  font-family: 'ZteIctIcons';
+  src:  url('fonts/icons.eot?ykw2z3');
+  src:  url('fonts/icons.eot?ykw2z3#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?ykw2z3') format('truetype'),
+    url('fonts/icons.woff?ykw2z3') format('woff'),
+    url('fonts/icons.svg?ykw2z3#ZteIctIcons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ict-"], [class*=" ict-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ZteIctIcons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ict-idea:before {
+  content: "\e904";
+}
+.ict-download:before {
+  content: "\e9b6";
+}
+.ict-it-other-sbcstg:before {
+  content: "\e9b4";
+}
+.ict-it-other-vngfw:before {
+  content: "\e9b5";
+}
+.ict-sql:before {
+  content: "\e900";
+}
+.ict-more-line:before {
+  content: "\e901";
+}
+.ict-table:before {
+  content: "\e902";
+}
+.ict-go:before {
+  content: "\e903";
+}
+.ict-sm-center:before {
+  content: "\e905";
+}
+.ict-thumbtack-selected:before {
+  content: "\e906";
+}
+.ict-thumbtack:before {
+  content: "\e907";
+}
+.ict-warning:before {
+  content: "\e908";
+}
+.ict-noticeFilter .path1:before {
+  content: "\e909";
+  color: rgb(9, 2, 4);
+}
+.ict-noticeFilter .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.ict-noticeFilter .path3:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.ict-noticeFilter .path4:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.ict-noticeFilter .path5:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.ict-noticeFilter .path6:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.ict-noticeFilter .path7:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.ict-noticeFilter .path8:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.ict-afreshDef:before {
+  content: "\e911";
+}
+.ict-alarmBox:before {
+  content: "\e912";
+}
+.ict-advice:before {
+  content: "\e913";
+}
+.ict-file:before {
+  content: "\e914";
+}
+.ict-full-grid-selected:before {
+  content: "\e915";
+}
+.ict-third-grid-selected:before {
+  content: "\e916";
+}
+.ict-half-grid-selected:before {
+  content: "\e917";
+}
+.ict-half-grid:before {
+  content: "\e918";
+}
+.ict-third-grid:before {
+  content: "\e919";
+}
+.ict-full-grid:before {
+  content: "\e91a";
+}
+.ict-clearAlarm:before {
+  content: "\e91b";
+}
+.ict-triangle:before {
+  content: "\e91c";
+}
+.ict-bell:before {
+  content: "\e91d";
+}
+.ict-inProgress:before {
+  content: "\e91e";
+}
+.ict-open:before {
+  content: "\e91f";
+}
+.ict-fold:before {
+  content: "\e920";
+}
+.ict-back:before {
+  content: "\e921";
+}
+.ict-check-right:before {
+  content: "\e922";
+}
+.ict-check-error:before {
+  content: "\e923";
+}
+.ict-parallel:before {
+  content: "\e924";
+}
+.ict-pbp:before {
+  content: "\e925";
+}
+.ict-grammarCheck:before {
+  content: "\e926";
+}
+.ict-helpTip:before {
+  content: "\e927";
+}
+.ict-copy:before {
+  content: "\e928";
+}
+.ict-message:before {
+  content: "\e929";
+}
+.ict-pause:before {
+  content: "\e92a";
+}
+.ict-executNext:before {
+  content: "\e92b";
+}
+.ict-loseError:before {
+  content: "\e92c";
+}
+.ict-start:before {
+  content: "\e92d";
+}
+.ict-deleSingle:before {
+  content: "\e92e";
+}
+.ict-singleCommand:before {
+  content: "\e92f";
+}
+.ict-batchCommand:before {
+  content: "\e930";
+}
+.ict-debug:before {
+  content: "\e931";
+}
+.ict-down:before {
+  content: "\e932";
+}
+.ict-up:before {
+  content: "\e933";
+}
+.ict-stop:before {
+  content: "\e934";
+}
+.ict-forceOut:before {
+  content: "\e935";
+}
+.ict-more:before {
+  content: "\e936";
+}
+.ict-alarmFilter:before {
+  content: "\e937";
+}
+.ict-userDispatch:before {
+  content: "\e938";
+}
+.ict-role:before {
+  content: "\e939";
+}
+.ict-menu:before {
+  content: "\e93a";
+}
+.ict-roleset:before {
+  content: "\e93b";
+}
+.ict-gear:before {
+  content: "\e93c";
+}
+.ict-userCompare:before {
+  content: "\e93d";
+}
+.ict-alarmTurn:before {
+  content: "\e93e";
+}
+.ict-zoomOverView:before {
+  content: "\e93f";
+}
+.ict-zoomReset:before {
+  content: "\e940";
+}
+.ict-find:before {
+  content: "\e941";
+}
+.ict-layout:before {
+  content: "\e942";
+}
+.ict-blackList:before {
+  content: "\e943";
+}
+.ict-user:before {
+  content: "\e944";
+}
+.ict-breakLink:before {
+  content: "\e945";
+}
+.ict-cancle:before {
+  content: "\e946";
+}
+.ict-folderOpen:before {
+  content: "\e947";
+}
+.ict-folder:before {
+  content: "\e948";
+}
+.ict-save:before {
+  content: "\e949";
+}
+.ict-Magnifier:before {
+  content: "\e94a";
+}
+.ict-zoomIn:before {
+  content: "\e94b";
+}
+.ict-zoomOut:before {
+  content: "\e94c";
+}
+.ict-delete:before {
+  content: "\e94d";
+}
+.ict-refresh:before {
+  content: "\e94e";
+}
+.ict-modify:before {
+  content: "\e94f";
+}
+.ict-new:before {
+  content: "\e950";
+}
+.ict-cpu:before {
+  content: "\e951";
+}
+.ict-memory:before {
+  content: "\e952";
+}
+.ict-currentAlarm:before {
+  content: "\e953";
+}
+.ict-noticeAlarm:before {
+  content: "\e954";
+}
+.ict-historyAlarm:before {
+  content: "\e955";
+}
+.ict-close:before {
+  content: "\e956";
+}
+.ict-next:before {
+  content: "\e957";
+}
+.ict-pre:before {
+  content: "\e958";
+}
+.ict-empty:before {
+  content: "\e959";
+}
+.ict-manAnalysis:before {
+  content: "\e95a";
+}
+.ict-drill:before {
+  content: "\e95b";
+}
+.ict-process:before {
+  content: "\e95c";
+}
+.ict-unacknownledge:before {
+  content: "\e95d";
+}
+.ict-acknownledge:before {
+  content: "\e95e";
+}
+.ict-Operation:before {
+  content: "\e95f";
+}
+.ict-cloud:before {
+  content: "\e960";
+}
+.ict-computer:before {
+  content: "\e961";
+}
+.ict-alarm:before {
+  content: "\e962";
+}
+.ict-import:before {
+  content: "\e963";
+}
+.ict-export:before {
+  content: "\e964";
+}
+.ict-Admin:before {
+  content: "\e965";
+}
+.ict-allSelected:before {
+  content: "\e966";
+}
+.ict-angleRight:before {
+  content: "\e967";
+}
+.ict-arrowLeft:before {
+  content: "\e968";
+}
+.ict-arrowLeftAll:before {
+  content: "\e969";
+}
+.ict-arrowRight:before {
+  content: "\e96a";
+}
+.ict-arrowRightAll:before {
+  content: "\e96b";
+}
+.ict-autoFind:before {
+  content: "\e96c";
+}
+.ict-ball:before {
+  content: "\e96d";
+}
+.ict-circle:before {
+  content: "\e96e";
+}
+.ict-closeTree:before {
+  content: "\e96f";
+}
+.ict-configmap:before {
+  content: "\e970";
+}
+.ict-department:before {
+  content: "\e971";
+}
+.ict-detail:before {
+  content: "\e972";
+}
+.ict-displaySwitch:before {
+  content: "\e973";
+}
+.ict-filter:before {
+  content: "\e974";
+}
+.ict-fullScreen:before {
+  content: "\e975";
+}
+.ict-Graphical:before {
+  content: "\e976";
+}
+.ict-hide:before {
+  content: "\e977";
+}
+.ict-history:before {
+  content: "\e978";
+}
+.ict-launchingTower:before {
+  content: "\e979";
+}
+.ict-legendhide:before {
+  content: "\e97a";
+}
+.ict-legendshow:before {
+  content: "\e97b";
+}
+.ict-link:before {
+  content: "\e97c";
+}
+.ict-lock:before {
+  content: "\e97d";
+}
+.ict-ltArrow:before {
+  content: "\e97e";
+}
+.ict-Maintain:before {
+  content: "\e97f";
+}
+.ict-maximize:before {
+  content: "\e980";
+}
+.ict-Monitor:before {
+  content: "\e981";
+}
+.ict-move:before {
+  content: "\e982";
+}
+.ict-newShortcut:before {
+  content: "\e983";
+}
+.ict-openTree:before {
+  content: "\e984";
+}
+.ict-poNode:before {
+  content: "\e985";
+}
+.ict-print:before {
+  content: "\e986";
+}
+.ict-product:before {
+  content: "\e987";
+}
+.ict-rbArrow:before {
+  content: "\e988";
+}
+.ict-reduction:before {
+  content: "\e989";
+}
+.ict-rename:before {
+  content: "\e98a";
+}
+.ict-select:before {
+  content: "\e98b";
+}
+.ict-selectAll:before {
+  content: "\e98c";
+}
+.ict-selectLeft:before {
+  content: "\e98d";
+}
+.ict-selectRight:before {
+  content: "\e98e";
+}
+.ict-show:before {
+  content: "\e98f";
+}
+.ict-shrink:before {
+  content: "\e990";
+}
+.ict-stretch:before {
+  content: "\e991";
+}
+.ict-strikeOut:before {
+  content: "\e992";
+}
+.ict-Synchronous:before {
+  content: "\e993";
+}
+.ict-toRight:before {
+  content: "\e994";
+}
+.ict-treefile:before {
+  content: "\e995";
+}
+.ict-treeFolder:before {
+  content: "\e996";
+}
+.ict-unlock:before {
+  content: "\e997";
+}
+.ict-xml:before {
+  content: "\e998";
+}
+.ict-analysis:before {
+  content: "\e999";
+}
+.ict-bindingRelationship:before {
+  content: "\e99a";
+}
+.ict-browsePolicy:before {
+  content: "\e99b";
+}
+.ict-businessManagment:before {
+  content: "\e99c";
+}
+.ict-cardData:before {
+  content: "\e99d";
+}
+.ict-dailyManagment:before {
+  content: "\e99e";
+}
+.ict-enterpriseCustomer:before {
+  content: "\e99f";
+}
+.ict-equipmentBlacklist:before {
+  content: "\e9a0";
+}
+.ict-equipmentModel:before {
+  content: "\e9a1";
+}
+.ict-examine:before {
+  content: "\e9a2";
+}
+.ict-failureList:before {
+  content: "\e9a3";
+}
+.ict-familyCustomer:before {
+  content: "\e9a4";
+}
+.ict-fileTool:before {
+  content: "\e9a5";
+}
+.ict-groupManagment:before {
+  content: "\e9a6";
+}
+.ict-notice:before {
+  content: "\e9a7";
+}
+.ict-policy:before {
+  content: "\e9a8";
+}
+.ict-portal:before {
+  content: "\e9a9";
+}
+.ict-recordQuery:before {
+  content: "\e9aa";
+}
+.ict-resourceManagment:before {
+  content: "\e9ab";
+}
+.ict-ruleManagment:before {
+  content: "\e9ac";
+}
+.ict-sucessRate:before {
+  content: "\e9ad";
+}
+.ict-terminalManagment:before {
+  content: "\e9ae";
+}
+.ict-tools:before {
+  content: "\e9af";
+}
+.ict-track:before {
+  content: "\e9b0";
+}
+.ict-userManagment:before {
+  content: "\e9b1";
+}
+.ict-versionManagment:before {
+  content: "\e9b2";
+}
+.ict-workOrder:before {
+  content: "\e9b3";
+}
+.ict-it-other-ku5200:before {
+  content: "\e9b9";
+}
+.ict-it-other-oraclerac:before {
+  content: "\e9ba";
+}
+.ict-it-other-ngips5000m2:before {
+  content: "\e9bb";
+}
+.ict-it-other-waf10000a:before {
+  content: "\e9bc";
+}
+.ict-it-other-iros:before {
+  content: "\e9bd";
+}
+.ict-it-server-freeBSD:before {
+  content: "\e9be";
+}
+.ict-it-server-as400:before {
+  content: "\e9bf";
+}
+.ict-it-other-moxap:before {
+  content: "\e9c0";
+}
+.ict-it-switch-moxa:before {
+  content: "\e9c1";
+}
+.ict-it-firewall-customize:before {
+  content: "\e9c2";
+}
+.ict-it-other-esb:before {
+  content: "\e9c3";
+}
+.ict-it-switch-customize:before {
+  content: "\e9c4";
+}
+.ict-it-other-customize:before {
+  content: "\e9c5";
+}
+.ict-it-router-customize:before {
+  content: "\e9c6";
+}
+.ict-it-database-gbase-8acluster:before {
+  content: "\e9c7";
+}
+.ict-it-other-f1000:before {
+  content: "\e9c8";
+}
+.ict-it-other-adsg:before {
+  content: "\e9c9";
+}
+.ict-it-other-sslvpn:before {
+  content: "\e9ca";
+}
+.ict-it-firewall-hillstone:before {
+  content: "\e9cb";
+}
+.ict-it-server-ubuntu:before {
+  content: "\e9cc";
+}
+.ict-it-server-tru64:before {
+  content: "\e9cd";
+}
+.ict-it-other-fileserver:before {
+  content: "\e9ce";
+}
+.ict-it-other-sapccms:before {
+  content: "\e9cf";
+}
+.ict-it-other-activedirectory:before {
+  content: "\e9d0";
+}
+.ict-it-app-sliverstream:before {
+  content: "\e9d1";
+}
+.ict-it-app-oracleas:before {
+  content: "\e9d2";
+}
+.ict-it-app-exchange2007:before {
+  content: "\e9d3";
+}
+.ict-it-app-exchange2003:before {
+  content: "\e9d4";
+}
+.ict-it-app-dotnet:before {
+  content: "\e9d5";
+}
+.ict-it-other-lenovo:before {
+  content: "\e9d6";
+}
+.ict-it-router-alu7750:before {
+  content: "\e9d7";
+}
+.ict-it-other-nds:before {
+  content: "\e9d8";
+}
+.ict-it-other-php:before {
+  content: "\e9d9";
+}
+.ict-it-app-glassfish:before {
+  content: "\e9da";
+}
+.ict-it-other-telnet:before {
+  content: "\e9db";
+}
+.ict-it-other-dns:before {
+  content: "\e9dc";
+}
+.ict-it-other-url:before {
+  content: "\e9dd";
+}
+.ict-it-database-mysql:before {
+  content: "\e9de";
+}
+.ict-it-other-ping:before {
+  content: "\e9df";
+}
+.ict-it-other-ftp:before {
+  content: "\e9e0";
+}
+.ict-it-other-rest:before {
+  content: "\e9e1";
+}
+.ict-it-other-soap:before {
+  content: "\e9e2";
+}
+.ict-it-server-macos:before {
+  content: "\e9e3";
+}
+.ict-it-server-openbsd:before {
+  content: "\e9e4";
+}
+.ict-it-server-debian:before {
+  content: "\e9e5";
+}
+.ict-it-app-iis:before {
+  content: "\e9e6";
+}
+.ict-it-app-mailserver:before {
+  content: "\e9e7";
+}
+.ict-it-app-websphere:before {
+  content: "\e9e8";
+}
+.ict-it-app-apache:before {
+  content: "\e9e9";
+}
+.ict-it-app-jboss:before {
+  content: "\e9ea";
+}
+.ict-it-other-a10bala:before {
+  content: "\e9eb";
+}
+.ict-it-cluster-vcs:before {
+  content: "\e9ec";
+}
+.ict-it-diskraid-hpeva:before {
+  content: "\e9ed";
+}
+.ict-it-diskraid-zte:before {
+  content: "\e9ee";
+}
+.ict-it-firewall-h3c:before {
+  content: "\e9ef";
+}
+.ict-it-other-ibm-blade:before {
+  content: "\e9f0";
+}
+.ict-it-other-secfox:before {
+  content: "\e9f1";
+}
+.ict-it-other-segw:before {
+  content: "\e9f2";
+}
+.ict-it-other-zteatca:before {
+  content: "\e9f3";
+}
+.ict-it-other-zteips:before {
+  content: "\e9f4";
+}
+.ict-it-sdn-controller:before {
+  content: "\e9f5";
+}
+.ict-it-server-hpux:before {
+  content: "\e9f6";
+}
+.ict-it-storage-ops:before {
+  content: "\e9f7";
+}
+.ict-it-storage-sanswitch-brocade:before {
+  content: "\e9f8";
+}
+.ict-it:before {
+  content: "\e9f9";
+}
+.ict-it-app:before {
+  content: "\e9fa";
+}
+.ict-it-app-bind:before {
+  content: "\e9fb";
+}
+.ict-it-app-dns:before {
+  content: "\e9fc";
+}
+.ict-it-app-ems:before {
+  content: "\e9fd";
+}
+.ict-it-app-mediator:before {
+  content: "\e9fe";
+}
+.ict-it-app-ntp:before {
+  content: "\e9ff";
+}
+.ict-it-app-ota:before {
+  content: "\ea00";
+}
+.ict-it-app-tomcat:before {
+  content: "\ea01";
+}
+.ict-it-app-trend:before {
+  content: "\ea02";
+}
+.ict-it-app-tsm:before {
+  content: "\ea03";
+}
+.ict-it-app-weblogic:before {
+  content: "\ea04";
+}
+.ict-it-cluster:before {
+  content: "\ea05";
+}
+.ict-it-cluster-hacmp:before {
+  content: "\ea06";
+}
+.ict-it-cluster-nec:before {
+  content: "\ea07";
+}
+.ict-it-cluster-ns:before {
+  content: "\ea08";
+}
+.ict-it-cluster-sg:before {
+  content: "\ea09";
+}
+.ict-it-database:before {
+  content: "\ea0a";
+}
+.ict-it-database-mssql:before {
+  content: "\ea0b";
+}
+.ict-it-database-oracle:before {
+  content: "\ea0c";
+}
+.ict-it-database-sybase:before {
+  content: "\ea0d";
+}
+.ict-it-database-sybaseiq:before {
+  content: "\ea0e";
+}
+.ict-it-diskraid-dellmd:before {
+  content: "\ea0f";
+}
+.ict-it-diskraid-emc:before {
+  content: "\ea10";
+}
+.ict-it-diskraid-eternus:before {
+  content: "\ea11";
+}
+.ict-it-diskraid-fujitsu:before {
+  content: "\ea12";
+}
+.ict-it-diskraid-hds:before {
+  content: "\ea13";
+}
+.ict-it-diskraid-hpaio:before {
+  content: "\ea14";
+}
+.ict-it-diskraid-hpmsa:before {
+  content: "\ea15";
+}
+.ict-it-diskraid-ibm:before {
+  content: "\ea16";
+}
+.ict-it-diskraid-ibmsm:before {
+  content: "\ea17";
+}
+.ict-it-diskraid-macrosan:before {
+  content: "\ea18";
+}
+.ict-it-diskraid-netapp:before {
+  content: "\ea19";
+}
+.ict-it-diskraid-sun:before {
+  content: "\ea1a";
+}
+.ict-it-firewall:before {
+  content: "\ea1b";
+}
+.ict-it-firewall-checkpoint:before {
+  content: "\ea1c";
+}
+.ict-it-firewall-cisco:before {
+  content: "\ea1d";
+}
+.ict-it-firewall-cisco2:before {
+  content: "\ea1e";
+}
+.ict-it-firewall-juniper:before {
+  content: "\ea1f";
+}
+.ict-it-firewall-neteye:before {
+  content: "\ea20";
+}
+.ict-it-firewall-zte:before {
+  content: "\ea21";
+}
+.ict-it-firewall-ztemf:before {
+  content: "\ea22";
+}
+.ict-it-firewall-zteutm:before {
+  content: "\ea23";
+}
+.ict-it-gather:before {
+  content: "\ea24";
+}
+.ict-it-ibp:before {
+  content: "\ea25";
+}
+.ict-it-ibp-ibp2000:before {
+  content: "\ea26";
+}
+.ict-it-net:before {
+  content: "\ea27";
+}
+.ict-it-other:before {
+  content: "\ea28";
+}
+.ict-it-other-alteon:before {
+  content: "\ea29";
+}
+.ict-it-other-appdirector:before {
+  content: "\ea2a";
+}
+.ict-it-other-atca-lb10:before {
+  content: "\ea2b";
+}
+.ict-it-other-cisco-ucs:before {
+  content: "\ea2c";
+}
+.ict-it-other-dcs:before {
+  content: "\ea2d";
+}
+.ict-it-other-delta:before {
+  content: "\ea2e";
+}
+.ict-it-other-dp:before {
+  content: "\ea2f";
+}
+.ict-it-other-e9000:before {
+  content: "\ea30";
+}
+.ict-it-other-f5bigip:before {
+  content: "\ea31";
+}
+.ict-it-other-f5bigip2:before {
+  content: "\ea32";
+}
+.ict-it-other-gbe2c:before {
+  content: "\ea33";
+}
+.ict-it-other-h3c:before {
+  content: "\ea34";
+}
+.ict-it-other-hpblc:before {
+  content: "\ea35";
+}
+.ict-it-other-imm:before {
+  content: "\ea36";
+}
+.ict-it-other-secsis:before {
+  content: "\ea37";
+}
+.ict-it-other-vc:before {
+  content: "\ea38";
+}
+.ict-it-other-ztepower:before {
+  content: "\ea39";
+}
+.ict-it-other-ztesgs:before {
+  content: "\ea3a";
+}
+.ict-it-other-zxsdr-nt:before {
+  content: "\ea3b";
+}
+.ict-it-router:before {
+  content: "\ea3c";
+}
+.ict-it-router-cisco:before {
+  content: "\ea3d";
+}
+.ict-it-router-juniper:before {
+  content: "\ea3e";
+}
+.ict-it-router-zte:before {
+  content: "\ea3f";
+}
+.ict-it-sdn-host:before {
+  content: "\ea40";
+}
+.ict-it-sdn-switch:before {
+  content: "\ea41";
+}
+.ict-it-server:before {
+  content: "\ea42";
+}
+.ict-it-server-aix:before {
+  content: "\ea43";
+}
+.ict-it-server-klinux:before {
+  content: "\ea44";
+}
+.ict-it-server-redhat:before {
+  content: "\ea45";
+}
+.ict-it-server-solaris:before {
+  content: "\ea46";
+}
+.ict-it-server-suse:before {
+  content: "\ea47";
+}
+.ict-it-server-windows:before {
+  content: "\ea48";
+}
+.ict-it-server-zxve:before {
+  content: "\ea49";
+}
+.ict-it-storage:before {
+  content: "\ea4a";
+}
+.ict-it-storage-cisco-mds:before {
+  content: "\ea4b";
+}
+.ict-it-storage-md3000:before {
+  content: "\ea4c";
+}
+.ict-it-storage-netvault:before {
+  content: "\ea4d";
+}
+.ict-it-storage-sanswitch-zte:before {
+  content: "\ea4e";
+}
+.ict-it-switch-at:before {
+  content: "\ea4f";
+}
+.ict-it-switch-cisco:before {
+  content: "\ea50";
+}
+.ict-it-switch-h3c:before {
+  content: "\ea51";
+}
+.ict-it-switch-juniper:before {
+  content: "\ea52";
+}
+.ict-it-switch-zte:before {
+  content: "\ea53";
+}
+.ict-it-tapelib-hpmsl:before {
+  content: "\ea54";
+}
+.ict-it-tapelib-ibmts:before {
+  content: "\ea55";
+}
+.ict-it-tapelib-sunts:before {
+  content: "\ea56";
+}
+.ict-it-Virtual-network:before {
+  content: "\ea57";
+}
+.ict-it-app-netnumen:before {
+  content: "\ea58";
+}
+.ict-it-sdn-vnet:before {
+  content: "\ea59";
+}
+.ict-it-storage-sanswitch-hp:before {
+  content: "\ea5a";
+}
+.ict-it-switch:before {
+  content: "\ea5b";
+}
+.ict-app:before {
+  content: "\ea5c";
+}
+.ict-car:before {
+  content: "\ea5d";
+}
+.ict-chgpile:before {
+  content: "\ea5e";
+}
+.ict-chgposition:before {
+  content: "\ea5f";
+}
+.ict-chgstation:before {
+  content: "\ea60";
+}
+.ict-cms:before {
+  content: "\ea61";
+}
+.ict-common_dc:before {
+  content: "\ea62";
+}
+.ict-common_ncd:before {
+  content: "\ea63";
+}
+.ict-common_ncd_break:before {
+  content: "\ea64";
+}
+.ict-common_ncd_stop:before {
+  content: "\ea65";
+}
+.ict-common_sc:before {
+  content: "\ea66";
+}
+.ict-ems:before {
+  content: "\ea67";
+}
+.ict-host:before {
+  content: "\ea68";
+}
+.ict-network:before {
+  content: "\ea69";
+}
+.ict-networkTree:before {
+  content: "\ea6a";
+}
+.ict-NFV:before {
+  content: "\ea6b";
+}
+.ict-NS:before {
+  content: "\ea6c";
+}
+.ict-resourceType:before {
+  content: "\ea6d";
+}
+.ict-sdno:before {
+  content: "\ea6e";
+}
+.ict-tree-icon:before {
+  content: "\ea6f";
+}
+.ict-uep-moc-root:before {
+  content: "\ea70";
+}
+.ict-uep-moc-uca-public:before {
+  content: "\ea71";
+}
+.ict-uep-topo-commongroup20x20:before {
+  content: "\ea72";
+}
+.ict-uep-topo-group20x20:before {
+  content: "\ea73";
+}
+.ict-uep-topo-root:before {
+  content: "\ea74";
+}
+.ict-uep-topo-undefinedgroup20x20:before {
+  content: "\ea75";
+}
+.ict-uep-topo-virtual20x20:before {
+  content: "\ea76";
+}
+.ict-vapel_chgpile:before {
+  content: "\ea77";
+}
+.ict-VDU:before {
+  content: "\ea78";
+}
+.ict-VIM:before {
+  content: "\ea79";
+}
+.ict-VNF:before {
+  content: "\ea7a";
+}
+.ict-VNFC:before {
+  content: "\ea7b";
+}
+.ict-VNFM:before {
+  content: "\ea7c";
+}
+

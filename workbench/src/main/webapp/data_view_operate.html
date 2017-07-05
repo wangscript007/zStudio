@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/bootstrap/select2/select2.min.css" rel="stylesheet">
+    <link href="css/component/m-layout.css" rel="stylesheet">
+    <link href="css/component/m-label.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-table.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootbox.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-Custom.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/bootstrapValidator-ID-CN.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrapvalidator/language/zh_CN.js"></script>
+    <script type="text/javascript" src="js/lib/lodash.min.js"></script>
+    <script type="text/javascript" src="js/lib/select2/select2.min.js"></script>
+    <script type="text/javascript" src="js/lib/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery.i18n.properties-1.0.9.js"></script>
+    <script type="text/javascript" src="js/lib/chinese-region/bootstrap-chinese-region.js"></script>
+    <script type="text/javascript" src="js/commTools.js"></script>
+    <script type="text/javascript" src="js/page/cache/page-cache-manage.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-base.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-json.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-multitable.js"></script>
+    <script type="text/javascript" src="js/page/operation/page-operation-orm.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPage.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageLoad.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPagei18n.js"></script>
+    <script type="text/javascript" src="js/page/init/page-cache-init.js"></script>
+    <script type="text/javascript" src="js/component/m-layout.js"></script>
+    <script type="text/javascript" src="js/component/m-label.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-editable.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-zh-CN.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-table-toolbar.js"></script>
+    <script type="text/javascript" src="js/page/layoutitPageTable.js"></script>
+    <script type="text/javascript" src="js/lib/avalon.js"></script>
+    <script type="text/javascript" src="default_common.js"></script>
+    <script type="text/javascript" src="js/mao/mao-env-base.js"></script>
+    <script type="text/javascript" src="js/common/designer-orm-base.js"></script>
+    <script type="text/javascript" src="js/mao/data_view_operate_logic.js"></script>
+    <script type="text/javascript" src="data_view_operate.js"></script>
+</head> 
+<body>
+<div class="container container-top">
+	<div type="layout" compid="vm1484017160882" compname="vm1484017160882" id="vm1484017160882" ms-controller="vm1484017160882" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 column">
+				<div type="layout" compid="layout1484037936934" compname="layout1484037936934" id="layout1484037936934" class="form-group">
+					<div class="row">
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+							<div type="label" compid="label14840379491030" compname="label14840379491030" class="layout-align-right">
+								 <label class="control-label" id="label14840379491030" i18nkey="视图名">视图名</label>
+							</div>
+						</div>
+						<div class="col-md-11 col-xs-11 col-sm-11 col-lg-11 column">
+							<div type="input_text" compid="input_text14840379778070" compname="input_text14840379778070" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D" class="group">
+								<input type="text" class="form-control" id="input_text14840379778070" name="input_text14840379778070" data-bv-group=".group">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1484017079608" compname="layout1484017079608" id="layout1484017079608" class="form-group">
+					<div class="row">
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+							<div type="label" compid="label14840163623480" compname="label14840163623480" class="layout-align-right">
+								 <label class="control-label" id="label14840163623480" i18nkey="表名">表名</label>
+							</div>
+						</div>
+						<div class="col-md-5 col-xs-5 col-sm-5 col-lg-5 column">
+							<div type="select_dynamic" compid="select_dynamic14840163855010" compname="select_dynamic14840163855010" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D">
+								 <select style="display : inline;width:100%;" class="form-control" id="select_dynamic14840163855010" name="select_dynamic14840163855010"><option></option></select>
+							</div>
+						</div>
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+							<div type="label" compid="label14840163723270" compname="label14840163723270" class="layout-align-right">
+								 <label class="control-label" id="label14840163723270" i18nkey="表名">表名</label>
+							</div>
+						</div>
+						<div class="col-md-5 col-xs-5 col-sm-5 col-lg-5 column">
+							<div type="select_dynamic" compid="select_dynamic14840163885580" compname="select_dynamic14840163885580" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D">
+								 <select style="display : inline;width:100%;" class="form-control" id="select_dynamic14840163885580" name="select_dynamic14840163885580"><option></option></select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1484016400575" compname="layout1484016400575" id="layout1484016400575" class="form-group">
+					<div class="row">
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+							<div type="label" compid="label14840171878290" compname="label14840171878290" class="layout-align-right">
+								 <label class="control-label" id="label14840171878290" i18nkey="关联方式">关联方式</label>
+							</div>
+						</div>
+						<div class="col-md-11 col-xs-11 col-sm-11 col-lg-11 column">
+							<div type="select_dynamic" compid="select_dynamic14840314039130" compname="select_dynamic14840314039130" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D">
+								 <select style="display : inline;width:100%;" class="form-control" id="select_dynamic14840314039130" name="select_dynamic14840314039130"><option></option></select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1484017077711" compname="layout1484017077711" id="layout1484017077711" class="form-group">
+					<div class="row">
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+							<div type="label" compid="label14840164097580" compname="label14840164097580" class="layout-align-right">
+								 <label class="control-label" id="label14840164097580" i18nkey="关联字段">关联字段</label>
+							</div>
+						</div>
+						<div class="col-md-5 col-xs-5 col-sm-5 col-lg-5 column">
+							<div type="select_dynamic" compid="select_dynamic14840164376660" compname="select_dynamic14840164376660" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D">
+								 <select style="display : inline;width:100%;" class="form-control" id="select_dynamic14840164376660" name="select_dynamic14840164376660"><option></option></select>
+							</div>
+						</div>
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+							<div type="label" compid="label14840164212550" compname="label14840164212550" class="layout-align-right">
+								 <label class="control-label" id="label14840164212550" i18nkey="关联字段">关联字段</label>
+							</div>
+						</div>
+						<div class="col-md-5 col-xs-5 col-sm-5 col-lg-5 column">
+							<div type="select_dynamic" compid="select_dynamic14840164392730" compname="select_dynamic14840164392730" editable="%7B%22add%22%3A%22checked%22%2C%22view%22%3A%22%22%2C%22modify%22%3A%22checked%22%7D">
+								 <select style="display : inline;width:100%;" class="form-control" id="select_dynamic14840164392730" name="select_dynamic14840164392730"><option></option></select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1484017076350" compname="layout1484017076350" id="layout1484017076350" class="form-group">
+					<div class="row">
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+							<div type="label" compid="label14840166113210" compname="label14840166113210" class="layout-align-right">
+								 <label class="control-label" id="label14840166113210" i18nkey="显示字段">显示字段</label>
+							</div>
+						</div>
+						<div class="col-md-5 col-xs-5 col-sm-5 col-lg-5 column">
+							<div type="table_base_local" style="overflow-x: auto; overflow-y: auto;" compid="table_base_local1484016794244" compname="table_base_local1484016794244" field="id%3Dcolumn%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3Dalias%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40">
+								<table id="table_base_local1484016794244">
+								</table>
+							</div>
+						</div>
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+							<div type="label" compid="label14840166350670" compname="label14840166350670" class="layout-align-right">
+								 <label class="control-label" id="label14840166350670" i18nkey="显示字段">显示字段</label>
+							</div>
+						</div>
+						<div class="col-md-5 col-xs-5 col-sm-5 col-lg-5 column">
+							<div type="table_base_local" style="overflow-x: auto; overflow-y: auto;" compid="table_base_local1484016652433" compname="table_base_local1484016652433" field="id%3Dcolumn%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40id%3Dalias%2Ctype%3Dstring%2Cdefaultvalue%3D%2Ccomponenttype%3Dtable_base_local%2Cparenttype%3Darray%40">
+								<table id="table_base_local1484016652433">
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div type="layout" compid="layout1484017067057" compname="layout1484017067057" id="layout1484017067057" class="form-group">
+					<div class="row">
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+						</div>
+						<div class="col-md-5 col-xs-5 col-sm-5 col-lg-5 column">
+						</div>
+						<div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 column">
+						</div>
+						<div class="col-md-5 col-xs-5 col-sm-5 col-lg-5 column" style="min-height: 50px;" id="groupLayout1484048738292">
+							<div type="label" compid="label14840455875400" compname="label14840455875400" class="layout-align-right">
+								 <label class="control-label" id="label14840455875400">label</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
